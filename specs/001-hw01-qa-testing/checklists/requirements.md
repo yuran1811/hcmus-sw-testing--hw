@@ -31,7 +31,7 @@
 
 ## Notes
 
-- All 21 functional requirements are testable with clear quantitative thresholds
+- All 26 functional requirements are testable with clear quantitative thresholds (FR-001–FR-026; FR-026 added 2026-05-31 for self-assessment table)
 - 4 user stories cover all 3 requirements plus cross-cutting AI audit concerns
 - Edge cases address realistic scenarios (broken links, insufficient defects, AI correctness)
 - Success criteria are measurable without implementation knowledge

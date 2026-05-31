@@ -181,13 +181,13 @@
 
 **Purpose**: Verify completeness, export PDF, package zip, final commit.
 
-- [ ] T054 Self-assessment: run through all checklist items in `specs/001-hw01-qa-testing/checklists/requirements.md` and `checklists/validation.md`; confirm every FR-001 through FR-025 is satisfied; document any gaps (FR-001–FR-025)
+- [ ] T054 Self-assessment: run through all checklist items in `specs/001-hw01-qa-testing/checklists/requirements.md` and `checklists/validation.md`; confirm every FR-001 through FR-026 is satisfied; document any gaps; write Section 5 Self-Assessment table in `hw01/report.md` filling in self-assessed grade for all 6 rubric criteria (Job Market 40 pts, Software Defects 20 pts, Physical-product test design 25 pts, AI-1 8 pts, AI-2 4 pts, AI-3 3 pts) with brief per-criterion justification (FR-001–FR-026)
 - [ ] T055 ⚠️ MANUAL Oral defense prep: ensure you can (a) demo any of the 15 test cases live on your machine/device, (b) explain the reasoning behind each test input choice, (c) point out at least 1 specific AI mistake you identified and corrected — these are the oral defense question types (FR-025)
 - [ ] T056 Export PDF: run `pandoc hw01/report.md -o hw01/report.pdf` (fallback: VS Code Markdown PDF extension); verify PDF renders all sections, images, and tables correctly; document Pandoc version in report cover page (FR-020)
 - [ ] T057 Package submission zip: create `StudentID_HW01_AI_<grade>.zip` containing `hw01/report.pdf`, `hw01/ai-artifacts/`, `hw01/evidence/`, GitHub repository URL in a `README-submission.txt` (FR-020)
 - [ ] T058 Final git commit: `chore: final submission — report.pdf exported, all artifacts committed` (FR-021)
 
-**Checkpoint**: All 25 FRs verified. `hw01/report.pdf` committed. Submission zip ready for Moodle upload. Repository URL noted.
+**Checkpoint**: All 26 FRs verified. `hw01/report.pdf` committed. Submission zip ready for Moodle upload. Repository URL noted.
 
 ---
 
@@ -229,7 +229,8 @@ Phase 3 + Phase 4 + Phase 5 complete
 | T023 | Design 15 test cases with device knowledge | Physical-world intuition required |
 | T024 | Identify AI-missed edge cases | Human critical analysis |
 | T027–T031 | Execute 5 test cases on real device | Physical execution required |
-| T031–T033 | Discover ≥5 defects via execution | Physical execution required |
+| T031 | Execute TC-05 on real device with voice narration | Physical execution + voice required |
+| T033 | Document ≥5 defects discovered during execution in Section 3.4 | Physical execution required |
 | T034, T035 | Create and screenshot GitHub Issues | GitHub account name visible |
 | T052 | Audit and complete prompt log | Honest timestamped record |
 | T055 | Oral defense preparation | Live demo readiness |

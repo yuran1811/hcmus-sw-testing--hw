@@ -123,6 +123,7 @@ As a software testing student, I demonstrate critical evaluation of AI throughou
 - **FR-023**: Student MUST maintain a prompt log (.md file) with timestamps for every AI prompt sent during the assignment
 - **FR-024**: Submission MUST attach [AI-02] AI Audit Report template and [AI-03] AI Disclosure Form (signed) from the /AI Templates folder
 - **FR-025**: Student MUST be prepared for an oral defense (random 30% selection): live demo of any test case, explain input choice, and identify 1 AI mistake corrected
+- **FR-026**: Report MUST include a self-assessment table at the end of the main content (before appendices), listing all 6 rubric criteria — Job Market 2026+ (40 pts), Software Defects 2022–2026 (20 pts), Physical-product test design (25 pts), AI-1 Audit Report (8 pts), AI-2 Critique + Disclosure (4 pts), AI-3 Checklist + anti-cheat (3 pts) — with the student's self-assessed grade for each criterion
 
 ### Key Entities
 

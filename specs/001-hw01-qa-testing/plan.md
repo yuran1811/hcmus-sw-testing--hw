@@ -116,6 +116,8 @@ hw01/report.md
 │   ├── 4.1 AI Critique (FR-015, 200–300 words)
 │   ├── 4.2 AI Accuracy Summary (FR-019)
 │   └── 4.3 Mandatory Disclosure (FR-016)
+├── Section 5 — Self-Assessment
+│   └── Rubric table with self-assessed grades per criterion (FR-026)
 ├── Appendix A — AI Audit Reports [AI-02]  (FR-014, FR-024)
 ├── Appendix B — AI Disclosure Form [AI-03] (FR-024)
 ├── Appendix C — AI Privacy Checklist [AI-05]
