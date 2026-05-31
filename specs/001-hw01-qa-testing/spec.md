@@ -119,6 +119,10 @@ As a software testing student, I demonstrate critical evaluation of AI throughou
 - **FR-019**: Report MUST summarize AI accuracy ratio at the end (VALID/INVALID/INCOMPLETE percentages) AND conclude: WHEN should AI be used / not used for this work?
 - **FR-020**: Report MUST be authored in Markdown format with PDF export
 - **FR-021**: Report MUST be Git-versioned with clear commits per logical step
+- **FR-022**: Execution videos MUST contain the student's own voice narration (anti-cheat requirement; AI-generated or silent videos are grounds for zero grade)
+- **FR-023**: Student MUST maintain a prompt log (.md file) with timestamps for every AI prompt sent during the assignment
+- **FR-024**: Submission MUST attach [AI-02] AI Audit Report template and [AI-03] AI Disclosure Form (signed) from the /AI Templates folder
+- **FR-025**: Student MUST be prepared for an oral defense (random 30% selection): live demo of any test case, explain input choice, and identify 1 AI mistake corrected
 
 ### Key Entities
 
@@ -143,6 +147,8 @@ As a software testing student, I demonstrate critical evaluation of AI throughou
 - **SC-008**: The single AI critique paragraph is within the 200-300 word range and substantively evaluates AI performance across the entire report
 - **SC-009**: Git history demonstrates incremental progress with descriptive commit messages per logical step
 - **SC-010**: The ISTQB mindmap audit correctly identifies 3 verifiable AI mistakes with citations to course materials
+- **SC-011**: All execution videos include student voice narration (not silent); prompt log .md is committed with timestamps for every AI prompt
+- **SC-012**: [AI-02] Audit Report and [AI-03] Disclosure Form are attached as appendices in the final submission
 
 ## Assumptions
 
