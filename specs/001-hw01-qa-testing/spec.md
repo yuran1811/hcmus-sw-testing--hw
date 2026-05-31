@@ -14,15 +14,16 @@
 
 As a software testing student, I research and analyze 10 real QA/QC job postings from the current market (published within 60 days of submission) to understand how AI is transforming QA/QC roles and what skills employers demand in 2026+.
 
-**Why this priority**: This requirement carries the highest weight (40 pts) and establishes the foundation for understanding the QA/QC profession. It demonstrates the student's ability to research, analyze, and synthesize real-world job market data with critical AI evaluation.
+**Why this priority**: This requirement carries the highest weight (40 pts, broken down as: 10 jobs × 3 pts = 30 pts base content + 10 pts AI Impact sub-component including ISTQB mindmap audit) and establishes the foundation for understanding the QA/QC profession. It demonstrates the student's ability to research, analyze, and synthesize real-world job market data with critical AI evaluation.
 
-**Independent Test**: Can be fully tested by verifying that 10 job postings are documented with all required fields (link, screenshot, description, skills, salary, AI Impact Analysis) and that at least 3 postings explicitly require AI/LLM/automation-AI skills.
+**Independent Test**: Can be fully tested by verifying that 10 job postings are documented with all required fields (link, screenshot, description, skills, salary, AI Impact Analysis), that at least 3 postings explicitly require AI/LLM/automation-AI skills, and that the ISTQB mindmap audit identifies exactly 3 AI mistakes with citations.
 
 **Acceptance Scenarios**:
 
 1. **Given** the student has access to job posting platforms, **When** they collect 10 QA/QC job postings published within 60 days of submission, **Then** each posting includes: a working URL, a dated screenshot showing the student's account name, job description, required skills list, salary information, and a 1-2 sentence AI Impact Analysis.
 2. **Given** 10 job postings are collected, **When** reviewing the set for AI-skill coverage, **Then** at least 3 postings explicitly require AI/LLM/automation-AI skills (e.g., prompt engineering for testing, AI-assisted test generation, LLM-based automation).
 3. **Given** AI tools are used during research or analysis, **When** an AI-generated artifact is produced, **Then** a complete AI Audit Report (5-section template) accompanies it with a VALID/INVALID/INCOMPLETE verdict and student correction.
+4. **Given** the student needs to demonstrate understanding of QA/QC roles (CLO G9.1), **When** they ask an AI tool to generate an ISTQB-based QA/QC role mindmap, **Then** the student identifies exactly 3 mistakes in the AI-generated mindmap with reasoning that cites course materials or ISTQB standards.
 
 ---
 
@@ -30,7 +31,7 @@ As a software testing student, I research and analyze 10 real QA/QC job postings
 
 As a software testing student, I apply ISTQB testing methodology to design 15 test cases for a specific stand fan, execute at least 5 of them on the real device with video evidence, and discover at least 5 defects — proving I can apply testing principles to physical products.
 
-**Why this priority**: This requirement also carries 40 pts and is the most hands-on, requiring physical test execution, video recording, and defect discovery. It uniquely demonstrates the student's ability to apply testing theory to tangible products and find edge cases that AI cannot.
+**Why this priority**: Per the AI-first rubric, R3 content scores 25 pts (with 15 pts allocated separately to AI compliance across all requirements). This is the most hands-on requirement, requiring physical test execution, video recording, and defect discovery. It uniquely demonstrates the student's ability to apply testing theory to tangible products and find edge cases that AI cannot.
 
 **Independent Test**: Can be fully tested by verifying 15 ISTQB-structured test cases exist (with ≥3 AI-missed edge cases), at least 5 are executed with video recordings (≤60s each), at least 5 defects are documented, and 1 photo shows the device with student ID card.
 
@@ -61,18 +62,17 @@ As a software testing student, I research and document 20 real software defects 
 
 ### User Story 4 - Cross-Cutting AI Audit & Compliance (Priority: P4)
 
-As a software testing student, I demonstrate critical evaluation of AI throughout the entire report by including AI Audit Reports for every AI-generated artifact, writing AI critique paragraphs, auditing an AI-generated ISTQB mindmap, and summarizing AI accuracy metrics.
+As a software testing student, I demonstrate critical evaluation of AI throughout the entire report by including AI Audit Reports for every AI-generated artifact, writing a single AI critique paragraph, and summarizing AI accuracy metrics.
 
-**Why this priority**: This cross-cutting concern underpins the academic integrity and learning objectives (CLO G9.1, G9.3) of the entire homework. Without it, other requirements lose their educational value.
+**Why this priority**: This cross-cutting concern underpins the academic integrity and learning objectives (CLO G9.3) of the entire homework. The AI compliance section carries 15 pts (AI-1: 8 pts, AI-2: 4 pts, AI-3: 3 pts). Without it, other requirements lose their educational value. Note: The ISTQB mindmap audit (CLO G9.1) is part of R1, not this cross-cutting concern.
 
-**Independent Test**: Can be fully tested by verifying AI Audit Reports accompany all AI-generated artifacts, the ISTQB mindmap audit identifies 3 AI mistakes, ≥3 edge cases are proven AI-missed, AI critique paragraphs are 200-300 words, a disclosure statement exists, and an accuracy ratio summary appears.
+**Independent Test**: Can be fully tested by verifying AI Audit Reports accompany all AI-generated artifacts, the single AI critique paragraph is 200-300 words, a disclosure statement exists, and an accuracy ratio summary appears.
 
 **Acceptance Scenarios**:
 
-1. **Given** the student uses AI to generate an ISTQB mindmap, **When** auditing it, **Then** exactly 3 mistakes are identified with reasoning citing course materials or ISTQB standards.
-2. **Given** AI tools are used throughout the report, **When** the report is finalized, **Then** a mandatory AI disclosure statement appears at the end.
-3. **Given** all AI Audit Reports are completed, **When** summarizing AI performance, **Then** an accuracy ratio is calculated showing VALID/INVALID/INCOMPLETE percentages across all audited artifacts.
-4. **Given** AI tools are used for major tasks, **When** reviewing each usage, **Then** a 200-300 word AI critique paragraph accompanies each major AI usage section.
+1. **Given** AI tools are used throughout the report, **When** the report is finalized, **Then** a mandatory AI disclosure statement appears at the end.
+2. **Given** all AI Audit Reports are completed, **When** summarizing AI performance, **Then** an accuracy ratio is calculated showing VALID/INVALID/INCOMPLETE percentages across all audited artifacts.
+3. **Given** AI tools are used throughout the report, **When** writing the AI critique, **Then** exactly ONE 200-300 word paragraph is written for the entire report (not per-requirement), evaluating where AI was wrong/biased/incomplete and what principles were learned.
 
 ---
 
@@ -83,6 +83,16 @@ As a software testing student, I demonstrate critical evaluation of AI throughou
 - What happens when AI provides a fully correct explanation for a defect? (The student must still probe deeper or rephrase to elicit bias/hallucination, documenting the attempt)
 - How does the student handle a video recording exceeding 60 seconds? (Edit to the critical segment or split into multiple clips within the time limit)
 - What happens when the stand fan serial number is not visible or documented? (Contact manufacturer or use model-specific identifiers; document the investigative process)
+
+## Clarifications
+
+### Session 2026-05-31
+
+- Q: What is the exact grading breakdown per sub-component? → A: Per AI-first rubric: R1=40 pts (10×3 base + 10 AI Impact/mindmap), R2=20 pts (20 defects × 1pt), R3=25 pts (15 TCs + 5 videos), AI-1=8 pts (Audit Reports), AI-2=4 pts (critique + disclosure), AI-3=3 pts (checklist + anti-cheat). Total=100.
+- Q: Is the 200-300 word AI critique per-requirement or one total? → A: ONE paragraph total for the entire report (per requirements Section 4: "Write a 200–300-word paragraph" singular, and rubric line "AI Critique 200–300 words" as single 4-pt item).
+- Q: Does the ISTQB mindmap audit belong to R1 or cross-cutting? → A: R1 (per CLO mapping table: "G9.1 → R1: AI Tool draws a QA/QC role mindmap; you find 3 mistakes"). It's thematically tied to QA/QC role understanding.
+- Q: Should defect severity use a specific standard? → A: ISTQB-aligned categories (Critical/Major/Minor/Trivial) recommended as primary standard; equivalent frameworks (IEEE 1044) acceptable. Flexible but must be consistent within the report.
+- Q: What constitutes a "defect" for physical product testing vs. a design limitation? → A: A defect is any deviation from: (a) manufacturer's stated specs/manual, (b) safety standards, or (c) reasonable user expectations. Inherent design limitations of the product category are NOT defects unless they contradict the device's own documentation.
 
 ## Requirements *(mandatory)*
 
@@ -102,22 +112,22 @@ As a software testing student, I demonstrate critical evaluation of AI throughou
 - **FR-012**: Report MUST include 1 photo showing the stand fan with the student ID card in the same frame
 - **FR-013**: Report MUST declare the stand fan's brand, model, year, and serial number (with serial masked for privacy)
 - **FR-014**: Every AI-generated artifact MUST include a complete AI Audit Report following the 5-section template (Prompt+tool, AI output, Verdict, Reasoning, Student fix)
-- **FR-015**: Report MUST include a 200-300 word AI critique paragraph for each major AI usage
+- **FR-015**: Report MUST include exactly ONE 200-300 word AI critique paragraph for the entire report (not per-requirement), evaluating where AI was wrong/biased/incomplete and what principles were learned for collaborating with AI
 - **FR-016**: Report MUST include a mandatory AI disclosure statement
-- **FR-017**: Student MUST ask AI for an ISTQB mindmap and identify exactly 3 mistakes in the AI output (CLO G9.1)
+- **FR-017**: As part of R1 (CLO G9.1), student MUST ask AI for a QA/QC role mindmap based on ISTQB and identify exactly 3 mistakes in the AI output, with reasoning citing course materials or ISTQB standards
 - **FR-018**: Student MUST find at least 3 edge cases for the stand fan that AI missed, with proof (CLO G9.3)
-- **FR-019**: Report MUST summarize AI accuracy ratio at the end (VALID/INVALID/INCOMPLETE percentages)
+- **FR-019**: Report MUST summarize AI accuracy ratio at the end (VALID/INVALID/INCOMPLETE percentages) AND conclude: WHEN should AI be used / not used for this work?
 - **FR-020**: Report MUST be authored in Markdown format with PDF export
 - **FR-021**: Report MUST be Git-versioned with clear commits per logical step
 
 ### Key Entities
 
 - **Job Posting**: A real QA/QC job advertisement with URL, screenshot, description, skills, salary, and AI impact analysis. Constrained to 60-day recency window.
-- **Software Defect**: A publicized software bug/failure from 2022-2026 with source evidence, severity classification, and documented AI evaluation bias.
+- **Software Defect**: A publicized software bug/failure from 2022-2026 with source evidence, severity classification (using ISTQB-aligned categories: Critical, Major, Minor, Trivial — or equivalent standard such as IEEE 1044), and documented AI evaluation bias.
 - **Test Case**: An ISTQB-structured verification activity for the stand fan with objective, inputs, steps, expected/actual results, and verdict.
 - **AI Audit Report**: A 5-section evaluation document applied to every AI-generated artifact, demonstrating critical judgment.
 - **Physical Device (Stand Fan)**: The specific device under test, identified by brand/model/serial, with photo evidence linking it to the student.
-- **Defect Report**: A documented issue found during physical test execution of the stand fan.
+- **Defect Report**: A documented issue found during physical test execution of the stand fan. A defect is defined as any observed behavior that deviates from: (a) the manufacturer's stated specifications or manual claims, (b) applicable safety standards, or (c) reasonable user expectations for the product category. Design limitations inherent to all products of that type are NOT defects unless they contradict the device's own documentation or marketing claims.
 
 ## Success Criteria *(mandatory)*
 
@@ -130,7 +140,7 @@ As a software testing student, I demonstrate critical evaluation of AI throughou
 - **SC-005**: At least 3 test cases demonstrably prove AI limitations by showing AI conversation failures alongside student-discovered edge cases
 - **SC-006**: Physical test execution produces at least 5 documented defects with video evidence under 60 seconds each
 - **SC-007**: AI accuracy summary quantifies the ratio of VALID vs INVALID vs INCOMPLETE AI outputs across the entire report
-- **SC-008**: All AI critique sections are within the 200-300 word range and substantively evaluate AI performance
+- **SC-008**: The single AI critique paragraph is within the 200-300 word range and substantively evaluates AI performance across the entire report
 - **SC-009**: Git history demonstrates incremental progress with descriptive commit messages per logical step
 - **SC-010**: The ISTQB mindmap audit correctly identifies 3 verifiable AI mistakes with citations to course materials
 
@@ -142,7 +152,24 @@ As a software testing student, I demonstrate critical evaluation of AI throughou
 - A smartphone or camera capable of recording video (≤60s) is available for test execution evidence
 - The student has access to at least one AI tool (ChatGPT, Gemini, Copilot, etc.) for the AI audit sections
 - "Published within 60 days" is measured from the homework submission deadline
-- Severity classification for defects follows standard categories (Critical, Major, Minor, Trivial) or equivalent
+- Severity classification for defects uses ISTQB-aligned categories (Critical, Major, Minor, Trivial) as the primary standard, with equivalent frameworks acceptable if applied consistently
 - The stand fan is a common household appliance with standard features (speed settings, oscillation, height adjustment, timer)
 - Internet access is available for job market research and defect database searches
 - The submission deadline and course materials (slides, ISTQB references) are accessible to the student
+
+## Grading Breakdown (AI-First Rubric)
+
+| # | Criteria | Points | Sub-component Detail |
+|---|----------|--------|---------------------|
+| 1 | Job Market 2026+ | 40 | 10 jobs × 3 pts = 30 (base content) + 10 (AI Impact Analysis + ISTQB mindmap audit) |
+| 2 | Software Defects 2022–2026 | 20 | 20 defects × 1 pt each (including AI bias identification per defect) |
+| 3 | Physical-product test design | 25 | 15 test cases + ≥5 video executions + ≥5 defects discovered |
+| AI-1 | AI Audit Report (5-section) | 8 | One entry per AI-generated artifact (batch = 1 entry). Covers all requirements. |
+| AI-2 | AI Critique + Disclosure | 4 | ONE 200-300 word paragraph total + [AI-03] Disclosure Form |
+| AI-3 | Checklist + anti-cheat | 3 | [AI-05] signed + device photo + voice narration + account screenshots |
+| | **Total** | **100** | |
+
+**Key scoring notes**:
+- "One batch generated by a single prompt counts as ONE artifact" for AI Audit Report purposes
+- The ISTQB mindmap audit (find 3 mistakes) is scored within R1's "AI Impact" sub-component (10 pts)
+- R3's heading in requirements says "40 pts" but the AI-first rubric (which "replaces the previous rubric") allocates 25 pts to R3 content and 15 pts to AI compliance
