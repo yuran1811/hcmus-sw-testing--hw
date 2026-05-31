@@ -23,12 +23,12 @@
 
 **Purpose**: Create the directory tree and empty files that every subsequent task writes into. Must be complete before any content work begins.
 
-- [ ] T001 Create directory skeleton: `mkdir -p hw01/ai-artifacts hw01/evidence/jobs hw01/evidence/mindmap hw01/evidence/videos` (FR-020, FR-021)
-- [ ] T002 Scaffold `hw01/report.md` with full section outline (Cover Page, Sections 1–4, Appendix A–B) and `<!-- TODO -->` placeholders per `plan.md` report structure (FR-020)
-- [ ] T003 [P] Initialize `hw01/ai-artifacts/prompt-log.md` with header, column format (`| HH:MM dd/mm/yyyy | Tool | Prompt summary | Purpose |`), and one example row (FR-023)
-- [ ] T004 [P] Initialize `hw01/ai-artifacts/audit-reports.md` with 5-section template header and one blank entry skeleton (FR-014, FR-024)
-- [ ] T005 [P] Create `hw01/evidence/placeholder.md` as a directory marker with note: "Replace with actual evidence files during execution" (FR-020)
-- [ ] T006 Git commit: `chore: scaffold hw01 directory structure and report skeleton` (FR-021)
+- [X] T001 Create directory skeleton: `mkdir -p hw01/ai-artifacts hw01/evidence/jobs hw01/evidence/mindmap hw01/evidence/videos` (FR-020, FR-021)
+- [X] T002 Scaffold `hw01/report.md` with full section outline (Cover Page, Sections 1–4, Appendix A–B) and `<!-- TODO -->` placeholders per `plan.md` report structure (FR-020)
+- [X] T003 [P] Initialize `hw01/ai-artifacts/prompt-log.md` with header, column format (`| HH:MM dd/mm/yyyy | Tool | Prompt summary | Purpose |`), and one example row (FR-023)
+- [X] T004 [P] Initialize `hw01/ai-artifacts/audit-reports.md` with 5-section template header and one blank entry skeleton (FR-014, FR-024)
+- [X] T005 [P] Create `hw01/evidence/placeholder.md` as a directory marker with note: "Replace with actual evidence files during execution" (FR-020)
+- [X] T006 Git commit: `chore: scaffold hw01 directory structure and report skeleton` (FR-021)
 
 **Checkpoint**: `hw01/` directory tree exists; `report.md`, `prompt-log.md`, `audit-reports.md` all exist with correct headers.
 
@@ -40,7 +40,7 @@
 
 ⚠️ **CRITICAL**: Complete T007 and T008 before beginning Phase 3.
 
-- [ ] T007 Download [AI-02], [AI-03], [AI-05] templates from course Moodle; save blank copies to `hw01/evidence/AI-02-blank.md`, `hw01/evidence/AI-03-blank.md`, `hw01/evidence/AI-05-blank.md` (FR-024)
+- [X] T007 Download [AI-02], [AI-03], [AI-05] templates from course Moodle; save blank copies to `hw01/evidence/AI-02-blank.md`, `hw01/evidence/AI-03-blank.md`, `hw01/evidence/AI-05-blank.md` (FR-024) *(placeholder templates created — replace with official Moodle versions)*
 - [ ] T008 Record the official submission deadline from Moodle in `hw01/report.md` Cover Page; compute and record the 60-day recency window start date (job postings must be published after this date) (FR-001, FR-003)
 
 **Checkpoint**: Templates downloaded; deadline and recency window documented in report cover page.
