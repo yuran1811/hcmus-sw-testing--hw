@@ -6,5 +6,6 @@ shell commands, and other important information, read the current plan
 **Branch**: `001-hw01-qa-testing`
 **Plan**: `specs/001-hw01-qa-testing/plan.md`
 **Spec**: `specs/001-hw01-qa-testing/spec.md`
+**Tasks**: `specs/001-hw01-qa-testing/tasks.md`
 **Constitution**: `.specify/memory/constitution.md`
 <!-- SPECKIT END -->
