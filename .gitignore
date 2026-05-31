@@ -1,0 +1,90 @@
+# Node modules
+**/node_modules
+**/.pnp
+**.pnp.*
+**/yarn/*
+!**/yarn/patches
+!**/yarn/plugins
+!**/yarn/releases
+!**/yarn/versions
+
+# Build outputs
+**/build
+**/.next
+**/dist
+**/out/
+
+# Testing
+**/coverage
+**/test-report
+**/.nyc_output
+**/*.tsbuildinfo
+
+# Logs and debugging
+**/logs
+**/*.log
+**/npm-debug.log*
+**/pnpm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*
+**/lerna-debug.log*
+
+# OS files
+**/.DS_Store
+
+# IDE and Editor files
+/.idea
+.project
+.classpath
+.c9
+
+# dotenv environment variable files
+**/.env*
+!**/.env.example*
+
+# Vercel deployment
+**/.vercel
+
+# TypeScript (next.js specific)
+**/next-env.d.ts
+
+# Runtime data
+**/pids
+**/*.pid
+**/*.seed
+**/*.pid.lock
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+**/report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Temporary files
+**/.temp
+**/.tmp
+
+# Misc
+.fallow/
+.rtk/
+.github/hooks/
+__generated__/
+__pycache__/
+
+# Added by code-review-graph
+.code-review-graph/
+
+# SonarQube
+.scannerwork/
+.sonarqube/
+
+# AI
+__pycache__/
+ai/draft
+
+# Data
+data/dataforBE
+
+# Playwright
+.playwright-*/
+
+# Storybook
+*storybook.log
+storybook-static
