@@ -6,10 +6,9 @@
 
 ---
 
-| Timestamp (HH:MM dd/mm/yyyy)       | Tool           | Prompt Summary                       | Purpose                   | Audit Report Ref  |
-| ---------------------------------- | -------------- | ------------------------------------ | ------------------------- | ----------------- |
-| <!-- Example: 14:30 31/05/2026 --> | GitHub Copilot | <!-- "Generate ISTQB mindmap..." --> | <!-- R1 mindmap audit --> | <!-- Audit-01 --> |
-
----
-
-<!-- Add entries below this line in chronological order -->
+| Timestamp (dd/mm/yyyy HH:MM) | Tool           | Prompt Summary                        | Purpose                                 | Audit Report Ref |
+| ---------------------------- | -------------- | ------------------------------------- | --------------------------------------- | ---------------- |
+| 30/05/2026 22:05             | GitHub Copilot | "follow the speckit document ..."     | Project Scaffolding                     | Audit-01         |
+| 30/05/2026 22:23             | GitHub Copilot | "follow the speckit document ..."     | Project Scaffolding                     | Audit-02         |
+| 30/05/2026 22:47             | GitHub Copilot | "/speckit.implement use context7"     | Project Scaffolding                     | Audit-03         |
+| 04/06/2026 23:54             | Antigravity    | "23127065-report.md complete the ..." | Add AI Impact Analysis for Job Postings | Audit-04         |
