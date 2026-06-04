@@ -6,20 +6,20 @@
 
 ## Required Fields
 
-| Field | Type | Constraint |
-|-------|------|------------|
-| `Job Title` | string | Non-empty |
-| `Company` | string | Non-empty |
-| `Platform` | enum | LinkedIn \| TopCV \| ITviec \| Glassdoor \| Indeed |
-| `URL` | URL | Must be a working link at time of capture |
-| `Published Date` | date (YYYY-MM-DD) | Within 60 days of submission deadline |
-| `Screenshot` | file link | `evidence/jobs/job-NN-<platform>.png`; must show account name |
-| `Location` | string | City/country or "Remote" |
-| `Salary` | string | Range, or "Not disclosed" — never blank |
-| `Required Skills` | list | ≥3 bullet points |
-| `AI/LLM Skills Required` | boolean + quote | Yes (quote) or No |
-| `Job Description Summary` | string | 3–5 sentences |
-| `AI Impact Analysis` | string | 1–2 sentences |
+| Field                     | Type              | Constraint                                                    |
+| ------------------------- | ----------------- | ------------------------------------------------------------- |
+| `Job Title`               | string            | Non-empty                                                     |
+| `Company`                 | string            | Non-empty                                                     |
+| `Platform`                | enum              | LinkedIn \| TopCV \| ITviec \| Glassdoor \| Indeed            |
+| `URL`                     | URL               | Must be a working link at time of capture                     |
+| `Published Date`          | date (YYYY-MM-DD) | Within 60 days of submission deadline                         |
+| `Screenshot`              | file link         | `evidence/jobs/job-NN-<platform>.png`; must show account name |
+| `Location`                | string            | City/country or "Remote"                                      |
+| `Salary`                  | string            | Range, or "Not disclosed" — never blank                       |
+| `Required Skills`         | list              | ≥3 bullet points                                              |
+| `AI/LLM Skills Required`  | boolean + quote   | Yes (quote) or No                                             |
+| `Job Description Summary` | string            | 3–5 sentences                                                 |
+| `AI Impact Analysis`      | string            | 1–2 sentences                                                 |
 
 ## Acceptance Criteria
 
@@ -35,23 +35,24 @@
 ```markdown
 ### Job-01: QA Automation Engineer at TechCorp Vietnam
 
-| Field | Value |
-|-------|-------|
-| **Platform** | LinkedIn |
-| **URL** | https://www.linkedin.com/jobs/view/1234567890 |
-| **Published Date** | 2026-05-10 |
-| **Screenshot** | [view](../evidence/jobs/job-01-linkedin.png) |
-| **Location** | Ho Chi Minh City, Vietnam |
-| **Salary** | 25,000,000–40,000,000 VND/month |
+| Field              | Value                                         |
+| ------------------ | --------------------------------------------- |
+| **Platform**       | LinkedIn                                      |
+| **URL**            | https://www.linkedin.com/jobs/view/1234567890 |
+| **Published Date** | 2026-05-10                                    |
+| **Screenshot**     | [view](../evidence/jobs/job-01-linkedin.png)  |
+| **Location**       | Ho Chi Minh City, Vietnam                     |
+| **Salary**         | 25,000,000–40,000,000 VND/month               |
 
 **Required Skills**:
+
 - Selenium, Appium, Cypress
 - API testing (Postman, REST Assured)
 - Prompt engineering for test generation with LLMs
 - ISTQB certification preferred
 
 **AI/LLM Skills Required**: Yes  
-*"Experience with prompt engineering for LLM-based test generation is a plus"*
+_"Experience with prompt engineering for LLM-based test generation is a plus"_
 
 **Job Description Summary**:
 TechCorp Vietnam is seeking a QA Automation Engineer to work on their mobile banking platform. The role involves designing and maintaining test automation frameworks, performing API testing, and collaborating with the development team in an Agile environment.

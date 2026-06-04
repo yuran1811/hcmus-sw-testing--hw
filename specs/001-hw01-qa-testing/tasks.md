@@ -8,14 +8,14 @@
 
 ## Legend
 
-| Marker | Meaning |
-|--------|---------|
-| `[P]` | Can run in parallel (no dependency on an incomplete sibling task) |
-| `[USn]` | Belongs to User Story n |
-| `⚠️ MANUAL` | Cannot be done by AI/agent — student must execute in person |
-| `📸 ACCOUNT` | Screenshot must show your login/display name (anti-cheat) |
-| `🎙️ VOICE` | Video must contain student voice narration (anti-cheat) |
-| `FR-nnn` | Functional Requirement(s) this task satisfies |
+| Marker       | Meaning                                                           |
+| ------------ | ----------------------------------------------------------------- |
+| `[P]`        | Can run in parallel (no dependency on an incomplete sibling task) |
+| `[USn]`      | Belongs to User Story n                                           |
+| `⚠️ MANUAL`  | Cannot be done by AI/agent — student must execute in person       |
+| `📸 ACCOUNT` | Screenshot must show your login/display name (anti-cheat)         |
+| `🎙️ VOICE`   | Video must contain student voice narration (anti-cheat)           |
+| `FR-nnn`     | Functional Requirement(s) this task satisfies                     |
 
 ---
 
@@ -23,12 +23,12 @@
 
 **Purpose**: Create the directory tree and empty files that every subsequent task writes into. Must be complete before any content work begins.
 
-- [X] T001 Create directory skeleton: `mkdir -p hw01/ai-artifacts hw01/evidence/jobs hw01/evidence/mindmap hw01/evidence/videos` (FR-020, FR-021)
-- [X] T002 Scaffold `hw01/report.md` with full section outline (Cover Page, Sections 1–4, Appendix A–B) and `<!-- TODO -->` placeholders per `plan.md` report structure (FR-020)
-- [X] T003 [P] Initialize `hw01/ai-artifacts/prompt-log.md` with header, column format (`| HH:MM dd/mm/yyyy | Tool | Prompt summary | Purpose |`), and one example row (FR-023)
-- [X] T004 [P] Initialize `hw01/ai-artifacts/audit-reports.md` with 5-section template header and one blank entry skeleton (FR-014, FR-024)
-- [X] T005 [P] Create `hw01/evidence/placeholder.md` as a directory marker with note: "Replace with actual evidence files during execution" (FR-020)
-- [X] T006 Git commit: `chore: scaffold hw01 directory structure and report skeleton` (FR-021)
+- [x] T001 Create directory skeleton: `mkdir -p hw01/ai-artifacts hw01/evidence/jobs hw01/evidence/mindmap hw01/evidence/videos` (FR-020, FR-021)
+- [x] T002 Scaffold `hw01/report.md` with full section outline (Cover Page, Sections 1–4, Appendix A–B) and `<!-- TODO -->` placeholders per `plan.md` report structure (FR-020)
+- [x] T003 [P] Initialize `hw01/ai-artifacts/prompt-log.md` with header, column format (`| HH:MM dd/mm/yyyy | Tool | Prompt summary | Purpose |`), and one example row (FR-023)
+- [x] T004 [P] Initialize `hw01/ai-artifacts/audit-reports.md` with 5-section template header and one blank entry skeleton (FR-014, FR-024)
+- [x] T005 [P] Create `hw01/evidence/placeholder.md` as a directory marker with note: "Replace with actual evidence files during execution" (FR-020)
+- [x] T006 Git commit: `chore: scaffold hw01 directory structure and report skeleton` (FR-021)
 
 **Checkpoint**: `hw01/` directory tree exists; `report.md`, `prompt-log.md`, `audit-reports.md` all exist with correct headers.
 
@@ -40,7 +40,7 @@
 
 ⚠️ **CRITICAL**: Complete T007 and T008 before beginning Phase 3.
 
-- [X] T007 Download [AI-02], [AI-03], [AI-05] templates from course Moodle; save blank copies to `hw01/evidence/AI-02-blank.md`, `hw01/evidence/AI-03-blank.md`, `hw01/evidence/AI-05-blank.md` (FR-024) *(placeholder templates created — replace with official Moodle versions)*
+- [x] T007 Download [AI-02], [AI-03], [AI-05] templates from course Moodle; save blank copies to `hw01/evidence/AI-02-blank.md`, `hw01/evidence/AI-03-blank.md`, `hw01/evidence/AI-05-blank.md` (FR-024) _(placeholder templates created — replace with official Moodle versions)_
 - [ ] T008 Record the official submission deadline from Moodle in `hw01/report.md` Cover Page; compute and record the 60-day recency window start date (job postings must be published after this date) (FR-001, FR-003)
 
 **Checkpoint**: Templates downloaded; deadline and recency window documented in report cover page.
@@ -208,6 +208,7 @@ Phase 3 + Phase 4 + Phase 5 complete
 **Story completion order**: US1 (R1) → US2 (R3) + US3 (R2) [parallel] → US4 (AI) → Submission
 
 **Parallel opportunities within each phase**:
+
 - Phase 3: T010 ∥ T011 (screenshots 01–05 vs 06–10)
 - Phase 5: T038 ∥ T039 (defects 01–10 vs 11–20); T041 ∥ T042 (AI queries 01–10 vs 11–20)
 - Phase 6: T049 ∥ T050 ∥ T051 (template forms are independent)
@@ -218,22 +219,22 @@ Phase 3 + Phase 4 + Phase 5 complete
 
 > These tasks CANNOT be delegated to an AI agent. The student must execute them personally. TA grading checks these artifacts for authenticity.
 
-| Task | Reason | Anti-cheat Check |
-|------|--------|-----------------|
-| T009 | Job platform search with account login | Account name in screenshot |
-| T010, T011 | Job screenshot capture (10 images) | Account name visible in each image |
-| T015 | Save AI mindmap output as image | Needs human screenshot of AI tool |
-| T016 | Annotate mindmap with corrections | Human judgment on ISTQB errors |
-| T020 | Device photo with student ID card | Photo authenticity (physical ID in frame) |
-| T021 | Record device serial number | Physical inspection of device |
-| T023 | Design 15 test cases with device knowledge | Physical-world intuition required |
-| T024 | Identify AI-missed edge cases | Human critical analysis |
-| T027–T031 | Execute 5 test cases on real device | Physical execution required |
-| T031 | Execute TC-05 on real device with voice narration | Physical execution + voice required |
-| T033 | Document ≥5 defects discovered during execution in Section 3.4 | Physical execution required |
-| T034, T035 | Create and screenshot GitHub Issues | GitHub account name visible |
-| T052 | Audit and complete prompt log | Honest timestamped record |
-| T055 | Oral defense preparation | Live demo readiness |
+| Task       | Reason                                                         | Anti-cheat Check                          |
+| ---------- | -------------------------------------------------------------- | ----------------------------------------- |
+| T009       | Job platform search with account login                         | Account name in screenshot                |
+| T010, T011 | Job screenshot capture (10 images)                             | Account name visible in each image        |
+| T015       | Save AI mindmap output as image                                | Needs human screenshot of AI tool         |
+| T016       | Annotate mindmap with corrections                              | Human judgment on ISTQB errors            |
+| T020       | Device photo with student ID card                              | Photo authenticity (physical ID in frame) |
+| T021       | Record device serial number                                    | Physical inspection of device             |
+| T023       | Design 15 test cases with device knowledge                     | Physical-world intuition required         |
+| T024       | Identify AI-missed edge cases                                  | Human critical analysis                   |
+| T027–T031  | Execute 5 test cases on real device                            | Physical execution required               |
+| T031       | Execute TC-05 on real device with voice narration              | Physical execution + voice required       |
+| T033       | Document ≥5 defects discovered during execution in Section 3.4 | Physical execution required               |
+| T034, T035 | Create and screenshot GitHub Issues                            | GitHub account name visible               |
+| T052       | Audit and complete prompt log                                  | Honest timestamped record                 |
+| T055       | Oral defense preparation                                       | Live demo readiness                       |
 
 ---
 
@@ -242,6 +243,7 @@ Phase 3 + Phase 4 + Phase 5 complete
 **MVP Scope (Phase 3 only)**: Complete US1/R1 first — 40 pts, no physical device needed, can be done entirely with a laptop. Establishes the report structure and AI workflow patterns used in every subsequent phase.
 
 **Incremental delivery**:
+
 1. **Session 1** (~2h): Phases 1–2 + Phase 3 (US1/R1 — all job postings + mindmap audit)
 2. **Session 2** (~2h): Phase 4 (US2/R3 — physical device required; bring student ID card and fan)
 3. **Session 3** (~1h): Phase 5 (US3/R2 — desktop research)

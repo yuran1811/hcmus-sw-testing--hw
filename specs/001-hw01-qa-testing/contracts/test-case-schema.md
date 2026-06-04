@@ -6,22 +6,22 @@
 
 ## Required Fields (ISTQB standard structure)
 
-| Field | Type | Constraint |
-|-------|------|------------|
-| `ID` | string | TC-NN (zero-padded, 01–15) |
-| `Test Case Title` | string | Verb phrase: "Verify X when Y" |
-| `Requirement Traced` | string | Manufacturer spec / safety standard / user expectation |
-| `Design Technique` | enum | Equivalence Partitioning \| Boundary Value Analysis \| Error Guessing \| Exploratory |
-| `AI-Missed Edge Case` | boolean | Yes \| No |
-| `Executed` | boolean | Yes \| No |
-| `Video` | URL or "N/A" | YouTube Unlisted link if Executed=Yes |
-| `Objective` | string | One sentence: what this test verifies |
-| `Preconditions / Input` | list | Fan state, environment, any special setup |
-| `Test Steps` | numbered list | ≥2 numbered, reproducible steps |
-| `Expected Result` | string | What SHOULD happen per specification |
-| `Actual Result` | string | What DID happen (or "Not executed") |
-| `Verdict` | enum | PASS \| FAIL \| BLOCKED \| Not executed |
-| `Defect Reference` | issue link or "N/A" | GitHub Issue link if Verdict=FAIL |
+| Field                   | Type                | Constraint                                                                           |
+| ----------------------- | ------------------- | ------------------------------------------------------------------------------------ |
+| `ID`                    | string              | TC-NN (zero-padded, 01–15)                                                           |
+| `Test Case Title`       | string              | Verb phrase: "Verify X when Y"                                                       |
+| `Requirement Traced`    | string              | Manufacturer spec / safety standard / user expectation                               |
+| `Design Technique`      | enum                | Equivalence Partitioning \| Boundary Value Analysis \| Error Guessing \| Exploratory |
+| `AI-Missed Edge Case`   | boolean             | Yes \| No                                                                            |
+| `Executed`              | boolean             | Yes \| No                                                                            |
+| `Video`                 | URL or "N/A"        | YouTube Unlisted link if Executed=Yes                                                |
+| `Objective`             | string              | One sentence: what this test verifies                                                |
+| `Preconditions / Input` | list                | Fan state, environment, any special setup                                            |
+| `Test Steps`            | numbered list       | ≥2 numbered, reproducible steps                                                      |
+| `Expected Result`       | string              | What SHOULD happen per specification                                                 |
+| `Actual Result`         | string              | What DID happen (or "Not executed")                                                  |
+| `Verdict`               | enum                | PASS \| FAIL \| BLOCKED \| Not executed                                              |
+| `Defect Reference`      | issue link or "N/A" | GitHub Issue link if Verdict=FAIL                                                    |
 
 ## Acceptance Criteria
 
@@ -34,40 +34,42 @@
 
 ## Required Coverage Distribution
 
-| Category | Count | Technique |
-|----------|-------|-----------|
-| Speed settings (1/2/3) | ≥2 | Equivalence Partitioning |
-| Oscillation control | ≥1 | Equivalence Partitioning |
-| Timer function | ≥1 | Boundary Value Analysis |
-| Height/tilt adjustment | ≥1 | Equivalence Partitioning |
-| Power on/off | ≥1 | Equivalence Partitioning |
-| Boundary conditions | ≥2 | Boundary Value Analysis |
-| Safety/hazard testing | ≥2 | Error Guessing |
-| Environmental/stress | ≥1 | Exploratory |
-| Simultaneous inputs | ≥1 | Error Guessing |
+| Category               | Count | Technique                |
+| ---------------------- | ----- | ------------------------ |
+| Speed settings (1/2/3) | ≥2    | Equivalence Partitioning |
+| Oscillation control    | ≥1    | Equivalence Partitioning |
+| Timer function         | ≥1    | Boundary Value Analysis  |
+| Height/tilt adjustment | ≥1    | Equivalence Partitioning |
+| Power on/off           | ≥1    | Equivalence Partitioning |
+| Boundary conditions    | ≥2    | Boundary Value Analysis  |
+| Safety/hazard testing  | ≥2    | Error Guessing           |
+| Environmental/stress   | ≥1    | Exploratory              |
+| Simultaneous inputs    | ≥1    | Error Guessing           |
 
 ## Example (compliant)
 
 ```markdown
 ### TC-01: Verify fan starts correctly at Speed 1
 
-| Field | Value |
-|-------|-------|
-| **ID** | TC-01 |
-| **Requirement Traced** | Manufacturer manual: "Press speed button once to activate Speed 1 (low)" |
-| **Design Technique** | Equivalence Partitioning |
-| **AI-Missed Edge Case** | No |
-| **Executed** | Yes |
-| **Video** | [▶ Watch](https://youtu.be/abc123) |
+| Field                   | Value                                                                    |
+| ----------------------- | ------------------------------------------------------------------------ |
+| **ID**                  | TC-01                                                                    |
+| **Requirement Traced**  | Manufacturer manual: "Press speed button once to activate Speed 1 (low)" |
+| **Design Technique**    | Equivalence Partitioning                                                 |
+| **AI-Missed Edge Case** | No                                                                       |
+| **Executed**            | Yes                                                                      |
+| **Video**               | [▶ Watch](https://youtu.be/abc123)                                       |
 
 **Objective**: Verify that pressing the speed button once from the OFF state activates Speed 1 (low speed rotation).
 
 **Preconditions / Input**:
+
 - Fan state: powered OFF, plugged into standard 220V outlet
 - Environment: indoor room, no obstructions within 1m of fan
 - Speed control: all buttons in default state
 
 **Test Steps**:
+
 1. Confirm fan is in OFF state (no rotation, power LED off)
 2. Press the power/speed button once
 3. Observe fan rotation and LED indicator
@@ -89,14 +91,14 @@ Fan blade started rotating at low speed within 2 seconds of button press. Power 
 ```markdown
 ### TC-11: Verify fan stability when guard grill is contacted during operation
 
-| Field | Value |
-|-------|-------|
-| **ID** | TC-11 |
-| **Requirement Traced** | IEC 60335-2-80 safety standard: "Moving parts must not be accessible during operation" |
-| **Design Technique** | Error Guessing |
-| **AI-Missed Edge Case** | Yes |
-| **Executed** | Yes |
-| **Video** | [▶ Watch](https://youtu.be/def456) |
+| Field                   | Value                                                                                  |
+| ----------------------- | -------------------------------------------------------------------------------------- |
+| **ID**                  | TC-11                                                                                  |
+| **Requirement Traced**  | IEC 60335-2-80 safety standard: "Moving parts must not be accessible during operation" |
+| **Design Technique**    | Error Guessing                                                                         |
+| **AI-Missed Edge Case** | Yes                                                                                    |
+| **Executed**            | Yes                                                                                    |
+| **Video**               | [▶ Watch](https://youtu.be/def456)                                                     |
 
 **Why AI Missed This** (with proof):  
 Screenshot: [AI conversation](../evidence/ai-tc-probe.png) (AI generated 15 test cases but none included contact with the grill during operation)  
@@ -105,11 +107,13 @@ Explanation: AI test case generators are trained on documented functional behavi
 **Objective**: Verify that the fan guard grill prevents finger contact with moving blades per IEC 60335-2-80 requirements.
 
 **Preconditions / Input**:
+
 - Fan operating at Speed 2 (medium)
 - Tester wearing a glove (for safety; test verifies grill integrity, not manual skin contact)
 - No obstructions, fan on stable surface
 
 **Test Steps**:
+
 1. Start fan at Speed 2
 2. Slowly press a gloved finger against the front face of the grill
 3. Observe whether the finger can pass through grill gaps to contact the blade

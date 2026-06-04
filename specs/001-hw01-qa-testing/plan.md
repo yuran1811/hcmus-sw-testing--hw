@@ -17,10 +17,12 @@ HW01 is a **documentation/research assignment** (not a software project). The de
 **Report Platform**: Git-versioned Markdown in `hw01/report.md`; PDF from `pandoc hw01/report.md -o hw01/report.pdf`
 
 **Research Platforms**:
+
 - Job postings: LinkedIn, TopCV (Vietnamese market), ITviec, Glassdoor, Indeed
 - Defect databases: CVE/NVD (https://nvd.nist.gov), MITRE CVE (https://cve.mitre.org), The Register, Wired, Ars Technica, VnExpress Tech
 
 **AI Tools**:
+
 - Primary: Claude (Anthropic) — declare version in each Audit Report
 - Secondary: ChatGPT — for cross-validation and deliberate hallucination probing
 
@@ -35,6 +37,7 @@ HW01 is a **documentation/research assignment** (not a software project). The de
 **Physical Device**: Stand fan (brand/model/serial declared at test time)
 
 **Constraints**:
+
 - Job postings: published within 60 days of submission deadline
 - Defects: publicized 2022–2026
 - Videos: ≤60s each, must contain student voice narration
@@ -42,20 +45,21 @@ HW01 is a **documentation/research assignment** (not a software project). The de
 - Submission zip: `StudentID_HW01_AI_<grade>.zip`
 
 **Scale/Scope**:
+
 - 10 job postings | 20 defects | 15 test cases | ≥5 executed tests | ≥5 defects found
 - ≥3 AI bias instances per defect (20 total) | ≥3 AI-missed edge cases | 1 ISTQB mindmap audit
 
 ## Constitution Check
 
-*GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
+_GATE: Must pass before Phase 0 research. Re-check after Phase 1 design._
 
-| # | Principle | Gate Condition | Status |
-|---|-----------|---------------|--------|
-| I | Evidence-Based Documentation | Every job posting, defect, and test result has a working URL + dated screenshot showing student account name | ✅ PASS — plan mandates source links and account-name screenshots for all R1/R2 artifacts |
-| II | AI-Augmented with Critical Evaluation | Every AI-generated artifact has a 5-section Audit Report; 20 AI bias instances documented; ONE 200–300 word critique; disclosure statement present | ✅ PASS — `hw01/ai-artifacts/audit-reports.md` and `prompt-log.md` are first-class deliverables |
-| III | ISTQB-Aligned Testing Methodology | All 15 test cases follow Objective/Input/Steps/Expected/Actual/Verdict structure; design techniques identified; traceability table present | ✅ PASS — data-model.md locks the test case schema; quickstart.md cross-references ISTQB |
-| IV | Markdown-First, Git-Versioned | Report in `hw01/report.md`; PDF export committed; commit per logical step with `req1:`, `req2:`, `req3:` prefixes | ✅ PASS — no proprietary formats; commit conventions defined in this plan |
-| V | Physical Product Testing Focus | ≥5 test cases physically executed; ≥5 defects discovered; ≥3 AI-missed edge cases with proof; voice-narrated videos; device photo with student ID card | ✅ PASS — R3 workflow requires real device execution before any commit for that section |
+| #   | Principle                             | Gate Condition                                                                                                                                         | Status                                                                                          |
+| --- | ------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------- |
+| I   | Evidence-Based Documentation          | Every job posting, defect, and test result has a working URL + dated screenshot showing student account name                                           | ✅ PASS — plan mandates source links and account-name screenshots for all R1/R2 artifacts       |
+| II  | AI-Augmented with Critical Evaluation | Every AI-generated artifact has a 5-section Audit Report; 20 AI bias instances documented; ONE 200–300 word critique; disclosure statement present     | ✅ PASS — `hw01/ai-artifacts/audit-reports.md` and `prompt-log.md` are first-class deliverables |
+| III | ISTQB-Aligned Testing Methodology     | All 15 test cases follow Objective/Input/Steps/Expected/Actual/Verdict structure; design techniques identified; traceability table present             | ✅ PASS — data-model.md locks the test case schema; quickstart.md cross-references ISTQB        |
+| IV  | Markdown-First, Git-Versioned         | Report in `hw01/report.md`; PDF export committed; commit per logical step with `req1:`, `req2:`, `req3:` prefixes                                      | ✅ PASS — no proprietary formats; commit conventions defined in this plan                       |
+| V   | Physical Product Testing Focus        | ≥5 test cases physically executed; ≥5 defects discovered; ≥3 AI-missed edge cases with proof; voice-narrated videos; device photo with student ID card | ✅ PASS — R3 workflow requires real device execution before any commit for that section         |
 
 **Constitution Check Result**: All 5 gates PASS. No violations to justify. Proceed to Phase 0.
 
@@ -128,25 +132,25 @@ hw01/report.md
 
 ## Git Commit Convention
 
-| Prefix | Scope | Example |
-|--------|-------|---------|
-| `req1:` | R1 job postings | `req1: add job postings 1-5 with screenshots` |
-| `req1:` | R1 mindmap audit | `req1: add ISTQB mindmap AI audit with 3 corrections` |
-| `req2:` | R2 defects | `req2: document defects 1-10 with AI bias analysis` |
-| `req3:` | R3 test cases | `req3: design 15 ISTQB test cases for stand fan` |
-| `req3:` | R3 execution | `req3: add execution results for TC-01 to TC-05 with video links` |
-| `ai-audit:` | Audit reports | `ai-audit: add audit reports for R1 AI artifacts` |
-| `chore:` | Infrastructure | `chore: add directory structure and report skeleton` |
+| Prefix      | Scope            | Example                                                           |
+| ----------- | ---------------- | ----------------------------------------------------------------- |
+| `req1:`     | R1 job postings  | `req1: add job postings 1-5 with screenshots`                     |
+| `req1:`     | R1 mindmap audit | `req1: add ISTQB mindmap AI audit with 3 corrections`             |
+| `req2:`     | R2 defects       | `req2: document defects 1-10 with AI bias analysis`               |
+| `req3:`     | R3 test cases    | `req3: design 15 ISTQB test cases for stand fan`                  |
+| `req3:`     | R3 execution     | `req3: add execution results for TC-01 to TC-05 with video links` |
+| `ai-audit:` | Audit reports    | `ai-audit: add audit reports for R1 AI artifacts`                 |
+| `chore:`    | Infrastructure   | `chore: add directory structure and report skeleton`              |
 
 ## Grading Traceability
 
-| Points | Requirement | Key Deliverables | FRs |
-|--------|-------------|-----------------|-----|
-| 30 | R1 — 10 job postings × 3 pts | 10 entries with URL, screenshot, description, skills, salary, AI impact | FR-001–003 |
-| 10 | R1 — AI Impact + mindmap audit | ≥3 AI-skill jobs; ISTQB mindmap with 3 corrected mistakes | FR-002, FR-017 |
-| 20 | R2 — 20 defects × 1 pt | 20 entries; ≥5 AI/LLM; 1 AI bias per entry (20 total) | FR-004–007 |
-| 25 | R3 — test design + execution | 15 ISTQB TCs; ≥3 AI-missed edge cases; ≥5 videos; ≥5 defects | FR-008–011 |
-| 8  | AI-1 — Audit Reports | 5-section report per AI-generated artifact | FR-014 |
-| 4  | AI-2 — Critique + Disclosure | ONE 200–300 word paragraph + [AI-03] signed | FR-015–016 |
-| 3  | AI-3 — Checklist + anti-cheat | [AI-05] signed + device photo + voice narration + account screenshots | FR-012, FR-022–025 |
-| **100** | **Total** | | |
+| Points  | Requirement                    | Key Deliverables                                                        | FRs                |
+| ------- | ------------------------------ | ----------------------------------------------------------------------- | ------------------ |
+| 30      | R1 — 10 job postings × 3 pts   | 10 entries with URL, screenshot, description, skills, salary, AI impact | FR-001–003         |
+| 10      | R1 — AI Impact + mindmap audit | ≥3 AI-skill jobs; ISTQB mindmap with 3 corrected mistakes               | FR-002, FR-017     |
+| 20      | R2 — 20 defects × 1 pt         | 20 entries; ≥5 AI/LLM; 1 AI bias per entry (20 total)                   | FR-004–007         |
+| 25      | R3 — test design + execution   | 15 ISTQB TCs; ≥3 AI-missed edge cases; ≥5 videos; ≥5 defects            | FR-008–011         |
+| 8       | AI-1 — Audit Reports           | 5-section report per AI-generated artifact                              | FR-014             |
+| 4       | AI-2 — Critique + Disclosure   | ONE 200–300 word paragraph + [AI-03] signed                             | FR-015–016         |
+| 3       | AI-3 — Checklist + anti-cheat  | [AI-05] signed + device photo + voice narration + account screenshots   | FR-012, FR-022–025 |
+| **100** | **Total**                      |                                                                         |                    |

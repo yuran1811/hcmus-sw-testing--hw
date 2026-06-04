@@ -6,9 +6,9 @@
 
 ---
 
-| Timestamp (HH:MM dd/mm/yyyy) | Tool | Prompt Summary | Purpose | Audit Report Ref |
-|------------------------------|------|----------------|---------|-----------------|
-| <!-- Example: 14:30 31/05/2026 --> | <!-- Claude / ChatGPT --> | <!-- "Generate ISTQB mindmap..." --> | <!-- R1 mindmap audit --> | <!-- Audit-01 --> |
+| Timestamp (HH:MM dd/mm/yyyy)       | Tool           | Prompt Summary                       | Purpose                   | Audit Report Ref  |
+| ---------------------------------- | -------------- | ------------------------------------ | ------------------------- | ----------------- |
+| <!-- Example: 14:30 31/05/2026 --> | GitHub Copilot | <!-- "Generate ISTQB mindmap..." --> | <!-- R1 mindmap audit --> | <!-- Audit-01 --> |
 
 ---
 

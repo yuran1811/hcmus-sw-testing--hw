@@ -6,21 +6,21 @@
 
 ## Required Fields
 
-| Field | Type | Constraint |
-|-------|------|------------|
-| `Defect Name / CVE ID` | string | CVE-YYYY-NNNNN for CVEs; descriptive name for others |
-| `Year Publicized` | year | 2022–2026 |
-| `Source URL` | URL | Publicly accessible CVE entry, vendor advisory, or news article |
-| `Affected System` | string | Software/system name + version if known |
-| `Severity` | enum | Critical \| Major \| Minor \| Trivial (ISTQB-aligned) |
-| `Type` | enum | AI/LLM \| Security \| Performance \| UI \| Data \| Other |
-| `Description` | string | 2–3 sentences — what happened |
-| `Consequences` | string | Impact: data loss, breach, financial, safety, etc. |
-| `Solution / Fix` | string | Patch version, workaround, or vendor action taken |
-| `Prompt sent to AI` | string | Exact prompt used to probe AI |
-| `AI Tool` | string | Claude / ChatGPT / other |
-| `Bias observed` | string | Describe the hallucination/bias found |
-| `Correct information` | string | What the source actually says |
+| Field                  | Type   | Constraint                                                      |
+| ---------------------- | ------ | --------------------------------------------------------------- |
+| `Defect Name / CVE ID` | string | CVE-YYYY-NNNNN for CVEs; descriptive name for others            |
+| `Year Publicized`      | year   | 2022–2026                                                       |
+| `Source URL`           | URL    | Publicly accessible CVE entry, vendor advisory, or news article |
+| `Affected System`      | string | Software/system name + version if known                         |
+| `Severity`             | enum   | Critical \| Major \| Minor \| Trivial (ISTQB-aligned)           |
+| `Type`                 | enum   | AI/LLM \| Security \| Performance \| UI \| Data \| Other        |
+| `Description`          | string | 2–3 sentences — what happened                                   |
+| `Consequences`         | string | Impact: data loss, breach, financial, safety, etc.              |
+| `Solution / Fix`       | string | Patch version, workaround, or vendor action taken               |
+| `Prompt sent to AI`    | string | Exact prompt used to probe AI                                   |
+| `AI Tool`              | string | Claude / ChatGPT / other                                        |
+| `Bias observed`        | string | Describe the hallucination/bias found                           |
+| `Correct information`  | string | What the source actually says                                   |
 
 ## Acceptance Criteria
 
@@ -33,25 +33,25 @@
 
 ## Severity Definitions (ISTQB-aligned)
 
-| Severity | Definition |
-|----------|------------|
-| Critical | System crash, data loss, security breach, safety hazard — no workaround |
-| Major | Major function fails, significant loss of functionality, workaround painful |
-| Minor | Non-critical impairment, workaround exists, limited user impact |
-| Trivial | Cosmetic, minor inconvenience, documentation error, no functional impact |
+| Severity | Definition                                                                  |
+| -------- | --------------------------------------------------------------------------- |
+| Critical | System crash, data loss, security breach, safety hazard — no workaround     |
+| Major    | Major function fails, significant loss of functionality, workaround painful |
+| Minor    | Non-critical impairment, workaround exists, limited user impact             |
+| Trivial  | Cosmetic, minor inconvenience, documentation error, no functional impact    |
 
 ## Example (compliant)
 
 ```markdown
 ### Defect-01: CVE-2023-36052 — Azure CLI Secret Exposure in GitHub Actions Logs
 
-| Field | Value |
-|-------|-------|
-| **Year Publicized** | 2023 |
-| **Source URL** | https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36052 |
-| **Affected System** | Azure CLI 2.53.0 and earlier |
-| **Severity** | Major |
-| **Type** | Security |
+| Field               | Value                                                                |
+| ------------------- | -------------------------------------------------------------------- |
+| **Year Publicized** | 2023                                                                 |
+| **Source URL**      | https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-36052 |
+| **Affected System** | Azure CLI 2.53.0 and earlier                                         |
+| **Severity**        | Major                                                                |
+| **Type**            | Security                                                             |
 
 **Description**:
 Azure CLI logged sensitive environment variables (including secrets and credentials) in plain text within GitHub Actions workflow logs. Any user with read access to the repository's Actions tab could view exposed secrets.
@@ -63,6 +63,7 @@ Unauthorized access to Azure subscriptions and resources if the logs were access
 Microsoft released Azure CLI 2.53.1 with a fix that redacts sensitive values from output. Users were advised to rotate any credentials exposed in logs and upgrade immediately.
 
 **AI Bias / Hallucination Identified**:
+
 - **Prompt sent**: "Explain CVE-2023-36052 — what caused it, how severe was it, and what was the fix?"
 - **Tool**: Claude
 - **Bias observed**: Claude stated the CVSS base score was 9.8 (Critical). The actual CVSS v3.1 score is 8.6 (High/Major), not Critical. Claude also hallucinated that "any unauthenticated user on the internet could access the logs," when in reality it required repository read access.

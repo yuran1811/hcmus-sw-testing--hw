@@ -93,6 +93,7 @@ git commit -m "req1: add ISTQB mindmap audit with 3 identified AI mistakes"
 ### 2b. AI bias elicitation (mandatory for all 20)
 
 For each defect:
+
 1. Ask AI: "Explain the <defect name> bug — what caused it, how severe was it, and how was it fixed?"
 2. Log prompt in `hw01/ai-artifacts/prompt-log.md`
 3. Identify 1 bias/hallucination (wrong CVSS score, fabricated fix, denied severity, etc.)
@@ -133,8 +134,9 @@ git commit -m "req3: add device declaration photo and device info"
 ### 3c. Design 15 test cases
 
 Design test cases covering:
+
 - **Functional** (5): speed settings (1/2/3), oscillation on/off, timer function, height adjustment, power on/off
-- **Boundary** (3): max speed sustained, min speed stability, timer at 0/max limits  
+- **Boundary** (3): max speed sustained, min speed stability, timer at 0/max limits
 - **AI-Missed Edge Cases** (≥3): e.g., safety contact test, simultaneous button press, high-load power strip behavior
 - **Exploratory** (2): unexpected scenarios discovered during testing
 
@@ -148,6 +150,7 @@ git commit -m "req3: design 15 ISTQB test cases including 3 AI-missed edge cases
 ### 3d. Execute ≥5 test cases
 
 For each test case executed:
+
 1. Set up your smartphone camera to record
 2. SPEAK ALOUD: your name, student ID, test case ID, and what you're doing (anti-cheat: voice narration required)
 3. Execute the test steps
@@ -171,6 +174,7 @@ git commit -m "req3: add execution results for TC-NN to TC-MM with video links"
 ### 4a. Complete Audit Reports
 
 After all R1/R2/R3 AI interactions are logged:
+
 1. Ensure every AI-generated artifact batch has a complete Audit-NN entry in `hw01/ai-artifacts/audit-reports.md`
 2. Tally: VALID count, INVALID count, INCOMPLETE count
 
@@ -219,6 +223,7 @@ zip -r <StudentID>_HW01_AI_<grade>.zip hw01/ --exclude "*.mp4"
 ```
 
 **Submission checklist** (verify before submitting to Moodle):
+
 - [ ] `hw01/report.md` + `hw01/report.pdf` present
 - [ ] 10 job posting screenshots in `hw01/evidence/jobs/` (all show account name)
 - [ ] `hw01/evidence/mindmap/ai-generated.png` + `hw01/evidence/mindmap/corrected.png`
@@ -244,6 +249,7 @@ A random 30% of students receive an oral defense invitation. Prepare:
 3. **AI mistake**: identify 1 specific AI mistake you corrected and explain why AI got it wrong (cite the correct ISTQB/source information)
 
 **Preparation notes to keep in report** (Section 4 or separate appendix):
+
 - List which ISTQB design technique applies to each test case
 - Note the reasoning for each boundary value chosen
 - Write one paragraph per AI-missed edge case explaining the physical-world reasoning AI lacks
@@ -252,13 +258,13 @@ A random 30% of students receive an oral defense invitation. Prepare:
 
 ## Reference Quick Links
 
-| Resource | URL |
-|----------|-----|
-| CVE Database | https://nvd.nist.gov/vuln/search |
-| MITRE CVE | https://cve.mitre.org |
-| The Register | https://www.theregister.com |
+| Resource                 | URL                                                                    |
+| ------------------------ | ---------------------------------------------------------------------- |
+| CVE Database             | https://nvd.nist.gov/vuln/search                                       |
+| MITRE CVE                | https://cve.mitre.org                                                  |
+| The Register             | https://www.theregister.com                                            |
 | ISTQB CTFL Syllabus v4.0 | https://www.istqb.org/certifications/certified-tester-foundation-level |
-| LinkedIn Jobs | https://www.linkedin.com/jobs |
-| TopCV | https://www.topcv.vn |
-| ITviec | https://itviec.com |
-| This repo's Issues | https://github.com/<your-username>/<repo>/issues |
+| LinkedIn Jobs            | https://www.linkedin.com/jobs                                          |
+| TopCV                    | https://www.topcv.vn                                                   |
+| ITviec                   | https://itviec.com                                                     |
+| This repo's Issues       | https://github.com/<your-username>/<repo>/issues                       |

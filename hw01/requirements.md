@@ -2,17 +2,17 @@
 
 ## General Information
 
-| Field | Details |
-|-------|---------|
-| **Exercise ID:** | HW01-AI |
-| **Duration:** | 5 hours |
-| **Deadline:** | (please see the submission link on Moodle) |
-| **Form:** | Individual Assignment |
-| **Submission:** | Moodle (report) + GitHub repo link (artifacts) |
-| **Lecturer / TA:** | Dr. Lam Quang Vu / Dr. Tran Duy Hoang / MSc. Tran Thi Bich Hanh / MSc. Truong Phuoc Loc / MSc. Ho Tuan Thanh |
-| **Contact:** | lqvu@fit.hcmus.edu.vn / tdhoang@fit.hcmus.edu.vn / ttbhanh@fit.hcmus.edu.vn / tploc@fit.hcmus.edu.vn / hthanh@fit.hcmus.edu.vn |
-| **AI Policy:** | Open – MANDATORY declaration + attached AI Audit Report |
-| **Required Bloom-AI level:** | G9.1 → G9.6 depending on HW (see 'CLO Mapping') |
+| Field                        | Details                                                                                                                        |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Exercise ID:**             | HW01-AI                                                                                                                        |
+| **Duration:**                | 5 hours                                                                                                                        |
+| **Deadline:**                | (please see the submission link on Moodle)                                                                                     |
+| **Form:**                    | Individual Assignment                                                                                                          |
+| **Submission:**              | Moodle (report) + GitHub repo link (artifacts)                                                                                 |
+| **Lecturer / TA:**           | Dr. Lam Quang Vu / Dr. Tran Duy Hoang / MSc. Tran Thi Bich Hanh / MSc. Truong Phuoc Loc / MSc. Ho Tuan Thanh                   |
+| **Contact:**                 | lqvu@fit.hcmus.edu.vn / tdhoang@fit.hcmus.edu.vn / ttbhanh@fit.hcmus.edu.vn / tploc@fit.hcmus.edu.vn / hthanh@fit.hcmus.edu.vn |
+| **AI Policy:**               | Open – MANDATORY declaration + attached AI Audit Report                                                                        |
+| **Required Bloom-AI level:** | G9.1 → G9.6 depending on HW (see 'CLO Mapping')                                                                                |
 
 ## Outcomes
 
@@ -24,7 +24,7 @@
 
 ## Description
 
-> *Note: HW01 is the warm-up — it does NOT use the EShop SUT. It focuses on the QA/QC job market, recent software defects, and testing a real physical device that you own. The EShop SUT is used from HW02 onwards.*
+> _Note: HW01 is the warm-up — it does NOT use the EShop SUT. It focuses on the QA/QC job market, recent software defects, and testing a real physical device that you own. The EShop SUT is used from HW02 onwards._
 
 ### Requirement 1 – QA/QC Job Market 2026+ (40 pts)
 
@@ -33,14 +33,14 @@
 - Each posting: link, dated screenshot, job description, required skills, salary.
 - Write 1–2 sentences of "AI Impact Analysis" per posting.
 - Anti-cheat: screenshots must show your account name in the corner.
-  - *Clarification: "account name" refers to your login name / display name on the job platform (LinkedIn, Indeed, etc.) — it does NOT need to match your StudentID.*
+  - _Clarification: "account name" refers to your login name / display name on the job platform (LinkedIn, Indeed, etc.) — it does NOT need to match your StudentID._
 
 ### Requirement 2 – 20 Software Defects 2022–2026 (20 pts)
 
 - Find 20 software defects publicized between 2022 and 2026.
 - Mandatory: ≥ 5 defects related to AI/LLM (hallucination, prompt injection, bias).
 - Each defect: source link, description, severity, consequences, solution.
-- NEW: find 1 place where the AI is biased or hallucinates when explaining the defect. ***Clarification: this applies to EVERY defect — each of the 20 entries must include 1 identified instance of AI bias or hallucination (20 instances total).***
+- NEW: find 1 place where the AI is biased or hallucinates when explaining the defect. **_Clarification: this applies to EVERY defect — each of the 20 entries must include 1 identified instance of AI bias or hallucination (20 instances total)._**
 
 ### Requirement 3 – Test cases for ONE physical product (40 pts)
 
@@ -48,21 +48,21 @@
 - Submit 1 photo of THE DEVICE + your student ID card in the SAME frame.
 - Declare brand, model, year, serial number (mask the middle 4 chars).
 - Design 15 test cases (Objective / Input / Steps / Expected / Actual / Verdict).
-  - ***Clarification: 15 test cases total. Execute and record videos for ≥ 5 out of the 15 (not all 15 need videos). Also aim to find ≥ 5 defects from the device during execution.***
+  - **_Clarification: 15 test cases total. Execute and record videos for ≥ 5 out of the 15 (not all 15 need videos). Also aim to find ≥ 5 defects from the device during execution._**
 - ≥ 3 test cases must be edge cases the AI Tool could NOT find.
-  - ***Clarification: students must provide BOTH (a) a screenshot of the AI conversation showing the AI did not generate these edge cases, AND (b) a written explanation of why the AI missed them.***
+  - **_Clarification: students must provide BOTH (a) a screenshot of the AI conversation showing the AI did not generate these edge cases, AND (b) a written explanation of why the AI missed them._**
 - Execute ≥ 5 test cases on the real device and record short videos (≤ 60s).
 
 ## AI Collaboration Protocol (Mandatory)
 
-> *This block applies to ALL AI-first homework. Failure to comply with any item below will result in deductions per the rubric.*
+> _This block applies to ALL AI-first homework. Failure to comply with any item below will result in deductions per the rubric._
 
 ### 1. Mapping to Course Learning Outcomes (CLOs / Bloom-AI)
 
-| CLO | Short description | Required activity in this HW |
-|-----|-------------------|------------------------------|
+| CLO  | Short description                            | Required activity in this HW                                 |
+| ---- | -------------------------------------------- | ------------------------------------------------------------ |
 | G9.1 | Ask AI Tool for ISTQB mindmap and correct it | R1: AI Tool draws a QA/QC role mindmap; you find 3 mistakes. |
-| G9.3 | Analyse AI output – find missing items | R3: find ≥ 3 edge cases AI missed on a real device. |
+| G9.3 | Analyse AI output – find missing items       | R3: find ≥ 3 edge cases AI missed on a real device.          |
 
 ### 2. Allowed tools & Bloom-AI level
 
@@ -77,15 +77,15 @@ Bloom-AI level for this homework: G9.1 (Understand) · G9.3 (Analyse).
 
 Each AI-generated artifact (test case, script, checklist, OpenAPI spec, JMeter plan, etc.) must have an entry following the 5-section template below.
 
-> *Clarification: one batch generated by a single prompt counts as ONE artifact (1 Audit Report entry) — e.g., 15 test cases produced in one prompt = 1 entry, not 15.*
+> _Clarification: one batch generated by a single prompt counts as ONE artifact (1 Audit Report entry) — e.g., 15 test cases produced in one prompt = 1 entry, not 15._
 
-| Item | Content |
-|------|---------|
+| Item                  | Content                                                                                                  |
+| --------------------- | -------------------------------------------------------------------------------------------------------- |
 | **(1) Prompt + tool** | Full prompt + tool name (Claude / GPT-5 / Cursor / Diffblue / Copilot…) with timestamp HH:MM dd/mm/yyyy. |
-| **(2) AI output** | Full AI output (or red-bordered screenshot with annotations) – no summary, no paraphrase. |
-| **(3) Verdict** | VALID / INVALID / INCOMPLETE – with reasoning grounded in ISTQB or course materials. |
-| **(4) Reasoning** | 2–5 sentences citing the matching slide / ISTQB section. |
-| **(5) Student fix** | The corrected test case / script / checklist – highlight what changed. |
+| **(2) AI output**     | Full AI output (or red-bordered screenshot with annotations) – no summary, no paraphrase.                |
+| **(3) Verdict**       | VALID / INVALID / INCOMPLETE – with reasoning grounded in ISTQB or course materials.                     |
+| **(4) Reasoning**     | 2–5 sentences citing the matching slide / ISTQB section.                                                 |
+| **(5) Student fix**   | The corrected test case / script / checklist – highlight what changed.                                   |
 
 At the end of the report, summarize the AI accuracy ratio (VALID / INVALID / INCOMPLETE percentages) and conclude: WHEN should AI be used / not used for this work?
 
@@ -130,9 +130,9 @@ Major Projects also need AI-04 Reflective Statement. The [AI-06] Student Acknowl
   - Main report (PDF), must contain "AI Audit Report" + "AI Critique" + "Mandatory Disclosure" sections.
   - Appendix A: full prompt log (.md or .txt) with timestamps.
   - Excel: Test Cases / Checklist / Test Summary Report (incremental).
-  - Bug screenshots: ~~FIT Mantis~~ → ***Clarification: Mantis is NO longer used for HW01. Instead, log all defects found during physical-device testing as Issues in your own GitHub repository (include screenshot of the Issues page showing your GitHub username).***
+  - Bug screenshots: ~~FIT Mantis~~ → **_Clarification: Mantis is NO longer used for HW01. Instead, log all defects found during physical-device testing as Issues in your own GitHub repository (include screenshot of the Issues page showing your GitHub username)._**
   - Device photo + student-ID card (.jpg).
-  - YouTube Unlisted links of ≥ 5 demo videos. ***Clarification: YouTube Unlisted is the primary platform. Alternative platforms (Google Drive, OneDrive, etc.) are only accepted if the YouTube video was removed/blocked due to a copyright claim — students must first make every effort to upload to YouTube.***
+  - YouTube Unlisted links of ≥ 5 demo videos. **_Clarification: YouTube Unlisted is the primary platform. Alternative platforms (Google Drive, OneDrive, etc.) are only accepted if the YouTube video was removed/blocked due to a copyright claim — students must first make every effort to upload to YouTube._**
   - QA/QC role mindmap (PNG / Markdown).
   - [AI-02] AI Audit Report (5-section per artifact) — required.
   - [AI-03] AI Disclosure Form — required.
@@ -143,17 +143,17 @@ Submit to Moodle. Deadline: see the submission link.
 
 ## Assessment & Self-Assessment Template
 
-> *The AI-first rubric below replaces the previous rubric. Total = 100 points. Every HW has an 'AI Compliance' column worth 15–20 points – missing the Audit Report / prompt log / critique forfeits the ENTIRE column.*
+> _The AI-first rubric below replaces the previous rubric. Total = 100 points. Every HW has an 'AI Compliance' column worth 15–20 points – missing the Audit Report / prompt log / critique forfeits the ENTIRE column._
 
-| No. | Criteria | Grade | Self-Assessed Grade |
-|-----|----------|-------|---------------------|
-| 1 | Job Market 2026+ (10 jobs × 3 pts + AI Impact) | 40 | |
-| 2 | Software Defects 2022–2026 (20 defects) | 20 | |
-| 3 | Physical-product test design (15 TCs + 5 videos) | 25 | |
-| AI-1 | [AI-02] AI Audit Report (5-section) attached | 8 | |
-| AI-2 | AI Critique 200–300 words + [AI-03] Disclosure attached | 4 | |
-| AI-3 | [AI-05] Checklist signed + anti-cheat artifacts | 3 | |
-| | **Total** | **100** | |
+| No.  | Criteria                                                | Grade   | Self-Assessed Grade |
+| ---- | ------------------------------------------------------- | ------- | ------------------- |
+| 1    | Job Market 2026+ (10 jobs × 3 pts + AI Impact)          | 40      |                     |
+| 2    | Software Defects 2022–2026 (20 defects)                 | 20      |                     |
+| 3    | Physical-product test design (15 TCs + 5 videos)        | 25      |                     |
+| AI-1 | [AI-02] AI Audit Report (5-section) attached            | 8       |                     |
+| AI-2 | AI Critique 200–300 words + [AI-03] Disclosure attached | 4       |                     |
+| AI-3 | [AI-05] Checklist signed + anti-cheat artifacts         | 3       |                     |
+|      | **Total**                                               | **100** |                     |
 
 ## References
 

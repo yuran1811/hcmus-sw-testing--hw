@@ -6,7 +6,7 @@
 **Student Name**: <!-- TODO -->  
 **Student ID**: <!-- TODO -->  
 **Course**: Software Testing  
-**Assignment**: HW01-AI  
+**Assignment**: HW01-AI
 
 ---
 

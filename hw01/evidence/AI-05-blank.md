@@ -7,7 +7,7 @@
 **Student ID**: <!-- TODO -->  
 **Course**: Software Testing  
 **Assignment**: HW01-AI  
-**Date**: <!-- TODO -->  
+**Date**: <!-- TODO -->
 
 ---
 
@@ -23,10 +23,3 @@
 - [ ] I have applied critical evaluation to all AI-generated content
 - [ ] I have properly attributed all AI-assisted work in my disclosure statement
 - [ ] I have complied with the course AI policy (Open – MANDATORY declaration)
-
-## Signature
-
-**I confirm I have reviewed and comply with all items above.**
-
-Student Signature: ___________________________  
-Date: ___________________________

@@ -7,7 +7,7 @@
 **Student ID**: <!-- TODO -->  
 **Course**: Software Testing  
 **Assignment**: HW01-AI  
-**Date**: <!-- TODO -->  
+**Date**: <!-- TODO -->
 
 ---
 
@@ -17,9 +17,9 @@
 
 ## AI Tools Used
 
-| Tool | Version | Sections Used For |
-|------|---------|-------------------|
-| <!-- TODO --> | <!-- TODO --> | <!-- TODO --> |
+| Tool          | Version       | Sections Used For |
+| ------------- | ------------- | ----------------- |
+| <!-- TODO --> | <!-- TODO --> | <!-- TODO -->     |
 
 ## Prohibited Category (NOT AI-generated)
 
@@ -27,10 +27,3 @@
 - [ ] Execution videos with voice narration
 - [ ] Job posting screenshots showing account name
 - [ ] Prompt log timestamps
-
-## Signature
-
-**I confirm the above declaration is true and complete.**
-
-Student Signature: ___________________________  
-Date: ___________________________

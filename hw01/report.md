@@ -2,24 +2,30 @@
 
 ## Cover Page
 
-| Field | Value |
-|-------|-------|
-| **Student Name** | <!-- TODO: Fill your name --> |
-| **Student ID** | <!-- TODO: Fill your StudentID --> |
-| **Course** | Software Testing |
-| **Assignment** | HW01-AI |
-| **Submission Date** | <!-- TODO: Fill submission date --> |
-| **Submission Deadline** | <!-- TODO: Record from Moodle --> |
-| **60-Day Recency Window Start** | <!-- TODO: Compute deadline - 60 days --> |
-| **AI Tools Used** | Claude (Anthropic), ChatGPT (OpenAI) |
-| **GitHub Repository** | <!-- TODO: Paste repo URL --> |
-| **Pandoc Version** | <!-- TODO: Fill after export --> |
+| Field                           | Value                                     |
+| ------------------------------- | ----------------------------------------- |
+| **Student Name**                | Ngô Nguyễn Thế Khoa                       |
+| **Student ID**                  | 23127065                                  |
+| **Course**                      | Software Testing                          |
+| **Assignment**                  | HW01-AI                                   |
+| **Submission Date**             | <!-- TODO: Fill submission date -->       |
+| **Submission Deadline**         | 08/06/2026                                |
+| **60-Day Recency Window Start** | 04/06/2026                                |
+| **AI Tools Used**               | GitHub Copilot (Student), Gemini (Google) |
+| **GitHub Repository**           | <!-- TODO: Paste repo URL -->             |
+| **Pandoc Version**              | <!-- TODO: Fill after export -->          |
 
 ---
 
 ## Section 1 — R1: QA/QC Job Market 2026+
 
 ### 1.1 Job Postings
+
+- [QA Engineer (Motorola Solutions)](https://www.linkedin.com/jobs/view/4390332055/):
+  - **Skills Required**: Software testing, automation, Agile methodologies
+  - **Salary Range**: $80,000–$120,000
+  - **AI Impact Analysis**: AI may automate some testing tasks but human oversight will remain crucial for complex scenarios.
+  - [Evidence](./evidence/jobs/qa-engineer_motorola-solutions_p2_2026-06-04_21.57.39.png)
 
 <!-- TODO: 10 job posting entries following data-model.md Entity 1 schema -->
 <!-- Each entry: Job-NN format with URL, screenshot, skills, salary, AI Impact Analysis -->
@@ -96,15 +102,15 @@ I confirm I did not use AI to generate any artifact listed in the prohibited cat
 
 ## Section 5 — Self-Assessment
 
-| No. | Criteria | Max Points | Self-Assessed Grade | Justification |
-|-----|----------|-----------|--------------------:|---------------|
-| 1 | Job Market 2026+ (10 jobs × 3 pts + AI Impact) | 40 | <!-- TODO --> | <!-- TODO --> |
-| 2 | Software Defects 2022–2026 (20 defects) | 20 | <!-- TODO --> | <!-- TODO --> |
-| 3 | Physical-product test design (15 TCs + 5 videos) | 25 | <!-- TODO --> | <!-- TODO --> |
-| AI-1 | [AI-02] AI Audit Report (5-section) attached | 8 | <!-- TODO --> | <!-- TODO --> |
-| AI-2 | AI Critique 200–300 words + [AI-03] Disclosure attached | 4 | <!-- TODO --> | <!-- TODO --> |
-| AI-3 | [AI-05] Checklist signed + anti-cheat artifacts | 3 | <!-- TODO --> | <!-- TODO --> |
-| | **Total** | **100** | <!-- TODO --> | |
+| No.  | Criteria                                                | Max Points | Self-Assessed Grade | Justification |
+| ---- | ------------------------------------------------------- | ---------- | ------------------: | ------------- |
+| 1    | Job Market 2026+ (10 jobs × 3 pts + AI Impact)          | 40         |       <!-- TODO --> | <!-- TODO --> |
+| 2    | Software Defects 2022–2026 (20 defects)                 | 20         |       <!-- TODO --> | <!-- TODO --> |
+| 3    | Physical-product test design (15 TCs + 5 videos)        | 25         |       <!-- TODO --> | <!-- TODO --> |
+| AI-1 | [AI-02] AI Audit Report (5-section) attached            | 8          |       <!-- TODO --> | <!-- TODO --> |
+| AI-2 | AI Critique 200–300 words + [AI-03] Disclosure attached | 4          |       <!-- TODO --> | <!-- TODO --> |
+| AI-3 | [AI-05] Checklist signed + anti-cheat artifacts         | 3          |       <!-- TODO --> | <!-- TODO --> |
+|      | **Total**                                               | **100**    |       <!-- TODO --> |               |
 
 ---
 
