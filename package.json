@@ -1,0 +1,11 @@
+{
+  "name": "hcmus-sw-testing--hw",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "fmt": "oxfmt"
+  },
+  "dependencies": {
+    "oxfmt": "^0.53.0"
+  }
+}

@@ -42,7 +42,7 @@ Every AI-generated artifact MUST include a full AI Audit Report:
 
 Additional mandatory requirements:
 - Each defect entry MUST identify potential AI bias or hallucination
-- A 200–300 word AI critique section MUST appear per major AI usage
+- ONE 200–300 word AI critique paragraph MUST appear at the end of the report (covering overall AI performance)
 - Students MUST identify ≥3 mistakes in AI-generated ISTQB mindmap
 - Students MUST find ≥3 edge cases that AI missed
 - A mandatory AI disclosure statement MUST appear at the end of the report

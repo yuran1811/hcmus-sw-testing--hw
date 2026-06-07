@@ -1,0 +1,31 @@
+@page {
+  size: A4 landscape;
+  margin: 1cm;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 4px;
+  border: 1px solid #ccc;
+  word-break: break-all;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+pre,
+code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+img {
+  max-width: 100%;
+  max-height: 90vh;
+  height: auto;
+}
