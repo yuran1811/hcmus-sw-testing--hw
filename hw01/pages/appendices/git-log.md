@@ -1,19 +1,20 @@
 # Git Log
 
 ```bash
-* commit 74b5a98934ccb1f77e3a50a0e4454eeca904782e
+* commit bb851d60f87a268a175cf21c16167efd504ca0d4
 | Author: yuran1811 <trieuvanbd123@gmail.com>
 | Date:   Sun Jun 7 20:02:00 2026 +0700
 | 
 |     feat: update tests
 | 
-|  hw01/23127065-report.md                         |  59 ++++++++++------------
-|  hw01/23127065-report.pdf                        | Bin 17833464 -> 17833842 bytes
+|  hw01/23127065-report.md                         |  59 ++--
+|  hw01/23127065-report.pdf                        | Bin 17833464 -> 17863049 bytes
 |  hw01/evidence/23127065 - HW01 - Test Cases.xlsx | Bin 0 -> 8378 bytes
 |  hw01/evidence/TC01-07.mp4                       | Bin 0 -> 40770737 bytes
 |  hw01/pages/01.audit-report.md                   |   2 +-
 |  hw01/pages/06.mandatory-disclosure.md           |   2 +-
-|  6 files changed, 29 insertions(+), 34 deletions(-)
+|  hw01/pages/appendices/git-log.md                | 376 +++++++++++++++++++++-
+|  7 files changed, 403 insertions(+), 36 deletions(-)
 | 
 * commit 6240d8f0f1b91ba25bff37236b05550c34ff3fed
 | Author: yuran1811 <trieuvanbd123@gmail.com>
