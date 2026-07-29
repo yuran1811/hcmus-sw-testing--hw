@@ -15,19 +15,19 @@ Cart / Functional / Equivalence Partitioning
 
 ## Test data
 
-| Product | Laptop Gaming |
+| Product | iPhone 15 Pro Max |
 | Quantity | 1 |
 
 ## Test steps
 
-1. Mở trang Chi tiết sản phẩm Laptop Gaming (`/products/1`)
+1. Mở trang Chi tiết sản phẩm iPhone 15 Pro Max (`/product/1`)
 2. Chọn số lượng = 1
 3. Bấm nút **Thêm vào giỏ hàng**
 4. Điều hướng tới trang Giỏ hàng (`/cart`)
 
 ## Expected result
 
-- Sản phẩm Laptop Gaming xuất hiện trong giỏ hàng với đúng Đơn giá và Số lượng = 1.
+- Sản phẩm iPhone 15 Pro Max xuất hiện trong giỏ hàng với đúng Đơn giá và Số lượng = 1.
 - Badge số lượng trên Navbar cập nhật = 1.
 - Thành tiền của dòng và Tổng cộng hiển thị đúng giá trị.
 

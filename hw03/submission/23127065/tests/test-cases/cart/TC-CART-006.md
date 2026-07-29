@@ -14,19 +14,19 @@ Cart / Functional / Equivalence Partitioning
 
 ## Test data
 
-| Target Product | Sản phẩm A |
+| Target Product | iPhone 15 Pro Max |
 | Action | Click Xóa -> Click Đồng ý |
 
 ## Test steps
 
 1. Mở trang Giỏ hàng (`/cart`)
-2. Bấm nút **Xóa** tại dòng Sản phẩm A
+2. Bấm nút **Xóa** tại dòng iPhone 15 Pro Max
 3. Bấm nút **Xác nhận** (OK/Confirm) trong Dialog
 
 ## Expected result
 
-- Đúng dòng Sản phẩm A bị xóa khỏi bảng.
-- Dòng Sản phẩm B giữ nguyên.
+- Đúng dòng iPhone 15 Pro Max bị xóa khỏi bảng.
+- Dòng Samsung Galaxy S24 Ultra giữ nguyên.
 - Tổng cộng giỏ hàng và Badge Navbar cập nhật lại chính xác.
 
 ## Status / Related bugs

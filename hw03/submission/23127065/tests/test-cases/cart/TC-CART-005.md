@@ -14,20 +14,20 @@ Cart / Functional / Equivalence Partitioning
 
 ## Test data
 
-| Target Product | Sản phẩm A |
+| Target Product | iPhone 15 Pro Max |
 | Action | Click Xóa -> Click Hủy |
 
 ## Test steps
 
 1. Mở trang Giỏ hàng (`/cart`)
-2. Bấm nút **Xóa** tại dòng Sản phẩm A
+2. Bấm nút **Xóa** tại dòng iPhone 15 Pro Max
 3. Quan sát Dialog xác nhận hiển thị
 4. Bấm nút **Hủy** (Cancel) trong Dialog
 
 ## Expected result
 
 - Dialog xác nhận đóng lại.
-- Sản phẩm A vẫn giữ nguyên trong giỏ hàng, số lượng và tổng tiền không thay đổi.
+- iPhone 15 Pro Max vẫn giữ nguyên trong giỏ hàng, số lượng và tổng tiền không thay đổi.
 
 ## Status / Related bugs
 

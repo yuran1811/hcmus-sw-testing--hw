@@ -10,7 +10,7 @@ Cart / Functional / Boundary Value Analysis
 
 ## Preconditions
 
-- Trang Giỏ hàng đang hiển thị Sản phẩm A với Số lượng = 1
+- Trang Giỏ hàng đang hiển thị iPhone 15 Pro Max với Số lượng = 1
 
 ## Test data
 
@@ -19,7 +19,7 @@ Cart / Functional / Boundary Value Analysis
 ## Test steps
 
 1. Mở trang Giỏ hàng (`/cart`)
-2. Bấm nút `−` tại dòng Sản phẩm A
+2. Bấm nút `−` tại dòng iPhone 15 Pro Max
 
 ## Expected result
 

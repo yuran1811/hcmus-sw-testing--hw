@@ -10,7 +10,7 @@ Cart / Functional / Equivalence Partitioning
 
 ## Preconditions
 
-- Trang Giỏ hàng đang hiển thị Sản phẩm A với Số lượng = 2
+- Trang Giỏ hàng đang hiển thị iPhone 15 Pro Max với Số lượng = 2
 
 ## Test data
 
@@ -19,11 +19,11 @@ Cart / Functional / Equivalence Partitioning
 ## Test steps
 
 1. Mở trang Giỏ hàng (`/cart`)
-2. Bấm nút `+` tại dòng Sản phẩm A
+2. Bấm nút `+` tại dòng iPhone 15 Pro Max
 
 ## Expected result
 
-- Số lượng Sản phẩm A tăng lên 3 ngay lập tức.
+- Số lượng iPhone 15 Pro Max tăng lên 3 ngay lập tức.
 - Thành tiền dòng cập nhật = Đơn giá × 3.
 - Tổng cộng giỏ hàng và Badge trên Navbar tăng đồng bộ 1 đơn vị.
 
