@@ -1,0 +1,38 @@
+{
+  "executedAt": "2026-07-29T15:55:21.650Z",
+  "label": "Automated technical rehearsal — not a human pilot",
+  "scenario": "Add multiple products, adjust quantity/remove an item, then checkout without a coupon",
+  "observations": [
+    {
+      "checkpoint": "Multiple products",
+      "result": "Passed",
+      "detail": "Two selected products should appear as separate cart rows."
+    },
+    {
+      "checkpoint": "Adjust quantity in cart",
+      "result": "Blocked",
+      "detail": "The cart exposes quantity as read-only text; no +/− controls exist."
+    },
+    {
+      "checkpoint": "Remove product",
+      "result": "Passed with concern",
+      "detail": "The item is removed immediately, without the FR-24 confirmation dialog."
+    },
+    {
+      "checkpoint": "Checkout without coupon",
+      "result": "Passed",
+      "detail": "Coupon input remained blank and no discount was applied."
+    },
+    {
+      "checkpoint": "Order completion",
+      "result": "Passed",
+      "detail": "The SUT displayed its success state."
+    },
+    {
+      "checkpoint": "Post-checkout cart state",
+      "result": "Failed",
+      "detail": "The purchased item remains in the cart after checkout, contrary to FR-08."
+    }
+  ],
+  "evidence": "evidence/task2/technical-rehearsal-final-state.png"
+}
