@@ -1,0 +1,16 @@
+{
+  "name": "hw03-gui-checklist",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "run": "node run-checklist.mjs",
+    "rehearse": "node run-usability-rehearsal.mjs",
+    "generate": "node generate-artifacts.mjs",
+    "validate": "node validate-artifacts.mjs"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "marked": "15.0.12",
+    "playwright": "1.61.0"
+  }
+}

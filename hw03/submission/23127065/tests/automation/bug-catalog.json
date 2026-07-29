@@ -1,0 +1,22 @@
+{
+  "BUG-CART-01": { "title": "Cart page lacks the required page heading and breadcrumb", "severity": "Major", "screen": "Customer Web /cart" },
+  "BUG-CART-02": { "title": "Cart navigation has no active state or quantity badge", "severity": "Major", "screen": "Customer Web header and /cart" },
+  "BUG-CART-05": { "title": "Empty cart state has no icon or illustration", "severity": "Minor", "screen": "Customer Web /cart" },
+  "BUG-CART-06": { "title": "Cart focus indicator is not visibly exposed", "severity": "Major", "screen": "Customer Web /cart" },
+  "BUG-CART-09": { "title": "Cart table uses the wrong unit-price column label", "severity": "Minor", "screen": "Customer Web /cart" },
+  "BUG-CART-11": { "title": "Cart total is labeled Tổng tạm tính instead of Tổng cộng", "severity": "Major", "screen": "Customer Web /cart" },
+  "BUG-CART-12": { "title": "Adding the same product creates duplicate cart rows", "severity": "Major", "screen": "Customer Web product detail and /cart" },
+  "BUG-CART-13": { "title": "Cart provides no controls for changing item quantity", "severity": "Blocker", "screen": "Customer Web /cart" },
+  "BUG-CART-16": { "title": "Removing a cart item bypasses the required confirmation dialog", "severity": "Major", "screen": "Customer Web /cart" },
+  "BUG-CART-20": { "title": "Cart table overflows the 320px mobile viewport", "severity": "Major", "screen": "Customer Web /cart at 320x568" },
+  "BUG-CART-21": { "title": "Repeated cart action controls do not identify their product", "severity": "Major", "screen": "Customer Web /cart" },
+  "BUG-CART-24": { "title": "Customer frontend declares English instead of Vietnamese document language", "severity": "Minor", "screen": "Customer Web document" },
+  "BUG-COUPON-03": { "title": "Coupon screen title uses the wrong heading level", "severity": "Minor", "screen": "Admin Coupon" },
+  "BUG-COUPON-04": { "title": "Admin navigation mixes English and Vietnamese labels", "severity": "Minor", "screen": "Admin shell" },
+  "BUG-COUPON-08": { "title": "Empty coupon table has no explanatory state", "severity": "Minor", "screen": "Admin Coupon" },
+  "BUG-COUPON-09": { "title": "Coupon form lacks visible labels and required markers", "severity": "Major", "screen": "Admin Coupon form" },
+  "BUG-COUPON-11": { "title": "Coupon form omits discount and expiry boundary validation", "severity": "Major", "screen": "Admin Coupon form" },
+  "BUG-COUPON-12": { "title": "Duplicate coupon exposes a SQLite error in a browser alert", "severity": "Major", "screen": "Admin Coupon form" },
+  "BUG-COUPON-14": { "title": "Coupon deletion has no confirmation dialog", "severity": "Major", "screen": "Admin Coupon table" },
+  "BUG-COUPON-17": { "title": "Coupon delete buttons have ambiguous accessible names", "severity": "Major", "screen": "Admin Coupon table" }
+}

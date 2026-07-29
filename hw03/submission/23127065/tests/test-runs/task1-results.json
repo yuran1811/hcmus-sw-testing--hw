@@ -1,0 +1,611 @@
+{
+  "executedAt": "2026-07-29T15:53:24.889Z",
+  "environment": {
+    "browser": "Chromium (Playwright 1.61.0)",
+    "os": "linux",
+    "webUrl": "http://127.0.0.1:5173",
+    "adminUrl": "http://127.0.0.1:5174"
+  },
+  "counts": {
+    "total": 85,
+    "passed": 52,
+    "failed": 33
+  },
+  "results": [
+    {
+      "id": "CART-GUI-001",
+      "status": "Passed",
+      "note": "Route /cart loaded.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-002",
+      "status": "Failed",
+      "note": "The page has no h1; its title is rendered as h2.",
+      "bugId": "BUG-CART-01",
+      "evidence": "evidence/task1/CART-GUI-002.png"
+    },
+    {
+      "id": "CART-GUI-003",
+      "status": "Failed",
+      "note": "No breadcrumb is rendered on /cart.",
+      "bugId": "BUG-CART-01",
+      "evidence": "evidence/task1/CART-GUI-003.png"
+    },
+    {
+      "id": "CART-GUI-004",
+      "status": "Failed",
+      "note": "The Cart link has only a hover style and no active state.",
+      "bugId": "BUG-CART-02",
+      "evidence": "evidence/task1/CART-GUI-004.png"
+    },
+    {
+      "id": "CART-GUI-005",
+      "status": "Failed",
+      "note": "The navigation has no cart quantity badge.",
+      "bugId": "BUG-CART-02",
+      "evidence": "evidence/task1/CART-GUI-005.png"
+    },
+    {
+      "id": "CART-GUI-006",
+      "status": "Passed",
+      "note": "Visible cart UI is consistently Vietnamese.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-007",
+      "status": "Passed",
+      "note": "Action colors are distinguishable in the empty state.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-008",
+      "status": "Passed",
+      "note": "Header, content, and footer render without overlap at desktop size.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-009",
+      "status": "Passed",
+      "note": "Friendly empty-state text is shown without an empty table.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-010",
+      "status": "Failed",
+      "note": "Empty state has no icon or illustration.",
+      "bugId": "BUG-CART-05",
+      "evidence": "evidence/task1/CART-GUI-010.png"
+    },
+    {
+      "id": "CART-GUI-011",
+      "status": "Passed",
+      "note": "Continue-shopping link is visible.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-012",
+      "status": "Passed",
+      "note": "Continue-shopping link is keyboard focusable.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-013",
+      "status": "Passed",
+      "note": "Empty state fits a 320px viewport.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-014",
+      "status": "Passed",
+      "note": "Two selected products render as two rows.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-015",
+      "status": "Failed",
+      "note": "The table uses “Giá” instead of the required “Đơn giá”.",
+      "bugId": "BUG-CART-09",
+      "evidence": "evidence/task1/CART-GUI-015.png"
+    },
+    {
+      "id": "CART-GUI-016",
+      "status": "Passed",
+      "note": "Native table and header elements expose row/column structure.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-017",
+      "status": "Passed",
+      "note": "Product names and quantities match the selected data.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-018",
+      "status": "Passed",
+      "note": "Currency values include ₫ and contain no invalid numeric text.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-019",
+      "status": "Passed",
+      "note": "Line totals equal price multiplied by quantity.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-020",
+      "status": "Failed",
+      "note": "The value is correct but the label is “Tổng tạm tính”, contrary to FR-07.",
+      "bugId": "BUG-CART-11",
+      "evidence": "evidence/task1/CART-GUI-020.png"
+    },
+    {
+      "id": "CART-GUI-021",
+      "status": "Failed",
+      "note": "Adding the same product creates a duplicate row.",
+      "bugId": "BUG-CART-12",
+      "evidence": "evidence/task1/CART-GUI-021.png"
+    },
+    {
+      "id": "CART-GUI-022",
+      "status": "Failed",
+      "note": "No +/− quantity controls are rendered.",
+      "bugId": "BUG-CART-13",
+      "evidence": "evidence/task1/CART-GUI-022.png"
+    },
+    {
+      "id": "CART-GUI-023",
+      "status": "Failed",
+      "note": "The + control is absent, so quantity cannot be increased in the cart.",
+      "bugId": "BUG-CART-13",
+      "evidence": "evidence/task1/CART-GUI-023.png"
+    },
+    {
+      "id": "CART-GUI-024",
+      "status": "Failed",
+      "note": "The − control is absent, so quantity cannot be decreased in the cart.",
+      "bugId": "BUG-CART-13",
+      "evidence": "evidence/task1/CART-GUI-024.png"
+    },
+    {
+      "id": "CART-GUI-025",
+      "status": "Failed",
+      "note": "The required decrement boundary cannot be exercised because the control is absent.",
+      "bugId": "BUG-CART-13",
+      "evidence": "evidence/task1/CART-GUI-025.png"
+    },
+    {
+      "id": "CART-GUI-026",
+      "status": "Passed",
+      "note": "A 150-character product name remains readable without page overflow at desktop size.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-027",
+      "status": "Passed",
+      "note": "Script-like product text is displayed as inert text.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-028",
+      "status": "Failed",
+      "note": "The row was removed immediately without confirmation.",
+      "bugId": "BUG-CART-16",
+      "evidence": "evidence/task1/CART-GUI-028.png"
+    },
+    {
+      "id": "CART-GUI-029",
+      "status": "Failed",
+      "note": "No Cancel action exists because no confirmation dialog is shown.",
+      "bugId": "BUG-CART-16",
+      "evidence": "evidence/task1/CART-GUI-029.png"
+    },
+    {
+      "id": "CART-GUI-030",
+      "status": "Passed",
+      "note": "Remove updates the intended row and totals immediately.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-031",
+      "status": "Passed",
+      "note": "Removing the final row returns to the empty state.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-032",
+      "status": "Failed",
+      "note": "No confirmation dialog exists, so focus trapping and restoration are absent.",
+      "bugId": "BUG-CART-16",
+      "evidence": "evidence/task1/CART-GUI-032.png"
+    },
+    {
+      "id": "CART-GUI-033",
+      "status": "Passed",
+      "note": "Continue shopping preserves the in-memory cart.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-034",
+      "status": "Passed",
+      "note": "Guest checkout displays a login notice and redirects to /login.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-035",
+      "status": "Passed",
+      "note": "Authenticated checkout receives the cart data.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-036",
+      "status": "Passed",
+      "note": "Primary cart actions use keyboard-operable native controls.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-037",
+      "status": "Passed",
+      "note": "Rapid activation does not create duplicate server operations; cart actions are local and deterministic.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-038",
+      "status": "Failed",
+      "note": "The fixed-width table forces unintended horizontal page overflow at 320px.",
+      "bugId": "BUG-CART-20",
+      "evidence": "evidence/task1/CART-GUI-038.png"
+    },
+    {
+      "id": "CART-GUI-039",
+      "status": "Passed",
+      "note": "Cart fits tablet and desktop widths.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-040",
+      "status": "Passed",
+      "note": "Landscape resize preserves cart content.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-041",
+      "status": "Passed",
+      "note": "Content remains usable under 200% zoom.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-042",
+      "status": "Passed",
+      "note": "Visible interactive controls participate in native tab order.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-043",
+      "status": "Failed",
+      "note": "Focus indicator is removed or imperceptible.",
+      "bugId": "BUG-CART-06",
+      "evidence": "evidence/task1/CART-GUI-043.png"
+    },
+    {
+      "id": "CART-GUI-044",
+      "status": "Failed",
+      "note": "Repeated controls do not identify their associated product.",
+      "bugId": "BUG-CART-21",
+      "evidence": "evidence/task1/CART-GUI-044.png"
+    },
+    {
+      "id": "CART-GUI-045",
+      "status": "Failed",
+      "note": "Accessibility structure lacks the required page h1.",
+      "bugId": "BUG-CART-01",
+      "evidence": "evidence/task1/CART-GUI-045.png"
+    },
+    {
+      "id": "CART-GUI-046",
+      "status": "Passed",
+      "note": "Primary CTA has distinguishable foreground and background colors.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-047",
+      "status": "Passed",
+      "note": "Primary mobile target is at least 40px tall.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-048",
+      "status": "Failed",
+      "note": "The document does not declare lang=vi.",
+      "bugId": "BUG-CART-24",
+      "evidence": "evidence/task1/CART-GUI-048.png"
+    },
+    {
+      "id": "CART-GUI-049",
+      "status": "Passed",
+      "note": "RTL direction does not introduce new overflow at desktop size.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "CART-GUI-050",
+      "status": "Passed",
+      "note": "No runtime console errors occurred during the cart flow.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-001",
+      "status": "Passed",
+      "note": "Unauthenticated users see only the login form.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-002",
+      "status": "Passed",
+      "note": "Normal-user login is rejected by the admin UI.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-003",
+      "status": "Passed",
+      "note": "Seeded admin credentials opened the dashboard.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-004",
+      "status": "Passed",
+      "note": "Coupon navigation is visibly selected.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-005",
+      "status": "Failed",
+      "note": "The screen title is h2 while the only h1 describes the whole admin shell.",
+      "bugId": "BUG-COUPON-03",
+      "evidence": "evidence/task1/COUPON-GUI-005.png"
+    },
+    {
+      "id": "COUPON-GUI-006",
+      "status": "Failed",
+      "note": "The admin shell mixes English “Dashboard” with Vietnamese labels.",
+      "bugId": "BUG-COUPON-04",
+      "evidence": "evidence/task1/COUPON-GUI-006.png"
+    },
+    {
+      "id": "COUPON-GUI-007",
+      "status": "Passed",
+      "note": "Create and delete actions use distinct positive/danger colors.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-008",
+      "status": "Passed",
+      "note": "All seven required columns are present.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-009",
+      "status": "Passed",
+      "note": "Coupon code is uppercase and visually differentiated.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-010",
+      "status": "Passed",
+      "note": "Coupon types are translated.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-011",
+      "status": "Passed",
+      "note": "Percent and fixed values include correctly formatted units.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-012",
+      "status": "Passed",
+      "note": "Minimum order includes currency and thousands separators.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-013",
+      "status": "Passed",
+      "note": "Expired and active dates are visually distinguishable.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-014",
+      "status": "Passed",
+      "note": "Usage limit is displayed in Vietnamese.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-015",
+      "status": "Failed",
+      "note": "An empty coupon table renders with no explanatory state.",
+      "bugId": "BUG-COUPON-08",
+      "evidence": "evidence/task1/COUPON-GUI-015.png"
+    },
+    {
+      "id": "COUPON-GUI-016",
+      "status": "Failed",
+      "note": "The form uses placeholders and HTML required attributes but no visible labels or * indicators.",
+      "bugId": "BUG-COUPON-09",
+      "evidence": "evidence/task1/COUPON-GUI-016.png"
+    },
+    {
+      "id": "COUPON-GUI-017",
+      "status": "Passed",
+      "note": "Coupon code is normalized to uppercase.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-018",
+      "status": "Passed",
+      "note": "Value placeholder changes with coupon type.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-019",
+      "status": "Failed",
+      "note": "Discount input has no positive min constraint.",
+      "bugId": "BUG-COUPON-11",
+      "evidence": "evidence/task1/COUPON-GUI-019.png"
+    },
+    {
+      "id": "COUPON-GUI-020",
+      "status": "Failed",
+      "note": "Percent discount has no 100% upper bound.",
+      "bugId": "BUG-COUPON-11",
+      "evidence": "evidence/task1/COUPON-GUI-020.png"
+    },
+    {
+      "id": "COUPON-GUI-021",
+      "status": "Passed",
+      "note": "Minimum order enforces min=0.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-022",
+      "status": "Failed",
+      "note": "Expiry date has no minimum and accepts past dates.",
+      "bugId": "BUG-COUPON-11",
+      "evidence": "evidence/task1/COUPON-GUI-022.png"
+    },
+    {
+      "id": "COUPON-GUI-023",
+      "status": "Passed",
+      "note": "Per-user usage input enforces min=1.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-024",
+      "status": "Failed",
+      "note": "Duplicate code exposes a technical alert: Lỗi: SQLITE_CONSTRAINT: UNIQUE constraint failed: coupons.code",
+      "bugId": "BUG-COUPON-12",
+      "evidence": "evidence/task1/COUPON-GUI-024.png"
+    },
+    {
+      "id": "COUPON-GUI-025",
+      "status": "Failed",
+      "note": "Errors are delivered through a browser alert rather than above the submit button.",
+      "bugId": "BUG-COUPON-12",
+      "evidence": "evidence/task1/COUPON-GUI-025.png"
+    },
+    {
+      "id": "COUPON-GUI-026",
+      "status": "Passed",
+      "note": "Script-like coupon code is rendered as inert text.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-027",
+      "status": "Failed",
+      "note": "Coupon is deleted immediately without confirmation.",
+      "bugId": "BUG-COUPON-14",
+      "evidence": "evidence/task1/COUPON-GUI-027.png"
+    },
+    {
+      "id": "COUPON-GUI-028",
+      "status": "Failed",
+      "note": "No Cancel action exists because there is no dialog.",
+      "bugId": "BUG-COUPON-14",
+      "evidence": "evidence/task1/COUPON-GUI-028.png"
+    },
+    {
+      "id": "COUPON-GUI-029",
+      "status": "Passed",
+      "note": "Deleting removes the intended disposable coupon and refreshes the list.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-030",
+      "status": "Failed",
+      "note": "No confirmation dialog exists, so keyboard dialog behavior is absent.",
+      "bugId": "BUG-COUPON-14",
+      "evidence": "evidence/task1/COUPON-GUI-030.png"
+    },
+    {
+      "id": "COUPON-GUI-031",
+      "status": "Passed",
+      "note": "Coupon layout fits tablet and desktop widths.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-032",
+      "status": "Passed",
+      "note": "Tab order follows the visual form order.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-033",
+      "status": "Passed",
+      "note": "Focused form controls retain a visible indicator.",
+      "bugId": "",
+      "evidence": ""
+    },
+    {
+      "id": "COUPON-GUI-034",
+      "status": "Failed",
+      "note": "All row actions have the ambiguous accessible name “Xóa”.",
+      "bugId": "BUG-COUPON-17",
+      "evidence": "evidence/task1/COUPON-GUI-034.png"
+    },
+    {
+      "id": "COUPON-GUI-035",
+      "status": "Passed",
+      "note": "No runtime console errors occurred during coupon testing.",
+      "bugId": "",
+      "evidence": ""
+    }
+  ]
+}
