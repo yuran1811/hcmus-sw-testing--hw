@@ -9,6 +9,7 @@ const results = JSON.parse(await fs.readFile(path.join(root, "tests/test-runs/ta
 const gui = await fs.readFile(path.join(root, "GUI_Testing.md"), "utf8");
 const usability = await fs.readFile(path.join(root, "Usability_Testing.md"), "utf8");
 const catalog = JSON.parse(await fs.readFile(path.join(here, "bug-catalog.json"), "utf8"));
+const issueLinks = JSON.parse(await fs.readFile(path.join(root, "issue-links.json"), "utf8"));
 const failures = results.results.filter((item) => item.status === "Failed");
 const screenshots = (await fs.readdir(path.join(root, "evidence/task1"))).filter((name) => name.endsWith(".png"));
 
@@ -18,6 +19,8 @@ assert(results.results.length === 85, "85 machine results present");
 assert(results.counts.passed + results.counts.failed === 85, "result counts sum to 85");
 assert(screenshots.length === failures.length, "one screenshot exists for every failed item");
 assert(failures.every((item) => catalog[item.bugId]), "every failure maps to a catalogued bug");
+assert(Object.keys(issueLinks).length === Object.keys(catalog).length, "every bug group has a GitHub issue link");
+assert(Object.values(issueLinks).every((url) => /^https:\/\/github\.com\/yuran1811\/hcmus-sw-testing--hw\/issues\/\d+$/.test(url)), "all GitHub issue links target the homework repository");
 assert((gui.match(/^\| (?:CART|COUPON)-GUI-\d+ \|.*\| (?:✅ Passed|❌ Failed) \|/gm) ?? []).length === 85, "85 checklist rows present in Markdown");
 assert(!gui.includes("| ☐"), "no checklist status is blank");
 assert(!/Lumiere|synthetic persona|cust1@cust\.vn/i.test(usability), "unrelated or synthetic usability content removed");

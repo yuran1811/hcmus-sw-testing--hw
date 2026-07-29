@@ -6,6 +6,7 @@
     "run": "node run-checklist.mjs",
     "rehearse": "node run-usability-rehearsal.mjs",
     "generate": "node generate-artifacts.mjs",
+    "publish:issues": "node publish-issues.mjs",
     "validate": "node validate-artifacts.mjs"
   },
   "dependencies": {

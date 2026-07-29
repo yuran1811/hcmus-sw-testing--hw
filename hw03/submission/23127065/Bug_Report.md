@@ -8,7 +8,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Customer Web /cart |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/2) |
 | Affected checks | CART-GUI-002, CART-GUI-003, CART-GUI-045 |
 
 **Steps to reproduce**
@@ -30,7 +30,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Customer Web header and /cart |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/3) |
 | Affected checks | CART-GUI-004, CART-GUI-005 |
 
 **Steps to reproduce**
@@ -52,7 +52,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Minor** |
 | Screen | Customer Web /cart |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/4) |
 | Affected checks | CART-GUI-010 |
 
 **Steps to reproduce**
@@ -74,7 +74,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Customer Web /cart |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/5) |
 | Affected checks | CART-GUI-043 |
 
 **Steps to reproduce**
@@ -96,7 +96,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Minor** |
 | Screen | Customer Web /cart |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/6) |
 | Affected checks | CART-GUI-015 |
 
 **Steps to reproduce**
@@ -118,7 +118,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Customer Web /cart |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/7) |
 | Affected checks | CART-GUI-020 |
 
 **Steps to reproduce**
@@ -140,7 +140,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Customer Web product detail and /cart |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/8) |
 | Affected checks | CART-GUI-021 |
 
 **Steps to reproduce**
@@ -162,7 +162,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Blocker** |
 | Screen | Customer Web /cart |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/9) |
 | Affected checks | CART-GUI-022, CART-GUI-023, CART-GUI-024, CART-GUI-025 |
 
 **Steps to reproduce**
@@ -184,7 +184,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Customer Web /cart |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/10) |
 | Affected checks | CART-GUI-028, CART-GUI-029, CART-GUI-032 |
 
 **Steps to reproduce**
@@ -206,7 +206,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Customer Web /cart at 320x568 |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/11) |
 | Affected checks | CART-GUI-038 |
 
 **Steps to reproduce**
@@ -228,7 +228,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Customer Web /cart |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/12) |
 | Affected checks | CART-GUI-044 |
 
 **Steps to reproduce**
@@ -250,7 +250,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Minor** |
 | Screen | Customer Web document |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/13) |
 | Affected checks | CART-GUI-048 |
 
 **Steps to reproduce**
@@ -272,7 +272,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Minor** |
 | Screen | Admin Coupon |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/14) |
 | Affected checks | COUPON-GUI-005 |
 
 **Steps to reproduce**
@@ -294,7 +294,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Minor** |
 | Screen | Admin shell |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/15) |
 | Affected checks | COUPON-GUI-006 |
 
 **Steps to reproduce**
@@ -316,7 +316,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Minor** |
 | Screen | Admin Coupon |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/16) |
 | Affected checks | COUPON-GUI-015 |
 
 **Steps to reproduce**
@@ -338,7 +338,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Admin Coupon form |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/17) |
 | Affected checks | COUPON-GUI-016 |
 
 **Steps to reproduce**
@@ -360,7 +360,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Admin Coupon form |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/18) |
 | Affected checks | COUPON-GUI-019, COUPON-GUI-020, COUPON-GUI-022 |
 
 **Steps to reproduce**
@@ -382,7 +382,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Admin Coupon form |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/19) |
 | Affected checks | COUPON-GUI-024, COUPON-GUI-025 |
 
 **Steps to reproduce**
@@ -404,7 +404,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Admin Coupon table |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/20) |
 | Affected checks | COUPON-GUI-027, COUPON-GUI-028, COUPON-GUI-030 |
 
 **Steps to reproduce**
@@ -426,7 +426,7 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 | --- | --- |
 | Severity | **Major** |
 | Screen | Admin Coupon table |
-| GitHub issue | Pending publication |
+| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/21) |
 | Affected checks | COUPON-GUI-034 |
 
 **Steps to reproduce**
