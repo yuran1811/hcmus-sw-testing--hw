@@ -1,1 +1,10 @@
-Git commit history will be regenerated after the required step-by-step commits are created.
+HW03 step-by-step commit log
+Generated: 2026-07-29 (Asia/Ho_Chi_Minh)
+
+30698d1 | 2026-07-29T23:05:51+07:00 | docs(hw03): publish GUI bug issues with evidence
+884dbb3 | 2026-07-29T23:03:29+07:00 | docs(hw03): assemble reports and AI audit
+cc7cd71 | 2026-07-29T23:03:17+07:00 | docs(hw03): prepare usability evaluation phase 1
+7b1352e | 2026-07-29T23:02:51+07:00 | test(hw03): execute GUI checklist with failure evidence
+f994f7b | 2026-07-29T23:02:26+07:00 | test(hw03): design cart and coupon GUI checklist
+
+The final packaging/validation commit that updates this file is intentionally not self-listed because a commit cannot contain its own final hash.
