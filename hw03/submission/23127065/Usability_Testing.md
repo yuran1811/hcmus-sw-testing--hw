@@ -163,3 +163,36 @@ Severity: S1 prevents completion; S2 requires help or risks an incorrect order; 
 | Dat | 1:15 | Trang giỏ hàng | Chỉnh số lượng | Chỗ này nó đang không cho mình thêm số lượng vô từng sản phẩm => không biết thêm kiểu gì, chỉ cho xóa | CART-QUANTITY-MANAGEMENT — dòng trùng và quản lý số lượng không rõ | No | S2 |
 | Dat | 1:38 | Trang danh sách sản phẩm | Thêm vào giỏ | À muốn thêm sản phẩm thì phải thêm 2 lần => cột số lượng trong giỏ hàng vô nghĩa quá | ADD-CART-RETRY — phải bấm thêm giỏ nhiều lần | No | S2 |
 | Dat | 2:30 | Trang thanh toán | Đổi thành tiền | Ơ cho mình sửa thành tiền này. Không có chặn người dùng thay đổi => Không logic lắm | CHECKOUT-TOTAL-EDITABLE — người dùng có thể sửa tổng tiền | No | S2 |
+
+## 12. Phase 3 — Tổng hợp và phân loại phát hiện
+
+Các ghi chú được nhóm theo cùng hành vi hoặc cùng nguyên nhân giao diện. Một phát hiện được xem là **systemic** khi xuất hiện ở từ hai participant trở lên; một nhận xét chỉ xuất hiện trong một phiên được giữ riêng để tránh suy rộng từ một người dùng.
+
+| Nhóm pain point | Số participant | Phân loại | Bằng chứng | Kết luận phân tích |
+| --- | ---: | --- | --- | --- |
+| Không có phản hồi rõ ràng sau khi thêm vào giỏ | 4 (Khoa, An, Anh, Dat) | Systemic | ADD-CART-NO-FEEDBACK | Người dùng không biết hành động đã thành công nên kiểm tra lại hoặc thử lại; đây là nguyên nhân trực tiếp của do dự và thao tác lặp. |
+| Phải bấm thêm vào giỏ nhiều lần | 3 (Tan, An, Dat) | Systemic | ADD-CART-RETRY | Cần tái hiện kỹ thuật để phân biệt lỗi xử lý click với hệ quả của việc thiếu feedback. Dù nguyên nhân nào, hành vi quan sát được vẫn làm người dùng mất niềm tin vào thao tác thêm giỏ. |
+| Không thể/quá khó quản lý số lượng và các dòng trùng | 3 (Khoa, Dang, Dat) | Systemic | CART-QUANTITY-MANAGEMENT | Đây là rào cản đối với mục tiêu cốt lõi của scenario: điều chỉnh số lượng trước checkout. Ghi nhận phù hợp với bug đã tái hiện BUG-CART-12 và BUG-CART-13. |
+| Có thể sửa thành tiền ở checkout, làm giảm trust | 4 (Khoa, An, Dang, Dat) | Systemic | CHECKOUT-TOTAL-EDITABLE | Đây là vấn đề trust nghiêm trọng; cần tái hiện có kiểm soát trước khi xác nhận là bug và mở issue riêng. |
+| Không biết nơi xem trạng thái đơn sau thanh toán | 1 (Tan) | Isolated | Probe answer | Là vấn đề discoverability cần theo dõi ở vòng test sau; một phản hồi chưa đủ để kết luận là lỗi thiết kế hệ thống. |
+| Giỏ còn dữ liệu sau checkout | 1 (Dang) | Isolated | CART-RETAINED-AFTER-CHECKOUT | Cần tái hiện để xác định đó là trạng thái mong đợi, dữ liệu test cũ, hay lỗi. Không gộp vào systemic finding. |
+
+## 13. Ưu tiên khắc phục
+
+Severity được xác định theo ảnh hưởng tới việc hoàn thành scenario, mức rủi ro đặt đơn sai, tần suất quan sát và mức độ tự tin của người dùng — không chỉ theo số người nêu ý kiến.
+
+| Priority | Finding | Severity | Rationale | Hành động đề xuất | Bug/issue đã có |
+| --- | --- | --- | --- | --- | --- |
+| P0 | Không có điều khiển tăng/giảm số lượng trong giỏ | S1 — blocker | Participant không thể điều chỉnh số lượng như scenario yêu cầu; có nguy cơ checkout sai đơn. | Thêm điều khiển tăng/giảm có giới hạn, cập nhật thành tiền/tổng cộng và kiểm thử lại flow. | [BUG-CART-13](Bug_Report.md#bug-cart-13--cart-provides-no-controls-for-changing-item-quantity), [GitHub issue #9](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/9) |
+| P1 | Sản phẩm trùng thành nhiều dòng, quản lý số lượng không rõ | S2 — nguy cơ đặt sai | Xuất hiện ở ba participant và khiến họ không hiểu số lượng thực tế của đơn. | Gộp cùng sản phẩm vào một dòng và hiển thị quantity rõ ràng. | [BUG-CART-12](Bug_Report.md#bug-cart-12--adding-the-same-product-creates-duplicate-cart-rows), [GitHub issue #8](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/8) |
+| P1 | Tổng tiền có thể bị chỉnh ở checkout | S2 — rủi ro trust | Bốn participant phản ứng tiêu cực; hành vi này có thể làm người dùng không tin giá trị đơn hàng. | Khoá trường tổng tiền, tính từ cart phía hệ thống, rồi tái hiện và tạo GitHub issue kèm screenshot nếu xác nhận. | Chưa xác nhận bằng tái hiện kỹ thuật trong bộ evidence hiện có. |
+| P2 | Thiếu feedback sau khi thêm vào giỏ / phải thử lại | S3 — chậm và retry | Bảy ghi nhận gộp từ hai biểu hiện liên quan (4 không thấy feedback, 3 retry); làm chậm chọn sản phẩm nhưng không tự nó chặn checkout. | Hiển thị toast/badge cập nhật và trạng thái button; tái hiện click retry để tách lỗi chức năng khỏi vấn đề feedback. | Chưa xác nhận bằng tái hiện kỹ thuật trong bộ evidence hiện có. |
+| P3 | Không rõ nơi xem trạng thái đơn | S4 — discoverability | Một participant nêu vấn đề sau checkout; cần thêm dữ liệu trước khi ưu tiên cao hơn. | Đánh giá lại ở vòng tiếp theo sau khi flow chính được sửa. | Chưa là bug được xác nhận. |
+
+## 14. Kết luận Phase 3 và bug triage
+
+Điểm SUS trung bình **66.8/100** và độ phân tán lớn (42.5–92.5) cho thấy luồng có thể hoàn thành với một số người dùng, nhưng chưa tạo trải nghiệm nhất quán. Pain point có ảnh hưởng lớn nhất không phải là phàn nàn thị giác đơn lẻ: đó là việc không thể quản lý số lượng, cách biểu diễn sản phẩm trùng, và sự thiếu tin cậy ở tổng tiền checkout.
+
+Hai defect đã được tái hiện trong tài liệu bug và đã có GitHub Issues là **BUG-CART-12** và **BUG-CART-13**; ảnh issue/screenshot được lưu trong [Bug_Report.md](Bug_Report.md). Các quan sát `ADD-CART-*`, `CHECKOUT-TOTAL-EDITABLE` và `CART-RETAINED-AFTER-CHECKOUT` được giữ là kết quả usability có nguồn participant, nhưng chưa được ghi là genuine bug cho đến khi tái hiện được và đăng GitHub Issue có screenshot. Cách tách này tránh biến phản hồi đơn lẻ hoặc môi trường test thành defect đã xác nhận.
+
+Vòng test tiếp theo nên chạy lại cùng scenario sau khi xử lý P0/P1, sử dụng cùng SUS và probes để so sánh thay đổi về completion, retry và trust thay vì chỉ dựa vào cảm nhận của moderator.
