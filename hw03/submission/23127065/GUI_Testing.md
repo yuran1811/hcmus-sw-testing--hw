@@ -1,13 +1,13 @@
-# Checklist GUI Testing - Trang Giỏ hàng
+# Danh sách kiểm thử giao diện — Trang giỏ hàng
 
 ## 1. Phạm vi và cơ sở kiểm thử
 
-- **Đối tượng:** Frontend Web EShop, route `/cart`.
-- **Trong phạm vi:** bố cục, nội dung, định dạng dữ liệu, empty state, thao tác trên giỏ hàng, điều hướng, responsive, accessibility và tương thích trình duyệt.
+- **Đối tượng:** Giao diện web EShop, đường dẫn `/cart`.
+- **Trong phạm vi:** bố cục, nội dung, định dạng dữ liệu, trạng thái giỏ trống, thao tác trên giỏ hàng, điều hướng, khả năng thích ứng theo màn hình, khả năng tiếp cận và tương thích trình duyệt.
 - **Ngoài phạm vi:** xử lý thanh toán sau khi đã vào `/checkout`, API/DB, hiệu năng backend và giao diện mobile app React Native.
 - **Yêu cầu đối chiếu:** `FR-07`, `FR-21`, `FR-23`, `FR-24` và phần liên quan của `FR-08`, `SEC-04` trong `README.md`.
 - **Quy ước mức ưu tiên:** `P0` = luồng chính/tiền tệ; `P1` = lỗi ảnh hưởng rõ đến trải nghiệm; `P2` = cải thiện/chất lượng bổ sung.
-- **Quy ước kết quả:** `☐` Chưa chạy; `✅` Pass; `❌` Fail; `⚠️` Blocked; `N/A` Không áp dụng.
+- **Quy ước kết quả:** `☐` Chưa chạy; `✅` Đạt; `❌` Không đạt; `⚠️` Bị chặn; `N/A` Không áp dụng.
 
 ## 2. Thông tin lần chạy
 
@@ -19,7 +19,7 @@
 | Môi trường               | Local: API `:3000`, Web `:5173`, Admin `:5174` |
 | Hệ điều hành             | Linux |
 | Trình duyệt và phiên bản | Chromium qua Playwright 1.61.0 |
-| Viewport                 | 1440×900; responsive checks tại 768×1024, 568×320 và 320×568 |
+| Kích thước màn hình      | 1440×900; kiểm tra khả năng thích ứng tại 768×1024, 568×320 và 320×568 |
 
 ## 3. Điều kiện và dữ liệu kiểm thử
 
@@ -45,11 +45,11 @@ Bổ sung một sản phẩm có tên dài khoảng 150 ký tự và một tên 
 
 ### A. Truy cập, cấu trúc và điều hướng chung
 
-| ID           | Pri | Hạng mục / Cách kiểm tra                                       | Kết quả mong đợi                                                                                                             | Status | Bug/ghi chú |
+| ID           | Ưu tiên | Hạng mục / Cách kiểm tra                                       | Kết quả mong đợi                                                                                                             | Trạng thái | Lỗi/ghi chú |
 | ------------ | --- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- | ------ | ----------- |
-| CART-GUI-001 | P0  | Mở trực tiếp `http://localhost:5173/cart`.                     | Trang tải thành công, không trắng trang, không lỗi runtime và đúng nội dung Giỏ hàng.                                        | ✅ Passed | Route /cart loaded. |
-| CART-GUI-002 | P1  | Kiểm tra tiêu đề trang bằng DevTools/accessibility tree.       | Có đúng một thẻ `h1`, nội dung mô tả rõ trang Giỏ hàng.                                                                      | ❌ Failed | The page has no h1; its title is rendered as h2. [BUG-CART-01](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/2) [Screenshot](evidence/task1/CART-GUI-002.png) |
-| CART-GUI-003 | P1  | Quan sát breadcrumb.                                           | Có breadcrumb cho biết vị trí hiện tại, ví dụ `Trang chủ > Giỏ hàng`; liên kết cha hoạt động.                                | ❌ Failed | No breadcrumb is rendered on /cart. [BUG-CART-01](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/2) [Screenshot](evidence/task1/CART-GUI-003.png) |
+| CART-GUI-001 | P0  | Mở trực tiếp `http://localhost:5173/cart`.                     | Trang tải thành công, không trắng trang, không lỗi khi chạy và đúng nội dung Giỏ hàng.                                       | ✅ Đạt | Đường dẫn `/cart` tải thành công. |
+| CART-GUI-002 | P1  | Kiểm tra tiêu đề trang bằng DevTools/cây hỗ trợ tiếp cận.      | Có đúng một thẻ `h1`, nội dung mô tả rõ trang Giỏ hàng.                                                                      | ❌ Không đạt | Trang không có `h1`; tiêu đề được hiển thị bằng `h2`. [BUG-CART-01](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/2) [Ảnh chụp](evidence/task1/CART-GUI-002.png) |
+| CART-GUI-003 | P1  | Quan sát thanh điều hướng vị trí.                              | Có thanh điều hướng vị trí, ví dụ `Trang chủ > Giỏ hàng`; liên kết cha hoạt động.                                            | ❌ Không đạt | `/cart` không hiển thị thanh điều hướng vị trí. [BUG-CART-01](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/2) [Ảnh chụp](evidence/task1/CART-GUI-003.png) |
 | CART-GUI-004 | P1  | Quan sát navbar tại `/cart`.                                   | Mục **Giỏ hàng** được highlight rõ ràng và khác trạng thái hover.                                                            | ❌ Failed | The Cart link has only a hover style and no active state. [BUG-CART-02](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/3) [Screenshot](evidence/task1/CART-GUI-004.png) |
 | CART-GUI-005 | P0  | Thêm/xóa/thay đổi số lượng sản phẩm rồi quan sát badge navbar. | Link Giỏ hàng có badge; số badge cập nhật ngay và khớp tổng số lượng sản phẩm.                                               | ❌ Failed | The navigation has no cart quantity badge. [BUG-CART-02](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/3) [Screenshot](evidence/task1/CART-GUI-005.png) |
 | CART-GUI-006 | P1  | Kiểm tra ngôn ngữ trên tiêu đề, cột, nút, thông báo.           | Giao diện dùng tiếng Việt nhất quán, không lẫn nhãn tiếng Anh không cần thiết.                                               | ✅ Passed | Visible cart UI is consistently Vietnamese. |
@@ -58,7 +58,7 @@ Bổ sung một sản phẩm có tên dài khoảng 150 ký tự và một tên 
 
 ### B. Trạng thái giỏ hàng trống
 
-| ID           | Pri | Hạng mục / Cách kiểm tra                                 | Kết quả mong đợi                                                                                 | Status | Bug/ghi chú |
+| ID           | Ưu tiên | Hạng mục / Cách kiểm tra                                 | Kết quả mong đợi                                                                                 | Trạng thái | Lỗi/ghi chú |
 | ------------ | --- | -------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ------ | ----------- |
 | CART-GUI-009 | P0  | Mở `/cart` khi giỏ không có sản phẩm.                    | Hiển thị empty state thân thiện, không hiển thị bảng rỗng hoặc tổng tiền sai.                    | ✅ Passed | Friendly empty-state text is shown without an empty table. |
 | CART-GUI-010 | P1  | Quan sát empty state.                                    | Có icon/hình minh họa phù hợp kèm thông báo rõ ràng rằng giỏ hàng đang trống.                    | ❌ Failed | Empty state has no icon or illustration. [BUG-CART-05](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/4) [Screenshot](evidence/task1/CART-GUI-010.png) |
@@ -68,7 +68,7 @@ Bổ sung một sản phẩm có tên dài khoảng 150 ký tự và một tên 
 
 ### C. Danh sách sản phẩm và tính tiền
 
-| ID           | Pri | Hạng mục / Cách kiểm tra                                          | Kết quả mong đợi                                                                                                                       | Status | Bug/ghi chú |
+| ID           | Ưu tiên | Hạng mục / Cách kiểm tra                                          | Kết quả mong đợi                                                                                                                       | Trạng thái | Lỗi/ghi chú |
 | ------------ | --- | ----------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------- |
 | CART-GUI-014 | P0  | Thêm iPhone 15 Pro Max và Samsung Galaxy S24 Ultra rồi mở `/cart`. | Mỗi sản phẩm xuất hiện đúng một dòng và đúng thứ tự hiển thị dự kiến.                                                                  | ✅ Passed | Two selected products render as two rows. |
 | CART-GUI-015 | P0  | Kiểm tra tiêu đề bảng.                                            | Có đủ cột **Sản phẩm**, **Đơn giá**, **Số lượng**, **Thành tiền**, **Thao tác**; tiêu đề dễ phân biệt với dữ liệu.                     | ❌ Failed | The table uses “Giá” instead of the required “Đơn giá”. [BUG-CART-09](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/6) [Screenshot](evidence/task1/CART-GUI-015.png) |
@@ -87,7 +87,7 @@ Bổ sung một sản phẩm có tên dài khoảng 150 ký tự và một tên 
 
 ### D. Xóa sản phẩm và các CTA
 
-| ID           | Pri | Hạng mục / Cách kiểm tra                                       | Kết quả mong đợi                                                                                                                             | Status | Bug/ghi chú |
+| ID           | Ưu tiên | Hạng mục / Cách kiểm tra                                       | Kết quả mong đợi                                                                                                                             | Trạng thái | Lỗi/ghi chú |
 | ------------ | --- | -------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------- |
 | CART-GUI-028 | P0  | Bấm **Xóa** ở một dòng.                                        | Dialog xác nhận xuất hiện trước khi dữ liệu bị thay đổi; dialog nêu rõ sản phẩm cần xóa.                                                     | ❌ Failed | The row was removed immediately without confirmation. [BUG-CART-16](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/10) [Screenshot](evidence/task1/CART-GUI-028.png) |
 | CART-GUI-029 | P0  | Chọn **Hủy** trong dialog xóa.                                 | Dialog đóng; sản phẩm, số lượng, Tổng cộng và badge không thay đổi.                                                                          | ❌ Failed | No Cancel action exists because no confirmation dialog is shown. [BUG-CART-16](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/10) [Screenshot](evidence/task1/CART-GUI-029.png) |
@@ -102,7 +102,7 @@ Bổ sung một sản phẩm có tên dài khoảng 150 ký tự và một tên 
 
 ### E. Responsive, accessibility và tương thích
 
-| ID           | Pri | Hạng mục / Cách kiểm tra                                                   | Kết quả mong đợi                                                                                                                | Status | Bug/ghi chú |
+| ID           | Ưu tiên | Hạng mục / Cách kiểm tra                                                   | Kết quả mong đợi                                                                                                                | Trạng thái | Lỗi/ghi chú |
 | ------------ | --- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------ | ----------- |
 | CART-GUI-038 | P0  | Kiểm tra tại chiều rộng 320 px và 375 px.                                  | Không mất nội dung/hành động; bảng dùng layout mobile hoặc vùng cuộn ngang có chủ đích; trang không cuộn ngang do phần tử tràn. | ❌ Failed | The fixed-width table forces unintended horizontal page overflow at 320px. [BUG-CART-20](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/11) [Screenshot](evidence/task1/CART-GUI-038.png) |
 | CART-GUI-039 | P1  | Kiểm tra tại 768 px, 1024 px và 1440 px.                                   | Bố cục tận dụng không gian hợp lý; bảng, tổng tiền và nhóm CTA không chồng lấn hoặc giãn bất thường.                            | ✅ Passed | Cart fits tablet and desktop widths. |
@@ -120,7 +120,7 @@ Bổ sung một sản phẩm có tên dài khoảng 150 ký tự và một tên 
 
 ### F. Phân hệ Web Admin — Truy cập & Điều hướng Coupon (FR-12, FR-17, IA-01, IA-03)
 
-| ID             | Pri | Hạng mục / Cách kiểm tra                                  | Kết quả mong đợi                                                     | Status | Bug/ghi chú |
+| ID             | Ưu tiên | Hạng mục / Cách kiểm tra                                  | Kết quả mong đợi                                                     | Trạng thái | Lỗi/ghi chú |
 | -------------- | --- | --------------------------------------------------------- | -------------------------------------------------------------------- | ------ | ----------- |
 | COUPON-GUI-001 | P0  | Mở `http://localhost:5174` khi chưa đăng nhập.            | Hiển thị form Admin Login, không lộ nội dung quản trị.               | ✅ Passed | Unauthenticated users see only the login form. |
 | COUPON-GUI-002 | P0  | Đăng nhập tài khoản User thường (`test@eshop.com`).       | Báo lỗi "Bạn không phải là admin!", từ chối vào Admin.               | ✅ Passed | Normal-user login is rejected by the admin UI. |
@@ -132,7 +132,7 @@ Bổ sung một sản phẩm có tên dài khoảng 150 ký tự và một tên 
 
 ### G. Phân hệ Web Admin — Danh sách mã giảm giá (FR-17, IA-01, IA-04)
 
-| ID             | Pri | Hạng mục / Cách kiểm tra                           | Kết quả mong đợi                                                                                               | Status | Bug/ghi chú |
+| ID             | Ưu tiên | Hạng mục / Cách kiểm tra                           | Kết quả mong đợi                                                                                               | Trạng thái | Lỗi/ghi chú |
 | -------------- | --- | -------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ------ | ----------- |
 | COUPON-GUI-008 | P0  | Quan sát tiêu đề các cột trong bảng Coupon.        | Có đủ 7 cột: **Mã**, **Loại**, **Giá trị**, **Đơn tối thiểu**, **Hết hạn**, **Giới hạn/người**, **Hành động**. | ✅ Passed | All seven required columns are present. |
 | COUPON-GUI-009 | P0  | Hiển thị cột Mã (`code`).                          | Mã in hoa, font monospace/bold dễ phân biệt.                                                                   | ✅ Passed | Coupon code is uppercase and visually differentiated. |
@@ -145,7 +145,7 @@ Bổ sung một sản phẩm có tên dài khoảng 150 ký tự và một tên 
 
 ### H. Phân hệ Web Admin — Form tạo mã giảm giá (FR-17, IA-02, SEC-04)
 
-| ID             | Pri | Hạng mục / Cách kiểm tra                                      | Kết quả mong đợi                                                                       | Status | Bug/ghi chú |
+| ID             | Ưu tiên | Hạng mục / Cách kiểm tra                                      | Kết quả mong đợi                                                                       | Trạng thái | Lỗi/ghi chú |
 | -------------- | --- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------- | ------ | ----------- |
 | COUPON-GUI-016 | P0  | Kiểm tra ký hiệu trường bắt buộc (`*` hoặc `required`).       | Các trường `Mã`, `Giá trị`, `Ngày hết hạn` bắt buộc có chỉ báo rõ ràng (FR-22).        | ❌ Failed | The form uses placeholders and HTML required attributes but no visible labels or * indicators. [BUG-COUPON-09](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/17) [Screenshot](evidence/task1/COUPON-GUI-016.png) |
 | COUPON-GUI-017 | P1  | Nhập chữ thường vào ô Mã coupon (vd: `save10`).               | Hệ thống tự động chuyển thành chữ in hoa (`SAVE10`).                                   | ✅ Passed | Coupon code is normalized to uppercase. |
@@ -161,7 +161,7 @@ Bổ sung một sản phẩm có tên dài khoảng 150 ký tự và một tên 
 
 ### I. Phân hệ Web Admin — Xóa mã giảm giá (FR-17, IA-03, IA-04)
 
-| ID             | Pri | Hạng mục / Cách kiểm tra                | Kết quả mong đợi                                                     | Status | Bug/ghi chú |
+| ID             | Ưu tiên | Hạng mục / Cách kiểm tra                | Kết quả mong đợi                                                     | Trạng thái | Lỗi/ghi chú |
 | -------------- | --- | --------------------------------------- | -------------------------------------------------------------------- | ------ | ----------- |
 | COUPON-GUI-027 | P0  | Bấm nút **Xóa** ở một dòng mã giảm giá. | Hiển thị Dialog xác nhận trước khi thực hiện xóa (FR-24).            | ❌ Failed | Coupon is deleted immediately without confirmation. [BUG-COUPON-14](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/20) [Screenshot](evidence/task1/COUPON-GUI-027.png) |
 | COUPON-GUI-028 | P0  | Chọn **Hủy** trong dialog xóa.          | Dialog đóng; mã giảm giá giữ nguyên trong bảng.                      | ❌ Failed | No Cancel action exists because there is no dialog. [BUG-COUPON-14](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/20) [Screenshot](evidence/task1/COUPON-GUI-028.png) |
@@ -170,7 +170,7 @@ Bổ sung một sản phẩm có tên dài khoảng 150 ký tự và một tên 
 
 ### J. Responsive, Accessibility & Tương thích Web Admin (IA-01, IA-02, IA-03, IA-04)
 
-| ID             | Pri | Hạng mục / Cách kiểm tra                                         | Kết quả mong đợi                                                           | Status | Bug/ghi chú |
+| ID             | Ưu tiên | Hạng mục / Cách kiểm tra                                         | Kết quả mong đợi                                                           | Trạng thái | Lỗi/ghi chú |
 | -------------- | --- | ---------------------------------------------------------------- | -------------------------------------------------------------------------- | ------ | ----------- |
 | COUPON-GUI-031 | P1  | Kiểm tra form Admin Coupon tại viewport 768 px và 1440 px.       | Layout grid co giãn hợp lý, không tràn viền hoặc che khuất nút **Tạo mã**. | ✅ Passed | Coupon layout fits tablet and desktop widths. |
 | COUPON-GUI-032 | P1  | Dùng phím `Tab` di chuyển qua form tạo mã.                       | Thứ tự focus từ trái sang phải, từ trên xuống dưới đúng Tab Order.         | ✅ Passed | Tab order follows the visual form order. |

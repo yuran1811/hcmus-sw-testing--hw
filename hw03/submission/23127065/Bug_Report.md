@@ -1,39 +1,39 @@
-# Task 1 Bug Report
+# Báo cáo lỗi — Task 1
 
-Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against the local EShop SUT.
+Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đây đều đã được tái hiện trên SUT EShop cục bộ.
 
 ## BUG-CART-01 — Cart page lacks the required page heading and breadcrumb
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Customer Web /cart |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/2) |
-| Affected checks | CART-GUI-002, CART-GUI-003, CART-GUI-045 |
+| Mức độ nghiêm trọng | **Nghiêm trọng** |
+| Màn hình | Web khách hàng /cart |
+| GitHub Issue | [Xem issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/2) |
+| Hạng mục bị ảnh hưởng | CART-GUI-002, CART-GUI-003, CART-GUI-045 |
 
-**Steps to reproduce**
+**Các bước tái hiện**
 
-1. Start the seeded backend and relevant frontend.
-2. Open Customer Web /cart.
-3. Perform the actions described by CART-GUI-002, CART-GUI-003, CART-GUI-045.
-4. Observe the actual behavior recorded below.
+1. Khởi động backend đã nạp dữ liệu và frontend tương ứng.
+2. Mở Web khách hàng tại `/cart`.
+3. Thực hiện các thao tác của CART-GUI-002, CART-GUI-003 và CART-GUI-045.
+4. Quan sát hành vi thực tế bên dưới.
 
-**Expected:** The interface satisfies the linked checklist expectations and applicable FR/IA requirements.
+**Kết quả mong đợi:** Giao diện đáp ứng kỳ vọng của checklist liên kết và các yêu cầu FR/IA áp dụng.
 
-**Actual:** The page has no h1; its title is rendered as h2. No breadcrumb is rendered on /cart. Accessibility structure lacks the required page h1.
+**Kết quả thực tế:** Trang không có thẻ `h1`; tiêu đề được hiển thị bằng `h2`. `/cart` không có breadcrumb và cấu trúc hỗ trợ tiếp cận cũng thiếu `h1` của trang.
 
-**Evidence:** [CART-GUI-002](evidence/task1/CART-GUI-002.png), [CART-GUI-003](evidence/task1/CART-GUI-003.png), [CART-GUI-045](evidence/task1/CART-GUI-045.png)
+**Bằng chứng:** [CART-GUI-002](evidence/task1/CART-GUI-002.png), [CART-GUI-003](evidence/task1/CART-GUI-003.png), [CART-GUI-045](evidence/task1/CART-GUI-045.png)
 
 ![GitHub issue BUG-CART-01](evidence/task1/gh-issues/BUG-CART-01.png)
 
 ## BUG-CART-02 — Cart navigation has no active state or quantity badge
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Customer Web header and /cart |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/3) |
-| Affected checks | CART-GUI-004, CART-GUI-005 |
+| Mức độ nghiêm trọng | **Major** |
+| Màn hình | Customer Web header and /cart |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/3) |
+| Hạng mục bị ảnh hưởng | CART-GUI-004, CART-GUI-005 |
 
 **Steps to reproduce**
 
@@ -52,12 +52,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-CART-05 — Empty cart state has no icon or illustration
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Minor** |
-| Screen | Customer Web /cart |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/4) |
-| Affected checks | CART-GUI-010 |
+| Mức độ nghiêm trọng | **Minor** |
+| Màn hình | Customer Web /cart |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/4) |
+| Hạng mục bị ảnh hưởng | CART-GUI-010 |
 
 **Steps to reproduce**
 
@@ -76,12 +76,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-CART-06 — Cart focus indicator is not visibly exposed
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Customer Web /cart |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/5) |
-| Affected checks | CART-GUI-043 |
+| Mức độ nghiêm trọng | **Major** |
+| Màn hình | Customer Web /cart |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/5) |
+| Hạng mục bị ảnh hưởng | CART-GUI-043 |
 
 **Steps to reproduce**
 
@@ -100,12 +100,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-CART-09 — Cart table uses the wrong unit-price column label
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Minor** |
-| Screen | Customer Web /cart |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/6) |
-| Affected checks | CART-GUI-015 |
+| Mức độ nghiêm trọng | **Minor** |
+| Màn hình | Customer Web /cart |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/6) |
+| Hạng mục bị ảnh hưởng | CART-GUI-015 |
 
 **Steps to reproduce**
 
@@ -124,12 +124,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-CART-11 — Cart total is labeled Tổng tạm tính instead of Tổng cộng
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Customer Web /cart |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/7) |
-| Affected checks | CART-GUI-020 |
+| Mức độ nghiêm trọng | **Major** |
+| Màn hình | Customer Web /cart |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/7) |
+| Hạng mục bị ảnh hưởng | CART-GUI-020 |
 
 **Steps to reproduce**
 
@@ -148,12 +148,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-CART-12 — Adding the same product creates duplicate cart rows
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Customer Web product detail and /cart |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/8) |
-| Affected checks | CART-GUI-021 |
+| Mức độ nghiêm trọng | **Major** |
+| Màn hình | Customer Web product detail and /cart |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/8) |
+| Hạng mục bị ảnh hưởng | CART-GUI-021 |
 
 **Steps to reproduce**
 
@@ -172,12 +172,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-CART-13 — Cart provides no controls for changing item quantity
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Blocker** |
-| Screen | Customer Web /cart |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/9) |
-| Affected checks | CART-GUI-022, CART-GUI-023, CART-GUI-024, CART-GUI-025 |
+| Mức độ nghiêm trọng | **Blocker** |
+| Màn hình | Customer Web /cart |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/9) |
+| Hạng mục bị ảnh hưởng | CART-GUI-022, CART-GUI-023, CART-GUI-024, CART-GUI-025 |
 
 **Steps to reproduce**
 
@@ -196,12 +196,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-CART-16 — Removing a cart item bypasses the required confirmation dialog
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Customer Web /cart |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/10) |
-| Affected checks | CART-GUI-028, CART-GUI-029, CART-GUI-032 |
+| Mức độ nghiêm trọng | **Major** |
+| Màn hình | Customer Web /cart |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/10) |
+| Hạng mục bị ảnh hưởng | CART-GUI-028, CART-GUI-029, CART-GUI-032 |
 
 **Steps to reproduce**
 
@@ -220,12 +220,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-CART-20 — Cart table overflows the 320px mobile viewport
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Customer Web /cart at 320x568 |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/11) |
-| Affected checks | CART-GUI-038 |
+| Mức độ nghiêm trọng | **Major** |
+| Màn hình | Customer Web /cart at 320x568 |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/11) |
+| Hạng mục bị ảnh hưởng | CART-GUI-038 |
 
 **Steps to reproduce**
 
@@ -244,12 +244,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-CART-21 — Repeated cart action controls do not identify their product
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Customer Web /cart |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/12) |
-| Affected checks | CART-GUI-044 |
+| Mức độ nghiêm trọng | **Major** |
+| Màn hình | Customer Web /cart |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/12) |
+| Hạng mục bị ảnh hưởng | CART-GUI-044 |
 
 **Steps to reproduce**
 
@@ -268,12 +268,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-CART-24 — Customer frontend declares English instead of Vietnamese document language
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Minor** |
-| Screen | Customer Web document |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/13) |
-| Affected checks | CART-GUI-048 |
+| Mức độ nghiêm trọng | **Minor** |
+| Màn hình | Customer Web document |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/13) |
+| Hạng mục bị ảnh hưởng | CART-GUI-048 |
 
 **Steps to reproduce**
 
@@ -292,12 +292,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-COUPON-03 — Coupon screen title uses the wrong heading level
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Minor** |
-| Screen | Admin Coupon |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/14) |
-| Affected checks | COUPON-GUI-005 |
+| Mức độ nghiêm trọng | **Minor** |
+| Màn hình | Admin Coupon |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/14) |
+| Hạng mục bị ảnh hưởng | COUPON-GUI-005 |
 
 **Steps to reproduce**
 
@@ -316,12 +316,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-COUPON-04 — Admin navigation mixes English and Vietnamese labels
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Minor** |
-| Screen | Admin shell |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/15) |
-| Affected checks | COUPON-GUI-006 |
+| Mức độ nghiêm trọng | **Minor** |
+| Màn hình | Admin shell |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/15) |
+| Hạng mục bị ảnh hưởng | COUPON-GUI-006 |
 
 **Steps to reproduce**
 
@@ -340,12 +340,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-COUPON-08 — Empty coupon table has no explanatory state
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Minor** |
-| Screen | Admin Coupon |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/16) |
-| Affected checks | COUPON-GUI-015 |
+| Mức độ nghiêm trọng | **Minor** |
+| Màn hình | Admin Coupon |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/16) |
+| Hạng mục bị ảnh hưởng | COUPON-GUI-015 |
 
 **Steps to reproduce**
 
@@ -364,12 +364,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-COUPON-09 — Coupon form lacks visible labels and required markers
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Admin Coupon form |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/17) |
-| Affected checks | COUPON-GUI-016 |
+| Mức độ nghiêm trọng | **Major** |
+| Màn hình | Admin Coupon form |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/17) |
+| Hạng mục bị ảnh hưởng | COUPON-GUI-016 |
 
 **Steps to reproduce**
 
@@ -388,12 +388,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-COUPON-11 — Coupon form omits discount and expiry boundary validation
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Admin Coupon form |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/18) |
-| Affected checks | COUPON-GUI-019, COUPON-GUI-020, COUPON-GUI-022 |
+| Mức độ nghiêm trọng | **Major** |
+| Màn hình | Admin Coupon form |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/18) |
+| Hạng mục bị ảnh hưởng | COUPON-GUI-019, COUPON-GUI-020, COUPON-GUI-022 |
 
 **Steps to reproduce**
 
@@ -412,12 +412,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-COUPON-12 — Duplicate coupon exposes a SQLite error in a browser alert
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Admin Coupon form |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/19) |
-| Affected checks | COUPON-GUI-024, COUPON-GUI-025 |
+| Mức độ nghiêm trọng | **Major** |
+| Màn hình | Admin Coupon form |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/19) |
+| Hạng mục bị ảnh hưởng | COUPON-GUI-024, COUPON-GUI-025 |
 
 **Steps to reproduce**
 
@@ -436,12 +436,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-COUPON-14 — Coupon deletion has no confirmation dialog
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Admin Coupon table |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/20) |
-| Affected checks | COUPON-GUI-027, COUPON-GUI-028, COUPON-GUI-030 |
+| Mức độ nghiêm trọng | **Major** |
+| Màn hình | Admin Coupon table |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/20) |
+| Hạng mục bị ảnh hưởng | COUPON-GUI-027, COUPON-GUI-028, COUPON-GUI-030 |
 
 **Steps to reproduce**
 
@@ -460,12 +460,12 @@ Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against 
 
 ## BUG-COUPON-17 — Coupon delete buttons have ambiguous accessible names
 
-| Field | Value |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Severity | **Major** |
-| Screen | Admin Coupon table |
-| GitHub issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/21) |
-| Affected checks | COUPON-GUI-034 |
+| Mức độ nghiêm trọng | **Major** |
+| Màn hình | Admin Coupon table |
+| GitHub Issue | [Open issue](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/21) |
+| Hạng mục bị ảnh hưởng | COUPON-GUI-034 |
 
 **Steps to reproduce**
 

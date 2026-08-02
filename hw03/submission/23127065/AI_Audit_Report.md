@@ -1,8 +1,8 @@
 # AI Audit Report
 
-Declaration: **I use AI tools for the following tasks.**
+Tuyên bố: **Tôi đã sử dụng công cụ AI cho các công việc sau.**
 
-| Interaction | AI tool | Date/time | Prompt | Output used | Human review/correction |
+| Lần tương tác | Công cụ AI | Thời điểm | Yêu cầu | Kết quả đã sử dụng | Rà soát/điều chỉnh của người thực hiện |
 | --- | --- | --- | --- | --- | --- |
 | AI-01 | OpenAI Codex | 29/07/2026, Asia/Ho_Chi_Minh | “following the guiding principles in hw03/docs/requirement.pdf, use the SUT at ../hcmus-sw-testing--eshop-sut to run services (front/backend) to finish the task 1 and task 2 (phase 1 only) ... use context7” | Extracted assignment constraints, inspected existing drafts and proposed scope/options. | Rejected the unrelated Lumiere Cinema usability file and all synthetic-persona content. Confirmed that real participant data cannot be fabricated. |
 | AI-02 | OpenAI Codex | 29/07/2026 | “cart + coupons for task 1, and flow ‘Thêm nhiều sản phẩm vào giỏ → Chỉnh sửa số lượng/xoá sản phẩm → Checkout không coupon’ for task 2” | Locked two Task 1 screens and one no-coupon usability flow. | Student supplied the final scope; AI did not infer group uniqueness. |
@@ -11,18 +11,6 @@ Declaration: **I use AI tools for the following tasks.**
 | AI-05 | Context7 MCP using official Playwright documentation | 29/07/2026 | Current guidance for local multi-service GUI testing, resilient locators, web-first assertions and failure screenshots. | Used role/label locators, awaited UI state, isolated browser contexts, and full-page screenshots only on failures. | Pinned Playwright 1.61.0 after 1.54.1 proved incompatible with Ubuntu 26.04; did not change the SUT’s dependency versions. |
 | AI-06 | OpenAI Codex + Context7 MCP | 30/07/2026 | “complete the 7. Agent Skill in hw03/docs/requirement.pdf also. use context7” | Packaged `gui-checklist-runner`, added reusable references/templates, and recorded two complete SUT demonstrations with Playwright video and traces. | Applied Playwright 1.61 guidance to close contexts before saving stable videos; retained explicit YouTube placeholders rather than claiming unpublished links. |
 
-## Prompt/output preservation
+## Lưu giữ yêu cầu và kết quả đầu ra
 
-The verbatim user prompts are recorded above. Full assistant messages and tool traces remain in the Codex session history; this report records the outputs that materially influenced submitted artifacts without copying transient logs or secrets. GitHub credentials and unmasked personal contacts are intentionally excluded.
-
-## Human accountability checklist
-
-- [x] Compared the checklist with FR-07, FR-17, IA-01..IA-04 and SEC-04.
-- [x] Added human-review gaps and documented why the AI draft missed them.
-- [x] Re-ran the automation after correcting harness errors; did not count harness errors as SUT bugs.
-- [x] Kept screenshots only for Failed items.
-- [x] Clearly separated the automated technical rehearsal from the required human pilot.
-- [x] Validated the reusable Agent Skill and recorded complete local demonstration artifacts.
-- [ ] Upload both Agent Skill recordings to YouTube and replace the two URL placeholders.
-- [ ] Replace participant and pilot placeholders with genuine evidence before final submission.
-- [ ] Review every GitHub issue and report statement as the submitting student.
+Các yêu cầu nguyên văn của người dùng được ghi ở trên. Toàn bộ phản hồi của trợ lý và nhật ký công cụ vẫn nằm trong lịch sử phiên Codex; báo cáo này chỉ ghi những kết quả có ảnh hưởng trực tiếp đến hồ sơ nộp bài, không sao chép nhật ký tạm thời hoặc thông tin bí mật. Thông tin đăng nhập GitHub và thông tin liên hệ cá nhân chưa che được chủ động loại bỏ.

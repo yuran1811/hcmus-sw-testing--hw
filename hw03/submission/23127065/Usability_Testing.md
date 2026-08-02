@@ -1,67 +1,67 @@
-# Task 2 — Usability Evaluation
+# Task 2 — Đánh giá khả năng sử dụng
 
 ## 1. Trạng thái và phạm vi
 
 | Thuộc tính | Giá trị |
 | --- | --- |
 | SUT | EShop Web, `http://localhost:5173` |
-| Luồng | Thêm nhiều sản phẩm → chỉnh số lượng/xóa sản phẩm → checkout không coupon |
+| Luồng | Thêm nhiều sản phẩm → chỉnh số lượng/xóa sản phẩm → thanh toán không dùng mã giảm giá |
 | FR liên quan | FR-05, FR-06, FR-07, FR-08; IA-01..IA-04 |
-| Phương pháp | Moderated usability evaluation, think-aloud |
+| Phương pháp | Đánh giá khả năng sử dụng có điều phối, yêu cầu người tham gia nói thành lời suy nghĩ |
 | Người tham gia | 7 người thật |
-| Công cụ sau phiên | SUS 10 câu + 4 probe questions + think-aloud observation log |
+| Công cụ sau phiên | Bảng SUS 10 câu + 4 câu hỏi khai thác + nhật ký quan sát |
 
-## 2. Objectives
+## 2. Mục tiêu
 
 1. Xác định người dùng có tìm được cách chọn nhiều sản phẩm và đi tới giỏ hàng mà không cần gợi ý hay không.
 2. Đánh giá khả năng nhận biết và sử dụng thao tác chỉnh số lượng, xóa sản phẩm không còn muốn mua, đồng thời hiểu tác động lên thành tiền và tổng cộng.
-3. Xác định điểm nghẽn khi chuyển từ giỏ hàng sang checkout và mức độ tự tin rằng danh sách hàng, số lượng và tổng tiền vẫn chính xác.
+3. Xác định điểm nghẽn khi chuyển từ giỏ hàng sang thanh toán và mức độ tự tin rằng danh sách hàng, số lượng và tổng tiền vẫn chính xác.
 4. Đánh giá khả năng phục hồi khi thao tác mong đợi không xuất hiện hoặc hệ thống phản hồi khác dự đoán.
 5. Ghi nhận thời gian, do dự, lỗi thao tác, yêu cầu trợ giúp và mức độ tin tưởng; không dùng kết quả kỹ thuật thay cho hành vi người thật.
 
-## 3. Target user profile và tiêu chí tuyển chọn
+## 3. Hồ sơ người dùng mục tiêu và tiêu chí tuyển chọn
 
 - Từ 18 tuổi, từng mua hàng trực tuyến ít nhất một lần trong 6 tháng gần đây.
 - Có thể sử dụng website trên laptop/desktop hoặc điện thoại mà không cần người hỗ trợ thường xuyên.
-- Đồng ý tham gia, think aloud, lưu ghi chú quan sát và ghi màn hình/âm thanh theo lựa chọn consent.
-- Contact lưu trong báo cáo phải che bốn chữ số giữa đối với số điện thoại/Zalo; không đưa contact đầy đủ vào Git.
+- Đồng ý tham gia, nói thành lời suy nghĩ, lưu ghi chú quan sát và ghi màn hình/âm thanh theo mức đồng ý đã chọn.
+- Thông tin liên hệ trong báo cáo phải che bốn chữ số giữa đối với số điện thoại/Zalo; không đưa thông tin liên hệ đầy đủ vào Git.
 
-## 4. Task scenario cho participant
+## 4. Kịch bản cho người tham gia
 
 > Bạn đang chuẩn bị mua một số sản phẩm công nghệ cho nhu cầu cá nhân. Hãy chọn nhiều hơn một sản phẩm, bảo đảm giỏ hàng cuối cùng có đúng các mặt hàng và số lượng bạn muốn, bỏ một sản phẩm mà bạn đổi ý không mua, rồi hoàn tất đặt hàng mà không sử dụng mã giảm giá. Hãy dừng lại khi bạn tin rằng đơn hàng đã hoàn tất.
 
-Scenario chỉ mô tả mục tiêu. Moderator không đọc tên nút, route, thứ tự click hoặc cách sửa số lượng. Tài khoản test được cung cấp như dữ liệu đầu vào, không phải chỉ dẫn thao tác.
+Kịch bản chỉ mô tả mục tiêu. Người điều phối không đọc tên nút, đường dẫn, thứ tự nhấp hoặc cách sửa số lượng. Tài khoản kiểm thử được cung cấp như dữ liệu đầu vào, không phải chỉ dẫn thao tác.
 
 ### Dữ liệu phiên
 
 - Website: `http://localhost:5173`
 - Tài khoản: `test@eshop.com` / `Test1234!`
 - Trạng thái đầu: đã đăng nhập, giỏ hàng trống, ở trang chủ.
-- Không đưa mã coupon; participant được nhắc mục tiêu là checkout **không coupon**.
+- Không đưa mã giảm giá; người tham gia được nhắc mục tiêu là thanh toán **không dùng mã giảm giá**.
 
-### Tiêu chí outcome
+### Tiêu chí kết quả
 
-| Outcome | Định nghĩa |
+| Kết quả | Định nghĩa |
 | --- | --- |
-| Success | Tự hoàn tất mục tiêu, không nhận hướng dẫn thao tác từ moderator. |
-| Success with assistance | Hoàn tất sau một can thiệp trung lập hoặc yêu cầu làm rõ scenario. |
-| Failure | Bỏ cuộc, checkout sai giỏ hàng, hoặc không thể tiếp tục vì UI/bug. |
+| Thành công | Tự hoàn tất mục tiêu, không nhận hướng dẫn thao tác từ người điều phối. |
+| Thành công có hỗ trợ | Hoàn tất sau một can thiệp trung lập hoặc yêu cầu làm rõ kịch bản. |
+| Không thành công | Bỏ cuộc, thanh toán với giỏ hàng sai hoặc không thể tiếp tục vì giao diện/lỗi. |
 
-## 5. Moderator script
+## 5. Kịch bản điều phối
 
 ### Mở đầu
 
-> Cảm ơn bạn đã tham gia. Hôm nay chúng tôi kiểm thử sản phẩm, không kiểm thử bạn. Không có thao tác đúng hoặc sai từ phía bạn. Trong lúc làm, xin hãy nói thành lời điều bạn đang tìm, điều bạn mong chờ và bất cứ điều gì khiến bạn phân vân. Tôi sẽ quan sát và không hướng dẫn cách dùng giao diện; nếu bạn hoàn toàn bị kẹt, tôi có thể hỏi một câu trung lập. Bạn có đồng ý tiếp tục và cho phép lưu loại bằng chứng đã chọn trong phiếu consent không?
+> Cảm ơn bạn đã tham gia. Hôm nay chúng tôi kiểm thử sản phẩm, không kiểm thử bạn. Không có thao tác đúng hoặc sai từ phía bạn. Trong lúc thực hiện, xin hãy nói thành lời điều bạn đang tìm, điều bạn mong đợi và bất cứ điều gì khiến bạn phân vân. Tôi sẽ quan sát và không hướng dẫn cách dùng giao diện; nếu bạn hoàn toàn bị kẹt, tôi có thể hỏi một câu trung lập. Bạn có đồng ý tiếp tục và cho phép lưu loại bằng chứng đã chọn trong phiếu đồng ý không?
 
 ### Quy tắc điều phối
 
-- Không chỉ vào màn hình, đọc tên nút, giải thích UI hoặc xác nhận participant “đang làm đúng”.
-- Khi participant im lặng, dùng câu trung lập: “Bạn đang nghĩ gì lúc này?”.
+- Không chỉ vào màn hình, đọc tên nút, giải thích giao diện hoặc xác nhận người tham gia “đang làm đúng”.
+- Khi người tham gia im lặng, dùng câu trung lập: “Bạn đang nghĩ gì lúc này?”.
 - Khi bị kẹt, chờ tối thiểu 20 giây rồi hỏi: “Bạn mong đợi điều gì sẽ xảy ra?”.
-- Chỉ can thiệp khi participant dừng hoàn toàn; ghi nguyên văn thời điểm và nội dung can thiệp.
-- Kết thúc bằng SUS trước, sau đó mới hỏi probes để tránh probes ảnh hưởng điểm scale.
+- Chỉ can thiệp khi người tham gia dừng hoàn toàn; ghi nguyên văn thời điểm và nội dung can thiệp.
+- Kết thúc bằng SUS trước, sau đó mới hỏi câu khai thác để tránh ảnh hưởng điểm thang đo.
 
-## 6. Instruments
+## 6. Công cụ thu thập dữ liệu
 
 ### 6.1 SUS — System Usability Scale
 
@@ -78,20 +78,20 @@ Thang Likert 1–5: 1 = Hoàn toàn không đồng ý; 5 = Hoàn toàn đồng �
 9. Tôi cảm thấy tự tin khi sử dụng hệ thống.
 10. Tôi cần học nhiều điều trước khi có thể sử dụng hệ thống.
 
-### 6.2 Probe questions
+### 6.2 Câu hỏi khai thác
 
 | Khía cạnh | Câu hỏi |
 | --- | --- |
-| Clarity | Nhãn, số lượng, thành tiền và tổng cộng ở bước nào rõ hoặc khó hiểu nhất? |
-| Error recovery | Khi không thấy thao tác mong đợi hoặc kết quả khác dự đoán, bạn đã thử cách nào và thông báo có giúp được không? |
-| Speed | Bước nào khiến bạn mất thời gian hoặc do dự nhiều nhất? Vì sao? |
-| Trust | Điều gì làm bạn tin hoặc không tin rằng giỏ hàng và số tiền checkout là chính xác? |
+| Độ rõ ràng | Nhãn, số lượng, thành tiền và tổng cộng ở bước nào rõ hoặc khó hiểu nhất? |
+| Phục hồi khi lỗi | Khi không thấy thao tác mong đợi hoặc kết quả khác dự đoán, bạn đã thử cách nào và thông báo có giúp được không? |
+| Tốc độ | Bước nào khiến bạn mất thời gian hoặc do dự nhiều nhất? Vì sao? |
+| Niềm tin | Điều gì làm bạn tin hoặc không tin rằng giỏ hàng và số tiền thanh toán là chính xác? |
 
-## 7. Recruitment matrix
+## 7. Danh sách tuyển chọn
 
-| ID | Họ và tên | Thiết bị & browser | Contact đã mask | Consent |
+| ID | Họ và tên | Thiết bị & trình duyệt | Thông tin liên hệ đã che | Đồng ý |
 | --- | --- | --- | --- | --- |
-| P01 | Nguyễn Lê Hồ Anh Khoa | Laptop - Edge | 094xxxx515 | Yes |
+| P01 | Nguyễn Lê Hồ Anh Khoa | Laptop - Edge | 094xxxx515 | Có |
 | P02 | Mạch Quốc Tấn | Laptop - Edge | 093xxxx328 | Yes |
 | P03 | Ân Tiến Nguyên An | Laptop - Edge | 086xxxx517 | Yes |
 | P04 | Nguyễn Tuấn Anh | Laptop - Chrome | 036xxxx674 | Yes |
@@ -99,21 +99,21 @@ Thang Likert 1–5: 1 = Hoàn toàn không đồng ý; 5 = Hoàn toàn đồng �
 | P06 | Nguyễn Thành Dâng | Laptop - Edge | 036xxxx676 | Yes |
 | P07 | Trương Thành Đạt | Laptop - Chrome | 085xxxx607 | Yes |
 
-## 8. Human pilot
+## 8. Phiên thử pilot
 
-| Field | Value to replace |
+| Thuộc tính | Giá trị |
 | --- | --- |
-| Pilot name/profile | Tăng Xuân Bắc |
-| Eligibility/contact masked | 083xxxx541 |
-| Date/time | 29/08/2026 20:12 |
-| Device/browser | Laptop - Firefox |
-| Consent | Yes |
-| Duration | 5 mins |
-| Outcome | Verify the flow |
-| Moderator interventions | No |
-| Observed confusion/errors | No |
-| Participant quote, verbatim | No |
-| Scenario/instrument refinement | No |
+| Tên | Tăng Xuân Bắc |
+| SĐT | 083xxxx541 |
+| Ngày giờ | 29/08/2026 20:12 |
+| Thiết bị/Trình duyệt | Laptop - Firefox |
+| Đồng ý | Có |
+| Thời lượng | 5 phút |
+| Kết quả | Xác nhận luồng |
+| Can thiệp của người điều phối | Không |
+| Bối rối/lỗi quan sát được | Không |
+| Trích dẫn nguyên văn của người tham gia | Không |
+| Điều chỉnh kịch bản/công cụ | Không |
 
 ## 9. Kết quả SUS
 
@@ -145,7 +145,7 @@ Thang Likert 1–5: 1 = Hoàn toàn không đồng ý; 5 = Hoàn toàn đồng �
 
 Severity: S1 prevents completion; S2 requires help or risks an incorrect order; S3 causes substantial delay/retry; S4 is minor/cosmetic. Cùng một vấn đề dùng cùng nhãn error và severity.
 
-| Participant | Time | Screen/task state | Participant action | Verbatim think-aloud | Friction/error | Moderator intervention | Severity |
+| Người tham gia | Thời gian | Màn hình/trạng thái tác vụ | Thao tác của người tham gia | Phát biểu nguyên văn | Trở ngại/lỗi | Can thiệp của người điều phối | Mức độ nghiêm trọng |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Khoa | 0:07 | Trang thông tin sản phẩm | Thêm vào giỏ | Ở trang danh sách sản phẩm, bấm thêm vào giỏ thì hệ thống không phản hồi. Phải vào trang giỏ hàng kiểm tra | ADD-CART-NO-FEEDBACK — không có xác nhận sau khi thêm giỏ | No | S3 |
 | Khoa | 0:25 | Trang giỏ hàng | Xem thông tin | Ở trang giỏ hàng, tại sao các sản phẩm cùng loại không được nhóm vào cùng dòng | CART-QUANTITY-MANAGEMENT — dòng trùng và quản lý số lượng không rõ | No | S2 |
@@ -181,7 +181,7 @@ Các ghi chú được nhóm theo cùng hành vi hoặc cùng nguyên nhân giao
 
 Severity được xác định theo ảnh hưởng tới việc hoàn thành scenario, mức rủi ro đặt đơn sai, tần suất quan sát và mức độ tự tin của người dùng — không chỉ theo số người nêu ý kiến.
 
-| Priority | Finding | Severity | Rationale | Hành động đề xuất | Bug/issue đã có |
+| Ưu tiên | Phát hiện | Mức độ nghiêm trọng | Cơ sở đánh giá | Hành động đề xuất | Bug/issue đã có |
 | --- | --- | --- | --- | --- | --- |
 | P0 | Không có điều khiển tăng/giảm số lượng trong giỏ | S1 — blocker | Participant không thể điều chỉnh số lượng như scenario yêu cầu; có nguy cơ checkout sai đơn. | Thêm điều khiển tăng/giảm có giới hạn, cập nhật thành tiền/tổng cộng và kiểm thử lại flow. | [BUG-CART-13](Bug_Report.md#bug-cart-13--cart-provides-no-controls-for-changing-item-quantity), [GitHub issue #9](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/9) |
 | P1 | Sản phẩm trùng thành nhiều dòng, quản lý số lượng không rõ | S2 — nguy cơ đặt sai | Xuất hiện ở ba participant và khiến họ không hiểu số lượng thực tế của đơn. | Gộp cùng sản phẩm vào một dòng và hiển thị quantity rõ ràng. | [BUG-CART-12](Bug_Report.md#bug-cart-12--adding-the-same-product-creates-duplicate-cart-rows), [GitHub issue #8](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/8) |
