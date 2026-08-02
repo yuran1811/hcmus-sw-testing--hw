@@ -1,0 +1,4 @@
+interface:
+  display_name: "Export Documents to PDF"
+  short_description: "Render repository documents as reviewed PDFs"
+  default_prompt: "Use $export-pdf to export the requested repository document as a PDF."
