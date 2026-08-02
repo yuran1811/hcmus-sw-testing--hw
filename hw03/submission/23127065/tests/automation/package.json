@@ -5,6 +5,7 @@
   "scripts": {
     "run": "node run-checklist.mjs",
     "rehearse": "node run-usability-rehearsal.mjs",
+    "demo": "node record-agent-skill-demos.mjs",
     "generate": "node generate-artifacts.mjs",
     "publish:issues": "node publish-issues.mjs",
     "validate": "node validate-artifacts.mjs"

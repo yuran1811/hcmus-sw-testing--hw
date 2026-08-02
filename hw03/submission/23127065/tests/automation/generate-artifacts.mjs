@@ -148,8 +148,9 @@ const readOptional = async (name) => { try { return await fs.readFile(path.join(
 const usability = await fs.readFile(usabilityPath, "utf8");
 const audit = await readOptional("AI_Audit_Report.md");
 const critique = await readOptional("AI_Critique.md");
+const agentSkillDemo = await readOptional("Agent_Skill_Demo.md");
 const readme = await readOptional("README.md");
-const main = `# 23127065 — HW03 AI GUI & Usability\n\n${readme}\n\n---\n\n${gui}\n\n---\n\n${bugReport}\n\n---\n\n${usability}\n\n---\n\n${audit}\n\n---\n\n${critique}`;
+const main = `# 23127065 — HW03 AI GUI & Usability\n\n${readme}\n\n---\n\n${gui}\n\n---\n\n${bugReport}\n\n---\n\n${usability}\n\n---\n\n${agentSkillDemo}\n\n---\n\n${audit}\n\n---\n\n${critique}`;
 await fs.writeFile(path.join(root, "23127065-report.md"), `${main.trim()}\n`);
 
 const css = `body{font-family:Arial,sans-serif;line-height:1.45;color:#172033;max-width:1100px;margin:32px auto;padding:0 24px}table{border-collapse:collapse;width:100%;font-size:10px}th,td{border:1px solid #bbb;padding:5px;vertical-align:top}th{background:#e9eef5}h1,h2{page-break-after:avoid}img{max-width:100%;height:auto}code{background:#f3f4f6;padding:1px 3px}@page{size:A4;margin:12mm}`;

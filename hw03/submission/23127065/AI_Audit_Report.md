@@ -9,6 +9,7 @@ Declaration: **I use AI tools for the following tasks.**
 | AI-03 | OpenAI Codex | 29/07/2026 | “make it as placeholder first, i will fill them in later.” | Replaced identities and pilot evidence with explicit placeholder tokens and a completion warning. | Verified no plausible fake participant, quote, timing or SUS score remained. |
 | AI-04 | OpenAI Codex | 29/07/2026 | “Implement the plan.” | Created and ran the Playwright checklist, captured fail-only evidence, generated reports/XLSX/PDF, technical rehearsal and bug drafts. | Corrected automation errors caused by SPA reload/state timing; visually checked representative screenshots and preserved product failures only after rerun. |
 | AI-05 | Context7 MCP using official Playwright documentation | 29/07/2026 | Current guidance for local multi-service GUI testing, resilient locators, web-first assertions and failure screenshots. | Used role/label locators, awaited UI state, isolated browser contexts, and full-page screenshots only on failures. | Pinned Playwright 1.61.0 after 1.54.1 proved incompatible with Ubuntu 26.04; did not change the SUT’s dependency versions. |
+| AI-06 | OpenAI Codex + Context7 MCP | 30/07/2026 | “complete the 7. Agent Skill in hw03/docs/requirement.pdf also. use context7” | Packaged `gui-checklist-runner`, added reusable references/templates, and recorded two complete SUT demonstrations with Playwright video and traces. | Applied Playwright 1.61 guidance to close contexts before saving stable videos; retained explicit YouTube placeholders rather than claiming unpublished links. |
 
 ## Prompt/output preservation
 
@@ -21,6 +22,7 @@ The verbatim user prompts are recorded above. Full assistant messages and tool t
 - [x] Re-ran the automation after correcting harness errors; did not count harness errors as SUT bugs.
 - [x] Kept screenshots only for Failed items.
 - [x] Clearly separated the automated technical rehearsal from the required human pilot.
+- [x] Validated the reusable Agent Skill and recorded complete local demonstration artifacts.
+- [ ] Upload both Agent Skill recordings to YouTube and replace the two URL placeholders.
 - [ ] Replace participant and pilot placeholders with genuine evidence before final submission.
 - [ ] Review every GitHub issue and report statement as the submitting student.
-

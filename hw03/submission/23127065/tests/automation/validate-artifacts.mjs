@@ -10,6 +10,8 @@ const gui = await fs.readFile(path.join(root, "GUI_Testing.md"), "utf8");
 const usability = await fs.readFile(path.join(root, "Usability_Testing.md"), "utf8");
 const catalog = JSON.parse(await fs.readFile(path.join(here, "bug-catalog.json"), "utf8"));
 const issueLinks = JSON.parse(await fs.readFile(path.join(root, "issue-links.json"), "utf8"));
+const agentSkillDemo = await fs.readFile(path.join(root, "Agent_Skill_Demo.md"), "utf8");
+const demoResults = JSON.parse(await fs.readFile(path.join(root, "evidence/agent-skill/demo-results.json"), "utf8"));
 const failures = results.results.filter((item) => item.status === "Failed");
 const screenshots = (await fs.readdir(path.join(root, "evidence/task1"))).filter((name) => name.endsWith(".png"));
 
@@ -26,6 +28,20 @@ assert(!gui.includes("| ☐"), "no checklist status is blank");
 assert(!/Lumiere|synthetic persona|cust1@cust\.vn/i.test(usability), "unrelated or synthetic usability content removed");
 assert((usability.match(/\[P0[1-7]_NAME\]/g) ?? []).length === 7, "seven explicit participant placeholders present");
 assert(usability.includes("[PILOT_NAME_PROFILE]"), "pilot placeholder record present");
+assert(demoResults.results.length === 2 && demoResults.results.every((item) => item.status === "Passed"), "two Agent Skill demonstrations passed");
+assert(agentSkillDemo.includes("[YOUTUBE_TASK1_DEMO_URL]") && agentSkillDemo.includes("[YOUTUBE_TASK2_DEMO_URL]"), "two explicit YouTube placeholders present");
+assert(agentSkillDemo.includes("are **not** human usability sessions"), "demonstrations are not represented as human evidence");
+for (const item of demoResults.results) {
+  assert((await fs.stat(path.join(root, item.video))).size > 10_000, `${item.name} video is non-empty`);
+  assert((await fs.stat(path.join(root, item.trace))).size > 1_000, `${item.name} trace is non-empty`);
+}
+
+const repoRoot = path.resolve(root, "../../..");
+const skillRoot = path.join(repoRoot, ".agents/skills/gui-checklist-runner");
+const skill = await fs.readFile(path.join(skillRoot, "SKILL.md"), "utf8");
+const skillMetadata = await fs.readFile(path.join(skillRoot, "agents/openai.yaml"), "utf8");
+assert(skill.includes("name: gui-checklist-runner") && skill.includes("## Completion Gate"), "reusable Agent Skill definition present");
+assert(skillMetadata.includes("$gui-checklist-runner"), "Agent Skill metadata includes invocation prompt");
 
 const workbook = new ExcelJS.Workbook();
 await workbook.xlsx.readFile(path.join(root, "23127065_HW03_GUI_Checklist.xlsx"));

@@ -1,6 +1,6 @@
 # Task 1 Bug Report
 
-Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against the local EShop SUT.
+Execution: 2026-07-30T02:02:12.546Z. All findings below were reproduced against the local EShop SUT.
 
 ## BUG-CART-01 — Cart page lacks the required page heading and breadcrumb
 
@@ -24,6 +24,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 
 **Evidence:** [CART-GUI-002](evidence/task1/CART-GUI-002.png), [CART-GUI-003](evidence/task1/CART-GUI-003.png), [CART-GUI-045](evidence/task1/CART-GUI-045.png)
 
+![GitHub issue BUG-CART-01](evidence/task1/gh-issues/BUG-CART-01.png)
+
 ## BUG-CART-02 — Cart navigation has no active state or quantity badge
 
 | Field | Value |
@@ -45,6 +47,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 **Actual:** The Cart link has only a hover style and no active state. The navigation has no cart quantity badge.
 
 **Evidence:** [CART-GUI-004](evidence/task1/CART-GUI-004.png), [CART-GUI-005](evidence/task1/CART-GUI-005.png)
+
+![GitHub issue BUG-CART-02](evidence/task1/gh-issues/BUG-CART-02.png)
 
 ## BUG-CART-05 — Empty cart state has no icon or illustration
 
@@ -68,6 +72,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 
 **Evidence:** [CART-GUI-010](evidence/task1/CART-GUI-010.png)
 
+![GitHub issue BUG-CART-05](evidence/task1/gh-issues/BUG-CART-05.png)
+
 ## BUG-CART-06 — Cart focus indicator is not visibly exposed
 
 | Field | Value |
@@ -89,6 +95,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 **Actual:** Focus indicator is removed or imperceptible.
 
 **Evidence:** [CART-GUI-043](evidence/task1/CART-GUI-043.png)
+
+![GitHub issue BUG-CART-06](evidence/task1/gh-issues/BUG-CART-06.png)
 
 ## BUG-CART-09 — Cart table uses the wrong unit-price column label
 
@@ -112,6 +120,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 
 **Evidence:** [CART-GUI-015](evidence/task1/CART-GUI-015.png)
 
+![GitHub issue BUG-CART-09](evidence/task1/gh-issues/BUG-CART-09.png)
+
 ## BUG-CART-11 — Cart total is labeled Tổng tạm tính instead of Tổng cộng
 
 | Field | Value |
@@ -133,6 +143,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 **Actual:** The value is correct but the label is “Tổng tạm tính”, contrary to FR-07.
 
 **Evidence:** [CART-GUI-020](evidence/task1/CART-GUI-020.png)
+
+![GitHub issue BUG-CART-11](evidence/task1/gh-issues/BUG-CART-11.png)
 
 ## BUG-CART-12 — Adding the same product creates duplicate cart rows
 
@@ -156,6 +168,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 
 **Evidence:** [CART-GUI-021](evidence/task1/CART-GUI-021.png)
 
+![GitHub issue BUG-CART-12](evidence/task1/gh-issues/BUG-CART-12.png)
+
 ## BUG-CART-13 — Cart provides no controls for changing item quantity
 
 | Field | Value |
@@ -177,6 +191,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 **Actual:** No +/− quantity controls are rendered. The + control is absent, so quantity cannot be increased in the cart. The − control is absent, so quantity cannot be decreased in the cart. The required decrement boundary cannot be exercised because the control is absent.
 
 **Evidence:** [CART-GUI-022](evidence/task1/CART-GUI-022.png), [CART-GUI-023](evidence/task1/CART-GUI-023.png), [CART-GUI-024](evidence/task1/CART-GUI-024.png), [CART-GUI-025](evidence/task1/CART-GUI-025.png)
+
+![GitHub issue BUG-CART-13](evidence/task1/gh-issues/BUG-CART-13.png)
 
 ## BUG-CART-16 — Removing a cart item bypasses the required confirmation dialog
 
@@ -200,6 +216,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 
 **Evidence:** [CART-GUI-028](evidence/task1/CART-GUI-028.png), [CART-GUI-029](evidence/task1/CART-GUI-029.png), [CART-GUI-032](evidence/task1/CART-GUI-032.png)
 
+![GitHub issue BUG-CART-16](evidence/task1/gh-issues/BUG-CART-16.png)
+
 ## BUG-CART-20 — Cart table overflows the 320px mobile viewport
 
 | Field | Value |
@@ -221,6 +239,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 **Actual:** The fixed-width table forces unintended horizontal page overflow at 320px.
 
 **Evidence:** [CART-GUI-038](evidence/task1/CART-GUI-038.png)
+
+![GitHub issue BUG-CART-20](evidence/task1/gh-issues/BUG-CART-20.png)
 
 ## BUG-CART-21 — Repeated cart action controls do not identify their product
 
@@ -244,6 +264,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 
 **Evidence:** [CART-GUI-044](evidence/task1/CART-GUI-044.png)
 
+![GitHub issue BUG-CART-21](evidence/task1/gh-issues/BUG-CART-21.png)
+
 ## BUG-CART-24 — Customer frontend declares English instead of Vietnamese document language
 
 | Field | Value |
@@ -265,6 +287,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 **Actual:** The document does not declare lang=vi.
 
 **Evidence:** [CART-GUI-048](evidence/task1/CART-GUI-048.png)
+
+![GitHub issue BUG-CART-24](evidence/task1/gh-issues/BUG-CART-24.png)
 
 ## BUG-COUPON-03 — Coupon screen title uses the wrong heading level
 
@@ -288,6 +312,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 
 **Evidence:** [COUPON-GUI-005](evidence/task1/COUPON-GUI-005.png)
 
+![GitHub issue BUG-COUPON-03](evidence/task1/gh-issues/BUG-COUPON-03.png)
+
 ## BUG-COUPON-04 — Admin navigation mixes English and Vietnamese labels
 
 | Field | Value |
@@ -309,6 +335,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 **Actual:** The admin shell mixes English “Dashboard” with Vietnamese labels.
 
 **Evidence:** [COUPON-GUI-006](evidence/task1/COUPON-GUI-006.png)
+
+![GitHub issue BUG-COUPON-04](evidence/task1/gh-issues/BUG-COUPON-04.png)
 
 ## BUG-COUPON-08 — Empty coupon table has no explanatory state
 
@@ -332,6 +360,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 
 **Evidence:** [COUPON-GUI-015](evidence/task1/COUPON-GUI-015.png)
 
+![GitHub issue BUG-COUPON-08](evidence/task1/gh-issues/BUG-COUPON-08.png)
+
 ## BUG-COUPON-09 — Coupon form lacks visible labels and required markers
 
 | Field | Value |
@@ -353,6 +383,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 **Actual:** The form uses placeholders and HTML required attributes but no visible labels or * indicators.
 
 **Evidence:** [COUPON-GUI-016](evidence/task1/COUPON-GUI-016.png)
+
+![GitHub issue BUG-COUPON-09](evidence/task1/gh-issues/BUG-COUPON-09.png)
 
 ## BUG-COUPON-11 — Coupon form omits discount and expiry boundary validation
 
@@ -376,6 +408,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 
 **Evidence:** [COUPON-GUI-019](evidence/task1/COUPON-GUI-019.png), [COUPON-GUI-020](evidence/task1/COUPON-GUI-020.png), [COUPON-GUI-022](evidence/task1/COUPON-GUI-022.png)
 
+![GitHub issue BUG-COUPON-11](evidence/task1/gh-issues/BUG-COUPON-11.png)
+
 ## BUG-COUPON-12 — Duplicate coupon exposes a SQLite error in a browser alert
 
 | Field | Value |
@@ -397,6 +431,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 **Actual:** Duplicate code exposes a technical alert: Lỗi: SQLITE_CONSTRAINT: UNIQUE constraint failed: coupons.code Errors are delivered through a browser alert rather than above the submit button.
 
 **Evidence:** [COUPON-GUI-024](evidence/task1/COUPON-GUI-024.png), [COUPON-GUI-025](evidence/task1/COUPON-GUI-025.png)
+
+![GitHub issue BUG-COUPON-12](evidence/task1/gh-issues/BUG-COUPON-12.png)
 
 ## BUG-COUPON-14 — Coupon deletion has no confirmation dialog
 
@@ -420,6 +456,8 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 
 **Evidence:** [COUPON-GUI-027](evidence/task1/COUPON-GUI-027.png), [COUPON-GUI-028](evidence/task1/COUPON-GUI-028.png), [COUPON-GUI-030](evidence/task1/COUPON-GUI-030.png)
 
+![GitHub issue BUG-COUPON-14](evidence/task1/gh-issues/BUG-COUPON-14.png)
+
 ## BUG-COUPON-17 — Coupon delete buttons have ambiguous accessible names
 
 | Field | Value |
@@ -442,3 +480,4 @@ Execution: 2026-07-29T15:53:24.889Z. All findings below were reproduced against 
 
 **Evidence:** [COUPON-GUI-034](evidence/task1/COUPON-GUI-034.png)
 
+![GitHub issue BUG-COUPON-17](evidence/task1/gh-issues/BUG-COUPON-17.png)

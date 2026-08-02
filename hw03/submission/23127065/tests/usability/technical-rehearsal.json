@@ -1,5 +1,5 @@
 {
-  "executedAt": "2026-07-29T15:55:21.650Z",
+  "executedAt": "2026-07-30T02:02:17.817Z",
   "label": "Automated technical rehearsal — not a human pilot",
   "scenario": "Add multiple products, adjust quantity/remove an item, then checkout without a coupon",
   "observations": [

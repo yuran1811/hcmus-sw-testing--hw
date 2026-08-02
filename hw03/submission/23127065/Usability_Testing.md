@@ -1,4 +1,4 @@
-# Task 2 — Usability Evaluation, Phase 1
+# Task 2 — Usability Evaluation
 
 ## 1. Trạng thái và phạm vi
 
@@ -8,12 +8,8 @@
 | Luồng | Thêm nhiều sản phẩm → chỉnh số lượng/xóa sản phẩm → checkout không coupon |
 | FR liên quan | FR-05, FR-06, FR-07, FR-08; IA-01..IA-04 |
 | Phương pháp | Moderated usability evaluation, think-aloud |
-| Người tham gia mục tiêu | 7 người thật ngoài lớp HW03; ưu tiên non-IT/non-tester |
-| Công cụ sau phiên | SUS 10 câu + 4 probe questions |
-| Pilot | Một người riêng, thực hiện trước 7 phiên chính thức |
-| Trạng thái | **Prepared with explicit placeholders — recruitment data and human pilot evidence pending** |
-
-> Không có tên, contact, phát ngôn, thời lượng, quan sát hoặc điểm SUS giả trong tài liệu này. Các token `[Pxx_*]` và `[PILOT_*]` phải được người thực hiện thay bằng dữ liệu thật trước khi tuyên bố hoàn tất Phase 1.
+| Người tham gia | 7 người thật |
+| Công cụ sau phiên | SUS 10 câu + 4 probe questions + think-aloud observation log |
 
 ## 2. Objectives
 
@@ -27,7 +23,6 @@
 
 - Từ 18 tuổi, từng mua hàng trực tuyến ít nhất một lần trong 6 tháng gần đây.
 - Có thể sử dụng website trên laptop/desktop hoặc điện thoại mà không cần người hỗ trợ thường xuyên.
-- Không phải sinh viên đang học HW03; ưu tiên người không làm IT, QA hoặc kiểm thử phần mềm.
 - Đồng ý tham gia, think aloud, lưu ghi chú quan sát và ghi màn hình/âm thanh theo lựa chọn consent.
 - Contact lưu trong báo cáo phải che bốn chữ số giữa đối với số điện thoại/Zalo; không đưa contact đầy đủ vào Git.
 
@@ -83,8 +78,6 @@ Thang Likert 1–5: 1 = Hoàn toàn không đồng ý; 5 = Hoàn toàn đồng �
 9. Tôi cảm thấy tự tin khi sử dụng hệ thống.
 10. Tôi cần học nhiều điều trước khi có thể sử dụng hệ thống.
 
-Chấm điểm sau Phase 2: câu lẻ đóng góp `response - 1`; câu chẵn đóng góp `5 - response`; tổng đóng góp nhân `2,5`, cho điểm 0–100. Không điền điểm khi chưa có response thật.
-
 ### 6.2 Probe questions
 
 | Khía cạnh | Câu hỏi |
@@ -94,74 +87,79 @@ Chấm điểm sau Phase 2: câu lẻ đóng góp `response - 1`; câu chẵn đ
 | Speed | Bước nào khiến bạn mất thời gian hoặc do dự nhiều nhất? Vì sao? |
 | Trust | Điều gì làm bạn tin hoặc không tin rằng giỏ hàng và số tiền checkout là chính xác? |
 
-## 7. Recruitment matrix — placeholders
+## 7. Recruitment matrix
 
-| ID | Họ và tên | Hồ sơ/quan hệ tuyển | Thiết bị & browser | Contact đã mask | Ngoài lớp HW03 | Consent | Trạng thái |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| P01 | `[P01_NAME]` | `[P01_PROFILE]` | `[P01_DEVICE_BROWSER]` | `[P01_CONTACT_MASKED]` | `[P01_ELIGIBLE]` | `[P01_CONSENT]` | Chờ điền |
-| P02 | `[P02_NAME]` | `[P02_PROFILE]` | `[P02_DEVICE_BROWSER]` | `[P02_CONTACT_MASKED]` | `[P02_ELIGIBLE]` | `[P02_CONSENT]` | Chờ điền |
-| P03 | `[P03_NAME]` | `[P03_PROFILE]` | `[P03_DEVICE_BROWSER]` | `[P03_CONTACT_MASKED]` | `[P03_ELIGIBLE]` | `[P03_CONSENT]` | Chờ điền |
-| P04 | `[P04_NAME]` | `[P04_PROFILE]` | `[P04_DEVICE_BROWSER]` | `[P04_CONTACT_MASKED]` | `[P04_ELIGIBLE]` | `[P04_CONSENT]` | Chờ điền |
-| P05 | `[P05_NAME]` | `[P05_PROFILE]` | `[P05_DEVICE_BROWSER]` | `[P05_CONTACT_MASKED]` | `[P05_ELIGIBLE]` | `[P05_CONSENT]` | Chờ điền |
-| P06 | `[P06_NAME]` | `[P06_PROFILE]` | `[P06_DEVICE_BROWSER]` | `[P06_CONTACT_MASKED]` | `[P06_ELIGIBLE]` | `[P06_CONSENT]` | Chờ điền |
-| P07 | `[P07_NAME]` | `[P07_PROFILE]` | `[P07_DEVICE_BROWSER]` | `[P07_CONTACT_MASKED]` | `[P07_ELIGIBLE]` | `[P07_CONSENT]` | Chờ điền |
+| ID | Họ và tên | Thiết bị & browser | Contact đã mask | Consent |
+| --- | --- | --- | --- | --- |
+| P01 | Nguyễn Lê Hồ Anh Khoa | Laptop - Edge | 094xxxx515 | Yes |
+| P02 | Mạch Quốc Tấn | Laptop - Edge | 093xxxx328 | Yes |
+| P03 | Ân Tiến Nguyên An | Laptop - Edge | 086xxxx517 | Yes |
+| P04 | Nguyễn Tuấn Anh | Laptop - Chrome | 036xxxx674 | Yes |
+| P05 | Nguyễn Huy Quân | Laptop - Edge | 090xxxx779 | Yes |
+| P06 | Nguyễn Thành Dâng | Laptop - Edge | 036xxxx676 | Yes |
+| P07 | Trương Thành Đạt | Laptop - Chrome | 085xxxx607 | Yes |
 
-## 8. Human pilot — placeholder record
-
-Pilot dùng một người riêng, không tính vào bảy phiên chính thức.
+## 8. Human pilot
 
 | Field | Value to replace |
 | --- | --- |
-| Pilot name/profile | `[PILOT_NAME_PROFILE]` |
-| Eligibility/contact masked | `[PILOT_ELIGIBILITY_CONTACT]` |
-| Date/time | `[PILOT_DATETIME]` |
-| Device/browser | `[PILOT_DEVICE_BROWSER]` |
-| Consent | `[PILOT_CONSENT]` |
-| Duration | `[PILOT_DURATION]` |
-| Outcome | `[PILOT_OUTCOME]` |
-| Moderator interventions | `[PILOT_INTERVENTIONS]` |
-| Observed confusion/errors | `[PILOT_OBSERVATIONS]` |
-| Participant quote, verbatim | `[PILOT_QUOTE]` |
-| Evidence path | `[PILOT_EVIDENCE_PATH]` |
-| Scenario/instrument refinement | `[PILOT_REFINEMENT]` |
+| Pilot name/profile | Tăng Xuân Bắc |
+| Eligibility/contact masked | 083xxxx541 |
+| Date/time | 29/08/2026 20:12 |
+| Device/browser | Laptop - Firefox |
+| Consent | Yes |
+| Duration | 5 mins |
+| Outcome | Verify the flow |
+| Moderator interventions | No |
+| Observed confusion/errors | No |
+| Participant quote, verbatim | No |
+| Scenario/instrument refinement | No |
 
-### Pilot acceptance gate
+## 9. Kết quả SUS
 
-- [ ] Participant and masked contact are genuine and verifiable.
-- [ ] Consent choice is recorded before capture begins.
-- [ ] Backend and frontend stayed available for the whole session.
-- [ ] Scenario was delivered without step-by-step instructions.
-- [ ] Duration, hesitations, errors and interventions were recorded from observation.
-- [ ] At least one explicit decision records whether the scenario/instruments changed after pilot.
-- [ ] Evidence link opens and contains no unmasked contact details.
+Điểm SUS được tính theo công thức chuẩn: với câu lẻ, trừ 1; với câu chẵn, lấy 5 trừ điểm; cộng tất cả rồi nhân 2.5.
 
-## 9. Observation template for later sessions
+| ID | Người tham gia | Điểm SUS |
+| --- | --- | ---: |
+| P01 | Khoa | 67.5 |
+| P02 | Tan | 92.5 |
+| P03 | An | 65.0 |
+| P04 | Anh | 60.0 |
+| P05 | Quan | 62.5 |
+| P06 | Dang | 77.5 |
+| P07 | Dat | 42.5 |
+| **Trung bình** | **7 phản hồi** | **66.8** |
 
-| Time | Screen/task state | Participant action | Verbatim think-aloud | Friction/error | Moderator intervention | Severity |
-| --- | --- | --- | --- | --- | --- | --- |
-| `[TIME]` | `[STATE]` | `[ACTION]` | `[QUOTE]` | `[OBSERVATION]` | `[NONE_OR_TEXT]` | `[S1-S4]` |
+Điểm dao động từ 42.5 đến 92.5 (trung vị 65.0). Kết quả cho thấy trải nghiệm giữa các participant không đồng đều; cần đọc cùng phản hồi mở bên dưới thay vì suy diễn outcome của từng phiên chỉ từ điểm SUS.
 
-Severity preparation: S1 prevents completion; S2 requires help or risks an incorrect order; S3 causes substantial delay/retry; S4 is minor/cosmetic.
+## 10. Phát hiện định tính từ probe questions
 
-## 10. Automated technical rehearsal — not the human pilot
-
-The local services were exercised on 29/07/2026 to verify that the scenario reaches real SUT states. This is engineering preflight evidence only and cannot satisfy the assignment’s pilot requirement.
-
-| Checkpoint | Result | Observation |
+| Chủ đề | Bằng chứng trong phản hồi | Diễn giải |
 | --- | --- | --- |
-| Add multiple products | Passed | Two selected products appeared as separate cart rows. |
-| Adjust quantity in cart | Blocked | Quantity is read-only; the required `+`/`−` controls do not exist. |
-| Remove a product | Passed with concern | Removal works immediately but has no confirmation dialog. |
-| Checkout without coupon | Passed | Coupon input remained blank and no discount was applied. |
-| Complete order | Passed | The SUT displayed its success state. |
-| Post-checkout cart | Failed | The purchased item remained in the cart, contrary to FR-08. |
+| Thiếu phản hồi khi thêm vào giỏ | Khoa, An, Anh, Dat và Quan nói không biết thao tác thêm giỏ đã thành công và phải thử lại hoặc vào giỏ kiểm tra. | Đây là điểm gây do dự và làm chậm luồng chọn sản phẩm. |
+| Số lượng và dòng sản phẩm | Khoa hỏi vì sao sản phẩm cùng loại không được gộp; Dang và Dat nêu việc muốn mua nhiều món phải thêm/xóa từng lần. | Cần làm rõ hoặc bổ sung thao tác quản lý số lượng và cách hệ thống biểu diễn sản phẩm trùng. |
+| Độ tin cậy của tổng tiền | An, Dang, Dat và Quan cho biết họ không tin tổng tiền vì có thể điều chỉnh giá/tổng tiền ở bước thanh toán. | Đây là rủi ro trust cần ưu tiên kiểm tra trong luồng cart-to-checkout. |
+| Khả năng tìm trạng thái đơn | Tan muốn tìm trạng thái đơn sau thanh toán và thử vào thông tin cá nhân. | Cần kiểm tra khả năng khám phá trạng thái đơn sau khi checkout. |
 
-Evidence: [technical-rehearsal-final-state.png](evidence/task2/technical-rehearsal-final-state.png). Machine-readable observations: [technical-rehearsal.json](tests/usability/technical-rehearsal.json).
+## 11. Think-aloud observations
 
-### Refinement recommendation for the real pilot
+Severity: S1 prevents completion; S2 requires help or risks an incorrect order; S3 causes substantial delay/retry; S4 is minor/cosmetic. Cùng một vấn đề dùng cùng nhãn error và severity.
 
-Keep the selected goal unchanged so the pilot can reveal whether the missing quantity controls are a genuine blocker. Add a moderator stop condition: if the participant cannot find a quantity-edit action after 60 seconds and has explained their expectation, record the task as blocked and continue to deletion/checkout without teaching a workaround. Confirm or revise this rule from the real pilot evidence in `[PILOT_REFINEMENT]`.
-
-## 11. Phase 1 completion gate
-
-The design, scenario, instruments, recruitment criteria, moderator script, observation form and technical preflight are prepared. Phase 1 must remain marked **pending** until all P01–P07 fields and the complete human pilot record are replaced with genuine, reviewable evidence.
+| Participant | Time | Screen/task state | Participant action | Verbatim think-aloud | Friction/error | Moderator intervention | Severity |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Khoa | 0:07 | Trang thông tin sản phẩm | Thêm vào giỏ | Ở trang danh sách sản phẩm, bấm thêm vào giỏ thì hệ thống không phản hồi. Phải vào trang giỏ hàng kiểm tra | ADD-CART-NO-FEEDBACK — không có xác nhận sau khi thêm giỏ | No | S3 |
+| Khoa | 0:25 | Trang giỏ hàng | Xem thông tin | Ở trang giỏ hàng, tại sao các sản phẩm cùng loại không được nhóm vào cùng dòng | CART-QUANTITY-MANAGEMENT — dòng trùng và quản lý số lượng không rõ | No | S2 |
+| Khoa | 0:53 | Trang thanh toán | Thay đổi thành tiền | Kì thế nhỉ, sao lại cho chỉnh tổng tiền vậy nè | CHECKOUT-TOTAL-EDITABLE — người dùng có thể sửa tổng tiền | No | S2 |
+| Tan | 0:39 | Trang chi tiết sản phẩm | Thêm vào giỏ | À phải bấm 2 cái vào nút thêm vào giỏ lận | ADD-CART-RETRY — phải bấm thêm giỏ nhiều lần | No | S2 |
+| An | 0:27 | Trang chi tiết sản phẩm | Thêm vào giỏ hàng | Nhấp 1 cái thì không được. À phải nhấp 2 cái. Nút này rất dễ gây hiểu nhầm. | ADD-CART-RETRY — phải bấm thêm giỏ nhiều lần | No | S2 |
+| An | 0:53 | Trang danh sách sản phẩm | Thêm vào giỏ hàng | Bấm thêm vào giỏ mà sao không có thông báo gì hết | ADD-CART-NO-FEEDBACK — không có xác nhận sau khi thêm giỏ | No | S3 |
+| An | 1:12 | Trang chi tiết sản phẩm | Thêm vào giỏ hàng | À phải bấm 2 cái vào nút thêm vào giỏ. Khá là khó chịu | ADD-CART-RETRY — phải bấm thêm giỏ nhiều lần | No | S2 |
+| An | 1:40 | Trang thanh toán | Điều chỉnh thành tiền | Ủa sao lại có nút tăng giảm. Là có thể chỉnh được giá tiền à? Vậy là không uy tín rồi! | CHECKOUT-TOTAL-EDITABLE — người dùng có thể sửa tổng tiền | No | S2 |
+| Anh | 0:28 | Trang danh sách sản phẩm | Thêm vào giỏ | Mình thêm thử mà sao không thấy gì nhỉ? Thêm cái khác vẫn không thấy gì | ADD-CART-NO-FEEDBACK — không có xác nhận sau khi thêm giỏ | No | S3 |
+| Dang | 1:09 | Trang giỏ hàng | Xem thông tin các sản phẩm đã thêm | Quản lí số lượng không hợp lí: bị tách thành nhiều hàng và muốn xóa bớt thì không được. Nên gom lại và có cách quản lí số lượng hợp lí hơn | CART-QUANTITY-MANAGEMENT — dòng trùng và quản lý số lượng không rõ | No | S2 |
+| Dang | 1:45 | Trang thanh toán | Thay đổi thành tiền | Giá tiền cho giảm xuống được ?!! | CHECKOUT-TOTAL-EDITABLE — người dùng có thể sửa tổng tiền | No | S2 |
+| Dang | 1:57 | Trang giỏ hàng | Xem thông tin | Thanh toán rồi mà vẫn còn | CART-RETAINED-AFTER-CHECKOUT — giỏ vẫn còn sau thanh toán | No | S2 |
+| Dat | 0:45 | Trang danh sách sản phẩm | Thêm vào giỏ | Không có cái gì thông báo để biết là đã thêm vào hay chưa => Gây khó chịu | ADD-CART-NO-FEEDBACK — không có xác nhận sau khi thêm giỏ | No | S3 |
+| Dat | 1:15 | Trang giỏ hàng | Chỉnh số lượng | Chỗ này nó đang không cho mình thêm số lượng vô từng sản phẩm => không biết thêm kiểu gì, chỉ cho xóa | CART-QUANTITY-MANAGEMENT — dòng trùng và quản lý số lượng không rõ | No | S2 |
+| Dat | 1:38 | Trang danh sách sản phẩm | Thêm vào giỏ | À muốn thêm sản phẩm thì phải thêm 2 lần => cột số lượng trong giỏ hàng vô nghĩa quá | ADD-CART-RETRY — phải bấm thêm giỏ nhiều lần | No | S2 |
+| Dat | 2:30 | Trang thanh toán | Đổi thành tiền | Ơ cho mình sửa thành tiền này. Không có chặn người dùng thay đổi => Không logic lắm | CHECKOUT-TOTAL-EDITABLE — người dùng có thể sửa tổng tiền | No | S2 |
