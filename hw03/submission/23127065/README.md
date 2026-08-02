@@ -11,7 +11,7 @@
 | Seven real recruits | Pending explicit `[P01_*]`..`[P07_*]` replacement by the student |
 | Human pilot | Pending explicit `[PILOT_*]` replacement and evidence by the student |
 | Task 2 Phase 2/3 | Out of scope |
-| Task 3 cross-platform | Out of scope |
+| Task 3 cross-platform | Complete — full 85-item Task 1 matrix on Chrome, Firefox, and Safari-compatible WebKit; actual Safari, Firefox, and Chrome Cart evidence attached |
 | Agent Skill | Complete locally — reusable skill and two recorded demonstrations; YouTube URL placeholders await student upload |
 
 This package does not misrepresent placeholders or the automated technical rehearsal as real participant evidence.
@@ -29,12 +29,14 @@ This package does not misrepresent placeholders or the automated technical rehea
 | Failure screenshots | 33 |
 | Real participants entered | 0 / 7 — placeholders pending |
 | Human pilot completed | 0 / 1 — placeholder pending |
+| Task 3 cross-browser checks | 255 executed: 156 passed, 99 reproducible existing failures |
 
 ## Key files
 
 - `23127065-report.md` and `23127065-report.pdf`: combined report.
 - `GUI_Testing.md`, `GUI_Testing.pdf`, and `23127065_HW03_GUI_Checklist.xlsx`: Task 1 design and execution.
 - `Bug_Report.md` and `evidence/task1/`: defect report and failure-only screenshots.
+- `Cross_Browser_Testing.md` and `evidence/task3/`: Task 3 three-browser execution and labeled screenshots.
 - `Usability_Testing.md`, `Usability_Testing_Phase1.pdf`, and `tests/usability/`: Task 2 Phase 1 preparation and technical rehearsal.
 - `AI_Audit_Report.md`, `AI_Critique.md`, and `Git_Commit_Log.txt`: mandatory process evidence.
 - `Agent_Skill_Demo.md` and `evidence/agent-skill/`: reusable skill invocation, two complete-flow videos, and Playwright traces.
@@ -55,5 +57,5 @@ The SUT database should be backed up before execution and restored afterward bec
 | Task 1 — GUI checklist, execution, bugs | 30 | Complete |
 | Task 2 Phase 1 — plan and prepare | Part of 40 | Structurally prepared; real recruitment and pilot evidence pending |
 | Task 2 Phase 2/3 | Part of 40 | Not requested |
-| Task 3 | 20 | Not requested |
+| Task 3 | 20 | Complete 85-item matrix across three browser engines; see `Cross_Browser_Testing.md` |
 | Agent Skills | 10 | Reusable `gui-checklist-runner`, two local end-to-end videos and traces complete; replace two explicit YouTube URL placeholders after upload |
