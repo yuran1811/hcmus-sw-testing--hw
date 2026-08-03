@@ -1,10 +1,1089 @@
-HW03 step-by-step commit log
-Generated: 2026-07-29 (Asia/Ho_Chi_Minh)
-
-30698d1 | 2026-07-29T23:05:51+07:00 | docs(hw03): publish GUI bug issues with evidence
-884dbb3 | 2026-07-29T23:03:29+07:00 | docs(hw03): assemble reports and AI audit
-cc7cd71 | 2026-07-29T23:03:17+07:00 | docs(hw03): prepare usability evaluation phase 1
-7b1352e | 2026-07-29T23:02:51+07:00 | test(hw03): execute GUI checklist with failure evidence
-f994f7b | 2026-07-29T23:02:26+07:00 | test(hw03): design cart and coupon GUI checklist
-
-The final packaging/validation commit that updates this file is intentionally not self-listed because a commit cannot contain its own final hash.
+* commit bb6e202d0660ce0ec715581447589227387452b4
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Mon Aug 3 08:26:19 2026 +0700
+| 
+|     docs: finalize the submission
+| 
+|  hw03/submission/23127065/AI_Audit_Report.md       | 219 ++++++++++++++++-
+|  hw03/submission/23127065/Cross_Browser_Testing.md | 248 ++++++++++++++++++--
+|  hw03/submission/23127065/GUI_Testing.md           |  41 +---
+|  hw03/submission/23127065/README.md                |  33 +++
+|  .../task2/technical-rehearsal-final-state.png     | Bin 40871 -> 0 bytes
+|  .../task3/chrome-incognito-cart-window.png        | Bin 108643 -> 0 bytes
+|  .../evidence/task3/firefox-cart-window.png        | Bin 113771 -> 0 bytes
+|  .../evidence/task3/safari-cart-window.png         | Bin 99699 -> 0 bytes
+|  .../tests/usability/usability-plan-FR07-FR17.md   |   5 -
+|  9 files changed, 475 insertions(+), 71 deletions(-)
+| 
+* commit 82b90e2918e51e3823d8cb0e7eb8e2bb970b9c1b
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Mon Aug 3 00:58:30 2026 +0700
+| 
+|     docs: finalize ai audit report, ai critique, bug report, gui & usability testing
+|     
+|     - Updated README.md to streamline project overview and remove redundant sections.
+|     - Translated Usability Testing documentation to Vietnamese and refined content for clarity.
+|     - Created issue-links.json to centralize bug report links for easier reference.
+|     - Added SUS results documentation for usability evaluation participants, detailing their feedback and observations.
+| 
+|  hw03/submission/23127065/AI_Audit_Report.md       |  20 +-
+|  hw03/submission/23127065/AI_Critique.md           |   4 +-
+|  hw03/submission/23127065/Agent_Skill_Demo.md      |  32 ---
+|  hw03/submission/23127065/Bug_Report.md            | 220 ++++++++++----------
+|  hw03/submission/23127065/GUI_Testing.md           |  36 ++--
+|  hw03/submission/23127065/README.md                |  62 +-----
+|  hw03/submission/23127065/Usability_Testing.md     |  94 ++++-----
+|  .../23127065/{ => evidence}/issue-links.json      |   0
+|  .../23127065/{ => evidence/task2}/SUS_UEQ-S.md    |   0
+|  9 files changed, 182 insertions(+), 286 deletions(-)
+| 
+* commit da1221f506a99a1a7f9bf6ca4990910a84a71efa
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Mon Aug 3 00:42:05 2026 +0700
+| 
+|     feat: finish task 3
+| 
+|  hw03/submission/23127065/23127065-report.md       |   7 +-
+|  hw03/submission/23127065/Cross_Browser_Testing.md |  37 ++
+|  hw03/submission/23127065/README.md                |   6 +-
+|  .../task3/chrome-incognito-cart-window.png        | Bin 0 -> 108643 bytes
+|  .../evidence/task3/chrome/CART-GUI-002.png        | Bin 0 -> 90731 bytes
+|  .../evidence/task3/chrome/CART-GUI-003.png        | Bin 0 -> 90731 bytes
+|  .../evidence/task3/chrome/CART-GUI-004.png        | Bin 0 -> 90731 bytes
+|  .../evidence/task3/chrome/CART-GUI-005.png        | Bin 0 -> 90731 bytes
+|  .../evidence/task3/chrome/CART-GUI-010.png        | Bin 0 -> 90731 bytes
+|  .../evidence/task3/chrome/CART-GUI-015.png        | Bin 0 -> 141430 bytes
+|  .../evidence/task3/chrome/CART-GUI-020.png        | Bin 0 -> 141430 bytes
+|  .../evidence/task3/chrome/CART-GUI-021.png        | Bin 0 -> 153401 bytes
+|  .../evidence/task3/chrome/CART-GUI-022.png        | Bin 0 -> 153401 bytes
+|  .../evidence/task3/chrome/CART-GUI-023.png        | Bin 0 -> 153401 bytes
+|  .../evidence/task3/chrome/CART-GUI-024.png        | Bin 0 -> 153401 bytes
+|  .../evidence/task3/chrome/CART-GUI-025.png        | Bin 0 -> 153401 bytes
+|  .../evidence/task3/chrome/CART-GUI-028.png        | Bin 0 -> 7095 bytes
+|  .../evidence/task3/chrome/CART-GUI-029.png        | Bin 0 -> 137209 bytes
+|  .../evidence/task3/chrome/CART-GUI-032.png        | Bin 0 -> 90731 bytes
+|  .../evidence/task3/chrome/CART-GUI-038.png        | Bin 0 -> 112109 bytes
+|  .../evidence/task3/chrome/CART-GUI-043.png        | Bin 0 -> 134264 bytes
+|  .../evidence/task3/chrome/CART-GUI-044.png        | Bin 0 -> 134264 bytes
+|  .../evidence/task3/chrome/CART-GUI-045.png        | Bin 0 -> 134264 bytes
+|  .../evidence/task3/chrome/CART-GUI-048.png        | Bin 0 -> 134264 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-005.png      | Bin 0 -> 214795 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-006.png      | Bin 0 -> 214795 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-015.png      | Bin 0 -> 152213 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-016.png      | Bin 0 -> 214795 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-019.png      | Bin 0 -> 216450 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-020.png      | Bin 0 -> 213251 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-022.png      | Bin 0 -> 213251 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-024.png      | Bin 0 -> 206076 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-025.png      | Bin 0 -> 206076 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-027.png      | Bin 0 -> 214741 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-028.png      | Bin 0 -> 214741 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-030.png      | Bin 0 -> 214741 bytes
+|  .../evidence/task3/chrome/COUPON-GUI-034.png      | Bin 0 -> 215272 bytes
+|  .../evidence/task3/firefox-cart-window.png        | Bin 0 -> 113771 bytes
+|  .../evidence/task3/firefox/CART-GUI-002.png       | Bin 0 -> 98028 bytes
+|  .../evidence/task3/firefox/CART-GUI-003.png       | Bin 0 -> 98028 bytes
+|  .../evidence/task3/firefox/CART-GUI-004.png       | Bin 0 -> 98028 bytes
+|  .../evidence/task3/firefox/CART-GUI-005.png       | Bin 0 -> 98028 bytes
+|  .../evidence/task3/firefox/CART-GUI-010.png       | Bin 0 -> 98028 bytes
+|  .../evidence/task3/firefox/CART-GUI-015.png       | Bin 0 -> 148608 bytes
+|  .../evidence/task3/firefox/CART-GUI-020.png       | Bin 0 -> 148608 bytes
+|  .../evidence/task3/firefox/CART-GUI-021.png       | Bin 0 -> 159260 bytes
+|  .../evidence/task3/firefox/CART-GUI-022.png       | Bin 0 -> 159260 bytes
+|  .../evidence/task3/firefox/CART-GUI-023.png       | Bin 0 -> 159260 bytes
+|  .../evidence/task3/firefox/CART-GUI-024.png       | Bin 0 -> 159260 bytes
+|  .../evidence/task3/firefox/CART-GUI-025.png       | Bin 0 -> 159260 bytes
+|  .../evidence/task3/firefox/CART-GUI-028.png       | Bin 0 -> 145695 bytes
+|  .../evidence/task3/firefox/CART-GUI-029.png       | Bin 0 -> 145695 bytes
+|  .../evidence/task3/firefox/CART-GUI-032.png       | Bin 0 -> 98107 bytes
+|  .../evidence/task3/firefox/CART-GUI-038.png       | Bin 0 -> 115415 bytes
+|  .../evidence/task3/firefox/CART-GUI-043.png       | Bin 0 -> 144509 bytes
+|  .../evidence/task3/firefox/CART-GUI-044.png       | Bin 0 -> 144509 bytes
+|  .../evidence/task3/firefox/CART-GUI-045.png       | Bin 0 -> 144509 bytes
+|  .../evidence/task3/firefox/CART-GUI-048.png       | Bin 0 -> 144509 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-005.png     | Bin 0 -> 225343 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-006.png     | Bin 0 -> 225343 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-015.png     | Bin 0 -> 160634 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-016.png     | Bin 0 -> 225410 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-019.png     | Bin 0 -> 228364 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-020.png     | Bin 0 -> 224776 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-022.png     | Bin 0 -> 224776 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-024.png     | Bin 0 -> 217368 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-025.png     | Bin 0 -> 217368 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-027.png     | Bin 0 -> 225329 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-028.png     | Bin 0 -> 225329 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-030.png     | Bin 0 -> 225329 bytes
+|  .../evidence/task3/firefox/COUPON-GUI-034.png     | Bin 0 -> 226057 bytes
+|  .../evidence/task3/safari-cart-window.png         | Bin 0 -> 99699 bytes
+|  .../evidence/task3/webkit/CART-GUI-002.png        | Bin 0 -> 144006 bytes
+|  .../evidence/task3/webkit/CART-GUI-003.png        | Bin 0 -> 144006 bytes
+|  .../evidence/task3/webkit/CART-GUI-004.png        | Bin 0 -> 144006 bytes
+|  .../evidence/task3/webkit/CART-GUI-005.png        | Bin 0 -> 144006 bytes
+|  .../evidence/task3/webkit/CART-GUI-010.png        | Bin 0 -> 144006 bytes
+|  .../evidence/task3/webkit/CART-GUI-015.png        | Bin 0 -> 227269 bytes
+|  .../evidence/task3/webkit/CART-GUI-020.png        | Bin 0 -> 227269 bytes
+|  .../evidence/task3/webkit/CART-GUI-021.png        | Bin 0 -> 250631 bytes
+|  .../evidence/task3/webkit/CART-GUI-022.png        | Bin 0 -> 250631 bytes
+|  .../evidence/task3/webkit/CART-GUI-023.png        | Bin 0 -> 250631 bytes
+|  .../evidence/task3/webkit/CART-GUI-024.png        | Bin 0 -> 250631 bytes
+|  .../evidence/task3/webkit/CART-GUI-025.png        | Bin 0 -> 250631 bytes
+|  .../evidence/task3/webkit/CART-GUI-028.png        | Bin 0 -> 223978 bytes
+|  .../evidence/task3/webkit/CART-GUI-029.png        | Bin 0 -> 223978 bytes
+|  .../evidence/task3/webkit/CART-GUI-032.png        | Bin 0 -> 144006 bytes
+|  .../evidence/task3/webkit/CART-GUI-038.png        | Bin 0 -> 160448 bytes
+|  .../evidence/task3/webkit/CART-GUI-043.png        | Bin 0 -> 235805 bytes
+|  .../evidence/task3/webkit/CART-GUI-044.png        | Bin 0 -> 235805 bytes
+|  .../evidence/task3/webkit/CART-GUI-045.png        | Bin 0 -> 235805 bytes
+|  .../evidence/task3/webkit/CART-GUI-048.png        | Bin 0 -> 235805 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-005.png      | Bin 0 -> 357133 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-006.png      | Bin 0 -> 357133 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-015.png      | Bin 0 -> 240795 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-016.png      | Bin 0 -> 357133 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-019.png      | Bin 0 -> 360209 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-020.png      | Bin 0 -> 355132 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-022.png      | Bin 0 -> 355235 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-024.png      | Bin 0 -> 343474 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-025.png      | Bin 0 -> 343474 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-027.png      | Bin 0 -> 356691 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-028.png      | Bin 0 -> 356691 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-030.png      | Bin 0 -> 356691 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-034.png      | Bin 0 -> 358075 bytes
+|  .../tests/test-runs/task3-chrome-results.json     | 611 ++++++++++++++++++++
+|  .../tests/test-runs/task3-firefox-results.json    | 611 ++++++++++++++++++++
+|  .../tests/test-runs/task3-webkit-results.json     | 611 ++++++++++++++++++++
+|  108 files changed, 1878 insertions(+), 5 deletions(-)
+| 
+* commit fcd315ee06428346d4cba2a252caaa76b4512191
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Mon Aug 3 00:04:02 2026 +0700
+| 
+|     feat(export-pdf): add PDF export skill and associated script
+| 
+|  .agents/skills/export-pdf/SKILL.md           |  60 +++++++++++++
+|  .agents/skills/export-pdf/agents/openai.yaml |   4 +
+|  .agents/skills/export-pdf/scripts/export.sh  | 120 +++++++++++++++++++++++++
+|  3 files changed, 184 insertions(+)
+| 
+* commit 1848c1644fbeb688d9e42fd7095c7bebc2dce93a
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Mon Aug 3 00:03:54 2026 +0700
+| 
+|     docs(hw03): add findings and recommendations from usability evaluation phase 3
+| 
+|  hw03/submission/23127065/Usability_Testing.md | 33 +++++++++++++++++++++++++
+|  1 file changed, 33 insertions(+)
+| 
+* commit 241021e6843908d054fb996f1faa5fe52d85efe9
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Sun Aug 2 23:47:02 2026 +0700
+| 
+|     feat: update submission
+|     
+|     - Updated Usability_Testing.md to clarify participant details and evaluation tools.
+|     - Removed outdated PDF report (Usability_Testing_Phase1.pdf).
+|     - Added new evidence images for bug tracking and coupon issues.
+|     - Implemented automated recording of agent skill demonstrations using Playwright.
+|     - Enhanced artifact generation script to include agent skill demo results.
+|     - Updated validation scripts to ensure new demo artifacts are correctly processed.
+|     - Adjusted timestamps in task results to reflect recent executions.
+| 
+|  .agents/skills/gui-checklist-runner/SKILL.md      |  43 +++++
+|  .../gui-checklist-runner/agents/openai.yaml       |   4 +
+|  .../assets/checklist-template.md                  |  21 +++
+|  .../references/eshop-delivery-contract.md         |  29 +++
+|  hw03/submission/23127065/23127065-report.md       |  49 +++++-
+|  hw03/submission/23127065/23127065-report.pdf      | Bin 219922 -> 0 bytes
+|  .../23127065/23127065_HW03_GUI_Checklist.xlsx     | Bin 20102 -> 20101 bytes
+|  hw03/submission/23127065/AI_Audit_Report.md       |   4 +-
+|  hw03/submission/23127065/Agent_Skill_Demo.md      |  32 ++++
+|  hw03/submission/23127065/Bug_Report.md            |  41 ++++-
+|  hw03/submission/23127065/GUI_Testing.pdf          | Bin 136794 -> 0 bytes
+|  hw03/submission/23127065/README.md                |   7 +-
+|  hw03/submission/23127065/SUS_UEQ-S.md             | 186 ++++++++++++++++++++
+|  hw03/submission/23127065/Usability_Testing.md     | 142 ++++++++-------
+|  .../23127065/Usability_Testing_Phase1.pdf         | Bin 70120 -> 0 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-019.png    | Bin 71891 -> 71886 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-027.png    | Bin 71053 -> 71112 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-028.png    | Bin 71053 -> 71073 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-030.png    | Bin 71053 -> 71073 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-034.png    | Bin 71046 -> 71065 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-01.png      | Bin 0 -> 269029 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-02.png      | Bin 0 -> 282887 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-05.png      | Bin 0 -> 270486 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-06.png      | Bin 0 -> 297803 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-09.png      | Bin 0 -> 298335 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-11.png      | Bin 0 -> 289284 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-12.png      | Bin 0 -> 295478 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-13.png      | Bin 0 -> 314145 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-16.png      | Bin 0 -> 303885 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-20.png      | Bin 0 -> 328243 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-21.png      | Bin 0 -> 288457 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-24.png      | Bin 0 -> 289907 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-03.png    | Bin 0 -> 311099 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-04.png    | Bin 0 -> 316984 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-08.png    | Bin 0 -> 288825 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-09.png    | Bin 0 -> 306073 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-11.png    | Bin 0 -> 327763 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-12.png    | Bin 0 -> 330375 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-14.png    | Bin 0 -> 324841 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-17.png    | Bin 0 -> 319339 bytes
+|  .../tests/automation/generate-artifacts.mjs       |   3 +-
+|  .../23127065/tests/automation/package.json        |   1 +
+|  .../tests/automation/record-agent-skill-demos.mjs | 143 +++++++++++++++
+|  .../tests/automation/validate-artifacts.mjs       |  16 ++
+|  .../23127065/tests/test-runs/task1-results.json   |   2 +-
+|  .../tests/usability/technical-rehearsal.json      |   2 +-
+|  46 files changed, 640 insertions(+), 85 deletions(-)
+| 
+* commit bca4ec366b3ecddf9e1fc1ac4a3711406d2ad0de
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Wed Jul 29 23:08:37 2026 +0700
+| 
+|     docs(hw03): align checklist data with seeded SUT
+| 
+|  hw03/submission/23127065/23127065-report.md       |   4 ++--
+|  hw03/submission/23127065/23127065-report.pdf      | Bin 220135 -> 219922 bytes
+|  .../23127065/23127065_HW03_GUI_Checklist.xlsx     | Bin 20080 -> 20102 bytes
+|  hw03/submission/23127065/GUI_Testing.md           |   4 ++--
+|  hw03/submission/23127065/GUI_Testing.pdf          | Bin 136752 -> 136794 bytes
+|  .../23127065/Usability_Testing_Phase1.pdf         | Bin 70120 -> 70120 bytes
+|  .../23127065/tests/test-cases/cart/TC-CART-001.md |   6 +++---
+|  .../23127065/tests/test-cases/cart/TC-CART-002.md |  10 +++++-----
+|  .../23127065/tests/test-cases/cart/TC-CART-003.md |   6 +++---
+|  .../23127065/tests/test-cases/cart/TC-CART-004.md |   4 ++--
+|  .../23127065/tests/test-cases/cart/TC-CART-005.md |   6 +++---
+|  .../23127065/tests/test-cases/cart/TC-CART-006.md |   8 ++++----
+|  12 files changed, 24 insertions(+), 24 deletions(-)
+| 
+* commit 4fbe57a8cc2c5362ed8800157dea592270aa1c8b
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Wed Jul 29 23:06:32 2026 +0700
+| 
+|     chore(hw03): finalize validated submission artifacts
+| 
+|  hw03/submission/23127065/23127065-report.pdf      | Bin 220135 -> 220135 bytes
+|  .../23127065/23127065_HW03_GUI_Checklist.xlsx     | Bin 20081 -> 20080 bytes
+|  hw03/submission/23127065/GUI_Testing.pdf          | Bin 136752 -> 136752 bytes
+|  hw03/submission/23127065/Git_Commit_Log.txt       |  11 ++++++++++-
+|  .../23127065/Usability_Testing_Phase1.pdf         | Bin 70120 -> 70120 bytes
+|  5 files changed, 10 insertions(+), 1 deletion(-)
+| 
+* commit 30698d15101c5c7675e620eec4ff74531ed26868
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Wed Jul 29 23:05:51 2026 +0700
+| 
+|     docs(hw03): publish GUI bug issues with evidence
+| 
+|  hw03/submission/23127065/23127065-report.md       | 106 ++++++++++----------
+|  hw03/submission/23127065/23127065-report.pdf      | Bin 203126 -> 220135 bytes
+|  .../23127065/23127065_HW03_GUI_Checklist.xlsx     | Bin 20081 -> 20081 bytes
+|  hw03/submission/23127065/Bug_Report.md            |  40 ++++----
+|  hw03/submission/23127065/GUI_Testing.md           |  66 ++++++------
+|  hw03/submission/23127065/GUI_Testing.pdf          | Bin 126787 -> 136752 bytes
+|  .../23127065/Usability_Testing_Phase1.pdf         | Bin 70120 -> 70120 bytes
+|  hw03/submission/23127065/issue-links.json         |  22 ++++
+|  .../23127065/tests/automation/package.json        |   1 +
+|  .../23127065/tests/automation/publish-issues.mjs  |  45 +++++++++
+|  .../tests/automation/validate-artifacts.mjs       |   3 +
+|  11 files changed, 177 insertions(+), 106 deletions(-)
+| 
+* commit 884dbb325ae987aa9a796983ace1f5ed49313b8a
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Wed Jul 29 23:03:29 2026 +0700
+| 
+|     docs(hw03): assemble reports and AI audit
+| 
+|  hw03/submission/23127065/23127065-report.md  | 968 +++++++++++++++++++++++++
+|  hw03/submission/23127065/23127065-report.pdf | Bin 0 -> 203126 bytes
+|  hw03/submission/23127065/AI_Audit_Report.md  |  26 +
+|  hw03/submission/23127065/AI_Critique.md      |   5 +
+|  hw03/submission/23127065/Bug_Report.md       | 444 ++++++++++++
+|  hw03/submission/23127065/Git_Commit_Log.txt  |   1 +
+|  hw03/submission/23127065/README.md           |  58 ++
+|  7 files changed, 1502 insertions(+)
+| 
+* commit cc7cd7108744ff388135ca582b7a67bf8f4d1a69
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Wed Jul 29 23:03:17 2026 +0700
+| 
+|     docs(hw03): prepare usability evaluation phase 1
+| 
+|  hw03/submission/23127065/Usability_Testing.md     | 167 ++++++++++++++++++++
+|  .../23127065/Usability_Testing_Phase1.pdf         | Bin 0 -> 70120 bytes
+|  .../task2/technical-rehearsal-final-state.png     | Bin 0 -> 40871 bytes
+|  .../tests/automation/run-usability-rehearsal.mjs  | 102 ++++++++++++
+|  .../tests/usability/technical-rehearsal.json      |  38 +++++
+|  .../tests/usability/usability-plan-FR07-FR17.md   |   5 +
+|  6 files changed, 312 insertions(+)
+| 
+* commit 7b1352ede0614fc126899d5c22cb465e491d387e
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Wed Jul 29 23:02:51 2026 +0700
+| 
+|     test(hw03): execute GUI checklist with failure evidence
+| 
+|  .../23127065/23127065_HW03_GUI_Checklist.xlsx     |  Bin 0 -> 20081 bytes
+|  hw03/submission/23127065/GUI_Testing.pdf          |  Bin 0 -> 126787 bytes
+|  .../23127065/evidence/task1/CART-GUI-002.png      |  Bin 0 -> 26494 bytes
+|  .../23127065/evidence/task1/CART-GUI-003.png      |  Bin 0 -> 26494 bytes
+|  .../23127065/evidence/task1/CART-GUI-004.png      |  Bin 0 -> 26494 bytes
+|  .../23127065/evidence/task1/CART-GUI-005.png      |  Bin 0 -> 26494 bytes
+|  .../23127065/evidence/task1/CART-GUI-010.png      |  Bin 0 -> 26494 bytes
+|  .../23127065/evidence/task1/CART-GUI-015.png      |  Bin 0 -> 44916 bytes
+|  .../23127065/evidence/task1/CART-GUI-020.png      |  Bin 0 -> 44916 bytes
+|  .../23127065/evidence/task1/CART-GUI-021.png      |  Bin 0 -> 49553 bytes
+|  .../23127065/evidence/task1/CART-GUI-022.png      |  Bin 0 -> 49553 bytes
+|  .../23127065/evidence/task1/CART-GUI-023.png      |  Bin 0 -> 49553 bytes
+|  .../23127065/evidence/task1/CART-GUI-024.png      |  Bin 0 -> 49553 bytes
+|  .../23127065/evidence/task1/CART-GUI-025.png      |  Bin 0 -> 49553 bytes
+|  .../23127065/evidence/task1/CART-GUI-028.png      |  Bin 0 -> 44670 bytes
+|  .../23127065/evidence/task1/CART-GUI-029.png      |  Bin 0 -> 44670 bytes
+|  .../23127065/evidence/task1/CART-GUI-032.png      |  Bin 0 -> 26494 bytes
+|  .../23127065/evidence/task1/CART-GUI-038.png      |  Bin 0 -> 40391 bytes
+|  .../23127065/evidence/task1/CART-GUI-043.png      |  Bin 0 -> 43856 bytes
+|  .../23127065/evidence/task1/CART-GUI-044.png      |  Bin 0 -> 43856 bytes
+|  .../23127065/evidence/task1/CART-GUI-045.png      |  Bin 0 -> 43856 bytes
+|  .../23127065/evidence/task1/CART-GUI-048.png      |  Bin 0 -> 43856 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-005.png    |  Bin 0 -> 71032 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-006.png    |  Bin 0 -> 71032 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-015.png    |  Bin 0 -> 45672 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-016.png    |  Bin 0 -> 71032 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-019.png    |  Bin 0 -> 71891 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-020.png    |  Bin 0 -> 70479 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-022.png    |  Bin 0 -> 70479 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-024.png    |  Bin 0 -> 67411 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-025.png    |  Bin 0 -> 67411 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-027.png    |  Bin 0 -> 71053 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-028.png    |  Bin 0 -> 71053 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-030.png    |  Bin 0 -> 71053 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-034.png    |  Bin 0 -> 71046 bytes
+|  .../23127065/tests/automation/bug-catalog.json    |   22 +
+|  .../tests/automation/generate-artifacts.mjs       |  172 +++
+|  .../23127065/tests/automation/package-lock.json   | 1060 +++++++++++++++++++
+|  .../23127065/tests/automation/package.json        |   16 +
+|  .../23127065/tests/automation/run-checklist.mjs   |  342 ++++++
+|  .../tests/automation/validate-artifacts.mjs       |   35 +
+|  .../23127065/tests/test-runs/task1-results.json   |  611 +++++++++++
+|  42 files changed, 2258 insertions(+)
+| 
+* commit f994f7baaecbe21ebf99928bccb9f6230d784077
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Wed Jul 29 23:02:26 2026 +0700
+| 
+|     test(hw03): design cart and coupon GUI checklist
+| 
+|  hw03/submission/23127065/GUI_Testing.md           | 246 ++++++++++++++++++++
+|  .../test-cases/admin-coupon/TC-COUPON-001.md      |  42 ++++
+|  .../test-cases/admin-coupon/TC-COUPON-002.md      |  42 ++++
+|  .../test-cases/admin-coupon/TC-COUPON-003.md      |  35 +++
+|  .../test-cases/admin-coupon/TC-COUPON-004.md      |  34 +++
+|  .../test-cases/admin-coupon/TC-COUPON-005.md      |  34 +++
+|  .../test-cases/admin-coupon/TC-COUPON-006.md      |  32 +++
+|  .../test-cases/admin-coupon/TC-COUPON-007.md      |  33 +++
+|  .../test-cases/admin-coupon/TC-COUPON-008.md      |  32 +++
+|  .../test-cases/admin-coupon/TC-COUPON-009.md      |  32 +++
+|  .../test-cases/admin-coupon/TC-COUPON-010.md      |  32 +++
+|  .../23127065/tests/test-cases/cart/TC-CART-001.md |  36 +++
+|  .../23127065/tests/test-cases/cart/TC-CART-002.md |  35 +++
+|  .../23127065/tests/test-cases/cart/TC-CART-003.md |  32 +++
+|  .../23127065/tests/test-cases/cart/TC-CART-004.md |  31 +++
+|  .../23127065/tests/test-cases/cart/TC-CART-005.md |  34 +++
+|  .../23127065/tests/test-cases/cart/TC-CART-006.md |  34 +++
+|  .../23127065/tests/test-cases/cart/TC-CART-007.md |  31 +++
+|  .../23127065/tests/test-cases/cart/TC-CART-008.md |  33 +++
+|  19 files changed, 860 insertions(+)
+| 
+* commit 4584ba49139f94e36957a4822be595e135cfab71
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Sat Jul 25 23:23:12 2026 +0700
+| 
+|     chore: add hw3-6 requirement
+| 
+|  hw03/docs/requirement.pdf | Bin 0 -> 231854 bytes
+|  hw04/docs/requirement.pdf | Bin 0 -> 463155 bytes
+|  hw05/docs/requirement.pdf | Bin 0 -> 491943 bytes
+|  hw06/docs/requirement.pdf | Bin 0 -> 455391 bytes
+|  4 files changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit c883defeffbcd631866816116ef034551e90d5c7
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Mon Jun 29 07:45:23 2026 +0700
+| 
+|     feat: update submission
+| 
+|  .../23127065_HW02_AI_DomainTesting_100.zip        | Bin 3716145 -> 11236088 bytes
+|  .../03.privacy-checklist.pdf                      | Bin 0 -> 37816 bytes
+|  .../bug-report.pdf                                | Bin 0 -> 3438576 bytes
+|  .../evidence/gh-issue-img/cart_mobile-14.png      | Bin
+|  .../evidence/gh-issue-img/cart_mobile-22.png      | Bin
+|  .../evidence/gh-issue-img/cart_mobile-23.png      | Bin
+|  .../evidence/gh-issue-img/cart_mobile-24.png      | Bin
+|  .../gh-issue-img/cart_mobile-8_11_20_21.png       | Bin
+|  .../evidence/gh-issue-img/coupon-1_13.png         | Bin
+|  .../evidence/gh-issue-img/coupon-2_12.png         | Bin
+|  .../evidence/gh-issue-img/coupon-8.png            | Bin
+|  .../evidence/gh-issue-img/coupon_admin-10.png     | Bin
+|  .../evidence/gh-issue-img/coupon_admin-11.png     | Bin
+|  .../evidence/gh-issue-img/coupon_admin-12.png     | Bin
+|  .../evidence/gh-issue-img/coupon_admin-14.png     | Bin
+|  .../evidence/gh-issue-img/coupon_admin-17.png     | Bin
+|  .../evidence/gh-issue-img/coupon_admin-25.png     | Bin
+|  .../evidence/gh-issue-img/coupon_admin-5.png      | Bin
+|  .../evidence/gh-issue-img/coupon_admin-6.png      | Bin
+|  .../evidence/gh-issue-img/coupon_admin-7.png      | Bin
+|  .../evidence/gh-issue-img/coupon_admin-9.png      | Bin
+|  .../evidence/gh-issue-img/ov-1.png                | Bin
+|  .../evidence/gh-issue-img/ov-2.png                | Bin
+|  .../evidence/gh-issue-img/prod_detail-1.png       | Bin
+|  .../evidence/gh-issue-img/prod_detail-12.png      | Bin
+|  .../evidence/gh-issue-img/prod_detail-13.png      | Bin
+|  .../evidence/gh-issue-img/prod_detail-4.png       | Bin
+|  .../gh-issue-img/prod_detail-5_6_7_8_9.png        | Bin
+|  ...ow to create coupon with `discount_value_0`.md |   0
+|  ... to create coupon with invalid `expired_at`.md |   0
+|  ... to create coupon with `min_order_amount_0`.md |   0
+|  ...to create coupon with `max_uses_per_user=0`.md |   0
+|  ...to create coupon with `max_uses_per_user_0`.md |   0
+|  ...ete non-exist coupon still get status `200`.md |   0
+|  ...n Admin] - Non-admin user can create coupon.md |   0
+|  ...Allow to create coupon without `code` field.md |   0
+|  ...irectly in cart cause bad quantity counting.md |   0
+|  ...o confirm dialog on removing item from cart.md |   0
+|  ...Mobile] - Total label not display correctly.md |   0
+|  ... of different items, not the total quantity.md |   0
+|  ...rt Mobile] - No illustration on empty state.md |   0
+|  ...UG][Product Detail] - Missing Category Name.md |   0
+|  ...ge_toast indicates the 'add to cart' action.md |   0
+|  ...ith invalid quantity still be added to cart.md |   0
+|  ...duct Detail] - Un-auth user can add to cart.md |   0
+|  ..._[BUG][Product Detail] - Missing breadcrumb.md |   0
+|  ...he final price too high (wrong calculation).md |   0
+|  ...upon] - BIGBUY be rejected at its threshold.md |   0
+|  ...Coupon] - Un-auth user can apply the coupon.md |   0
+|  ...llow to create coupon with `type=_invalid_`.md |   0
+|  ...ow to create coupon with `discount_value=0`.md |   0
+|  51 files changed, 0 insertions(+), 0 deletions(-)
+| 
+* commit 9b23284a5bd61e74e6c0051d3d27dc32603667d5
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Mon Jun 29 02:11:34 2026 +0700
+| 
+|     feat: add hw02
+| 
+|  hw02/docs/requirements.pdf                        |  Bin 0 -> 403870 bytes
+|  hw02/evidence/gh-issue-img/cart_mobile-14.png     |  Bin 0 -> 157029 bytes
+|  hw02/evidence/gh-issue-img/cart_mobile-22.png     |  Bin 0 -> 147044 bytes
+|  hw02/evidence/gh-issue-img/cart_mobile-23.png     |  Bin 0 -> 149062 bytes
+|  hw02/evidence/gh-issue-img/cart_mobile-24.png     |  Bin 0 -> 139550 bytes
+|  .../gh-issue-img/cart_mobile-8_11_20_21.png       |  Bin 0 -> 170132 bytes
+|  hw02/evidence/gh-issue-img/coupon-1_13.png        |  Bin 0 -> 155782 bytes
+|  hw02/evidence/gh-issue-img/coupon-2_12.png        |  Bin 0 -> 150275 bytes
+|  hw02/evidence/gh-issue-img/coupon-8.png           |  Bin 0 -> 145020 bytes
+|  hw02/evidence/gh-issue-img/coupon_admin-10.png    |  Bin 0 -> 192122 bytes
+|  hw02/evidence/gh-issue-img/coupon_admin-11.png    |  Bin 0 -> 192955 bytes
+|  hw02/evidence/gh-issue-img/coupon_admin-12.png    |  Bin 0 -> 193589 bytes
+|  hw02/evidence/gh-issue-img/coupon_admin-14.png    |  Bin 0 -> 179423 bytes
+|  hw02/evidence/gh-issue-img/coupon_admin-17.png    |  Bin 0 -> 197444 bytes
+|  hw02/evidence/gh-issue-img/coupon_admin-25.png    |  Bin 0 -> 188025 bytes
+|  hw02/evidence/gh-issue-img/coupon_admin-5.png     |  Bin 0 -> 194967 bytes
+|  hw02/evidence/gh-issue-img/coupon_admin-6.png     |  Bin 0 -> 188952 bytes
+|  hw02/evidence/gh-issue-img/coupon_admin-7.png     |  Bin 0 -> 190498 bytes
+|  hw02/evidence/gh-issue-img/coupon_admin-9.png     |  Bin 0 -> 191946 bytes
+|  hw02/evidence/gh-issue-img/ov-1.png               |  Bin 0 -> 250519 bytes
+|  hw02/evidence/gh-issue-img/ov-2.png               |  Bin 0 -> 274979 bytes
+|  hw02/evidence/gh-issue-img/prod_detail-1.png      |  Bin 0 -> 143218 bytes
+|  hw02/evidence/gh-issue-img/prod_detail-12.png     |  Bin 0 -> 156635 bytes
+|  hw02/evidence/gh-issue-img/prod_detail-13.png     |  Bin 0 -> 141988 bytes
+|  hw02/evidence/gh-issue-img/prod_detail-4.png      |  Bin 0 -> 163487 bytes
+|  .../gh-issue-img/prod_detail-5_6_7_8_9.png        |  Bin 0 -> 170385 bytes
+|  ...ow to create coupon with `discount_value_0`.md |   42 +
+|  ... to create coupon with invalid `expired_at`.md |   42 +
+|  ... to create coupon with `min_order_amount_0`.md |   42 +
+|  ...to create coupon with `max_uses_per_user=0`.md |   42 +
+|  ...to create coupon with `max_uses_per_user_0`.md |   42 +
+|  ...ete non-exist coupon still get status `200`.md |   42 +
+|  ...n Admin] - Non-admin user can create coupon.md |   43 +
+|  ...Allow to create coupon without `code` field.md |   42 +
+|  ...irectly in cart cause bad quantity counting.md |   43 +
+|  ...o confirm dialog on removing item from cart.md |   42 +
+|  ...Mobile] - Total label not display correctly.md |   42 +
+|  ... of different items, not the total quantity.md |   43 +
+|  ...rt Mobile] - No illustration on empty state.md |   42 +
+|  ...UG][Product Detail] - Missing Category Name.md |   42 +
+|  ...ge_toast indicates the 'add to cart' action.md |   43 +
+|  ...ith invalid quantity still be added to cart.md |   43 +
+|  ...duct Detail] - Un-auth user can add to cart.md |   43 +
+|  ..._[BUG][Product Detail] - Missing breadcrumb.md |   42 +
+|  ...he final price too high (wrong calculation).md |   43 +
+|  ...upon] - BIGBUY be rejected at its threshold.md |   43 +
+|  ...Coupon] - Un-auth user can apply the coupon.md |   42 +
+|  ...llow to create coupon with `type=_invalid_`.md |   42 +
+|  ...ow to create coupon with `discount_value=0`.md |   42 +
+|  .../23127065_HW02_AI_DomainTesting_100.zip        |  Bin 0 -> 3716145 bytes
+|  .../.agents/skills/bva/SKILL.md                   |  253 ++++
+|  .../.agents/skills/domain-testing/SKILL.md        |  268 ++++
+|  .../.github/agents/qa.agent.md                    |   38 +
+|  .../.github/prompts/test-plan.prompt.md           |   66 +
+|  .../.github/prompts/test-run.prompt.md            |   60 +
+|  .../.github/prompts/test-write.prompt.md          |   44 +
+|  .../01.audit-report.md                            | 1443 +++++++++++++++++++
+|  .../01.audit-report.pdf                           |  Bin 0 -> 106827 bytes
+|  .../02.ai-critique.md                             |    5 +
+|  .../02.ai-critique.pdf                            |  Bin 0 -> 19914 bytes
+|  .../03.privacy-checklist.md                       |   47 +
+|  .../23127065-report.md                            | 1117 ++++++++++++++
+|  .../23127065-report.pdf                           |  Bin 0 -> 3500322 bytes
+|  .../23127065_HW02_AI_DomainTesting_100/README.md  |   76 +
+|  .../23127065_HW02_AI_DomainTesting_100/README.pdf |  Bin 0 -> 36603 bytes
+|  .../bug-report.md                                 |  669 +++++++++
+|  .../23127065_HW02_AI_DomainTesting_100/git-log.md |  628 ++++++++
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-001.md  |   38 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-002.md  |   41 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-003.md  |   41 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-004.md  |   41 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-005.md  |   41 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-006.md  |   41 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-007.md  |   41 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-008.md  |   38 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-009.md  |   38 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-010.md  |   38 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-011.md  |   38 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-012.md  |   37 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-013.md  |   38 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-014.md  |   35 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-015.md  |   39 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-016.md  |   37 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-017.md  |   38 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-018.md  |   41 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-019.md  |   41 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-020.md  |   38 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-021.md  |   38 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-022.md  |   38 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-023.md  |   41 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-024.md  |   39 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-BVA.md  |   57 +
+|  .../test-cases/cart-mobile/TC-CART-MOBILE-DT.md   |   69 +
+|  .../cart-mobile/TEST-PLAN-CART-MOBILE.md          |   91 ++
+|  .../coupon-admin/TC-COUPON-ADMIN-001.md           |   55 +
+|  .../coupon-admin/TC-COUPON-ADMIN-002.md           |   55 +
+|  .../coupon-admin/TC-COUPON-ADMIN-003.md           |   49 +
+|  .../coupon-admin/TC-COUPON-ADMIN-004.md           |   50 +
+|  .../coupon-admin/TC-COUPON-ADMIN-005.md           |   46 +
+|  .../coupon-admin/TC-COUPON-ADMIN-006.md           |   50 +
+|  .../coupon-admin/TC-COUPON-ADMIN-007.md           |   50 +
+|  .../coupon-admin/TC-COUPON-ADMIN-008.md           |   50 +
+|  .../coupon-admin/TC-COUPON-ADMIN-009.md           |   46 +
+|  .../coupon-admin/TC-COUPON-ADMIN-010.md           |   50 +
+|  .../coupon-admin/TC-COUPON-ADMIN-011.md           |   50 +
+|  .../coupon-admin/TC-COUPON-ADMIN-012.md           |   49 +
+|  .../coupon-admin/TC-COUPON-ADMIN-013.md           |   38 +
+|  .../coupon-admin/TC-COUPON-ADMIN-014.md           |   33 +
+|  .../coupon-admin/TC-COUPON-ADMIN-015.md           |   36 +
+|  .../coupon-admin/TC-COUPON-ADMIN-016.md           |   46 +
+|  .../coupon-admin/TC-COUPON-ADMIN-017.md           |   47 +
+|  .../coupon-admin/TC-COUPON-ADMIN-018.md           |   50 +
+|  .../coupon-admin/TC-COUPON-ADMIN-019.md           |   50 +
+|  .../coupon-admin/TC-COUPON-ADMIN-020.md           |   50 +
+|  .../coupon-admin/TC-COUPON-ADMIN-021.md           |   50 +
+|  .../coupon-admin/TC-COUPON-ADMIN-022.md           |   50 +
+|  .../coupon-admin/TC-COUPON-ADMIN-023.md           |   50 +
+|  .../coupon-admin/TC-COUPON-ADMIN-024.md           |   52 +
+|  .../coupon-admin/TC-COUPON-ADMIN-025.md           |   45 +
+|  .../coupon-admin/TC-COUPON-ADMIN-026.md           |   47 +
+|  .../coupon-admin/TC-COUPON-ADMIN-BVA.md           |   81 ++
+|  .../test-cases/coupon-admin/TC-COUPON-ADMIN-DT.md |   99 ++
+|  .../coupon-admin/TEST-PLAN-COUPON-ADMIN.md        |  121 ++
+|  .../tests/test-cases/coupon/TC-COUPON-001.md      |   42 +
+|  .../tests/test-cases/coupon/TC-COUPON-002.md      |   42 +
+|  .../tests/test-cases/coupon/TC-COUPON-003.md      |   40 +
+|  .../tests/test-cases/coupon/TC-COUPON-004.md      |   41 +
+|  .../tests/test-cases/coupon/TC-COUPON-005.md      |   41 +
+|  .../tests/test-cases/coupon/TC-COUPON-006.md      |   40 +
+|  .../tests/test-cases/coupon/TC-COUPON-007.md      |   40 +
+|  .../tests/test-cases/coupon/TC-COUPON-008.md      |   40 +
+|  .../tests/test-cases/coupon/TC-COUPON-009.md      |   41 +
+|  .../tests/test-cases/coupon/TC-COUPON-010.md      |   42 +
+|  .../tests/test-cases/coupon/TC-COUPON-011.md      |   41 +
+|  .../tests/test-cases/coupon/TC-COUPON-012.md      |   41 +
+|  .../tests/test-cases/coupon/TC-COUPON-013.md      |   41 +
+|  .../tests/test-cases/coupon/TC-COUPON-014.md      |   40 +
+|  .../tests/test-cases/coupon/TC-COUPON-015.md      |   41 +
+|  .../tests/test-cases/coupon/TC-COUPON-016.md      |   42 +
+|  .../tests/test-cases/coupon/TC-COUPON-017.md      |   40 +
+|  .../tests/test-cases/coupon/TC-COUPON-018.md      |   39 +
+|  .../tests/test-cases/coupon/TC-COUPON-BVA.md      |   99 ++
+|  .../tests/test-cases/coupon/TC-COUPON-DT.md       |   72 +
+|  .../tests/test-cases/coupon/TEST-PLAN-COUPON.md   |  111 ++
+|  .../product-detail/TC-PRODUCT-DETAIL-001.md       |   41 +
+|  .../product-detail/TC-PRODUCT-DETAIL-002.md       |   36 +
+|  .../product-detail/TC-PRODUCT-DETAIL-003.md       |   35 +
+|  .../product-detail/TC-PRODUCT-DETAIL-004.md       |   40 +
+|  .../product-detail/TC-PRODUCT-DETAIL-005.md       |   40 +
+|  .../product-detail/TC-PRODUCT-DETAIL-006.md       |   40 +
+|  .../product-detail/TC-PRODUCT-DETAIL-007.md       |   40 +
+|  .../product-detail/TC-PRODUCT-DETAIL-008.md       |   40 +
+|  .../product-detail/TC-PRODUCT-DETAIL-009.md       |   40 +
+|  .../product-detail/TC-PRODUCT-DETAIL-010.md       |   40 +
+|  .../product-detail/TC-PRODUCT-DETAIL-011.md       |   40 +
+|  .../product-detail/TC-PRODUCT-DETAIL-012.md       |   40 +
+|  .../product-detail/TC-PRODUCT-DETAIL-013.md       |   37 +
+|  .../product-detail/TC-PRODUCT-DETAIL-014.md       |   37 +
+|  .../product-detail/TC-PRODUCT-DETAIL-015.md       |   41 +
+|  .../product-detail/TC-PRODUCT-DETAIL-BVA.md       |   37 +
+|  .../product-detail/TC-PRODUCT-DETAIL-DT.md        |   48 +
+|  .../product-detail/TEST-PLAN-PRODUCT-DETAIL.md    |   73 +
+|  .../tests/test-runs/sprint-1-test-run.md          |   95 ++
+|  .../tests/test-summary/traceability-matrix.md     |   85 ++
+|  scripts/m2p.sh                                    |   39 +
+|  165 files changed, 10366 insertions(+)
+| 
+* commit 8c6fc53bf5306792bc4bdc072922d4b7cd37fa10
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Sun Jun 7 20:28:31 2026 +0700
+| 
+|     chore: compress file to submit HW01
+| 
+|  hw01/submission/23127065_HW01_AI_100.zip          | Bin 86003408 -> 14992479 bytes
+|  .../23127065_HW01_AI_100/23127065-report.md       | 494 +++++++++++++++++++
+|  .../23127065_HW01_AI_100/23127065-report.pdf      | Bin 0 -> 3334683 bytes
+|  .../evidence/23127065 - HW01 - Test Cases.xlsx    | Bin 0 -> 8378 bytes
+|  .../evidence/device/stand-fan.jpg                 | Bin 0 -> 2256047 bytes
+|  .../evidence/device/test-cases.png                | Bin 0 -> 368999 bytes
+|  .../evidence/mindmap/qa-qc-mindmap-corrected.png  | Bin 0 -> 1917771 bytes
+|  .../evidence/mindmap/qa-qc-mindmap-prompt.png     | Bin 0 -> 307104 bytes
+|  .../evidence/mindmap/qa-qc-mindmap.png            | Bin 0 -> 2052364 bytes
+|  .../23127065_HW01_AI_100/pages/01.audit-report.md | 513 ++++++++++++++++++++
+|  .../pages/01.audit-report.pdf                     | Bin 0 -> 4667805 bytes
+|  .../23127065_HW01_AI_100/pages/02.ai-critique.md  |   5 +
+|  .../23127065_HW01_AI_100/pages/02.ai-critique.pdf | Bin 0 -> 16139 bytes
+|  .../23127065_HW01_AI_100/pages/03.disclosure.md   |  80 +++
+|  .../23127065_HW01_AI_100/pages/03.disclosure.pdf  | Bin 0 -> 35344 bytes
+|  .../pages/04.privacy-checklist.md                 |  47 ++
+|  .../pages/04.privacy-checklist.pdf                | Bin 0 -> 37853 bytes
+|  .../pages/05.self-assessment.md                   |  13 +
+|  .../pages/05.self-assessment.pdf                  | Bin 0 -> 19986 bytes
+|  .../pages/06.mandatory-disclosure.md              |   5 +
+|  .../pages/06.mandatory-disclosure.pdf             | Bin 0 -> 17179 bytes
+|  .../pages/appendices/git-log.md                   | 381 +++++++++++++++
+|  .../pages/appendices/prompt-log.md                |  13 +
+|  23 files changed, 1551 insertions(+)
+|   
+*   commit dfd62609a83fc24bf2207bf839ab31712daff656
+|\  Merge: 3872303 a6ce53c
+| | Author: Yuran <trieuvanbd123@gmail.com>
+| | Date:   Sun Jun 7 20:15:39 2026 +0700
+| | 
+| |     merge: yuran1811/001-hw01-qa-testing
+| |     
+| |     hw1
+| | 
+| * commit a6ce53c5216f5739ba1eb886bbe3970c1f3d860a
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Sun Jun 7 20:14:56 2026 +0700
+| | 
+| |     chore: zip files for submission
+| | 
+| |  hw01/submission/23127065_HW01_AI_100.zip | Bin 0 -> 86003408 bytes
+| |  1 file changed, 0 insertions(+), 0 deletions(-)
+| | 
+| * commit d8019d03c0782a329a575ae6afa4c519699ea957
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Sun Jun 7 20:12:56 2026 +0700
+| | 
+| |     chore: generate pdf from md files
+| | 
+| |  hw01/23127065-report.pdf               | Bin 17875393 -> 17863097 bytes
+| |  hw01/pages/01.audit-report.pdf         | Bin 0 -> 4667805 bytes
+| |  hw01/pages/02.ai-critique.pdf          | Bin 0 -> 16139 bytes
+| |  hw01/pages/03.disclosure.pdf           | Bin 0 -> 35344 bytes
+| |  hw01/pages/04.privacy-checklist.pdf    | Bin 0 -> 37853 bytes
+| |  hw01/pages/05.self-assessment.pdf      | Bin 0 -> 19986 bytes
+| |  hw01/pages/06.mandatory-disclosure.pdf | Bin 0 -> 17179 bytes
+| |  scripts/md2pdf.sh                      |  20 ++++++++++++++++++++
+| |  8 files changed, 20 insertions(+)
+| | 
+| * commit 0ad8abd434cae391b795cdd63c49c3d40bab69c2
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Sun Jun 7 20:07:20 2026 +0700
+| | 
+| |     doc: update git log
+| | 
+| |  hw01/23127065-report.pdf         | Bin 17863049 -> 17875393 bytes
+| |  hw01/pages/appendices/git-log.md |   9 +++++----
+| |  2 files changed, 5 insertions(+), 4 deletions(-)
+| | 
+| * commit bb851d60f87a268a175cf21c16167efd504ca0d4
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Sun Jun 7 20:02:00 2026 +0700
+| | 
+| |     feat: update tests
+| | 
+| |  hw01/23127065-report.md                         |  59 ++-
+| |  hw01/23127065-report.pdf                        | Bin 17833464 -> 17863049 bytes
+| |  hw01/evidence/23127065 - HW01 - Test Cases.xlsx | Bin 0 -> 8378 bytes
+| |  hw01/evidence/TC01-07.mp4                       | Bin 0 -> 40770737 bytes
+| |  hw01/pages/01.audit-report.md                   |   2 +-
+| |  hw01/pages/06.mandatory-disclosure.md           |   2 +-
+| |  hw01/pages/appendices/git-log.md                | 376 +++++++++++++++++++-
+| |  7 files changed, 403 insertions(+), 36 deletions(-)
+| | 
+| * commit 6240d8f0f1b91ba25bff37236b05550c34ff3fed
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Sun Jun 7 19:09:36 2026 +0700
+| | 
+| |     feat: update pages and generate pdf
+| | 
+| |  .serena/memories/memory_maintenance.md           |  33 ++
+| |  {hw01 => docs}/policies.md                       |   0
+| |  {hw01 => docs}/policies.pdf                      | Bin
+| |  docs/refs.md                                     |  22 +
+| |  docs/templates/ai.03.disclosure.md               |  61 +++
+| |  docs/templates/ai.05.privacy-checklist.md        |  47 ++
+| |  .../[AI-01] - FIT@HCMUS - AI Agreement_En.docx   | Bin 0 -> 201411 bytes
+| |  ...[AI-02] - FIT@HCMUS - AI Audit Report_En.docx | Bin 0 -> 32090 bytes
+| |  ...-03] - FIT@HCMUS - AI Disclosure Form_En.docx | Bin 0 -> 29770 bytes
+| |  ...- FIT@HCMUS - AI Reflective Statement_En.docx | Bin 0 -> 30003 bytes
+| |  ...5] - FIT@HCMUS - AI Privacy Checklist_En.docx | Bin 0 -> 28862 bytes
+| |  ...IT@HCMUS - AI Student Acknowledgement_En.docx | Bin 0 -> 28817 bytes
+| |  docs/templates/origin/ai.01.agreement.md         | 119 +++++
+| |  docs/templates/origin/ai.02.audit-report.md      | 106 ++++
+| |  docs/templates/origin/ai.03.disclosure-form.md   | 120 +++++
+| |  .../origin/ai.04.reflective-statement.md         | 131 +++++
+| |  docs/templates/origin/ai.05.privacy-checklist.md |  61 +++
+| |  .../origin/ai.06.student-acknowledgement.md      |  53 ++
+| |  .../partials/audit-report-section.template.md    |  31 ++
+| |  docs/templates/partials/prompt-log.template.md   |   5 +
+| |  docs/templates/partials/signature.template.md    |  11 +
+| |  hw01/23127065-report.md                          | 208 ++++----
+| |  hw01/23127065-report.pdf                         | Bin 0 -> 17833464 bytes
+| |  hw01/ai-artifacts/audit-reports.md               | 384 --------------
+| |  hw01/{ => docs}/requirements.md                  |   0
+| |  hw01/{ => docs}/requirements.pdf                 | Bin
+| |  hw01/evidence/AI-02-blank.md                     |  27 -
+| |  hw01/evidence/AI-03-blank.md                     |  29 --
+| |  hw01/evidence/AI-05-blank.md                     |  25 -
+| |  hw01/evidence/device/stand-fan.jpg               | Bin 0 -> 2256047 bytes
+| |  hw01/evidence/device/test-cases.png              | Bin 0 -> 368999 bytes
+| |  .../evidence/mindmap/qa-qc-mindmap-corrected.png | Bin 0 -> 6299325 bytes
+| |  hw01/evidence/mindmap/qa-qc-mindmap-prompt.png   | Bin 0 -> 1271962 bytes
+| |  hw01/evidence/mindmap/qa-qc-mindmap.png          | Bin 0 -> 6085705 bytes
+| |  hw01/evidence/placeholder.md                     |  15 -
+| |  hw01/pages/01.audit-report.md                    | 513 +++++++++++++++++++
+| |  hw01/pages/02.ai-critique.md                     |   5 +
+| |  hw01/pages/03.disclosure.md                      |  80 +++
+| |  hw01/pages/04.privacy-checklist.md               |  47 ++
+| |  hw01/pages/05.self-assessment.md                 |  13 +
+| |  hw01/pages/06.mandatory-disclosure.md            |   5 +
+| |  hw01/pages/appendices/git-log.md                 |   8 +
+| |  .../appendices}/prompt-log.md                    |  19 +-
+| |  pandoc/report.css                                |  31 ++
+| |  scripts/md2pdf.sh                                |   7 +
+| |  scripts/submit.sh                                |   4 +
+| |  46 files changed, 1644 insertions(+), 576 deletions(-)
+| | 
+| * commit 561fcddc29b9210458c661314f05ddae6e487c9d
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Fri Jun 5 00:22:07 2026 +0700
+| | 
+| |     doc: update github link
+| | 
+| |  hw01/23127065-report.md | 24 ++++++++++++------------
+| |  1 file changed, 12 insertions(+), 12 deletions(-)
+| | 
+| * commit 122ae5dddc4039e099eba6b2c53aea808a3e9926
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Fri Jun 5 00:14:12 2026 +0700
+| | 
+| |     feat: finish 1.1 with audit report and prompt log
+| | 
+| |  hw01/23127065-report.md                          | 463 +++++++++++++++++++
+| |  hw01/ai-artifacts/audit-reports.md               | 375 ++++++++++++++-
+| |  hw01/ai-artifacts/prompt-log.md                  |  13 +-
+| |  ...ecialist_optisigns_p0_2026-06-04_22.57.10.png | Bin 0 -> 191301 bytes
+| |  ...ecialist_optisigns_p1_2026-06-04_22.58.11.png | Bin 0 -> 352362 bytes
+| |  ...ecialist_optisigns_p2_2026-06-04_22.58.39.png | Bin 0 -> 466771 bytes
+| |  ...a-engineer_corsair_p0_2026-06-04_23.02.45.png | Bin 0 -> 193784 bytes
+| |  ...a-engineer_corsair_p1_2026-06-04_23.03.22.png | Bin 0 -> 485587 bytes
+| |  ...motorola-solutions_p0_2026-06-04_22.31.18.png | Bin 0 -> 183694 bytes
+| |  ...motorola-solutions_p1_2026-06-04_22.09.05.png | Bin 0 -> 251221 bytes
+| |  ...motorola-solutions_p2_2026-06-04_21.57.39.png | Bin 0 -> 442561 bytes
+| |  .../qa-specialist_dxc_p0_2026-06-04_22.37.50.png | Bin 0 -> 193076 bytes
+| |  .../qa-specialist_dxc_p1_2026-06-04_22.39.10.png | Bin 0 -> 391063 bytes
+| |  .../qa-specialist_dxc_p2_2026-06-04_22.39.50.png | Bin 0 -> 487413 bytes
+| |  ...-specialist_lifung_p0_2026-06-04_23.15.21.png | Bin 0 -> 212310 bytes
+| |  ...-specialist_lifung_p1_2026-06-04_23.15.38.png | Bin 0 -> 563492 bytes
+| |  ...engineer_datalogic_p0_2026-06-04_23.04.41.png | Bin 0 -> 202154 bytes
+| |  ...engineer_datalogic_p1_2026-06-04_23.05.37.png | Bin 0 -> 456030 bytes
+| |  ...engineer_datalogic_p2_2026-06-04_23.05.57.png | Bin 0 -> 389067 bytes
+| |  ...y-engineer_zalopay_p0_2026-06-04_22.32.03.png | Bin 0 -> 187486 bytes
+| |  ...y-engineer_zalopay_p1_2026-06-04_22.30.24.png | Bin 0 -> 343914 bytes
+| |  ...or-qc-engineer_vng_p0_2026-06-04_22.53.58.png | Bin 0 -> 203647 bytes
+| |  ...or-qc-engineer_vng_p1_2026-06-04_22.54.51.png | Bin 0 -> 285532 bytes
+| |  .../test-engineer_kms_p0_2026-06-04_22.44.35.png | Bin 0 -> 191094 bytes
+| |  .../test-engineer_kms_p1_2026-06-04_22.45.14.png | Bin 0 -> 432930 bytes
+| |  .../test-engineer_kms_p2_2026-06-04_22.46.20.png | Bin 0 -> 456874 bytes
+| |  .../test-engineer_sbc_p0_2026-06-04_23.08.36.png | Bin 0 -> 190753 bytes
+| |  .../test-engineer_sbc_p1_2026-06-04_23.09.32.png | Bin 0 -> 492889 bytes
+| |  hw01/report.md                                   | 131 ------
+| |  29 files changed, 830 insertions(+), 152 deletions(-)
+| | 
+| * commit d3a3d9023774b30db2bd5775bac1b48aa7ae94f1
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Thu Jun 4 22:16:00 2026 +0700
+| | 
+| |     chore: format source
+| | 
+| |  .oxfmtrc.json                                    |   4 +
+| |  bun.lock                                         |  55 ++++++++
+| |  hw01/ai-artifacts/audit-reports.md               |  13 +-
+| |  hw01/ai-artifacts/prompt-log.md                  |   6 +-
+| |  hw01/evidence/AI-02-blank.md                     |   2 +-
+| |  hw01/evidence/AI-03-blank.md                     |  15 +--
+| |  hw01/evidence/AI-05-blank.md                     |   9 +-
+| |  hw01/report.md                                   |  48 ++++---
+| |  hw01/requirements.md                             |  80 +++++------
+| |  package.json                                     |  11 ++
+| |  .../contracts/ai-audit-schema.md                 |  56 ++++----
+| |  .../contracts/defect-entry-schema.md             |  57 ++++----
+| |  .../contracts/job-posting-schema.md              |  47 +++----
+| |  .../contracts/test-case-schema.md                |  90 +++++++------
+| |  specs/001-hw01-qa-testing/data-model.md          | 134 ++++++++++---------
+| |  specs/001-hw01-qa-testing/plan.md                |  58 ++++----
+| |  specs/001-hw01-qa-testing/quickstart.md          |  26 ++--
+| |  specs/001-hw01-qa-testing/research.md            |  36 +++--
+| |  specs/001-hw01-qa-testing/spec.md                |  25 ++--
+| |  specs/001-hw01-qa-testing/tasks.md               |  64 ++++-----
+| |  20 files changed, 469 insertions(+), 367 deletions(-)
+| | 
+| * commit 7e4f9c605679492f3c17b29e331dcb6ebb33c0f0
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Mon Jun 1 00:07:15 2026 +0700
+| | 
+| |     chore: add AI template placeholders (AI-02, AI-03, AI-05) and mark Phase 1 tasks complete
+| | 
+| |  hw01/evidence/AI-02-blank.md       | 27 +++++++++++++++++++++++++
+| |  hw01/evidence/AI-03-blank.md       | 36 ++++++++++++++++++++++++++++++++++
+| |  hw01/evidence/AI-05-blank.md       | 32 ++++++++++++++++++++++++++++++
+| |  specs/001-hw01-qa-testing/tasks.md | 14 ++++++-------
+| |  4 files changed, 102 insertions(+), 7 deletions(-)
+| | 
+| * commit 6165984a231d8636e3ee233a6afd3bf335861872
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Mon Jun 1 00:06:00 2026 +0700
+| | 
+| |     chore: scaffold hw01 directory structure and report skeleton
+| |     
+| |     - Created hw01/ directory tree (ai-artifacts, evidence/jobs, evidence/mindmap, evidence/videos)
+| |     - Added report.md with full section outline and TODO placeholders
+| |     - Added prompt-log.md with timestamp column format
+| |     - Added audit-reports.md with 5-section template skeleton
+| |     - Added evidence/placeholder.md as directory marker
+| |     - Updated spec.md with FR-027 through FR-039 (validation gaps fixed)
+| |     - Updated validation.md checklist (63/63 items resolved)
+| | 
+| |  hw01/ai-artifacts/audit-reports.md               |  36 +++++
+| |  hw01/ai-artifacts/prompt-log.md                  |  15 +++
+| |  hw01/evidence/placeholder.md                     |  15 +++
+| |  hw01/report.md                                   | 125 +++++++++++++++++
+| |  .../001-hw01-qa-testing/checklists/validation.md | 133 +++++++++----------
+| |  specs/001-hw01-qa-testing/spec.md                |  24 +++-
+| |  6 files changed, 277 insertions(+), 71 deletions(-)
+| | 
+| * commit e4b964ca4ad6f380a19c6bba8f66c9684bbfb52b
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Sun May 31 23:52:20 2026 +0700
+| | 
+| |     chore: update agent context with plan and tasks references
+| | 
+| |  .github/copilot-instructions.md | 1 +
+| |  1 file changed, 1 insertion(+)
+| | 
+| * commit 9004f46614a3f333bd6be72df0011d13e391b1ab
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Sun May 31 23:49:28 2026 +0700
+| | 
+| |     analyze: fix 3 FAIL items — add FR-026 self-assessment, fix T031-T033 manual table, update FR count to 26
+| | 
+| |  specs/001-hw01-qa-testing/checklists/requirements.md | 2 +-
+| |  specs/001-hw01-qa-testing/plan.md                    | 2 ++
+| |  specs/001-hw01-qa-testing/spec.md                    | 1 +
+| |  specs/001-hw01-qa-testing/tasks.md                   | 7 ++++---
+| |  4 files changed, 8 insertions(+), 4 deletions(-)
+| | 
+| * commit d82ae3cb76f2d01a1701d734dfc72d89c6962cca
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Sun May 31 23:43:12 2026 +0700
+| | 
+| |     tasks: generate 58-task breakdown across 7 phases with manual/voice/account flags
+| | 
+| |  specs/001-hw01-qa-testing/tasks.md | 249 +++++++++++++++++++++++++++++++++
+| |  1 file changed, 249 insertions(+)
+| | 
+| * commit bfb276a3a7696865185626cc3db5ffc1e95b6019
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Sun May 31 23:39:01 2026 +0700
+| | 
+| |     plan: create implementation plan with directory layout, schemas, grading traceability
+| | 
+| |  .github/copilot-instructions.md                  |   1 +
+| |  .../contracts/ai-audit-schema.md                 |  86 ++++++
+| |  .../contracts/defect-entry-schema.md             |  70 +++++
+| |  .../contracts/job-posting-schema.md              |  61 +++++
+| |  .../contracts/test-case-schema.md                | 127 +++++++++
+| |  specs/001-hw01-qa-testing/data-model.md          | 256 ++++++++++++++++++
+| |  specs/001-hw01-qa-testing/plan.md                | 150 +++++++++++
+| |  specs/001-hw01-qa-testing/quickstart.md          | 264 +++++++++++++++++++
+| |  specs/001-hw01-qa-testing/research.md            | 160 +++++++++++
+| |  9 files changed, 1175 insertions(+)
+| | 
+| * commit 3678511523e28c6705f41a16855dfd2138ff4b0b
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Sun May 31 23:30:27 2026 +0700
+| | 
+| |     spec: add missing FRs (voice narration, prompt log, AI templates, oral defense prep)
+| | 
+| |  specs/001-hw01-qa-testing/spec.md | 6 ++++++
+| |  1 file changed, 6 insertions(+)
+| | 
+| * commit e420a05ea4a0035f9486f71a5c7f890eb8812684
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Sun May 31 23:22:52 2026 +0700
+| | 
+| |     chore: update agent context with active feature metadata
+| | 
+| |  .github/copilot-instructions.md | 5 +++++
+| |  1 file changed, 5 insertions(+)
+| | 
+| * commit 9d976f3bb047fc11dfe6cdc61062dfb69b474aef
+| | Author: yuran1811 <trieuvanbd123@gmail.com>
+| | Date:   Sun May 31 23:22:08 2026 +0700
+| | 
+| |     spec: clarify ambiguities, add validation checklist, fix constitution conflict
+| | 
+| |  .specify/memory/constitution.md                  |   2 +-
+| |  .../001-hw01-qa-testing/checklists/validation.md | 104 +++++++++++++++++++
+| |  specs/001-hw01-qa-testing/spec.md                |  61 ++++++++---
+| |  3 files changed, 149 insertions(+), 18 deletions(-)
+| | 
+| * commit 06a2b761be3b978c124aacaf8c05052b984211dd
+|/  Author: yuran1811 <trieuvanbd123@gmail.com>
+|   Date:   Sun May 31 23:14:12 2026 +0700
+|   
+|       spec: create HW01 feature specification (3 requirements + cross-cutting AI audit)
+|   
+|    .specify/feature.json                            |   3 +
+|    .../checklists/requirements.md                   |  38 +++++
+|    specs/001-hw01-qa-testing/spec.md                | 148 +++++++++++++++++++
+|    3 files changed, 189 insertions(+)
+| 
+* commit 3872303975ac10a4c13a5f06b2a0b6fb1bd1ecb5
+| Author: yuran1811 <trieuvanbd123@gmail.com>
+| Date:   Sun May 31 23:11:11 2026 +0700
+| 
+|     docs: ratify constitution v1.0.0 for HW01 (5 principles + constraints + governance)
+| 
+|  .specify/memory/constitution.md | 169 ++++++++++++++++++++++++++++++--------
+|  1 file changed, 134 insertions(+), 35 deletions(-)
+| 
+* commit af1b82e84d100c56ac8cb4d0eb135123d2fc3d32
+  Author: yuran1811 <trieuvanbd123@gmail.com>
+  Date:   Sun May 31 22:52:36 2026 +0700
+  
+      feat: initial commit
+  
+   .agents/skills/pdf-extraction/SKILL.md            | 529 ++++++++++++++++
+   .../skills/speckit-agent-context-update/SKILL.md  |  31 +
+   .agents/skills/speckit-git-commit/SKILL.md        |  53 ++
+   .agents/skills/speckit-git-feature/SKILL.md       |  72 +++
+   .agents/skills/speckit-git-initialize/SKILL.md    |  54 ++
+   .agents/skills/speckit-git-remote/SKILL.md        |  50 ++
+   .agents/skills/speckit-git-validate/SKILL.md      |  54 ++
+   .gitattributes                                    |   1 +
+   .../agents/speckit.agent-context.update.agent.md  |  29 +
+   .github/agents/speckit.analyze.agent.md           | 249 ++++++++
+   .github/agents/speckit.checklist.agent.md         | 363 +++++++++++
+   .github/agents/speckit.clarify.agent.md           | 279 +++++++++
+   .github/agents/speckit.constitution.agent.md      | 150 +++++
+   .github/agents/speckit.git.commit.agent.md        |  51 ++
+   .github/agents/speckit.git.feature.agent.md       |  70 +++
+   .github/agents/speckit.git.initialize.agent.md    |  52 ++
+   .github/agents/speckit.git.remote.agent.md        |  48 ++
+   .github/agents/speckit.git.validate.agent.md      |  52 ++
+   .github/agents/speckit.implement.agent.md         | 213 +++++++
+   .github/agents/speckit.plan.agent.md              | 161 +++++
+   .github/agents/speckit.specify.agent.md           | 341 +++++++++++
+   .github/agents/speckit.tasks.agent.md             | 213 +++++++
+   .github/agents/speckit.taskstoissues.agent.md     |  97 +++
+   .github/copilot-instructions.md                   |   4 +
+   .../speckit.agent-context.update.prompt.md        |   3 +
+   .github/prompts/speckit.analyze.prompt.md         |   3 +
+   .github/prompts/speckit.checklist.prompt.md       |   3 +
+   .github/prompts/speckit.clarify.prompt.md         |   3 +
+   .github/prompts/speckit.constitution.prompt.md    |   3 +
+   .github/prompts/speckit.git.commit.prompt.md      |   3 +
+   .github/prompts/speckit.git.feature.prompt.md     |   3 +
+   .github/prompts/speckit.git.initialize.prompt.md  |   3 +
+   .github/prompts/speckit.git.remote.prompt.md      |   3 +
+   .github/prompts/speckit.git.validate.prompt.md    |   3 +
+   .github/prompts/speckit.implement.prompt.md       |   3 +
+   .github/prompts/speckit.plan.prompt.md            |   3 +
+   .github/prompts/speckit.specify.prompt.md         |   3 +
+   .github/prompts/speckit.tasks.prompt.md           |   3 +
+   .github/prompts/speckit.taskstoissues.prompt.md   |   3 +
+   .gitignore                                        |  90 +++
+   .serena/.gitignore                                |   2 +
+   .serena/project.yml                               | 132 ++++
+   .specify/extensions.yml                           | 164 +++++
+   .specify/extensions/.registry                     |  57 ++
+   .specify/extensions/agent-context/README.md       |  57 ++
+   .../agent-context/agent-context-config.yml        |   4 +
+   .../commands/speckit.agent-context.update.md      |  26 +
+   .specify/extensions/agent-context/extension.yml   |  34 ++
+   .../scripts/bash/update-agent-context.sh          | 200 ++++++
+   .../scripts/powershell/update-agent-context.ps1   | 237 +++++++
+   .specify/extensions/git/README.md                 | 100 +++
+   .../extensions/git/commands/speckit.git.commit.md |  48 ++
+   .../git/commands/speckit.git.feature.md           |  67 ++
+   .../git/commands/speckit.git.initialize.md        |  49 ++
+   .../extensions/git/commands/speckit.git.remote.md |  45 ++
+   .../git/commands/speckit.git.validate.md          |  49 ++
+   .specify/extensions/git/config-template.yml       |  62 ++
+   .specify/extensions/git/extension.yml             | 140 +++++
+   .specify/extensions/git/git-config.yml            |  62 ++
+   .../extensions/git/scripts/bash/auto-commit.sh    | 140 +++++
+   .../git/scripts/bash/create-new-feature.sh        | 453 ++++++++++++++
+   .../extensions/git/scripts/bash/git-common.sh     |  54 ++
+   .../git/scripts/bash/initialize-repo.sh           |  54 ++
+   .../git/scripts/powershell/auto-commit.ps1        | 169 +++++
+   .../git/scripts/powershell/create-new-feature.ps1 | 403 ++++++++++++
+   .../git/scripts/powershell/git-common.ps1         |  51 ++
+   .../git/scripts/powershell/initialize-repo.ps1    |  69 +++
+   .specify/init-options.json                        |   8 +
+   .specify/integration.json                         |  15 +
+   .specify/integrations/copilot.manifest.json       |  25 +
+   .specify/integrations/speckit.manifest.json       |  17 +
+   .specify/memory/constitution.md                   |  50 ++
+   .specify/scripts/bash/check-prerequisites.sh      | 192 ++++++
+   .specify/scripts/bash/common.sh                   | 644 ++++++++++++++++++++
+   .specify/scripts/bash/create-new-feature.sh       | 413 +++++++++++++
+   .specify/scripts/bash/setup-plan.sh               |  91 +++
+   .specify/scripts/bash/setup-tasks.sh              |  96 +++
+   .specify/templates/checklist-template.md          |  40 ++
+   .specify/templates/constitution-template.md       |  50 ++
+   .specify/templates/plan-template.md               | 113 ++++
+   .specify/templates/spec-template.md               | 131 ++++
+   .specify/templates/tasks-template.md              | 252 ++++++++
+   .specify/workflows/speckit/workflow.yml           |  77 +++
+   .specify/workflows/workflow-registry.json         |  13 +
+   .vscode/extensions.json                           |   3 +
+   .vscode/mcp.json                                  |  49 ++
+   .vscode/settings.json                             |  26 +
+   AGENTS.md                                         | 301 +++++++++
+   CLAUDE.md                                         |   1 +
+   GEMINI.md                                         |   1 +
+   hw01/policies.md                                  |  57 ++
+   hw01/policies.pdf                                 | Bin 0 -> 169510 bytes
+   hw01/requirements.md                              | 171 ++++++
+   hw01/requirements.pdf                             | Bin 0 -> 471275 bytes
+   skills-lock.json                                  |  11 +
+   95 files changed, 9126 insertions(+)

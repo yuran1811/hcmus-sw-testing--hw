@@ -11,15 +11,15 @@
 
 ## 2. Thông tin lần chạy
 
-| Thuộc tính               | Giá trị cần ghi        |
-| ------------------------ | ---------------------- |
-| Người kiểm thử           | Ngô Nguyễn Thế Khoa (23127065) |
-| Ngày kiểm thử            | 29/07/2026 (Asia/Ho_Chi_Minh) |
-| Build/commit             | SUT working tree tại thời điểm chạy; không sửa mã nguồn SUT |
-| Môi trường               | Local: API `:3000`, Web `:5173`, Admin `:5174` |
-| Hệ điều hành             | Linux |
-| Trình duyệt và phiên bản | Chromium qua Playwright 1.61.0 |
-| Kích thước màn hình      | 1440×900; kiểm tra khả năng thích ứng tại 768×1024, 568×320 và 320×568 |
+| Thuộc tính           | Giá trị                |
+| -------------------- | ---------------------- |
+| Người kiểm thử       | Ngô Nguyễn Thế Khoa (23127065) |
+| Ngày kiểm thử        | 29/07/2026 (Asia/Ho_Chi_Minh) |
+| Build/commit         | SUT working tree tại thời điểm chạy; không sửa mã nguồn SUT |
+| Môi trường           | Local: API `:3000`, Web `:5173`, Admin `:5174` |
+| Hệ điều hành         | Linux |
+| Trình duyệt	       | Chromium |
+| Kích thước màn hình  | 1440×900; kiểm tra khả năng thích ứng tại 768×1024, 568×320 và 320×568 |
 
 ## 3. Điều kiện và dữ liệu kiểm thử
 
@@ -178,7 +178,7 @@ Bổ sung một sản phẩm có tên dài khoảng 150 ký tự và một tên 
 | COUPON-GUI-034 | P1  | Kiểm tra accessible name cho nút Xóa từng dòng.                  | Mỗi nút Xóa mô tả đúng mã coupon cần xóa (vd: "Xóa mã SAVE10").            | ❌ Failed | All row actions have the ambiguous accessible name “Xóa”. [BUG-COUPON-17](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/21) [Screenshot](evidence/task1/COUPON-GUI-034.png) |
 | COUPON-GUI-035 | P1  | Kiểm tra Console Log trong suốt quá trình thao tác Admin Coupon. | Không có lỗi runtime JavaScript hay warning React key nghiêm trọng.        | ✅ Passed | No runtime console errors occurred during coupon testing. |
 
-## 5. Ma trận thực thi Task 1
+## 5. Ma trận thực thi
 
 | Nhóm                     | Cấu hình bắt buộc             | Checklist cần ưu tiên                                             |
 | ------------------------ | ----------------------------- | ----------------------------------------------------------------- |
@@ -186,8 +186,6 @@ Bổ sung một sản phẩm có tên dài khoảng 150 ký tự và một tên 
 | Tablet | Chromium, 768 × 1024 | Các mục responsive, focus và form |
 | Mobile nhỏ | Chromium, 320 × 568 | Cart responsive, target size và overflow |
 | Landscape nhỏ | Chromium, 568 × 320 | Cart reflow khi đổi hướng |
-
-Không tuyên bố kết quả chéo trình duyệt hoặc chéo nền tảng; phần đó thuộc Task 3 và nằm ngoài phạm vi lần thực hiện này.
 
 ## 6. Critical review của checklist AI
 
@@ -217,22 +215,7 @@ AI tạo bản nháp ban đầu từ FR-07, FR-17 và IA-01..IA-04. Người ki�
 | IA-03 Navigation | Cart A/B/D/E; Coupon F/I/J |
 | IA-04 Feedback / State | Cart B/C/D; Coupon G/H/I |
 
-## 7. Tiêu chí hoàn tất
-
-- Tất cả mục `P0` và `P1` phải được thực thi; lỗi còn mở phải có bug, severity và bằng chứng rõ ràng.
-- Không đổi Failed thành Passed chỉ để đạt tỷ lệ; blocker được nêu trong summary và issue tracker.
-- Mỗi mục Fail phải có mã bug, môi trường, bước tái hiện, expected/actual và ảnh/video minh chứng.
-- Chạy lại các mục liên quan sau khi sửa lỗi và thực hiện regression cho luồng thêm sản phẩm → xem giỏ → sửa số lượng/xóa → checkout và Admin coupon CRUD.
-
-## 8. Tài liệu tham chiếu
-
-- Đặc tả nội bộ: `README.md` — FR-07 (Giỏ hàng), FR-09 (Coupon), FR-12 (Access Control), FR-17 (Coupon Admin), FR-21, FR-22, FR-23, FR-24 và SEC-04.
-- Mã giao diện được khảo sát: `frontend-web/src/pages/Cart.jsx`, `frontend-web/src/pages/Checkout.jsx`, `frontend-admin/src/App.jsx`.
-- Context7, Playwright `v1.61.0`: locators hướng người dùng, web-first assertions, viewport emulation, nhiều local web servers và full-page screenshot chỉ khi fail.
-
-> Tự động hóa dùng locator theo role/accessible name, web-first assertions, context độc lập và full-page screenshot chỉ khi item Failed.
-
-## 9. Kết quả thực thi
+## 7. Kết quả thực thi
 
 | Chỉ số | Kết quả |
 | --- | ---: |
@@ -243,4 +226,4 @@ AI tạo bản nháp ban đầu từ FR-07, FR-17 và IA-01..IA-04. Người ki�
 | Pass rate | 61.2% |
 | Bug groups | 20 |
 
-Môi trường: Chromium (Playwright 1.61.0), linux; Customer Web `http://127.0.0.1:5173`; Admin `http://127.0.0.1:5174`. Mỗi item Failed có screenshot riêng; item Passed không tạo screenshot.
+Môi trường: Chromium, linux; Customer Web `http://127.0.0.1:5173`; Admin `http://127.0.0.1:5174`.
