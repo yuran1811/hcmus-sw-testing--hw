@@ -232,4 +232,4 @@ Safari, Firefox Developer Edition (riêng tư) và Google Chrome (Ẩn danh) cũ
 
 ![Ảnh chụp lỗi COUPON-GUI-030 trên WebKit](evidence/task3/webkit/COUPON-GUI-030.png)
 
-![Ảnh chụp lỗi COUPON-GUI-034 trên WebKit](evidence/task3/webkit/COUPON-GUI-034.png)
+![Ảnh chụp lỗi COUPON-GUI-034 trên WebKit](evidence/task3/webkit/COUPON-GUI-034.jpg)

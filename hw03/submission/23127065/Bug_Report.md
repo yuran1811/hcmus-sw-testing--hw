@@ -24,7 +24,7 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Bằng chứng:** [CART-GUI-002](evidence/task1/CART-GUI-002.png), [CART-GUI-003](evidence/task1/CART-GUI-003.png), [CART-GUI-045](evidence/task1/CART-GUI-045.png)
 
-![GitHub issue BUG-CART-01](evidence/task1/gh-issues/BUG-CART-01.png)
+![GitHub issue BUG-CART-01](evidence/task1/gh-issues/BUG-CART-01.jpg)
 
 ## BUG-CART-02 — Cart navigation has no active state or quantity badge
 
@@ -48,7 +48,7 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Evidence:** [CART-GUI-004](evidence/task1/CART-GUI-004.png), [CART-GUI-005](evidence/task1/CART-GUI-005.png)
 
-![GitHub issue BUG-CART-02](evidence/task1/gh-issues/BUG-CART-02.png)
+![GitHub issue BUG-CART-02](evidence/task1/gh-issues/BUG-CART-02.jpg)
 
 ## BUG-CART-05 — Empty cart state has no icon or illustration
 
@@ -72,7 +72,7 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Evidence:** [CART-GUI-010](evidence/task1/CART-GUI-010.png)
 
-![GitHub issue BUG-CART-05](evidence/task1/gh-issues/BUG-CART-05.png)
+![GitHub issue BUG-CART-05](evidence/task1/gh-issues/BUG-CART-05.jpg)
 
 ## BUG-CART-06 — Cart focus indicator is not visibly exposed
 
@@ -96,7 +96,7 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Evidence:** [CART-GUI-043](evidence/task1/CART-GUI-043.png)
 
-![GitHub issue BUG-CART-06](evidence/task1/gh-issues/BUG-CART-06.png)
+![GitHub issue BUG-CART-06](evidence/task1/gh-issues/BUG-CART-06.jpg)
 
 ## BUG-CART-09 — Cart table uses the wrong unit-price column label
 
@@ -120,7 +120,7 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Evidence:** [CART-GUI-015](evidence/task1/CART-GUI-015.png)
 
-![GitHub issue BUG-CART-09](evidence/task1/gh-issues/BUG-CART-09.png)
+![GitHub issue BUG-CART-09](evidence/task1/gh-issues/BUG-CART-09.jpg)
 
 ## BUG-CART-11 — Cart total is labeled Tổng tạm tính instead of Tổng cộng
 
@@ -144,7 +144,7 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Evidence:** [CART-GUI-020](evidence/task1/CART-GUI-020.png)
 
-![GitHub issue BUG-CART-11](evidence/task1/gh-issues/BUG-CART-11.png)
+![GitHub issue BUG-CART-11](evidence/task1/gh-issues/BUG-CART-11.jpg)
 
 ## BUG-CART-12 — Adding the same product creates duplicate cart rows
 
@@ -168,7 +168,7 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Evidence:** [CART-GUI-021](evidence/task1/CART-GUI-021.png)
 
-![GitHub issue BUG-CART-12](evidence/task1/gh-issues/BUG-CART-12.png)
+![GitHub issue BUG-CART-12](evidence/task1/gh-issues/BUG-CART-12.jpg)
 
 ## BUG-CART-13 — Cart provides no controls for changing item quantity
 
@@ -192,7 +192,7 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Evidence:** [CART-GUI-022](evidence/task1/CART-GUI-022.png), [CART-GUI-023](evidence/task1/CART-GUI-023.png), [CART-GUI-024](evidence/task1/CART-GUI-024.png), [CART-GUI-025](evidence/task1/CART-GUI-025.png)
 
-![GitHub issue BUG-CART-13](evidence/task1/gh-issues/BUG-CART-13.png)
+![GitHub issue BUG-CART-13](evidence/task1/gh-issues/BUG-CART-13.jpg)
 
 ## BUG-CART-16 — Removing a cart item bypasses the required confirmation dialog
 
@@ -216,7 +216,7 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Evidence:** [CART-GUI-028](evidence/task1/CART-GUI-028.png), [CART-GUI-029](evidence/task1/CART-GUI-029.png), [CART-GUI-032](evidence/task1/CART-GUI-032.png)
 
-![GitHub issue BUG-CART-16](evidence/task1/gh-issues/BUG-CART-16.png)
+![GitHub issue BUG-CART-16](evidence/task1/gh-issues/BUG-CART-16.jpg)
 
 ## BUG-CART-20 — Cart table overflows the 320px mobile viewport
 
@@ -238,9 +238,9 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Actual:** The fixed-width table forces unintended horizontal page overflow at 320px.
 
-**Evidence:** [CART-GUI-038](evidence/task1/CART-GUI-038.png)
+**Evidence:** [CART-GUI-038](evidence/task1/CART-GUI-038.jpg)
 
-![GitHub issue BUG-CART-20](evidence/task1/gh-issues/BUG-CART-20.png)
+![GitHub issue BUG-CART-20](evidence/task1/gh-issues/BUG-CART-20.jpg)
 
 ## BUG-CART-21 — Repeated cart action controls do not identify their product
 
@@ -264,7 +264,7 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Evidence:** [CART-GUI-044](evidence/task1/CART-GUI-044.png)
 
-![GitHub issue BUG-CART-21](evidence/task1/gh-issues/BUG-CART-21.png)
+![GitHub issue BUG-CART-21](evidence/task1/gh-issues/BUG-CART-21.jpg)
 
 ## BUG-CART-24 — Customer frontend declares English instead of Vietnamese document language
 
@@ -288,7 +288,7 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Evidence:** [CART-GUI-048](evidence/task1/CART-GUI-048.png)
 
-![GitHub issue BUG-CART-24](evidence/task1/gh-issues/BUG-CART-24.png)
+![GitHub issue BUG-CART-24](evidence/task1/gh-issues/BUG-CART-24.jpg)
 
 ## BUG-COUPON-03 — Coupon screen title uses the wrong heading level
 
@@ -310,9 +310,9 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Actual:** The screen title is h2 while the only h1 describes the whole admin shell.
 
-**Evidence:** [COUPON-GUI-005](evidence/task1/COUPON-GUI-005.png)
+**Evidence:** [COUPON-GUI-005](evidence/task1/COUPON-GUI-005.jpg)
 
-![GitHub issue BUG-COUPON-03](evidence/task1/gh-issues/BUG-COUPON-03.png)
+![GitHub issue BUG-COUPON-03](evidence/task1/gh-issues/BUG-COUPON-03.jpg)
 
 ## BUG-COUPON-04 — Admin navigation mixes English and Vietnamese labels
 
@@ -334,9 +334,9 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Actual:** The admin shell mixes English “Dashboard” with Vietnamese labels.
 
-**Evidence:** [COUPON-GUI-006](evidence/task1/COUPON-GUI-006.png)
+**Evidence:** [COUPON-GUI-006](evidence/task1/COUPON-GUI-006.jpg)
 
-![GitHub issue BUG-COUPON-04](evidence/task1/gh-issues/BUG-COUPON-04.png)
+![GitHub issue BUG-COUPON-04](evidence/task1/gh-issues/BUG-COUPON-04.jpg)
 
 ## BUG-COUPON-08 — Empty coupon table has no explanatory state
 
@@ -358,9 +358,9 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Actual:** An empty coupon table renders with no explanatory state.
 
-**Evidence:** [COUPON-GUI-015](evidence/task1/COUPON-GUI-015.png)
+**Evidence:** [COUPON-GUI-015](evidence/task1/COUPON-GUI-015.jpg)
 
-![GitHub issue BUG-COUPON-08](evidence/task1/gh-issues/BUG-COUPON-08.png)
+![GitHub issue BUG-COUPON-08](evidence/task1/gh-issues/BUG-COUPON-08.jpg)
 
 ## BUG-COUPON-09 — Coupon form lacks visible labels and required markers
 
@@ -382,9 +382,9 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Actual:** The form uses placeholders and HTML required attributes but no visible labels or * indicators.
 
-**Evidence:** [COUPON-GUI-016](evidence/task1/COUPON-GUI-016.png)
+**Evidence:** [COUPON-GUI-016](evidence/task1/COUPON-GUI-016.jpg)
 
-![GitHub issue BUG-COUPON-09](evidence/task1/gh-issues/BUG-COUPON-09.png)
+![GitHub issue BUG-COUPON-09](evidence/task1/gh-issues/BUG-COUPON-09.jpg)
 
 ## BUG-COUPON-11 — Coupon form omits discount and expiry boundary validation
 
@@ -406,9 +406,9 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Actual:** Discount input has no positive min constraint. Percent discount has no 100% upper bound. Expiry date has no minimum and accepts past dates.
 
-**Evidence:** [COUPON-GUI-019](evidence/task1/COUPON-GUI-019.png), [COUPON-GUI-020](evidence/task1/COUPON-GUI-020.png), [COUPON-GUI-022](evidence/task1/COUPON-GUI-022.png)
+**Evidence:** [COUPON-GUI-019](evidence/task1/COUPON-GUI-019.jpg), [COUPON-GUI-020](evidence/task1/COUPON-GUI-020.jpg), [COUPON-GUI-022](evidence/task1/COUPON-GUI-022.jpg)
 
-![GitHub issue BUG-COUPON-11](evidence/task1/gh-issues/BUG-COUPON-11.png)
+![GitHub issue BUG-COUPON-11](evidence/task1/gh-issues/BUG-COUPON-11.jpg)
 
 ## BUG-COUPON-12 — Duplicate coupon exposes a SQLite error in a browser alert
 
@@ -430,9 +430,9 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Actual:** Duplicate code exposes a technical alert: Lỗi: SQLITE_CONSTRAINT: UNIQUE constraint failed: coupons.code Errors are delivered through a browser alert rather than above the submit button.
 
-**Evidence:** [COUPON-GUI-024](evidence/task1/COUPON-GUI-024.png), [COUPON-GUI-025](evidence/task1/COUPON-GUI-025.png)
+**Evidence:** [COUPON-GUI-024](evidence/task1/COUPON-GUI-024.jpg), [COUPON-GUI-025](evidence/task1/COUPON-GUI-025.jpg)
 
-![GitHub issue BUG-COUPON-12](evidence/task1/gh-issues/BUG-COUPON-12.png)
+![GitHub issue BUG-COUPON-12](evidence/task1/gh-issues/BUG-COUPON-12.jpg)
 
 ## BUG-COUPON-14 — Coupon deletion has no confirmation dialog
 
@@ -454,9 +454,9 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Actual:** Coupon is deleted immediately without confirmation. No Cancel action exists because there is no dialog. No confirmation dialog exists, so keyboard dialog behavior is absent.
 
-**Evidence:** [COUPON-GUI-027](evidence/task1/COUPON-GUI-027.png), [COUPON-GUI-028](evidence/task1/COUPON-GUI-028.png), [COUPON-GUI-030](evidence/task1/COUPON-GUI-030.png)
+**Evidence:** [COUPON-GUI-027](evidence/task1/COUPON-GUI-027.jpg), [COUPON-GUI-028](evidence/task1/COUPON-GUI-028.jpg), [COUPON-GUI-030](evidence/task1/COUPON-GUI-030.jpg)
 
-![GitHub issue BUG-COUPON-14](evidence/task1/gh-issues/BUG-COUPON-14.png)
+![GitHub issue BUG-COUPON-14](evidence/task1/gh-issues/BUG-COUPON-14.jpg)
 
 ## BUG-COUPON-17 — Coupon delete buttons have ambiguous accessible names
 
@@ -478,6 +478,6 @@ Thời điểm thực hiện: 2026-07-30T02:02:12.546Z. Mọi lỗi dưới đâ
 
 **Actual:** All row actions have the ambiguous accessible name “Xóa”.
 
-**Evidence:** [COUPON-GUI-034](evidence/task1/COUPON-GUI-034.png)
+**Evidence:** [COUPON-GUI-034](evidence/task1/COUPON-GUI-034.jpg)
 
-![GitHub issue BUG-COUPON-17](evidence/task1/gh-issues/BUG-COUPON-17.png)
+![GitHub issue BUG-COUPON-17](evidence/task1/gh-issues/BUG-COUPON-17.jpg)

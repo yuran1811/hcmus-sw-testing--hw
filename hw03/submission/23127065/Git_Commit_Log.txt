@@ -147,7 +147,7 @@
 |  .../evidence/task3/webkit/COUPON-GUI-027.png      | Bin 0 -> 356691 bytes
 |  .../evidence/task3/webkit/COUPON-GUI-028.png      | Bin 0 -> 356691 bytes
 |  .../evidence/task3/webkit/COUPON-GUI-030.png      | Bin 0 -> 356691 bytes
-|  .../evidence/task3/webkit/COUPON-GUI-034.png      | Bin 0 -> 358075 bytes
+|  .../evidence/task3/webkit/COUPON-GUI-034.jpg      | Bin 0 -> 358075 bytes
 |  .../tests/test-runs/task3-chrome-results.json     | 611 ++++++++++++++++++++
 |  .../tests/test-runs/task3-firefox-results.json    | 611 ++++++++++++++++++++
 |  .../tests/test-runs/task3-webkit-results.json     | 611 ++++++++++++++++++++
@@ -202,31 +202,31 @@
 |  hw03/submission/23127065/SUS_UEQ-S.md             | 186 ++++++++++++++++++++
 |  hw03/submission/23127065/Usability_Testing.md     | 142 ++++++++-------
 |  .../23127065/Usability_Testing_Phase1.pdf         | Bin 70120 -> 0 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-019.png    | Bin 71891 -> 71886 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-027.png    | Bin 71053 -> 71112 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-028.png    | Bin 71053 -> 71073 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-030.png    | Bin 71053 -> 71073 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-034.png    | Bin 71046 -> 71065 bytes
-|  .../evidence/task1/gh-issues/BUG-CART-01.png      | Bin 0 -> 269029 bytes
-|  .../evidence/task1/gh-issues/BUG-CART-02.png      | Bin 0 -> 282887 bytes
-|  .../evidence/task1/gh-issues/BUG-CART-05.png      | Bin 0 -> 270486 bytes
-|  .../evidence/task1/gh-issues/BUG-CART-06.png      | Bin 0 -> 297803 bytes
-|  .../evidence/task1/gh-issues/BUG-CART-09.png      | Bin 0 -> 298335 bytes
-|  .../evidence/task1/gh-issues/BUG-CART-11.png      | Bin 0 -> 289284 bytes
-|  .../evidence/task1/gh-issues/BUG-CART-12.png      | Bin 0 -> 295478 bytes
-|  .../evidence/task1/gh-issues/BUG-CART-13.png      | Bin 0 -> 314145 bytes
-|  .../evidence/task1/gh-issues/BUG-CART-16.png      | Bin 0 -> 303885 bytes
-|  .../evidence/task1/gh-issues/BUG-CART-20.png      | Bin 0 -> 328243 bytes
-|  .../evidence/task1/gh-issues/BUG-CART-21.png      | Bin 0 -> 288457 bytes
-|  .../evidence/task1/gh-issues/BUG-CART-24.png      | Bin 0 -> 289907 bytes
-|  .../evidence/task1/gh-issues/BUG-COUPON-03.png    | Bin 0 -> 311099 bytes
-|  .../evidence/task1/gh-issues/BUG-COUPON-04.png    | Bin 0 -> 316984 bytes
-|  .../evidence/task1/gh-issues/BUG-COUPON-08.png    | Bin 0 -> 288825 bytes
-|  .../evidence/task1/gh-issues/BUG-COUPON-09.png    | Bin 0 -> 306073 bytes
-|  .../evidence/task1/gh-issues/BUG-COUPON-11.png    | Bin 0 -> 327763 bytes
-|  .../evidence/task1/gh-issues/BUG-COUPON-12.png    | Bin 0 -> 330375 bytes
-|  .../evidence/task1/gh-issues/BUG-COUPON-14.png    | Bin 0 -> 324841 bytes
-|  .../evidence/task1/gh-issues/BUG-COUPON-17.png    | Bin 0 -> 319339 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-019.jpg    | Bin 71891 -> 71886 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-027.jpg    | Bin 71053 -> 71112 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-028.jpg    | Bin 71053 -> 71073 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-030.jpg    | Bin 71053 -> 71073 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-034.jpg    | Bin 71046 -> 71065 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-01.jpg      | Bin 0 -> 269029 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-02.jpg      | Bin 0 -> 282887 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-05.jpg      | Bin 0 -> 270486 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-06.jpg      | Bin 0 -> 297803 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-09.jpg      | Bin 0 -> 298335 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-11.jpg      | Bin 0 -> 289284 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-12.jpg      | Bin 0 -> 295478 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-13.jpg      | Bin 0 -> 314145 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-16.jpg      | Bin 0 -> 303885 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-20.jpg      | Bin 0 -> 328243 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-21.jpg      | Bin 0 -> 288457 bytes
+|  .../evidence/task1/gh-issues/BUG-CART-24.jpg      | Bin 0 -> 289907 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-03.jpg    | Bin 0 -> 311099 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-04.jpg    | Bin 0 -> 316984 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-08.jpg    | Bin 0 -> 288825 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-09.jpg    | Bin 0 -> 306073 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-11.jpg    | Bin 0 -> 327763 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-12.jpg    | Bin 0 -> 330375 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-14.jpg    | Bin 0 -> 324841 bytes
+|  .../evidence/task1/gh-issues/BUG-COUPON-17.jpg    | Bin 0 -> 319339 bytes
 |  .../tests/automation/generate-artifacts.mjs       |   3 +-
 |  .../23127065/tests/automation/package.json        |   1 +
 |  .../tests/automation/record-agent-skill-demos.mjs | 143 +++++++++++++++
@@ -339,24 +339,24 @@
 |  .../23127065/evidence/task1/CART-GUI-028.png      |  Bin 0 -> 44670 bytes
 |  .../23127065/evidence/task1/CART-GUI-029.png      |  Bin 0 -> 44670 bytes
 |  .../23127065/evidence/task1/CART-GUI-032.png      |  Bin 0 -> 26494 bytes
-|  .../23127065/evidence/task1/CART-GUI-038.png      |  Bin 0 -> 40391 bytes
+|  .../23127065/evidence/task1/CART-GUI-038.jpg      |  Bin 0 -> 40391 bytes
 |  .../23127065/evidence/task1/CART-GUI-043.png      |  Bin 0 -> 43856 bytes
 |  .../23127065/evidence/task1/CART-GUI-044.png      |  Bin 0 -> 43856 bytes
 |  .../23127065/evidence/task1/CART-GUI-045.png      |  Bin 0 -> 43856 bytes
 |  .../23127065/evidence/task1/CART-GUI-048.png      |  Bin 0 -> 43856 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-005.png    |  Bin 0 -> 71032 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-006.png    |  Bin 0 -> 71032 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-015.png    |  Bin 0 -> 45672 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-016.png    |  Bin 0 -> 71032 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-019.png    |  Bin 0 -> 71891 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-020.png    |  Bin 0 -> 70479 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-022.png    |  Bin 0 -> 70479 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-024.png    |  Bin 0 -> 67411 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-025.png    |  Bin 0 -> 67411 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-027.png    |  Bin 0 -> 71053 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-028.png    |  Bin 0 -> 71053 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-030.png    |  Bin 0 -> 71053 bytes
-|  .../23127065/evidence/task1/COUPON-GUI-034.png    |  Bin 0 -> 71046 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-005.jpg    |  Bin 0 -> 71032 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-006.jpg    |  Bin 0 -> 71032 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-015.jpg    |  Bin 0 -> 45672 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-016.jpg    |  Bin 0 -> 71032 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-019.jpg    |  Bin 0 -> 71891 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-020.jpg    |  Bin 0 -> 70479 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-022.jpg    |  Bin 0 -> 70479 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-024.jpg    |  Bin 0 -> 67411 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-025.jpg    |  Bin 0 -> 67411 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-027.jpg    |  Bin 0 -> 71053 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-028.jpg    |  Bin 0 -> 71053 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-030.jpg    |  Bin 0 -> 71053 bytes
+|  .../23127065/evidence/task1/COUPON-GUI-034.jpg    |  Bin 0 -> 71046 bytes
 |  .../23127065/tests/automation/bug-catalog.json    |   22 +
 |  .../tests/automation/generate-artifacts.mjs       |  172 +++
 |  .../23127065/tests/automation/package-lock.json   | 1060 +++++++++++++++++++
