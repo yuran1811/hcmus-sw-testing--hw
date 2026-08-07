@@ -1,0 +1,70 @@
+{
+  "studentId": "23127065",
+  "startedAt": "2026-08-07T17:53:03.665Z",
+  "finishedAt": "2026-08-07T17:56:49.774Z",
+  "results": [
+    {
+      "feature": "product-detail",
+      "spec": "tests/product-detail.spec.ts",
+      "browser": "chromium",
+      "exitCode": 1,
+      "report": "reports/html/product-detail/chromium"
+    },
+    {
+      "feature": "product-detail",
+      "spec": "tests/product-detail.spec.ts",
+      "browser": "firefox",
+      "exitCode": 1,
+      "report": "reports/html/product-detail/firefox"
+    },
+    {
+      "feature": "product-detail",
+      "spec": "tests/product-detail.spec.ts",
+      "browser": "webkit",
+      "exitCode": 1,
+      "report": "reports/html/product-detail/webkit"
+    },
+    {
+      "feature": "coupon",
+      "spec": "tests/coupon.spec.ts",
+      "browser": "chromium",
+      "exitCode": 1,
+      "report": "reports/html/coupon/chromium"
+    },
+    {
+      "feature": "coupon",
+      "spec": "tests/coupon.spec.ts",
+      "browser": "firefox",
+      "exitCode": 1,
+      "report": "reports/html/coupon/firefox"
+    },
+    {
+      "feature": "coupon",
+      "spec": "tests/coupon.spec.ts",
+      "browser": "webkit",
+      "exitCode": 1,
+      "report": "reports/html/coupon/webkit"
+    },
+    {
+      "feature": "coupon-admin",
+      "spec": "tests/coupon-admin.spec.ts",
+      "browser": "chromium",
+      "exitCode": 1,
+      "report": "reports/html/coupon-admin/chromium"
+    },
+    {
+      "feature": "coupon-admin",
+      "spec": "tests/coupon-admin.spec.ts",
+      "browser": "firefox",
+      "exitCode": 1,
+      "report": "reports/html/coupon-admin/firefox"
+    },
+    {
+      "feature": "coupon-admin",
+      "spec": "tests/coupon-admin.spec.ts",
+      "browser": "webkit",
+      "exitCode": 1,
+      "report": "reports/html/coupon-admin/webkit"
+    }
+  ]
+}

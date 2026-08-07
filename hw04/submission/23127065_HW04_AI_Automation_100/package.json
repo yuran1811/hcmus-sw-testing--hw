@@ -1,0 +1,16 @@
+{
+  "name": "23127065-hw04-ai-automation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "list": "playwright test --list",
+    "test": "playwright test",
+    "run:matrix": "node scripts/run-matrix.mjs",
+    "screenshot:issue": "node scripts/screenshot-github-issue.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,14 @@
+[
+  {"id":"CP-001","code":"SAVE10","total":"300000","login":true,"expected":"success","final":"270000"},
+  {"id":"CP-002","code":"save10","total":"300001","login":true,"expected":"success","final":"270001"},
+  {"id":"CP-003","code":"BIGBUY","total":"500000","login":true,"expected":"success","final":"450000"},
+  {"id":"CP-004","code":"VIP100","total":"300000","login":true,"expected":"success","final":"200000"},
+  {"id":"CP-005","code":"EXPIRED","total":"300000","login":true,"expected":"error","message":"hết hạn"},
+  {"id":"CP-006","code":"UNKNOWN","total":"300000","login":true,"expected":"error","message":"không tồn tại"},
+  {"id":"CP-007","code":"SAVE10","total":"299999","login":true,"expected":"error","message":"chưa đủ"},
+  {"id":"CP-008","code":"BIGBUY","total":"499999","login":true,"expected":"error","message":"chưa đủ"},
+  {"id":"CP-009","code":"SAVE10","total":"300000","login":false,"expected":"error","message":"đăng nhập"},
+  {"id":"CP-010","code":"","total":"300000","login":true,"expected":"disabled"},
+  {"id":"CP-011","code":" VIP100 ","total":"300000","login":true,"expected":"success","final":"200000"},
+  {"id":"CP-012","code":"SAVE10","total":"0","login":true,"expected":"error","message":"chưa đủ"}
+]

@@ -1,0 +1,14 @@
+[
+  {"id":"CA-001","code":"HW04_VALID_PERCENT","type":"percent","discount":"10","minimum":"0","expiry":"2099-12-31","limit":"1","expected":"created"},
+  {"id":"CA-002","code":"HW04_VALID_FIXED","type":"fixed","discount":"50000","minimum":"100000","expiry":"2099-12-31","limit":"2","expected":"created"},
+  {"id":"CA-003","code":"","type":"percent","discount":"10","minimum":"0","expiry":"2099-12-31","limit":"1","expected":"rejected"},
+  {"id":"CA-004","code":"HW04_ZERO_DISCOUNT","type":"percent","discount":"0","minimum":"0","expiry":"2099-12-31","limit":"1","expected":"rejected"},
+  {"id":"CA-005","code":"HW04_NEG_DISCOUNT","type":"percent","discount":"-1","minimum":"0","expiry":"2099-12-31","limit":"1","expected":"rejected"},
+  {"id":"CA-006","code":"HW04_NEG_MIN","type":"fixed","discount":"1","minimum":"-1","expiry":"2099-12-31","limit":"1","expected":"rejected"},
+  {"id":"CA-007","code":"HW04_ZERO_LIMIT","type":"fixed","discount":"1","minimum":"0","expiry":"2099-12-31","limit":"0","expected":"rejected"},
+  {"id":"CA-008","code":"HW04_NEG_LIMIT","type":"fixed","discount":"1","minimum":"0","expiry":"2099-12-31","limit":"-1","expected":"rejected"},
+  {"id":"CA-009","code":"HW04_PAST_EXPIRY","type":"percent","discount":"1","minimum":"0","expiry":"2020-01-01","limit":"1","expected":"rejected"},
+  {"id":"CA-010","code":"HW04_VALID_HIGH","type":"fixed","discount":"999999","minimum":"0","expiry":"2099-12-31","limit":"1","expected":"created"},
+  {"id":"CA-011","code":"HW04_VALID_MIN","type":"percent","discount":"1","minimum":"0","expiry":"2099-12-31","limit":"1","expected":"created"},
+  {"id":"CA-012","code":"HW04_VALID_LIMIT","type":"fixed","discount":"1","minimum":"0","expiry":"2099-12-31","limit":"3","expected":"created"}
+]

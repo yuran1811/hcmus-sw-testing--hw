@@ -1,0 +1,14 @@
+[
+  {"id":"PD-001","kind":"text","field":"title","expected":"iPhone 15 Pro Max"},
+  {"id":"PD-002","kind":"image-alt","expected":"iPhone 15 Pro Max"},
+  {"id":"PD-003","kind":"text","field":"price","expected":"30,000,000 ₫"},
+  {"id":"PD-004","kind":"text","field":"description","expected":"Điện thoại cao cấp của Apple"},
+  {"id":"PD-005","kind":"text","field":"category","expected":"Điện thoại"},
+  {"id":"PD-006","kind":"quantity-value","quantity":"1"},
+  {"id":"PD-007","kind":"reject-quantity","quantity":"0"},
+  {"id":"PD-008","kind":"reject-quantity","quantity":"-1"},
+  {"id":"PD-009","kind":"reject-quantity","quantity":"1.5"},
+  {"id":"PD-010","kind":"reject-quantity","quantity":""},
+  {"id":"PD-011","kind":"accept-quantity","quantity":"1"},
+  {"id":"PD-012","kind":"accept-quantity","quantity":"2"}
+]
