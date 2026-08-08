@@ -1,0 +1,5 @@
+Automation demo (unlisted YouTube, >= 5 minutes, Vietnamese narration, face-cam or whoami + hostname):
+https://youtu.be/epycdQsDkLw
+
+Agent Skill end-to-end demo (unlisted YouTube):
+https://youtu.be/jjZuMnvjHQo

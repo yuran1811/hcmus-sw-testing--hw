@@ -49,10 +49,10 @@ node .agents/skills/automation-test/scripts/audit-assignment.mjs \
 - Screenshots and contexts: `evidence/bugs/`
 - Git commit log: `git-log.txt`
 
-## Video placeholders
+## Video Demo Links
 
-- Automation demo: **`<UNLISTED_YOUTUBE_AUTOMATION_DEMO_LINK_REQUIRED>`**
-- Agent Skill demo: **`<UNLISTED_YOUTUBE_AGENT_SKILL_DEMO_LINK_REQUIRED>`**
+- Automation demo: **`https://youtu.be/epycdQsDkLw`**
+- Agent Skill demo: **`https://youtu.be/jjZuMnvjHQo`**
 
 ## Self-assessment
 

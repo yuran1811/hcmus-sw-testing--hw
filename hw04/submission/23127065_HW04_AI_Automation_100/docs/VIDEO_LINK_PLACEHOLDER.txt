@@ -1,7 +1,0 @@
-HUMAN EVIDENCE REQUIRED — DO NOT SUBMIT THIS PLACEHOLDER AS A VIDEO LINK
-
-Automation demo (unlisted YouTube, >= 5 minutes, Vietnamese narration, face-cam or whoami + hostname):
-<UNLISTED_YOUTUBE_AUTOMATION_DEMO_LINK_REQUIRED>
-
-Agent Skill end-to-end demo (unlisted YouTube):
-<UNLISTED_YOUTUBE_AGENT_SKILL_DEMO_LINK_REQUIRED>
