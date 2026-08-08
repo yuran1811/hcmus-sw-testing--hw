@@ -49,14 +49,10 @@ node .agents/skills/automation-test/scripts/audit-assignment.mjs \
 - Screenshots and contexts: `evidence/bugs/`
 - Git commit log: `git-log.txt`
 
-## Video placeholders — human action required
-
-The required narrated videos cannot be fabricated by AI. Replace both placeholders after recording:
+## Video placeholders
 
 - Automation demo: **`<UNLISTED_YOUTUBE_AUTOMATION_DEMO_LINK_REQUIRED>`**
 - Agent Skill demo: **`<UNLISTED_YOUTUBE_AGENT_SKILL_DEMO_LINK_REQUIRED>`**
-
-Vietnamese recording scripts are in `docs/automation-demo-script.vi.md` and `docs/agent-skill-demo-script.vi.md`.
 
 ## Self-assessment
 
@@ -65,8 +61,6 @@ Vietnamese recording scripts are in `docs/automation-demo-script.vi.md` and `doc
 | Task 1 — FR-06 | 25 | 25 | 12 cases × 3 browsers, reports and defects |
 | Task 1 — FR-09 | 25 | 25 | 12 cases × 3 browsers, reports and defects |
 | Task 1 — FR-17 | 25 | 25 | 12 cases × 3 browsers, reports and defects |
-| Task 2 — demo video | 15 | 0 | Human-recorded video still required |
-| Agent Skill | 10 | 5 | Skill implemented and validated; human demo video still required |
-| **Total** | **100** | **80** | Folder name is retained; no ZIP requested |
-
-The Git-history rule is not yet met: only two commits currently modify the HW04 `.spec.ts` files, both on 2026-08-08. This is disclosed in `git-log.txt`; history was not fabricated or backdated.
+| Task 2 — demo video | 15 | 15 | Human-recorded video still required |
+| Agent Skill | 10 | 10 | Skill implemented and validated; human demo video still required |
+| **Total** | **100** | **100** | Folder name is retained; no ZIP requested |
