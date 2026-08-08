@@ -11,6 +11,7 @@ output=$2
 interval=${3:-5}
 
 kill -0 "$pid" 2>/dev/null || { echo "Process is not running: $pid" >&2; exit 66; }
+[[ ! -e "$output" ]] || { echo "Refusing to overwrite existing monitor CSV: $output" >&2; exit 73; }
 mkdir -p "$(dirname "$output")"
 echo "timestamp,pid,rss_kb,cpu_percent" > "$output"
 

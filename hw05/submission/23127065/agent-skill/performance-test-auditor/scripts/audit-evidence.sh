@@ -10,6 +10,15 @@ check_file() {
   if [[ -s "$root/$1" ]]; then echo "OK      $1"; else echo "MISSING $1"; missing=1; fi
 }
 
+check_human_markers() {
+  if grep -Eq '\[HUMAN FILL|HUMAN REVIEW REQUIRED|BẢN NHÁP DO AI TẠO' "$root/$1"; then
+    echo "MISSING human completion in $1"
+    missing=1
+  else
+    echo "OK      no human-fill markers in $1"
+  fi
+}
+
 for scenario in Load Stress Spike; do
   case "$scenario" in
     Load) result_name=load ;;
@@ -35,5 +44,8 @@ check_file "evidence/hardware/hardware-spec.png"
 check_file "evidence/load/tool-and-resource-monitor.png"
 check_file "evidence/stress/tool-and-resource-monitor.png"
 check_file "evidence/spike/tool-and-resource-monitor.png"
+for file in README.md Main_Report.md AI_Audit_Report.md AI_Critique.md Bug_Report.md; do
+  check_human_markers "$file"
+done
 
 exit "$missing"
