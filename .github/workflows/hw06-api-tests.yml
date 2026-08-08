@@ -1,0 +1,81 @@
+name: HW06 API tests - 23127065
+
+on:
+  workflow_dispatch:
+    inputs:
+      demo_mode:
+        description: "Run the passing smoke set or one intentional failing assertion"
+        required: true
+        default: pass
+        type: choice
+        options:
+          - pass
+          - intentional-failure
+
+permissions:
+  contents: read
+
+jobs:
+  newman:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: hw06/submission/23127065_HW06_AI_API_100
+    steps:
+      - name: Check out test submission
+        uses: actions/checkout@v4
+
+      - name: Check out exact SUT revision
+        uses: actions/checkout@v4
+        with:
+          repository: yuran1811/hcmus-sw-testing--eshop-sut
+          ref: d97f995247a4a31ac91e8c6664da6fbf58b5fbd5
+          path: sut
+
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: hw06/submission/23127065_HW06_AI_API_100/package-lock.json
+
+      - name: Install Newman
+        run: npm ci
+
+      - name: Install and start SUT
+        working-directory: sut/backend
+        run: |
+          npm ci
+          node database.js
+          nohup node server.js > /tmp/hw06-sut.log 2>&1 &
+          for attempt in {1..30}; do
+            curl --fail --silent http://127.0.0.1:3000/api/products && break
+            sleep 1
+          done
+          curl --fail --silent http://127.0.0.1:3000/api/products > /dev/null
+
+      - name: Passing sample - login
+        if: inputs.demo_mode == 'pass'
+        run: npx newman run postman/23127065_HW06.postman_collection.json -e postman/localhost.postman_environment.json -d ci-data/login-pass.json --folder "Pool A - Login" -r cli,junit --reporter-junit-export newman/results/ci-login.xml
+
+      - name: Passing sample - checkout
+        if: inputs.demo_mode == 'pass'
+        run: npx newman run postman/23127065_HW06.postman_collection.json -e postman/localhost.postman_environment.json -d ci-data/checkout-pass.json --folder "Pool B - Checkout" -r cli,junit --reporter-junit-export newman/results/ci-checkout.xml
+
+      - name: Passing sample - order status
+        if: inputs.demo_mode == 'pass'
+        run: npx newman run postman/23127065_HW06.postman_collection.json -e postman/localhost.postman_environment.json -d ci-data/orderstatus-pass.json --folder "Pool C - Admin Order Status" -r cli,junit --reporter-junit-export newman/results/ci-orderstatus.xml
+
+      - name: Intentional failing sample
+        if: inputs.demo_mode == 'intentional-failure'
+        run: npx newman run postman/23127065_HW06.postman_collection.json -e postman/localhost.postman_environment.json -d ci-data/login-intentional-fail.json --folder "Pool A - Login" -r cli,junit --reporter-junit-export newman/results/ci-intentional-fail.xml
+
+      - name: Upload Newman evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: 23127065-newman-${{ inputs.demo_mode }}
+          path: |
+            hw06/submission/23127065_HW06_AI_API_100/newman/results
+            hw06/submission/23127065_HW06_AI_API_100/newman/reports
