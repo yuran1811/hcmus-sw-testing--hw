@@ -1,0 +1,737 @@
+{
+  "config": {
+    "argv": [
+      "/home/yuran1811/.volta/tools/image/node/26.5.0/bin/node",
+      "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/node_modules/@playwright/test/cli.js",
+      "test",
+      "tests/coupon-admin.spec.ts",
+      "--project",
+      "chromium"
+    ],
+    "configFile": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/playwright.config.ts",
+    "rootDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "runBy": "23127065",
+      "feature": "coupon-admin",
+      "browser": "chromium",
+      "startedAt": "2026-08-08T02:36:53.522Z",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "runBy": "23127065",
+          "feature": "coupon-admin",
+          "browser": "chromium",
+          "startedAt": "2026-08-08T02:36:53.522Z",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "runBy": "23127065",
+          "feature": "coupon-admin",
+          "browser": "chromium",
+          "startedAt": "2026-08-08T02:36:53.522Z",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "runBy": "23127065",
+          "feature": "coupon-admin",
+          "browser": "chromium",
+          "startedAt": "2026-08-08T02:36:53.522Z",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "reports/html/coupon-admin/chromium",
+          "title": "Run by: 23127065 | coupon-admin | chromium | 2026-08-08T02:36:53.522Z"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/json/coupon-admin/chromium.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "coupon-admin.spec.ts",
+      "file": "coupon-admin.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FR-17 Coupon Admin",
+          "file": "coupon-admin.spec.ts",
+          "line": 35,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-COUPON-ADMIN-001 positive created",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 839,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:36:54.277Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fee18694ae2dd1403663-94660149b44243670eb2",
+              "file": "coupon-admin.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-ADMIN-002 positive created",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 774,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:36:55.183Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fee18694ae2dd1403663-56e5a95a0bc1cbeb5672",
+              "file": "coupon-admin.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-ADMIN-003 negative rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2493,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:36:55.967Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fee18694ae2dd1403663-e63c33f28512dd2befa6",
+              "file": "coupon-admin.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-ADMIN-006 boundary rejected",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR17-NONPOSITIVE-DISCOUNT"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6527,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('tbody tr').filter({ hasText: 'HW04_DISCOUNT_ZERO_CHROMIUM_1786156618787' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tbody tr').filter({ hasText: 'HW04_DISCOUNT_ZERO_CHROMIUM_1786156618787' })\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('tbody tr').filter({ hasText: 'HW04_DISCOUNT_ZERO_CHROMIUM_1786156618787' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tbody tr').filter({ hasText: 'HW04_DISCOUNT_ZERO_CHROMIUM_1786156618787' })\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts:65:35",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts",
+                          "column": 35,
+                          "line": 65
+                        },
+                        "snippet": "  63 |           await submission;\n  64 |           await page.waitForTimeout(500);\n> 65 |           await expect(couponRow).toHaveCount(0);\n     |                                   ^\n  66 |         } else {\n  67 |           await expect(couponRow).toHaveCount(1);\n  68 |           if (row.expected === 'created-expired') await expect(couponRow).toContainText('Hết hạn');"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts",
+                            "column": 35,
+                            "line": 65
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('tbody tr').filter({ hasText: 'HW04_DISCOUNT_ZERO_CHROMIUM_1786156618787' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tbody tr').filter({ hasText: 'HW04_DISCOUNT_ZERO_CHROMIUM_1786156618787' })\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  63 |           await submission;\n  64 |           await page.waitForTimeout(500);\n> 65 |           await expect(couponRow).toHaveCount(0);\n     |                                   ^\n  66 |         } else {\n  67 |           await expect(couponRow).toHaveCount(1);\n  68 |           if (row.expected === 'created-expired') await expect(couponRow).toContainText('Hết hạn');\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts:65:35"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:36:58.467Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR17-NONPOSITIVE-DISCOUNT"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "confirmed-defect",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-chromium/attachments/confirmed-defect-4995c3544c4df0d1a5aaf137a494a72a6c1a20ea.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts",
+                        "column": 35,
+                        "line": 65
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "fee18694ae2dd1403663-79b5c333850695b796c8",
+              "file": "coupon-admin.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-ADMIN-007 negative rejected",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR17-NONPOSITIVE-DISCOUNT"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6595,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('tbody tr').filter({ hasText: 'HW04_DISCOUNT_NEG_CHROMIUM_1786156625846' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tbody tr').filter({ hasText: 'HW04_DISCOUNT_NEG_CHROMIUM_1786156625846' })\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('tbody tr').filter({ hasText: 'HW04_DISCOUNT_NEG_CHROMIUM_1786156625846' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tbody tr').filter({ hasText: 'HW04_DISCOUNT_NEG_CHROMIUM_1786156625846' })\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts:65:35",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts",
+                          "column": 35,
+                          "line": 65
+                        },
+                        "snippet": "  63 |           await submission;\n  64 |           await page.waitForTimeout(500);\n> 65 |           await expect(couponRow).toHaveCount(0);\n     |                                   ^\n  66 |         } else {\n  67 |           await expect(couponRow).toHaveCount(1);\n  68 |           if (row.expected === 'created-expired') await expect(couponRow).toContainText('Hết hạn');"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts",
+                            "column": 35,
+                            "line": 65
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('tbody tr').filter({ hasText: 'HW04_DISCOUNT_NEG_CHROMIUM_1786156625846' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tbody tr').filter({ hasText: 'HW04_DISCOUNT_NEG_CHROMIUM_1786156625846' })\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  63 |           await submission;\n  64 |           await page.waitForTimeout(500);\n> 65 |           await expect(couponRow).toHaveCount(0);\n     |                                   ^\n  66 |         } else {\n  67 |           await expect(couponRow).toHaveCount(1);\n  68 |           if (row.expected === 'created-expired') await expect(couponRow).toContainText('Hết hạn');\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts:65:35"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:37:05.398Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR17-NONPOSITIVE-DISCOUNT"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "confirmed-defect",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-chromium/attachments/confirmed-defect-98b317e7b04447fecdb260cfda0f884b3d4d065a.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts",
+                        "column": 35,
+                        "line": 65
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "fee18694ae2dd1403663-220c46a69d82d8aaaaf6",
+              "file": "coupon-admin.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-ADMIN-008 negative rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2565,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:37:12.459Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fee18694ae2dd1403663-33045c44c1e26950e81d",
+              "file": "coupon-admin.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-ADMIN-010 boundary rejected",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR17-NEGATIVE-MINIMUM"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6523,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('tbody tr').filter({ hasText: 'HW04_MINIMUM_NEG_CHROMIUM_1786156635420' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tbody tr').filter({ hasText: 'HW04_MINIMUM_NEG_CHROMIUM_1786156635420' })\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('tbody tr').filter({ hasText: 'HW04_MINIMUM_NEG_CHROMIUM_1786156635420' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tbody tr').filter({ hasText: 'HW04_MINIMUM_NEG_CHROMIUM_1786156635420' })\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts:65:35",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts",
+                          "column": 35,
+                          "line": 65
+                        },
+                        "snippet": "  63 |           await submission;\n  64 |           await page.waitForTimeout(500);\n> 65 |           await expect(couponRow).toHaveCount(0);\n     |                                   ^\n  66 |         } else {\n  67 |           await expect(couponRow).toHaveCount(1);\n  68 |           if (row.expected === 'created-expired') await expect(couponRow).toContainText('Hết hạn');"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts",
+                            "column": 35,
+                            "line": 65
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('tbody tr').filter({ hasText: 'HW04_MINIMUM_NEG_CHROMIUM_1786156635420' })\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tbody tr').filter({ hasText: 'HW04_MINIMUM_NEG_CHROMIUM_1786156635420' })\u001b[22m\n\u001b[2m    14 × locator resolved to 1 element\u001b[22m\n\u001b[2m       - unexpected value \"1\"\u001b[22m\n\n\n  63 |           await submission;\n  64 |           await page.waitForTimeout(500);\n> 65 |           await expect(couponRow).toHaveCount(0);\n     |                                   ^\n  66 |         } else {\n  67 |           await expect(couponRow).toHaveCount(1);\n  68 |           if (row.expected === 'created-expired') await expect(couponRow).toContainText('Hết hạn');\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts:65:35"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:37:15.095Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR17-NEGATIVE-MINIMUM"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "confirmed-defect",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-chromium/attachments/confirmed-defect-d4abcac285d907906a245e378024631634239e2c.png"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-chromium/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-chromium/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon-admin.spec.ts",
+                        "column": 35,
+                        "line": 65
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "fee18694ae2dd1403663-550b4bce9c3bf89b1c46",
+              "file": "coupon-admin.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-ADMIN-011 boundary rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2621,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:37:22.016Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fee18694ae2dd1403663-61708e3505d883f48b5c",
+              "file": "coupon-admin.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-ADMIN-012 negative rejected",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2533,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:37:24.705Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fee18694ae2dd1403663-603e0cae2f25c91ae568",
+              "file": "coupon-admin.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-ADMIN-020 boundary created",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 781,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:37:27.246Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fee18694ae2dd1403663-b98705a1ff29586f009b",
+              "file": "coupon-admin.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-ADMIN-022 boundary created",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 762,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:37:28.035Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fee18694ae2dd1403663-4ed31b9a3ba73306c630",
+              "file": "coupon-admin.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-ADMIN-024 exploratory created-expired",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 752,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:37:28.811Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fee18694ae2dd1403663-5bbf5ddbc1a98a4b406b",
+              "file": "coupon-admin.spec.ts",
+              "line": 37,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-08T02:36:53.934Z",
+    "duration": 35668.471,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}

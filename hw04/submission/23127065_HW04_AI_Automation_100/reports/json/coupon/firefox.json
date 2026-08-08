@@ -1,0 +1,832 @@
+{
+  "config": {
+    "argv": [
+      "/home/yuran1811/.volta/tools/image/node/26.5.0/bin/node",
+      "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/node_modules/@playwright/test/cli.js",
+      "test",
+      "tests/coupon.spec.ts",
+      "--project",
+      "firefox"
+    ],
+    "configFile": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/playwright.config.ts",
+    "rootDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "runBy": "23127065",
+      "feature": "coupon",
+      "browser": "firefox",
+      "startedAt": "2026-08-08T02:35:22.152Z",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "runBy": "23127065",
+          "feature": "coupon",
+          "browser": "firefox",
+          "startedAt": "2026-08-08T02:35:22.152Z",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "runBy": "23127065",
+          "feature": "coupon",
+          "browser": "firefox",
+          "startedAt": "2026-08-08T02:35:22.152Z",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "runBy": "23127065",
+          "feature": "coupon",
+          "browser": "firefox",
+          "startedAt": "2026-08-08T02:35:22.152Z",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "reports/html/coupon/firefox",
+          "title": "Run by: 23127065 | coupon | firefox | 2026-08-08T02:35:22.152Z"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/json/coupon/firefox.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "coupon.spec.ts",
+      "file": "coupon.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FR-09 Coupon",
+          "file": "coupon.spec.ts",
+          "line": 35,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-COUPON-001 positive SAVE10",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR09-PERCENT-CALCULATION"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6597,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tiết kiệm: 40,000 ₫')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tiết kiệm: 40,000 ₫')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tiết kiệm: 40,000 ₫')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tiết kiệm: 40,000 ₫')\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts:49:114",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                          "column": 114,
+                          "line": 49
+                        },
+                        "snippet": "  47 |       if (row.expected === 'success') {\n  48 |         await expect(page.getByText(/Áp dụng thành công/i)).toBeVisible();\n> 49 |         await expect(page.getByText(`Tiết kiệm: ${row.expectedDiscount!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n     |                                                                                                                  ^\n  50 |         await expect(page.getByText(`Thành tiền: ${row.expectedFinal!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  51 |       } else {\n  52 |         await expect(page.locator('p.text-red-600')).toContainText(new RegExp(row.expectedMessage!, 'i'));"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                            "column": 114,
+                            "line": 49
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tiết kiệm: 40,000 ₫')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tiết kiệm: 40,000 ₫')\u001b[22m\n\n\n  47 |       if (row.expected === 'success') {\n  48 |         await expect(page.getByText(/Áp dụng thành công/i)).toBeVisible();\n> 49 |         await expect(page.getByText(`Tiết kiệm: ${row.expectedDiscount!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n     |                                                                                                                  ^\n  50 |         await expect(page.getByText(`Thành tiền: ${row.expectedFinal!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  51 |       } else {\n  52 |         await expect(page.locator('p.text-red-600')).toContainText(new RegExp(row.expectedMessage!, 'i'));\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts:49:114"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:35:22.883Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR09-PERCENT-CALCULATION"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                        "column": 114,
+                        "line": 49
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6ff94abeb6e6490bd61d-5208b9049a9aa7ab7bd2",
+              "file": "coupon.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-002 boundary BIGBUY",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR09-THRESHOLD-EXCLUDES-EQUALITY"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6567,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/i)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/i)\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts:48:61",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                          "column": 61,
+                          "line": 48
+                        },
+                        "snippet": "  46 |\n  47 |       if (row.expected === 'success') {\n> 48 |         await expect(page.getByText(/Áp dụng thành công/i)).toBeVisible();\n     |                                                             ^\n  49 |         await expect(page.getByText(`Tiết kiệm: ${row.expectedDiscount!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  50 |         await expect(page.getByText(`Thành tiền: ${row.expectedFinal!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  51 |       } else {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                            "column": 61,
+                            "line": 48
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/i)\u001b[22m\n\n\n  46 |\n  47 |       if (row.expected === 'success') {\n> 48 |         await expect(page.getByText(/Áp dụng thành công/i)).toBeVisible();\n     |                                                             ^\n  49 |         await expect(page.getByText(`Tiết kiệm: ${row.expectedDiscount!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  50 |         await expect(page.getByText(`Thành tiền: ${row.expectedFinal!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  51 |       } else {\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts:48:61"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:35:30.420Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR09-THRESHOLD-EXCLUDES-EQUALITY"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                        "column": 61,
+                        "line": 48
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6ff94abeb6e6490bd61d-4a8070ee638e70e88063",
+              "file": "coupon.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-003 negative NOTEXIST",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1539,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:35:37.938Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6ff94abeb6e6490bd61d-6b298bf5b37fddd673ac",
+              "file": "coupon.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-004 negative INACTIVE",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 771,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:35:39.771Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6ff94abeb6e6490bd61d-7658a25da2b995205c12",
+              "file": "coupon.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-005 negative EXPIRED",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 763,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:35:40.551Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6ff94abeb6e6490bd61d-c2357a1732bbcd7ddc99",
+              "file": "coupon.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-006 boundary SAVE10",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 748,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:35:41.322Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6ff94abeb6e6490bd61d-c8aaf189b6737839d0f0",
+              "file": "coupon.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-007 boundary SAVE10",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 817,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:35:42.078Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6ff94abeb6e6490bd61d-2d3d1949726317489c46",
+              "file": "coupon.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-008 authorization SAVE10",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR09-COUPON-ALLOWS-GUEST"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5610,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('p.text-red-600')\nExpected pattern: \u001b[32m/đăng nhập/i\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('p.text-red-600')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('p.text-red-600')\nExpected pattern: \u001b[32m/đăng nhập/i\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('p.text-red-600')\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts:52:54",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                          "column": 54,
+                          "line": 52
+                        },
+                        "snippet": "  50 |         await expect(page.getByText(`Thành tiền: ${row.expectedFinal!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  51 |       } else {\n> 52 |         await expect(page.locator('p.text-red-600')).toContainText(new RegExp(row.expectedMessage!, 'i'));\n     |                                                      ^\n  53 |         await expect(page.getByText(/Tiết kiệm:/)).toHaveCount(0);\n  54 |       }\n  55 |     });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                            "column": 54,
+                            "line": 52
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('p.text-red-600')\nExpected pattern: \u001b[32m/đăng nhập/i\u001b[39m\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('p.text-red-600')\u001b[22m\n\n\n  50 |         await expect(page.getByText(`Thành tiền: ${row.expectedFinal!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  51 |       } else {\n> 52 |         await expect(page.locator('p.text-red-600')).toContainText(new RegExp(row.expectedMessage!, 'i'));\n     |                                                      ^\n  53 |         await expect(page.getByText(/Tiết kiệm:/)).toHaveCount(0);\n  54 |       }\n  55 |     });\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts:52:54"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:35:42.903Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR09-COUPON-ALLOWS-GUEST"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                        "column": 54,
+                        "line": 52
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6ff94abeb6e6490bd61d-b9fd9ee31cec64dc68b4",
+              "file": "coupon.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-012 boundary SAVE10",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR09-THRESHOLD-EXCLUDES-EQUALITY"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6573,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/i)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/i)\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts:48:61",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                          "column": 61,
+                          "line": 48
+                        },
+                        "snippet": "  46 |\n  47 |       if (row.expected === 'success') {\n> 48 |         await expect(page.getByText(/Áp dụng thành công/i)).toBeVisible();\n     |                                                             ^\n  49 |         await expect(page.getByText(`Tiết kiệm: ${row.expectedDiscount!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  50 |         await expect(page.getByText(`Thành tiền: ${row.expectedFinal!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  51 |       } else {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                            "column": 61,
+                            "line": 48
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Áp dụng thành công/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Áp dụng thành công/i)\u001b[22m\n\n\n  46 |\n  47 |       if (row.expected === 'success') {\n> 48 |         await expect(page.getByText(/Áp dụng thành công/i)).toBeVisible();\n     |                                                             ^\n  49 |         await expect(page.getByText(`Tiết kiệm: ${row.expectedDiscount!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  50 |         await expect(page.getByText(`Thành tiền: ${row.expectedFinal!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  51 |       } else {\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts:48:61"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:35:49.183Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR09-THRESHOLD-EXCLUDES-EQUALITY"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                        "column": 61,
+                        "line": 48
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6ff94abeb6e6490bd61d-7cd0065a25037a297679",
+              "file": "coupon.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-013 boundary SAVE10",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR09-PERCENT-CALCULATION"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6737,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tiết kiệm: 30,000 ₫')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tiết kiệm: 30,000 ₫')\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tiết kiệm: 30,000 ₫')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tiết kiệm: 30,000 ₫')\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts:49:114",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                          "column": 114,
+                          "line": 49
+                        },
+                        "snippet": "  47 |       if (row.expected === 'success') {\n  48 |         await expect(page.getByText(/Áp dụng thành công/i)).toBeVisible();\n> 49 |         await expect(page.getByText(`Tiết kiệm: ${row.expectedDiscount!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n     |                                                                                                                  ^\n  50 |         await expect(page.getByText(`Thành tiền: ${row.expectedFinal!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  51 |       } else {\n  52 |         await expect(page.locator('p.text-red-600')).toContainText(new RegExp(row.expectedMessage!, 'i'));"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                            "column": 114,
+                            "line": 49
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tiết kiệm: 30,000 ₫')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tiết kiệm: 30,000 ₫')\u001b[22m\n\n\n  47 |       if (row.expected === 'success') {\n  48 |         await expect(page.getByText(/Áp dụng thành công/i)).toBeVisible();\n> 49 |         await expect(page.getByText(`Tiết kiệm: ${row.expectedDiscount!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n     |                                                                                                                  ^\n  50 |         await expect(page.getByText(`Thành tiền: ${row.expectedFinal!.toLocaleString()} ₫`, { exact: false })).toBeVisible();\n  51 |       } else {\n  52 |         await expect(page.locator('p.text-red-600')).toContainText(new RegExp(row.expectedMessage!, 'i'));\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts:49:114"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:35:56.751Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR09-PERCENT-CALCULATION"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/coupon.spec.ts",
+                        "column": 114,
+                        "line": 49
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "6ff94abeb6e6490bd61d-1b928b0d384d0c4ce03a",
+              "file": "coupon.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-014 boundary BIGBUY",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1624,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:36:04.485Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6ff94abeb6e6490bd61d-9b6b66312160d47d5c0f",
+              "file": "coupon.spec.ts",
+              "line": 37,
+              "column": 5
+            },
+            {
+              "title": "TC-COUPON-015 boundary BIGBUY",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 845,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:36:06.428Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "6ff94abeb6e6490bd61d-62a6925976c94c94ce83",
+              "file": "coupon.spec.ts",
+              "line": 37,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-08T02:35:22.545Z",
+    "duration": 45033.593,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 5,
+    "flaky": 0
+  }
+}

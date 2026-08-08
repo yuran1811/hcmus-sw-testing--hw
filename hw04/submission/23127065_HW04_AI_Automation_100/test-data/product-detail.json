@@ -1,14 +1,14 @@
 [
-  {"id":"PD-001","kind":"text","field":"title","expected":"iPhone 15 Pro Max"},
-  {"id":"PD-002","kind":"image-alt","expected":"iPhone 15 Pro Max"},
-  {"id":"PD-003","kind":"text","field":"price","expected":"30,000,000 ₫"},
-  {"id":"PD-004","kind":"text","field":"description","expected":"Điện thoại cao cấp của Apple"},
-  {"id":"PD-005","kind":"text","field":"category","expected":"Điện thoại"},
-  {"id":"PD-006","kind":"quantity-value","quantity":"1"},
-  {"id":"PD-007","kind":"reject-quantity","quantity":"0"},
-  {"id":"PD-008","kind":"reject-quantity","quantity":"-1"},
-  {"id":"PD-009","kind":"reject-quantity","quantity":"1.5"},
-  {"id":"PD-010","kind":"reject-quantity","quantity":""},
-  {"id":"PD-011","kind":"accept-quantity","quantity":"1"},
-  {"id":"PD-012","kind":"accept-quantity","quantity":"2"}
+  {"id":"TC-PRODUCT-DETAIL-001","category":"positive","action":"display-details","productId":"1","expectedName":"iPhone 15 Pro Max","expectedPrice":"30,000,000 ₫","expectedDescription":"Điện thoại cao cấp của Apple","expectedCategory":"Điện thoại","defectKey":"FR06-MISSING-CATEGORY"},
+  {"id":"TC-PRODUCT-DETAIL-002","category":"negative","action":"invalid-product","productId":"9999","expectedMessage":"Sản phẩm không tồn tại","defectKey":"FR06-MISSING-NOT-FOUND-STATE"},
+  {"id":"TC-PRODUCT-DETAIL-003","category":"negative","action":"invalid-product","productId":"abc","expectedMessage":"Sản phẩm không tồn tại","defectKey":"FR06-MISSING-NOT-FOUND-STATE"},
+  {"id":"TC-PRODUCT-DETAIL-004","category":"positive","action":"accept-quantity","productId":"1","quantity":"2","expectedFeedback":"Đã thêm","defectKey":"FR06-FIRST-CLICK-IGNORED"},
+  {"id":"TC-PRODUCT-DETAIL-005","category":"boundary","action":"reject-quantity","productId":"1","quantity":"0","expectedMessage":"Số lượng tối thiểu là 1","defectKey":"FR06-QUANTITY-NOT-VALIDATED"},
+  {"id":"TC-PRODUCT-DETAIL-006","category":"negative","action":"reject-quantity","productId":"1","quantity":"-1","expectedMessage":"Số lượng phải là số nguyên dương","defectKey":"FR06-QUANTITY-NOT-VALIDATED"},
+  {"id":"TC-PRODUCT-DETAIL-007","category":"negative","action":"reject-quantity","productId":"1","quantity":"1.5","expectedMessage":"Số lượng phải là số nguyên","defectKey":"FR06-QUANTITY-NOT-VALIDATED"},
+  {"id":"TC-PRODUCT-DETAIL-008","category":"negative","action":"reject-quantity","productId":"1","quantity":"","expectedMessage":"Vui lòng nhập số lượng","defectKey":"FR06-QUANTITY-NOT-VALIDATED"},
+  {"id":"TC-PRODUCT-DETAIL-009","category":"negative","action":"reject-quantity","productId":"1","quantity":"abc","expectedMessage":"Số lượng không hợp lệ","defectKey":"FR06-QUANTITY-NOT-VALIDATED"},
+  {"id":"TC-PRODUCT-DETAIL-010","category":"boundary","action":"accept-quantity","productId":"1","quantity":"1","expectedFeedback":"Đã thêm","defectKey":"FR06-FIRST-CLICK-IGNORED"},
+  {"id":"TC-PRODUCT-DETAIL-011","category":"boundary","action":"accept-quantity","productId":"1","quantity":"2","expectedFeedback":"Đã thêm","defectKey":"FR06-FIRST-CLICK-IGNORED"},
+  {"id":"TC-PRODUCT-DETAIL-012","category":"authorization","action":"require-login","productId":"1","quantity":"1","expectedMessage":"Đăng nhập","defectKey":"FR06-UNAUTHENTICATED-CART-ADD"}
 ]

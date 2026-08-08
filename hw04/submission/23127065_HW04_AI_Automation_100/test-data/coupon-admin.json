@@ -1,14 +1,14 @@
 [
-  {"id":"CA-001","code":"HW04_VALID_PERCENT","type":"percent","discount":"10","minimum":"0","expiry":"2099-12-31","limit":"1","expected":"created"},
-  {"id":"CA-002","code":"HW04_VALID_FIXED","type":"fixed","discount":"50000","minimum":"100000","expiry":"2099-12-31","limit":"2","expected":"created"},
-  {"id":"CA-003","code":"","type":"percent","discount":"10","minimum":"0","expiry":"2099-12-31","limit":"1","expected":"rejected"},
-  {"id":"CA-004","code":"HW04_ZERO_DISCOUNT","type":"percent","discount":"0","minimum":"0","expiry":"2099-12-31","limit":"1","expected":"rejected"},
-  {"id":"CA-005","code":"HW04_NEG_DISCOUNT","type":"percent","discount":"-1","minimum":"0","expiry":"2099-12-31","limit":"1","expected":"rejected"},
-  {"id":"CA-006","code":"HW04_NEG_MIN","type":"fixed","discount":"1","minimum":"-1","expiry":"2099-12-31","limit":"1","expected":"rejected"},
-  {"id":"CA-007","code":"HW04_ZERO_LIMIT","type":"fixed","discount":"1","minimum":"0","expiry":"2099-12-31","limit":"0","expected":"rejected"},
-  {"id":"CA-008","code":"HW04_NEG_LIMIT","type":"fixed","discount":"1","minimum":"0","expiry":"2099-12-31","limit":"-1","expected":"rejected"},
-  {"id":"CA-009","code":"HW04_PAST_EXPIRY","type":"percent","discount":"1","minimum":"0","expiry":"2020-01-01","limit":"1","expected":"rejected"},
-  {"id":"CA-010","code":"HW04_VALID_HIGH","type":"fixed","discount":"999999","minimum":"0","expiry":"2099-12-31","limit":"1","expected":"created"},
-  {"id":"CA-011","code":"HW04_VALID_MIN","type":"percent","discount":"1","minimum":"0","expiry":"2099-12-31","limit":"1","expected":"created"},
-  {"id":"CA-012","code":"HW04_VALID_LIMIT","type":"fixed","discount":"1","minimum":"0","expiry":"2099-12-31","limit":"3","expected":"created"}
+  {"id":"TC-COUPON-ADMIN-001","category":"positive","code":"VALID_PERCENT","type":"percent","discount":"10","minimum":"100000","expiry":"2099-12-31","limit":"2","expected":"created","defectKey":""},
+  {"id":"TC-COUPON-ADMIN-002","category":"positive","code":"VALID_FIXED","type":"fixed","discount":"50000","minimum":"100000","expiry":"2099-12-31","limit":"2","expected":"created","defectKey":""},
+  {"id":"TC-COUPON-ADMIN-003","category":"negative","code":"","type":"percent","discount":"10","minimum":"100000","expiry":"2099-12-31","limit":"2","expected":"rejected","invalidField":"code","defectKey":""},
+  {"id":"TC-COUPON-ADMIN-006","category":"boundary","code":"DISCOUNT_ZERO","type":"percent","discount":"0","minimum":"100000","expiry":"2099-12-31","limit":"2","expected":"rejected","invalidField":"discount","defectKey":"FR17-NONPOSITIVE-DISCOUNT"},
+  {"id":"TC-COUPON-ADMIN-007","category":"negative","code":"DISCOUNT_NEG","type":"fixed","discount":"-10","minimum":"100000","expiry":"2099-12-31","limit":"2","expected":"rejected","invalidField":"discount","defectKey":"FR17-NONPOSITIVE-DISCOUNT"},
+  {"id":"TC-COUPON-ADMIN-008","category":"negative","code":"NO_EXPIRY","type":"percent","discount":"10","minimum":"100000","expiry":"","limit":"2","expected":"rejected","invalidField":"expiry","defectKey":""},
+  {"id":"TC-COUPON-ADMIN-010","category":"boundary","code":"MINIMUM_NEG","type":"percent","discount":"10","minimum":"-1","expiry":"2099-12-31","limit":"2","expected":"rejected","invalidField":"minimum","defectKey":"FR17-NEGATIVE-MINIMUM"},
+  {"id":"TC-COUPON-ADMIN-011","category":"boundary","code":"LIMIT_ZERO","type":"percent","discount":"10","minimum":"100000","expiry":"2099-12-31","limit":"0","expected":"rejected","invalidField":"limit","defectKey":""},
+  {"id":"TC-COUPON-ADMIN-012","category":"negative","code":"LIMIT_NEG","type":"percent","discount":"10","minimum":"100000","expiry":"2099-12-31","limit":"-5","expected":"rejected","invalidField":"limit","defectKey":""},
+  {"id":"TC-COUPON-ADMIN-020","category":"boundary","code":"MINIMUM_ON","type":"percent","discount":"15","minimum":"0","expiry":"2099-12-31","limit":"5","expected":"created","defectKey":""},
+  {"id":"TC-COUPON-ADMIN-022","category":"boundary","code":"LIMIT_ON","type":"percent","discount":"15","minimum":"200000","expiry":"2099-12-31","limit":"1","expected":"created","defectKey":""},
+  {"id":"TC-COUPON-ADMIN-024","category":"exploratory","code":"PAST_EXPIRY","type":"percent","discount":"15","minimum":"200000","expiry":"2020-01-01","limit":"5","expected":"created-expired","defectKey":""}
 ]

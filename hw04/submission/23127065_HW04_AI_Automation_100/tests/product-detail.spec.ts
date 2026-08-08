@@ -1,33 +1,68 @@
 import { expect, test } from '@playwright/test';
-import { loadCases } from './data.js';
+import { hasOnlyKeys, isOneOf, isRecord, isString, loadCases, type BaseCase } from './data.js';
 
-type ProductCase = { id: string; kind: 'text' | 'image-alt' | 'quantity-value' | 'reject-quantity' | 'accept-quantity'; field?: 'title' | 'price' | 'description' | 'category'; expected?: string; quantity?: string };
-const cases = loadCases<ProductCase>(new URL('../test-data/product-detail.json', import.meta.url));
+type ProductCase = BaseCase & {
+  action: 'display-details' | 'invalid-product' | 'accept-quantity' | 'reject-quantity' | 'require-login';
+  productId: string;
+  quantity?: string;
+  expectedName?: string;
+  expectedPrice?: string;
+  expectedDescription?: string;
+  expectedCategory?: string;
+  expectedFeedback?: string;
+  expectedMessage?: string;
+};
+
+const allowedKeys = ['id', 'category', 'action', 'productId', 'quantity', 'expectedName', 'expectedPrice', 'expectedDescription', 'expectedCategory', 'expectedFeedback', 'expectedMessage', 'defectKey'] as const;
+const actions = ['display-details', 'invalid-product', 'accept-quantity', 'reject-quantity', 'require-login'] as const;
+function isProductCase(value: unknown): value is ProductCase {
+  if (!isRecord(value) || !hasOnlyKeys(value, allowedKeys)) return false;
+  if (![value.id, value.category, value.productId, value.defectKey].every(isString) || !isOneOf(value.action, actions)) return false;
+  return Object.entries(value).every(([key, item]) => key === 'action' || item === undefined || typeof item === 'string');
+}
+
+const cases = loadCases<ProductCase>(new URL('../test-data/product-detail.json', import.meta.url), 'FR-06 Product Detail', isProductCase);
 const baseURL = process.env.ESHOP_WEB_URL ?? 'http://localhost:5173';
 
 test.describe('FR-06 Product Detail', () => {
   for (const row of cases) {
-    test(`${row.id} ${row.kind}`, async ({ page }) => {
-      await page.goto(`${baseURL}/product/1`);
-      await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
+    test(`${row.id} ${row.category} ${row.action}`, async ({ page }, testInfo) => {
+      if (row.defectKey) testInfo.annotations.push({ type: 'defect-key', description: row.defectKey });
+      await page.goto(`${baseURL}/product/${row.productId}`);
+
+      if (row.action === 'invalid-product') {
+        await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();
+        return;
+      }
+
+      const heading = page.getByRole('heading', { level: 1 });
+      await expect(heading).toBeVisible();
+
+      if (row.action === 'display-details') {
+        await expect(heading).toHaveText(row.expectedName!);
+        await expect(page.getByRole('img', { name: row.expectedName })).toHaveAttribute('alt', row.expectedName!);
+        await expect(page.locator('p').filter({ hasText: '₫' }).first()).toHaveText(row.expectedPrice!);
+        await expect(page.getByText(row.expectedDescription!, { exact: true })).toBeVisible();
+        await expect(page.getByText(row.expectedCategory!, { exact: true })).toBeVisible();
+        return;
+      }
+
       const quantity = page.locator('input[type="number"]');
-      if (row.kind === 'text') {
-        const locator = row.field === 'title' ? page.getByRole('heading', { level: 1 }) : row.field === 'price' ? page.locator('p').filter({ hasText: '₫' }).first() : row.field === 'description' ? page.locator('p').filter({ hasText: 'Điện thoại' }) : page.getByText(row.expected!, { exact: true });
-        if (row.field === 'category') await expect(locator).toBeVisible();
-        else await expect(locator).toHaveText(row.expected!);
-      } else if (row.kind === 'image-alt') {
-        await expect(page.getByRole('img')).toHaveAttribute('alt', row.expected!);
-      } else if (row.kind === 'quantity-value') {
-        await expect(quantity).toHaveValue(row.quantity!);
+      if (row.quantity && !Number.isFinite(Number(row.quantity))) {
+        await quantity.clear();
+        await quantity.pressSequentially(row.quantity);
       } else {
-        await quantity.fill(row.quantity!);
-        await page.getByRole('button', { name: 'Thêm vào giỏ hàng' }).click();
-        await page.getByRole('button', { name: 'Thêm vào giỏ hàng' }).click();
-        if (row.kind === 'reject-quantity') {
-          const success = page.getByRole('button', { name: 'Đã thêm' });
-          await expect(success).toBeVisible();
-          await expect(success).toBeHidden();
-        } else await expect(page.getByRole('button', { name: 'Đã thêm' })).toBeVisible();
+        await quantity.fill(row.quantity ?? '');
+      }
+      await page.getByRole('button', { name: 'Thêm vào giỏ hàng' }).click();
+
+      if (row.action === 'accept-quantity') {
+        await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();
+      } else if (row.action === 'reject-quantity') {
+        await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();
+      } else {
+        await expect(page).toHaveURL(/\/login(?:$|\?)/);
+        await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();
       }
     });
   }

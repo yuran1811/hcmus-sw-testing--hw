@@ -1,0 +1,1127 @@
+{
+  "config": {
+    "argv": [
+      "/home/yuran1811/.volta/tools/image/node/26.5.0/bin/node",
+      "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/node_modules/@playwright/test/cli.js",
+      "test",
+      "tests/product-detail.spec.ts",
+      "--project",
+      "firefox"
+    ],
+    "configFile": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/playwright.config.ts",
+    "rootDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "runBy": "23127065",
+      "feature": "product-detail",
+      "browser": "firefox",
+      "startedAt": "2026-08-08T02:32:24.352Z",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "runBy": "23127065",
+          "feature": "product-detail",
+          "browser": "firefox",
+          "startedAt": "2026-08-08T02:32:24.352Z",
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "runBy": "23127065",
+          "feature": "product-detail",
+          "browser": "firefox",
+          "startedAt": "2026-08-08T02:32:24.352Z",
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "runBy": "23127065",
+          "feature": "product-detail",
+          "browser": "firefox",
+          "startedAt": "2026-08-08T02:32:24.352Z",
+          "actualWorkers": 1
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "reports/html/product-detail/firefox",
+          "title": "Run by: 23127065 | product-detail | firefox | 2026-08-08T02:32:24.352Z"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "reports/json/product-detail/firefox.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "product-detail.spec.ts",
+      "file": "product-detail.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "FR-06 Product Detail",
+          "file": "product-detail.spec.ts",
+          "line": 27,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-PRODUCT-DETAIL-001 positive display-details",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR06-MISSING-CATEGORY"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6108,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Điện thoại', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Điện thoại', { exact: true })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Điện thoại', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Điện thoại', { exact: true })\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:46:78",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                          "column": 78,
+                          "line": 46
+                        },
+                        "snippet": "  44 |         await expect(page.locator('p').filter({ hasText: '₫' }).first()).toHaveText(row.expectedPrice!);\n  45 |         await expect(page.getByText(row.expectedDescription!, { exact: true })).toBeVisible();\n> 46 |         await expect(page.getByText(row.expectedCategory!, { exact: true })).toBeVisible();\n     |                                                                              ^\n  47 |         return;\n  48 |       }\n  49 |"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                            "column": 78,
+                            "line": 46
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Điện thoại', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Điện thoại', { exact: true })\u001b[22m\n\n\n  44 |         await expect(page.locator('p').filter({ hasText: '₫' }).first()).toHaveText(row.expectedPrice!);\n  45 |         await expect(page.getByText(row.expectedDescription!, { exact: true })).toBeVisible();\n> 46 |         await expect(page.getByText(row.expectedCategory!, { exact: true })).toBeVisible();\n     |                                                                              ^\n  47 |         return;\n  48 |       }\n  49 |\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:46:78"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:32:25.067Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR06-MISSING-CATEGORY"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-f0a47-01-positive-display-details-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-f0a47-01-positive-display-details-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-f0a47-01-positive-display-details-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-f0a47-01-positive-display-details-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                        "column": 78,
+                        "line": 46
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "62d53a362a4fbb3b09ca-f5ab60e94a66162eca34",
+              "file": "product-detail.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "TC-PRODUCT-DETAIL-002 negative invalid-product",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR06-MISSING-NOT-FOUND-STATE"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 950,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:32:32.099Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR06-MISSING-NOT-FOUND-STATE"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "62d53a362a4fbb3b09ca-f13443e1677fe166a0f1",
+              "file": "product-detail.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "TC-PRODUCT-DETAIL-003 negative invalid-product",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR06-MISSING-NOT-FOUND-STATE"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 409,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:32:33.345Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR06-MISSING-NOT-FOUND-STATE"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "62d53a362a4fbb3b09ca-144bf8db33044e26bf41",
+              "file": "product-detail.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "TC-PRODUCT-DETAIL-004 positive accept-quantity",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR06-FIRST-CLICK-IGNORED"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5503,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Đã thêm' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Đã thêm' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Đã thêm' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Đã thêm' })\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:60:81",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                          "column": 81,
+                          "line": 60
+                        },
+                        "snippet": "  58 |\n  59 |       if (row.action === 'accept-quantity') {\n> 60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n     |                                                                                 ^\n  61 |       } else if (row.action === 'reject-quantity') {\n  62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n  63 |       } else {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                            "column": 81,
+                            "line": 60
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Đã thêm' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Đã thêm' })\u001b[22m\n\n\n  58 |\n  59 |       if (row.action === 'accept-quantity') {\n> 60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n     |                                                                                 ^\n  61 |       } else if (row.action === 'reject-quantity') {\n  62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n  63 |       } else {\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:60:81"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:32:33.767Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR06-FIRST-CLICK-IGNORED"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                        "column": 81,
+                        "line": 60
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "62d53a362a4fbb3b09ca-42447d2d7fd45c07e244",
+              "file": "product-detail.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "TC-PRODUCT-DETAIL-005 boundary reject-quantity",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR06-QUANTITY-NOT-VALIDATED"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6161,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Số lượng tối thiểu là 1/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Số lượng tối thiểu là 1/i)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Số lượng tối thiểu là 1/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Số lượng tối thiểu là 1/i)\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:62:77",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                          "column": 77,
+                          "line": 62
+                        },
+                        "snippet": "  60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n  61 |       } else if (row.action === 'reject-quantity') {\n> 62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n     |                                                                             ^\n  63 |       } else {\n  64 |         await expect(page).toHaveURL(/\\/login(?:$|\\?)/);\n  65 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                            "column": 77,
+                            "line": 62
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Số lượng tối thiểu là 1/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Số lượng tối thiểu là 1/i)\u001b[22m\n\n\n  60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n  61 |       } else if (row.action === 'reject-quantity') {\n> 62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n     |                                                                             ^\n  63 |       } else {\n  64 |         await expect(page).toHaveURL(/\\/login(?:$|\\?)/);\n  65 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:62:77"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:32:39.898Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR06-QUANTITY-NOT-VALIDATED"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                        "column": 77,
+                        "line": 62
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "62d53a362a4fbb3b09ca-6708243353dc06c618b9",
+              "file": "product-detail.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "TC-PRODUCT-DETAIL-006 negative reject-quantity",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR06-QUANTITY-NOT-VALIDATED"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6143,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Số lượng phải là số nguyên dương/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Số lượng phải là số nguyên dương/i)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Số lượng phải là số nguyên dương/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Số lượng phải là số nguyên dương/i)\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:62:77",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                          "column": 77,
+                          "line": 62
+                        },
+                        "snippet": "  60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n  61 |       } else if (row.action === 'reject-quantity') {\n> 62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n     |                                                                             ^\n  63 |       } else {\n  64 |         await expect(page).toHaveURL(/\\/login(?:$|\\?)/);\n  65 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                            "column": 77,
+                            "line": 62
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Số lượng phải là số nguyên dương/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Số lượng phải là số nguyên dương/i)\u001b[22m\n\n\n  60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n  61 |       } else if (row.action === 'reject-quantity') {\n> 62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n     |                                                                             ^\n  63 |       } else {\n  64 |         await expect(page).toHaveURL(/\\/login(?:$|\\?)/);\n  65 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:62:77"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:32:46.972Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR06-QUANTITY-NOT-VALIDATED"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                        "column": 77,
+                        "line": 62
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "62d53a362a4fbb3b09ca-2405e002e70a5f230d39",
+              "file": "product-detail.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "TC-PRODUCT-DETAIL-007 negative reject-quantity",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR06-QUANTITY-NOT-VALIDATED"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6328,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Số lượng phải là số nguyên/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Số lượng phải là số nguyên/i)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Số lượng phải là số nguyên/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Số lượng phải là số nguyên/i)\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:62:77",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                          "column": 77,
+                          "line": 62
+                        },
+                        "snippet": "  60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n  61 |       } else if (row.action === 'reject-quantity') {\n> 62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n     |                                                                             ^\n  63 |       } else {\n  64 |         await expect(page).toHaveURL(/\\/login(?:$|\\?)/);\n  65 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                            "column": 77,
+                            "line": 62
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Số lượng phải là số nguyên/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Số lượng phải là số nguyên/i)\u001b[22m\n\n\n  60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n  61 |       } else if (row.action === 'reject-quantity') {\n> 62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n     |                                                                             ^\n  63 |       } else {\n  64 |         await expect(page).toHaveURL(/\\/login(?:$|\\?)/);\n  65 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:62:77"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:32:54.024Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR06-QUANTITY-NOT-VALIDATED"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                        "column": 77,
+                        "line": 62
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "62d53a362a4fbb3b09ca-00db7924e324bee8623e",
+              "file": "product-detail.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "TC-PRODUCT-DETAIL-008 negative reject-quantity",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR06-QUANTITY-NOT-VALIDATED"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6155,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Vui lòng nhập số lượng/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Vui lòng nhập số lượng/i)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Vui lòng nhập số lượng/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Vui lòng nhập số lượng/i)\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:62:77",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                          "column": 77,
+                          "line": 62
+                        },
+                        "snippet": "  60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n  61 |       } else if (row.action === 'reject-quantity') {\n> 62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n     |                                                                             ^\n  63 |       } else {\n  64 |         await expect(page).toHaveURL(/\\/login(?:$|\\?)/);\n  65 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                            "column": 77,
+                            "line": 62
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Vui lòng nhập số lượng/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Vui lòng nhập số lượng/i)\u001b[22m\n\n\n  60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n  61 |       } else if (row.action === 'reject-quantity') {\n> 62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n     |                                                                             ^\n  63 |       } else {\n  64 |         await expect(page).toHaveURL(/\\/login(?:$|\\?)/);\n  65 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:62:77"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:33:01.275Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR06-QUANTITY-NOT-VALIDATED"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                        "column": 77,
+                        "line": 62
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "62d53a362a4fbb3b09ca-c5a3ae939ab039ab4fb0",
+              "file": "product-detail.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "TC-PRODUCT-DETAIL-009 negative reject-quantity",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR06-QUANTITY-NOT-VALIDATED"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6175,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Số lượng không hợp lệ/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Số lượng không hợp lệ/i)\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Số lượng không hợp lệ/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Số lượng không hợp lệ/i)\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:62:77",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                          "column": 77,
+                          "line": 62
+                        },
+                        "snippet": "  60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n  61 |       } else if (row.action === 'reject-quantity') {\n> 62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n     |                                                                             ^\n  63 |       } else {\n  64 |         await expect(page).toHaveURL(/\\/login(?:$|\\?)/);\n  65 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                            "column": 77,
+                            "line": 62
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText(/Số lượng không hợp lệ/i)\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/Số lượng không hợp lệ/i)\u001b[22m\n\n\n  60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n  61 |       } else if (row.action === 'reject-quantity') {\n> 62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n     |                                                                             ^\n  63 |       } else {\n  64 |         await expect(page).toHaveURL(/\\/login(?:$|\\?)/);\n  65 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:62:77"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:33:08.325Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR06-QUANTITY-NOT-VALIDATED"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                        "column": 77,
+                        "line": 62
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "62d53a362a4fbb3b09ca-56e203aa4d053541080c",
+              "file": "product-detail.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "TC-PRODUCT-DETAIL-010 boundary accept-quantity",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR06-FIRST-CLICK-IGNORED"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6143,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Đã thêm' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Đã thêm' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Đã thêm' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Đã thêm' })\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:60:81",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                          "column": 81,
+                          "line": 60
+                        },
+                        "snippet": "  58 |\n  59 |       if (row.action === 'accept-quantity') {\n> 60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n     |                                                                                 ^\n  61 |       } else if (row.action === 'reject-quantity') {\n  62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n  63 |       } else {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                            "column": 81,
+                            "line": 60
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Đã thêm' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Đã thêm' })\u001b[22m\n\n\n  58 |\n  59 |       if (row.action === 'accept-quantity') {\n> 60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n     |                                                                                 ^\n  61 |       } else if (row.action === 'reject-quantity') {\n  62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n  63 |       } else {\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:60:81"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:33:15.415Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR06-FIRST-CLICK-IGNORED"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                        "column": 81,
+                        "line": 60
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "62d53a362a4fbb3b09ca-2cb0a71c826245002cb2",
+              "file": "product-detail.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "TC-PRODUCT-DETAIL-011 boundary accept-quantity",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR06-FIRST-CLICK-IGNORED"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6165,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Đã thêm' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Đã thêm' })\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Đã thêm' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Đã thêm' })\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:60:81",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                          "column": 81,
+                          "line": 60
+                        },
+                        "snippet": "  58 |\n  59 |       if (row.action === 'accept-quantity') {\n> 60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n     |                                                                                 ^\n  61 |       } else if (row.action === 'reject-quantity') {\n  62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n  63 |       } else {"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                            "column": 81,
+                            "line": 60
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: 'Đã thêm' })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: 'Đã thêm' })\u001b[22m\n\n\n  58 |\n  59 |       if (row.action === 'accept-quantity') {\n> 60 |         await expect(page.getByRole('button', { name: row.expectedFeedback! })).toBeVisible();\n     |                                                                                 ^\n  61 |       } else if (row.action === 'reject-quantity') {\n  62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n  63 |       } else {\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:60:81"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:33:22.495Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR06-FIRST-CLICK-IGNORED"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                        "column": 81,
+                        "line": 60
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "62d53a362a4fbb3b09ca-759600cc08fa11169467",
+              "file": "product-detail.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "TC-PRODUCT-DETAIL-012 authorization require-login",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "defect-key",
+                      "description": "FR06-UNAUTHENTICATED-CART-ADD"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 6172,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/login(?:$|\\?)/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/product/1\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:5173/product/1\"\u001b[22m\n",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/login(?:$|\\?)/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/product/1\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:5173/product/1\"\u001b[22m\n\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:64:28",
+                        "location": {
+                          "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                          "column": 28,
+                          "line": 64
+                        },
+                        "snippet": "  62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n  63 |       } else {\n> 64 |         await expect(page).toHaveURL(/\\/login(?:$|\\?)/);\n     |                            ^\n  65 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n  66 |       }\n  67 |     });"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                            "column": 28,
+                            "line": 64
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/login(?:$|\\?)/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/product/1\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    14 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:5173/product/1\"\u001b[22m\n\n\n  62 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n  63 |       } else {\n> 64 |         await expect(page).toHaveURL(/\\/login(?:$|\\?)/);\n     |                            ^\n  65 |         await expect(page.getByText(new RegExp(row.expectedMessage!, 'i'))).toBeVisible();\n  66 |       }\n  67 |     });\n    at /home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts:64:28"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-08T02:33:29.582Z",
+                      "annotations": [
+                        {
+                          "type": "defect-key",
+                          "description": "FR06-UNAUTHENTICATED-CART-ADD"
+                        }
+                      ],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-df557-authorization-require-login-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-df557-authorization-require-login-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-df557-authorization-require-login-firefox/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-df557-authorization-require-login-firefox/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/tests/product-detail.spec.ts",
+                        "column": 28,
+                        "line": 64
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "62d53a362a4fbb3b09ca-6375e3e78dc5524a7b08",
+              "file": "product-detail.spec.ts",
+              "line": 29,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-08T02:32:24.741Z",
+    "duration": 71611.098,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 10,
+    "flaky": 0
+  }
+}

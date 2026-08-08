@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "list": "playwright test --list",
+    "typecheck": "tsc --noEmit",
     "test": "playwright test",
     "run:matrix": "node scripts/run-matrix.mjs",
     "screenshot:issue": "node scripts/screenshot-github-issue.mjs"

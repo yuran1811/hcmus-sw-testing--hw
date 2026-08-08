@@ -1,0 +1,4 @@
+interface:
+  display_name: "Playwright Assignment Builder"
+  short_description: "Build and audit three-feature Playwright submissions"
+  default_prompt: "Use $build-playwright-assignment to build, execute, and audit a complete three-feature Playwright submission."

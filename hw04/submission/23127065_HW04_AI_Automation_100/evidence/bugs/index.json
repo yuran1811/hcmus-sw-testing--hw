@@ -1,0 +1,86 @@
+{
+  "generatedAt": "2026-08-08T02:38:59.945Z",
+  "defects": [
+    {
+      "defectKey": "FR06-FIRST-CLICK-IGNORED",
+      "executions": 9,
+      "feature": "product-detail",
+      "browser": "chromium",
+      "caseId": "TC-PRODUCT-DETAIL-004",
+      "screenshot": "evidence/bugs/FR06-FIRST-CLICK-IGNORED/TC-PRODUCT-DETAIL-004-chromium.png",
+      "errorContext": "evidence/bugs/FR06-FIRST-CLICK-IGNORED/TC-PRODUCT-DETAIL-004-chromium-error-context.md"
+    },
+    {
+      "defectKey": "FR06-MISSING-CATEGORY",
+      "executions": 3,
+      "feature": "product-detail",
+      "browser": "chromium",
+      "caseId": "TC-PRODUCT-DETAIL-001",
+      "screenshot": "evidence/bugs/FR06-MISSING-CATEGORY/TC-PRODUCT-DETAIL-001-chromium.png",
+      "errorContext": "evidence/bugs/FR06-MISSING-CATEGORY/TC-PRODUCT-DETAIL-001-chromium-error-context.md"
+    },
+    {
+      "defectKey": "FR06-QUANTITY-NOT-VALIDATED",
+      "executions": 15,
+      "feature": "product-detail",
+      "browser": "chromium",
+      "caseId": "TC-PRODUCT-DETAIL-005",
+      "screenshot": "evidence/bugs/FR06-QUANTITY-NOT-VALIDATED/TC-PRODUCT-DETAIL-005-chromium.png",
+      "errorContext": "evidence/bugs/FR06-QUANTITY-NOT-VALIDATED/TC-PRODUCT-DETAIL-005-chromium-error-context.md"
+    },
+    {
+      "defectKey": "FR06-UNAUTHENTICATED-CART-ADD",
+      "executions": 3,
+      "feature": "product-detail",
+      "browser": "chromium",
+      "caseId": "TC-PRODUCT-DETAIL-012",
+      "screenshot": "evidence/bugs/FR06-UNAUTHENTICATED-CART-ADD/TC-PRODUCT-DETAIL-012-chromium.png",
+      "errorContext": "evidence/bugs/FR06-UNAUTHENTICATED-CART-ADD/TC-PRODUCT-DETAIL-012-chromium-error-context.md"
+    },
+    {
+      "defectKey": "FR09-COUPON-ALLOWS-GUEST",
+      "executions": 3,
+      "feature": "coupon",
+      "browser": "chromium",
+      "caseId": "TC-COUPON-008",
+      "screenshot": "evidence/bugs/FR09-COUPON-ALLOWS-GUEST/TC-COUPON-008-chromium.png",
+      "errorContext": "evidence/bugs/FR09-COUPON-ALLOWS-GUEST/TC-COUPON-008-chromium-error-context.md"
+    },
+    {
+      "defectKey": "FR09-PERCENT-CALCULATION",
+      "executions": 6,
+      "feature": "coupon",
+      "browser": "chromium",
+      "caseId": "TC-COUPON-001",
+      "screenshot": "evidence/bugs/FR09-PERCENT-CALCULATION/TC-COUPON-001-chromium.png",
+      "errorContext": "evidence/bugs/FR09-PERCENT-CALCULATION/TC-COUPON-001-chromium-error-context.md"
+    },
+    {
+      "defectKey": "FR09-THRESHOLD-EXCLUDES-EQUALITY",
+      "executions": 6,
+      "feature": "coupon",
+      "browser": "chromium",
+      "caseId": "TC-COUPON-002",
+      "screenshot": "evidence/bugs/FR09-THRESHOLD-EXCLUDES-EQUALITY/TC-COUPON-002-chromium.png",
+      "errorContext": "evidence/bugs/FR09-THRESHOLD-EXCLUDES-EQUALITY/TC-COUPON-002-chromium-error-context.md"
+    },
+    {
+      "defectKey": "FR17-NEGATIVE-MINIMUM",
+      "executions": 3,
+      "feature": "coupon-admin",
+      "browser": "chromium",
+      "caseId": "TC-COUPON-ADMIN-010",
+      "screenshot": "evidence/bugs/FR17-NEGATIVE-MINIMUM/TC-COUPON-ADMIN-010-chromium.png",
+      "errorContext": "evidence/bugs/FR17-NEGATIVE-MINIMUM/TC-COUPON-ADMIN-010-chromium-error-context.md"
+    },
+    {
+      "defectKey": "FR17-NONPOSITIVE-DISCOUNT",
+      "executions": 6,
+      "feature": "coupon-admin",
+      "browser": "chromium",
+      "caseId": "TC-COUPON-ADMIN-006",
+      "screenshot": "evidence/bugs/FR17-NONPOSITIVE-DISCOUNT/TC-COUPON-ADMIN-006-chromium.png",
+      "errorContext": "evidence/bugs/FR17-NONPOSITIVE-DISCOUNT/TC-COUPON-ADMIN-006-chromium-error-context.md"
+    }
+  ]
+}

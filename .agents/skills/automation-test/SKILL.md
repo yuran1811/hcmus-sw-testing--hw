@@ -1,6 +1,6 @@
 ---
 name: build-playwright-assignment
-description: Design and implement a submission-ready Playwright automation assignment for exactly three web features, with at least 12 test cases per feature, step-by-step AI collaboration evidence, external CSV or JSON test data, at least three assertion patterns, three-browser execution, and a separate HTML report for every feature-browser run visibly labeled with a student ID. Use when asked to convert manual cases or feature requirements into data-driven Playwright tests, complete or repair a Playwright testing assignment, run its 3x3 browser matrix, or audit the resulting scripts and reports against these requirements.
+description: Design, implement, execute, and audit a submission-ready Playwright assignment for exactly three web features, with at least 12 documented test cases per feature, external CSV or JSON data, at least three assertion patterns, complete Chromium/Firefox/WebKit execution, separate labeled HTML reports, failure screenshots, and GitHub defect issues. Use when converting manual cases into automation, repairing a three-feature assignment, running its 3x3 matrix, packaging case evidence, or publishing verified defects.
 ---
 
 # Build a Playwright Automation Assignment
@@ -39,6 +39,8 @@ For each feature independently, perform and preserve a trace of these stages. Do
 7. **Verify and repair** — list/discover tests, execute them, diagnose failures from evidence, and make targeted corrections without weakening valid expectations.
 
 Record the actual stage prompts and concise outcomes in one existing assignment log if the repository has one; otherwise create a single `docs/ai-conversion-log.md`. Include feature, stage, prompt, relevant inputs, output/decision, and affected files. Never fabricate tool transcripts or claim an execution that did not occur.
+
+Copy or author the selected human-readable case specifications inside the submission. Preserve their original case IDs and map each one to exactly one external data record and one Playwright title. Do not treat a JSON row alone as the submitted test-case specification.
 
 ## Design the test cases
 
@@ -157,6 +159,22 @@ Prefer a deterministic runner that iterates the nine cells and invokes Playwrigh
 Do not use `--reporter=html` in a way that discards the configured dynamic title or output folder.
 
 After execution, inspect each report's `index.html` or open the report and confirm the exact `Run by: <student-id>` text is visible. File existence alone is insufficient. Record all nine report paths and statuses in a compact run manifest.
+
+Use a JSON reporter alongside the HTML reporter so the manifest can record every individual case status and attachment without scraping terminal output. Give every matrix cell a distinct `outputDir`; otherwise later runs erase earlier screenshots, traces, and videos.
+
+## Capture and publish confirmed defects
+
+Enable screenshot-on-failure and retain failure traces. After the complete matrix:
+
+1. Classify every unexpected result as automation, data, environment, or product behavior.
+2. Repair and rerun automation, data, and environment failures before reporting defects.
+3. Group repeated browser/case failures by one observable product root cause.
+4. Preserve at least one fresh screenshot from the exact failing run for every confirmed root cause.
+5. Search the target GitHub repository for an existing matching issue.
+6. Add the new evidence to the existing issue, or create one issue when no match exists.
+7. Include the requirement, case ID, browser, steps, expected result, actual result, report, trace, and screenshot URL.
+
+Publish screenshot files before using their permanent repository URLs in issue bodies. Never create an issue from a static source-code suspicion alone, and never report browser-launch or test-harness failures as SUT defects. See [references/submission-gate.md](references/submission-gate.md) for the compact gate and run `scripts/audit-assignment.mjs` before handoff.
 
 ## Validate in increasing scope
 

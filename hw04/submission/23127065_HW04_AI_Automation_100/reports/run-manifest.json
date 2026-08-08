@@ -1,70 +1,2523 @@
 {
   "studentId": "23127065",
-  "startedAt": "2026-08-07T17:53:03.665Z",
-  "finishedAt": "2026-08-07T17:56:49.774Z",
+  "expectedLogicalCases": 36,
+  "expectedExecutions": 108,
+  "startedAt": "2026-08-08T02:31:22.368Z",
+  "finishedAt": "2026-08-08T02:38:59.945Z",
   "results": [
     {
       "feature": "product-detail",
       "spec": "tests/product-detail.spec.ts",
       "browser": "chromium",
+      "startedAt": "2026-08-08T02:31:22.369Z",
+      "finishedAt": "2026-08-08T02:32:24.352Z",
       "exitCode": 1,
-      "report": "reports/html/product-detail/chromium"
+      "report": "reports/html/product-detail/chromium",
+      "jsonReport": "reports/json/product-detail/chromium.json",
+      "artifacts": "test-results/product-detail/chromium",
+      "label": "Run by: 23127065 | product-detail | chromium | 2026-08-08T02:31:22.369Z",
+      "total": 12,
+      "statusCounts": {
+        "failed": 10,
+        "passed": 2
+      },
+      "cases": [
+        {
+          "id": "TC-PRODUCT-DETAIL-001",
+          "title": "TC-PRODUCT-DETAIL-001 positive display-details",
+          "status": "failed",
+          "durationMs": 5657,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-f0a47-01-positive-display-details-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-f0a47-01-positive-display-details-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-f0a47-01-positive-display-details-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-f0a47-01-positive-display-details-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-MISSING-CATEGORY"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-002",
+          "title": "TC-PRODUCT-DETAIL-002 negative invalid-product",
+          "status": "passed",
+          "durationMs": 330,
+          "attachments": [],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-MISSING-NOT-FOUND-STATE"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-003",
+          "title": "TC-PRODUCT-DETAIL-003 negative invalid-product",
+          "status": "passed",
+          "durationMs": 302,
+          "attachments": [],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-MISSING-NOT-FOUND-STATE"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-004",
+          "title": "TC-PRODUCT-DETAIL-004 positive accept-quantity",
+          "status": "failed",
+          "durationMs": 5691,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-FIRST-CLICK-IGNORED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-005",
+          "title": "TC-PRODUCT-DETAIL-005 boundary reject-quantity",
+          "status": "failed",
+          "durationMs": 5676,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-006",
+          "title": "TC-PRODUCT-DETAIL-006 negative reject-quantity",
+          "status": "failed",
+          "durationMs": 5633,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-007",
+          "title": "TC-PRODUCT-DETAIL-007 negative reject-quantity",
+          "status": "failed",
+          "durationMs": 5702,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-008",
+          "title": "TC-PRODUCT-DETAIL-008 negative reject-quantity",
+          "status": "failed",
+          "durationMs": 5672,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-009",
+          "title": "TC-PRODUCT-DETAIL-009 negative reject-quantity",
+          "status": "failed",
+          "durationMs": 5687,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-010",
+          "title": "TC-PRODUCT-DETAIL-010 boundary accept-quantity",
+          "status": "failed",
+          "durationMs": 5635,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-FIRST-CLICK-IGNORED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-011",
+          "title": "TC-PRODUCT-DETAIL-011 boundary accept-quantity",
+          "status": "failed",
+          "durationMs": 5650,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-FIRST-CLICK-IGNORED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-012",
+          "title": "TC-PRODUCT-DETAIL-012 authorization require-login",
+          "status": "failed",
+          "durationMs": 5663,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-df557-authorization-require-login-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-df557-authorization-require-login-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-df557-authorization-require-login-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/chromium/product-detail-FR-06-Produ-df557-authorization-require-login-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-UNAUTHENTICATED-CART-ADD"
+            }
+          ]
+        }
+      ]
     },
     {
       "feature": "product-detail",
       "spec": "tests/product-detail.spec.ts",
       "browser": "firefox",
+      "startedAt": "2026-08-08T02:32:24.352Z",
+      "finishedAt": "2026-08-08T02:33:36.400Z",
       "exitCode": 1,
-      "report": "reports/html/product-detail/firefox"
+      "report": "reports/html/product-detail/firefox",
+      "jsonReport": "reports/json/product-detail/firefox.json",
+      "artifacts": "test-results/product-detail/firefox",
+      "label": "Run by: 23127065 | product-detail | firefox | 2026-08-08T02:32:24.352Z",
+      "total": 12,
+      "statusCounts": {
+        "failed": 10,
+        "passed": 2
+      },
+      "cases": [
+        {
+          "id": "TC-PRODUCT-DETAIL-001",
+          "title": "TC-PRODUCT-DETAIL-001 positive display-details",
+          "status": "failed",
+          "durationMs": 6108,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-f0a47-01-positive-display-details-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-f0a47-01-positive-display-details-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-f0a47-01-positive-display-details-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-f0a47-01-positive-display-details-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-MISSING-CATEGORY"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-002",
+          "title": "TC-PRODUCT-DETAIL-002 negative invalid-product",
+          "status": "passed",
+          "durationMs": 950,
+          "attachments": [],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-MISSING-NOT-FOUND-STATE"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-003",
+          "title": "TC-PRODUCT-DETAIL-003 negative invalid-product",
+          "status": "passed",
+          "durationMs": 409,
+          "attachments": [],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-MISSING-NOT-FOUND-STATE"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-004",
+          "title": "TC-PRODUCT-DETAIL-004 positive accept-quantity",
+          "status": "failed",
+          "durationMs": 5503,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-FIRST-CLICK-IGNORED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-005",
+          "title": "TC-PRODUCT-DETAIL-005 boundary reject-quantity",
+          "status": "failed",
+          "durationMs": 6161,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-006",
+          "title": "TC-PRODUCT-DETAIL-006 negative reject-quantity",
+          "status": "failed",
+          "durationMs": 6143,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-007",
+          "title": "TC-PRODUCT-DETAIL-007 negative reject-quantity",
+          "status": "failed",
+          "durationMs": 6328,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-008",
+          "title": "TC-PRODUCT-DETAIL-008 negative reject-quantity",
+          "status": "failed",
+          "durationMs": 6155,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-009",
+          "title": "TC-PRODUCT-DETAIL-009 negative reject-quantity",
+          "status": "failed",
+          "durationMs": 6175,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-010",
+          "title": "TC-PRODUCT-DETAIL-010 boundary accept-quantity",
+          "status": "failed",
+          "durationMs": 6143,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-FIRST-CLICK-IGNORED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-011",
+          "title": "TC-PRODUCT-DETAIL-011 boundary accept-quantity",
+          "status": "failed",
+          "durationMs": 6165,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-FIRST-CLICK-IGNORED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-012",
+          "title": "TC-PRODUCT-DETAIL-012 authorization require-login",
+          "status": "failed",
+          "durationMs": 6172,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-df557-authorization-require-login-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-df557-authorization-require-login-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-df557-authorization-require-login-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/firefox/product-detail-FR-06-Produ-df557-authorization-require-login-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-UNAUTHENTICATED-CART-ADD"
+            }
+          ]
+        }
+      ]
     },
     {
       "feature": "product-detail",
       "spec": "tests/product-detail.spec.ts",
       "browser": "webkit",
+      "startedAt": "2026-08-08T02:33:36.400Z",
+      "finishedAt": "2026-08-08T02:34:44.567Z",
       "exitCode": 1,
-      "report": "reports/html/product-detail/webkit"
+      "report": "reports/html/product-detail/webkit",
+      "jsonReport": "reports/json/product-detail/webkit.json",
+      "artifacts": "test-results/product-detail/webkit",
+      "label": "Run by: 23127065 | product-detail | webkit | 2026-08-08T02:33:36.400Z",
+      "total": 12,
+      "statusCounts": {
+        "failed": 10,
+        "passed": 2
+      },
+      "cases": [
+        {
+          "id": "TC-PRODUCT-DETAIL-001",
+          "title": "TC-PRODUCT-DETAIL-001 positive display-details",
+          "status": "failed",
+          "durationMs": 6072,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-f0a47-01-positive-display-details-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-f0a47-01-positive-display-details-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-f0a47-01-positive-display-details-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-f0a47-01-positive-display-details-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-MISSING-CATEGORY"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-002",
+          "title": "TC-PRODUCT-DETAIL-002 negative invalid-product",
+          "status": "passed",
+          "durationMs": 770,
+          "attachments": [],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-MISSING-NOT-FOUND-STATE"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-003",
+          "title": "TC-PRODUCT-DETAIL-003 negative invalid-product",
+          "status": "passed",
+          "durationMs": 702,
+          "attachments": [],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-MISSING-NOT-FOUND-STATE"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-004",
+          "title": "TC-PRODUCT-DETAIL-004 positive accept-quantity",
+          "status": "failed",
+          "durationMs": 6085,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-548ae-04-positive-accept-quantity-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-FIRST-CLICK-IGNORED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-005",
+          "title": "TC-PRODUCT-DETAIL-005 boundary reject-quantity",
+          "status": "failed",
+          "durationMs": 6135,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-aa2e9-05-boundary-reject-quantity-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-006",
+          "title": "TC-PRODUCT-DETAIL-006 negative reject-quantity",
+          "status": "failed",
+          "durationMs": 6167,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-55402-06-negative-reject-quantity-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-007",
+          "title": "TC-PRODUCT-DETAIL-007 negative reject-quantity",
+          "status": "failed",
+          "durationMs": 6301,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-e733b-07-negative-reject-quantity-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-008",
+          "title": "TC-PRODUCT-DETAIL-008 negative reject-quantity",
+          "status": "failed",
+          "durationMs": 6150,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-3e076-08-negative-reject-quantity-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-009",
+          "title": "TC-PRODUCT-DETAIL-009 negative reject-quantity",
+          "status": "failed",
+          "durationMs": 6223,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-25f8c-09-negative-reject-quantity-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-QUANTITY-NOT-VALIDATED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-010",
+          "title": "TC-PRODUCT-DETAIL-010 boundary accept-quantity",
+          "status": "failed",
+          "durationMs": 6129,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-26781-10-boundary-accept-quantity-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-FIRST-CLICK-IGNORED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-011",
+          "title": "TC-PRODUCT-DETAIL-011 boundary accept-quantity",
+          "status": "failed",
+          "durationMs": 6144,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-560e8-11-boundary-accept-quantity-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-FIRST-CLICK-IGNORED"
+            }
+          ]
+        },
+        {
+          "id": "TC-PRODUCT-DETAIL-012",
+          "title": "TC-PRODUCT-DETAIL-012 authorization require-login",
+          "status": "failed",
+          "durationMs": 6144,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-df557-authorization-require-login-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-df557-authorization-require-login-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-df557-authorization-require-login-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/product-detail/webkit/product-detail-FR-06-Produ-df557-authorization-require-login-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR06-UNAUTHENTICATED-CART-ADD"
+            }
+          ]
+        }
+      ]
     },
     {
       "feature": "coupon",
       "spec": "tests/coupon.spec.ts",
       "browser": "chromium",
+      "startedAt": "2026-08-08T02:34:44.567Z",
+      "finishedAt": "2026-08-08T02:35:22.152Z",
       "exitCode": 1,
-      "report": "reports/html/coupon/chromium"
+      "report": "reports/html/coupon/chromium",
+      "jsonReport": "reports/json/coupon/chromium.json",
+      "artifacts": "test-results/coupon/chromium",
+      "label": "Run by: 23127065 | coupon | chromium | 2026-08-08T02:34:44.567Z",
+      "total": 12,
+      "statusCounts": {
+        "failed": 5,
+        "passed": 7
+      },
+      "cases": [
+        {
+          "id": "TC-COUPON-001",
+          "title": "TC-COUPON-001 positive SAVE10",
+          "status": "failed",
+          "durationMs": 6045,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-PERCENT-CALCULATION"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-002",
+          "title": "TC-COUPON-002 boundary BIGBUY",
+          "status": "failed",
+          "durationMs": 5929,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-THRESHOLD-EXCLUDES-EQUALITY"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-003",
+          "title": "TC-COUPON-003 negative NOTEXIST",
+          "status": "passed",
+          "durationMs": 693,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-004",
+          "title": "TC-COUPON-004 negative INACTIVE",
+          "status": "passed",
+          "durationMs": 676,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-005",
+          "title": "TC-COUPON-005 negative EXPIRED",
+          "status": "passed",
+          "durationMs": 682,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-006",
+          "title": "TC-COUPON-006 boundary SAVE10",
+          "status": "passed",
+          "durationMs": 624,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-007",
+          "title": "TC-COUPON-007 boundary SAVE10",
+          "status": "passed",
+          "durationMs": 670,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-008",
+          "title": "TC-COUPON-008 authorization SAVE10",
+          "status": "failed",
+          "durationMs": 5737,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-COUPON-ALLOWS-GUEST"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-012",
+          "title": "TC-COUPON-012 boundary SAVE10",
+          "status": "failed",
+          "durationMs": 5944,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-THRESHOLD-EXCLUDES-EQUALITY"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-013",
+          "title": "TC-COUPON-013 boundary SAVE10",
+          "status": "failed",
+          "durationMs": 6052,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/chromium/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-PERCENT-CALCULATION"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-014",
+          "title": "TC-COUPON-014 boundary BIGBUY",
+          "status": "passed",
+          "durationMs": 713,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-015",
+          "title": "TC-COUPON-015 boundary BIGBUY",
+          "status": "passed",
+          "durationMs": 714,
+          "attachments": [],
+          "annotations": []
+        }
+      ]
     },
     {
       "feature": "coupon",
       "spec": "tests/coupon.spec.ts",
       "browser": "firefox",
+      "startedAt": "2026-08-08T02:35:22.152Z",
+      "finishedAt": "2026-08-08T02:36:07.630Z",
       "exitCode": 1,
-      "report": "reports/html/coupon/firefox"
+      "report": "reports/html/coupon/firefox",
+      "jsonReport": "reports/json/coupon/firefox.json",
+      "artifacts": "test-results/coupon/firefox",
+      "label": "Run by: 23127065 | coupon | firefox | 2026-08-08T02:35:22.152Z",
+      "total": 12,
+      "statusCounts": {
+        "failed": 5,
+        "passed": 7
+      },
+      "cases": [
+        {
+          "id": "TC-COUPON-001",
+          "title": "TC-COUPON-001 positive SAVE10",
+          "status": "failed",
+          "durationMs": 6597,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-PERCENT-CALCULATION"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-002",
+          "title": "TC-COUPON-002 boundary BIGBUY",
+          "status": "failed",
+          "durationMs": 6567,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-THRESHOLD-EXCLUDES-EQUALITY"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-003",
+          "title": "TC-COUPON-003 negative NOTEXIST",
+          "status": "passed",
+          "durationMs": 1539,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-004",
+          "title": "TC-COUPON-004 negative INACTIVE",
+          "status": "passed",
+          "durationMs": 771,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-005",
+          "title": "TC-COUPON-005 negative EXPIRED",
+          "status": "passed",
+          "durationMs": 763,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-006",
+          "title": "TC-COUPON-006 boundary SAVE10",
+          "status": "passed",
+          "durationMs": 748,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-007",
+          "title": "TC-COUPON-007 boundary SAVE10",
+          "status": "passed",
+          "durationMs": 817,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-008",
+          "title": "TC-COUPON-008 authorization SAVE10",
+          "status": "failed",
+          "durationMs": 5610,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-COUPON-ALLOWS-GUEST"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-012",
+          "title": "TC-COUPON-012 boundary SAVE10",
+          "status": "failed",
+          "durationMs": 6573,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-THRESHOLD-EXCLUDES-EQUALITY"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-013",
+          "title": "TC-COUPON-013 boundary SAVE10",
+          "status": "failed",
+          "durationMs": 6737,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/firefox/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-PERCENT-CALCULATION"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-014",
+          "title": "TC-COUPON-014 boundary BIGBUY",
+          "status": "passed",
+          "durationMs": 1624,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-015",
+          "title": "TC-COUPON-015 boundary BIGBUY",
+          "status": "passed",
+          "durationMs": 845,
+          "attachments": [],
+          "annotations": []
+        }
+      ]
     },
     {
       "feature": "coupon",
       "spec": "tests/coupon.spec.ts",
       "browser": "webkit",
+      "startedAt": "2026-08-08T02:36:07.630Z",
+      "finishedAt": "2026-08-08T02:36:53.522Z",
       "exitCode": 1,
-      "report": "reports/html/coupon/webkit"
+      "report": "reports/html/coupon/webkit",
+      "jsonReport": "reports/json/coupon/webkit.json",
+      "artifacts": "test-results/coupon/webkit",
+      "label": "Run by: 23127065 | coupon | webkit | 2026-08-08T02:36:07.630Z",
+      "total": 12,
+      "statusCounts": {
+        "failed": 5,
+        "passed": 7
+      },
+      "cases": [
+        {
+          "id": "TC-COUPON-001",
+          "title": "TC-COUPON-001 positive SAVE10",
+          "status": "failed",
+          "durationMs": 6761,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-001-positive-SAVE10-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-PERCENT-CALCULATION"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-002",
+          "title": "TC-COUPON-002 boundary BIGBUY",
+          "status": "failed",
+          "durationMs": 6624,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-002-boundary-BIGBUY-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-THRESHOLD-EXCLUDES-EQUALITY"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-003",
+          "title": "TC-COUPON-003 negative NOTEXIST",
+          "status": "passed",
+          "durationMs": 1409,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-004",
+          "title": "TC-COUPON-004 negative INACTIVE",
+          "status": "passed",
+          "durationMs": 1292,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-005",
+          "title": "TC-COUPON-005 negative EXPIRED",
+          "status": "passed",
+          "durationMs": 1315,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-006",
+          "title": "TC-COUPON-006 boundary SAVE10",
+          "status": "passed",
+          "durationMs": 1321,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-007",
+          "title": "TC-COUPON-007 boundary SAVE10",
+          "status": "passed",
+          "durationMs": 1295,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-008",
+          "title": "TC-COUPON-008 authorization SAVE10",
+          "status": "failed",
+          "durationMs": 6282,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-008-authorization-SAVE10-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-COUPON-ALLOWS-GUEST"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-012",
+          "title": "TC-COUPON-012 boundary SAVE10",
+          "status": "failed",
+          "durationMs": 6613,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-012-boundary-SAVE10-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-THRESHOLD-EXCLUDES-EQUALITY"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-013",
+          "title": "TC-COUPON-013 boundary SAVE10",
+          "status": "failed",
+          "durationMs": 6699,
+          "attachments": [
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon/webkit/coupon-FR-09-Coupon-TC-COUPON-013-boundary-SAVE10-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR09-PERCENT-CALCULATION"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-014",
+          "title": "TC-COUPON-014 boundary BIGBUY",
+          "status": "passed",
+          "durationMs": 1397,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-015",
+          "title": "TC-COUPON-015 boundary BIGBUY",
+          "status": "passed",
+          "durationMs": 1420,
+          "attachments": [],
+          "annotations": []
+        }
+      ]
     },
     {
       "feature": "coupon-admin",
       "spec": "tests/coupon-admin.spec.ts",
       "browser": "chromium",
+      "startedAt": "2026-08-08T02:36:53.522Z",
+      "finishedAt": "2026-08-08T02:37:29.648Z",
       "exitCode": 1,
-      "report": "reports/html/coupon-admin/chromium"
+      "report": "reports/html/coupon-admin/chromium",
+      "jsonReport": "reports/json/coupon-admin/chromium.json",
+      "artifacts": "test-results/coupon-admin/chromium",
+      "label": "Run by: 23127065 | coupon-admin | chromium | 2026-08-08T02:36:53.522Z",
+      "total": 12,
+      "statusCounts": {
+        "passed": 9,
+        "failed": 3
+      },
+      "cases": [
+        {
+          "id": "TC-COUPON-ADMIN-001",
+          "title": "TC-COUPON-ADMIN-001 positive created",
+          "status": "passed",
+          "durationMs": 839,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-002",
+          "title": "TC-COUPON-ADMIN-002 positive created",
+          "status": "passed",
+          "durationMs": 774,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-003",
+          "title": "TC-COUPON-ADMIN-003 negative rejected",
+          "status": "passed",
+          "durationMs": 2493,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-006",
+          "title": "TC-COUPON-ADMIN-006 boundary rejected",
+          "status": "failed",
+          "durationMs": 6527,
+          "attachments": [
+            {
+              "name": "confirmed-defect",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-chromium/attachments/confirmed-defect-4995c3544c4df0d1a5aaf137a494a72a6c1a20ea.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR17-NONPOSITIVE-DISCOUNT"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-ADMIN-007",
+          "title": "TC-COUPON-ADMIN-007 negative rejected",
+          "status": "failed",
+          "durationMs": 6595,
+          "attachments": [
+            {
+              "name": "confirmed-defect",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-chromium/attachments/confirmed-defect-98b317e7b04447fecdb260cfda0f884b3d4d065a.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR17-NONPOSITIVE-DISCOUNT"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-ADMIN-008",
+          "title": "TC-COUPON-ADMIN-008 negative rejected",
+          "status": "passed",
+          "durationMs": 2565,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-010",
+          "title": "TC-COUPON-ADMIN-010 boundary rejected",
+          "status": "failed",
+          "durationMs": 6523,
+          "attachments": [
+            {
+              "name": "confirmed-defect",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-chromium/attachments/confirmed-defect-d4abcac285d907906a245e378024631634239e2c.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-chromium/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-chromium/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-chromium/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/chromium/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-chromium/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR17-NEGATIVE-MINIMUM"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-ADMIN-011",
+          "title": "TC-COUPON-ADMIN-011 boundary rejected",
+          "status": "passed",
+          "durationMs": 2621,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-012",
+          "title": "TC-COUPON-ADMIN-012 negative rejected",
+          "status": "passed",
+          "durationMs": 2533,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-020",
+          "title": "TC-COUPON-ADMIN-020 boundary created",
+          "status": "passed",
+          "durationMs": 781,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-022",
+          "title": "TC-COUPON-ADMIN-022 boundary created",
+          "status": "passed",
+          "durationMs": 762,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-024",
+          "title": "TC-COUPON-ADMIN-024 exploratory created-expired",
+          "status": "passed",
+          "durationMs": 752,
+          "attachments": [],
+          "annotations": []
+        }
+      ]
     },
     {
       "feature": "coupon-admin",
       "spec": "tests/coupon-admin.spec.ts",
       "browser": "firefox",
+      "startedAt": "2026-08-08T02:37:29.648Z",
+      "finishedAt": "2026-08-08T02:38:12.926Z",
       "exitCode": 1,
-      "report": "reports/html/coupon-admin/firefox"
+      "report": "reports/html/coupon-admin/firefox",
+      "jsonReport": "reports/json/coupon-admin/firefox.json",
+      "artifacts": "test-results/coupon-admin/firefox",
+      "label": "Run by: 23127065 | coupon-admin | firefox | 2026-08-08T02:37:29.648Z",
+      "total": 12,
+      "statusCounts": {
+        "passed": 9,
+        "failed": 3
+      },
+      "cases": [
+        {
+          "id": "TC-COUPON-ADMIN-001",
+          "title": "TC-COUPON-ADMIN-001 positive created",
+          "status": "passed",
+          "durationMs": 1776,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-002",
+          "title": "TC-COUPON-ADMIN-002 positive created",
+          "status": "passed",
+          "durationMs": 984,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-003",
+          "title": "TC-COUPON-ADMIN-003 negative rejected",
+          "status": "passed",
+          "durationMs": 2696,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-006",
+          "title": "TC-COUPON-ADMIN-006 boundary rejected",
+          "status": "failed",
+          "durationMs": 6607,
+          "attachments": [
+            {
+              "name": "confirmed-defect",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-firefox/attachments/confirmed-defect-4635198a84808303e9ebb09cbc09b17dab9ee327.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR17-NONPOSITIVE-DISCOUNT"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-ADMIN-007",
+          "title": "TC-COUPON-ADMIN-007 negative rejected",
+          "status": "failed",
+          "durationMs": 7417,
+          "attachments": [
+            {
+              "name": "confirmed-defect",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-firefox/attachments/confirmed-defect-8bf3409380b917e909671d1a2cf6f224cc349ac9.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR17-NONPOSITIVE-DISCOUNT"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-ADMIN-008",
+          "title": "TC-COUPON-ADMIN-008 negative rejected",
+          "status": "passed",
+          "durationMs": 3518,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-010",
+          "title": "TC-COUPON-ADMIN-010 boundary rejected",
+          "status": "failed",
+          "durationMs": 6539,
+          "attachments": [
+            {
+              "name": "confirmed-defect",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-firefox/attachments/confirmed-defect-1e44b83a22044bf8fc44184fd1cd1477cc6caf82.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-firefox/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-firefox/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-firefox/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/firefox/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-firefox/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR17-NEGATIVE-MINIMUM"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-ADMIN-011",
+          "title": "TC-COUPON-ADMIN-011 boundary rejected",
+          "status": "passed",
+          "durationMs": 3557,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-012",
+          "title": "TC-COUPON-ADMIN-012 negative rejected",
+          "status": "passed",
+          "durationMs": 2724,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-020",
+          "title": "TC-COUPON-ADMIN-020 boundary created",
+          "status": "passed",
+          "durationMs": 980,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-022",
+          "title": "TC-COUPON-ADMIN-022 boundary created",
+          "status": "passed",
+          "durationMs": 1009,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-024",
+          "title": "TC-COUPON-ADMIN-024 exploratory created-expired",
+          "status": "passed",
+          "durationMs": 992,
+          "attachments": [],
+          "annotations": []
+        }
+      ]
     },
     {
       "feature": "coupon-admin",
       "spec": "tests/coupon-admin.spec.ts",
       "browser": "webkit",
+      "startedAt": "2026-08-08T02:38:12.926Z",
+      "finishedAt": "2026-08-08T02:38:59.945Z",
       "exitCode": 1,
-      "report": "reports/html/coupon-admin/webkit"
+      "report": "reports/html/coupon-admin/webkit",
+      "jsonReport": "reports/json/coupon-admin/webkit.json",
+      "artifacts": "test-results/coupon-admin/webkit",
+      "label": "Run by: 23127065 | coupon-admin | webkit | 2026-08-08T02:38:12.926Z",
+      "total": 12,
+      "statusCounts": {
+        "passed": 9,
+        "failed": 3
+      },
+      "cases": [
+        {
+          "id": "TC-COUPON-ADMIN-001",
+          "title": "TC-COUPON-ADMIN-001 positive created",
+          "status": "passed",
+          "durationMs": 1817,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-002",
+          "title": "TC-COUPON-ADMIN-002 positive created",
+          "status": "passed",
+          "durationMs": 1637,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-003",
+          "title": "TC-COUPON-ADMIN-003 negative rejected",
+          "status": "passed",
+          "durationMs": 3277,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-006",
+          "title": "TC-COUPON-ADMIN-006 boundary rejected",
+          "status": "failed",
+          "durationMs": 7461,
+          "attachments": [
+            {
+              "name": "confirmed-defect",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-webkit/attachments/confirmed-defect-c038ddf04b4c3f4724069fcec891d5a0184ddb0a.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--bf3f1-ADMIN-006-boundary-rejected-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR17-NONPOSITIVE-DISCOUNT"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-ADMIN-007",
+          "title": "TC-COUPON-ADMIN-007 negative rejected",
+          "status": "failed",
+          "durationMs": 7614,
+          "attachments": [
+            {
+              "name": "confirmed-defect",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-webkit/attachments/confirmed-defect-e7d9c5769a88e4d936b31d9249caaabbcf99f24c.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--41d4a-ADMIN-007-negative-rejected-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR17-NONPOSITIVE-DISCOUNT"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-ADMIN-008",
+          "title": "TC-COUPON-ADMIN-008 negative rejected",
+          "status": "passed",
+          "durationMs": 3390,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-010",
+          "title": "TC-COUPON-ADMIN-010 boundary rejected",
+          "status": "failed",
+          "durationMs": 7564,
+          "attachments": [
+            {
+              "name": "confirmed-defect",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-webkit/attachments/confirmed-defect-44dea27411ebb698369462a8d3e681a38106d4ee.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "screenshot",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-webkit/test-failed-1.png",
+              "contentType": "image/png"
+            },
+            {
+              "name": "video",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-webkit/video.webm",
+              "contentType": "video/webm"
+            },
+            {
+              "name": "error-context",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-webkit/error-context.md",
+              "contentType": "text/markdown"
+            },
+            {
+              "name": "trace",
+              "path": "/home/yuran1811/@repo/hcmus-sw-testing--hw/hw04/submission/23127065_HW04_AI_Automation_100/test-results/coupon-admin/webkit/coupon-admin-FR-17-Coupon--27eb0-ADMIN-010-boundary-rejected-webkit/trace.zip",
+              "contentType": "application/zip"
+            }
+          ],
+          "annotations": [
+            {
+              "type": "defect-key",
+              "description": "FR17-NEGATIVE-MINIMUM"
+            }
+          ]
+        },
+        {
+          "id": "TC-COUPON-ADMIN-011",
+          "title": "TC-COUPON-ADMIN-011 boundary rejected",
+          "status": "passed",
+          "durationMs": 3381,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-012",
+          "title": "TC-COUPON-ADMIN-012 negative rejected",
+          "status": "passed",
+          "durationMs": 3268,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-020",
+          "title": "TC-COUPON-ADMIN-020 boundary created",
+          "status": "passed",
+          "durationMs": 1680,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-022",
+          "title": "TC-COUPON-ADMIN-022 boundary created",
+          "status": "passed",
+          "durationMs": 1623,
+          "attachments": [],
+          "annotations": []
+        },
+        {
+          "id": "TC-COUPON-ADMIN-024",
+          "title": "TC-COUPON-ADMIN-024 exploratory created-expired",
+          "status": "passed",
+          "durationMs": 1669,
+          "attachments": [],
+          "annotations": []
+        }
+      ]
     }
   ]
 }

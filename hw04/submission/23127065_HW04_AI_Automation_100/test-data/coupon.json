@@ -1,14 +1,14 @@
 [
-  {"id":"CP-001","code":"SAVE10","total":"300000","login":true,"expected":"success","final":"270000"},
-  {"id":"CP-002","code":"save10","total":"300001","login":true,"expected":"success","final":"270001"},
-  {"id":"CP-003","code":"BIGBUY","total":"500000","login":true,"expected":"success","final":"450000"},
-  {"id":"CP-004","code":"VIP100","total":"300000","login":true,"expected":"success","final":"200000"},
-  {"id":"CP-005","code":"EXPIRED","total":"300000","login":true,"expected":"error","message":"hết hạn"},
-  {"id":"CP-006","code":"UNKNOWN","total":"300000","login":true,"expected":"error","message":"không tồn tại"},
-  {"id":"CP-007","code":"SAVE10","total":"299999","login":true,"expected":"error","message":"chưa đủ"},
-  {"id":"CP-008","code":"BIGBUY","total":"499999","login":true,"expected":"error","message":"chưa đủ"},
-  {"id":"CP-009","code":"SAVE10","total":"300000","login":false,"expected":"error","message":"đăng nhập"},
-  {"id":"CP-010","code":"","total":"300000","login":true,"expected":"disabled"},
-  {"id":"CP-011","code":" VIP100 ","total":"300000","login":true,"expected":"success","final":"200000"},
-  {"id":"CP-012","code":"SAVE10","total":"0","login":true,"expected":"error","message":"chưa đủ"}
+  {"id":"TC-COUPON-001","category":"positive","code":"SAVE10","total":400000,"login":true,"expected":"success","expectedDiscount":40000,"expectedFinal":360000,"defectKey":"FR09-PERCENT-CALCULATION"},
+  {"id":"TC-COUPON-002","category":"boundary","code":"BIGBUY","total":500000,"login":true,"expected":"success","expectedDiscount":50000,"expectedFinal":450000,"defectKey":"FR09-THRESHOLD-EXCLUDES-EQUALITY"},
+  {"id":"TC-COUPON-003","category":"negative","code":"NOTEXIST","total":400000,"login":true,"expected":"error","expectedMessage":"không tồn tại","defectKey":""},
+  {"id":"TC-COUPON-004","category":"negative","code":"INACTIVE","total":400000,"login":true,"expected":"error","expectedMessage":"vô hiệu hóa","defectKey":""},
+  {"id":"TC-COUPON-005","category":"negative","code":"EXPIRED","total":400000,"login":true,"expected":"error","expectedMessage":"hết hạn","defectKey":""},
+  {"id":"TC-COUPON-006","category":"boundary","code":"SAVE10","total":299999,"login":true,"expected":"error","expectedMessage":"chưa đủ","defectKey":""},
+  {"id":"TC-COUPON-007","category":"boundary","code":"SAVE10","total":0,"login":true,"expected":"error","expectedMessage":"chưa đủ","defectKey":""},
+  {"id":"TC-COUPON-008","category":"authorization","code":"SAVE10","total":400000,"login":false,"expected":"error","expectedMessage":"đăng nhập","defectKey":"FR09-COUPON-ALLOWS-GUEST"},
+  {"id":"TC-COUPON-012","category":"boundary","code":"SAVE10","total":300000,"login":true,"expected":"success","expectedDiscount":30000,"expectedFinal":270000,"defectKey":"FR09-THRESHOLD-EXCLUDES-EQUALITY"},
+  {"id":"TC-COUPON-013","category":"boundary","code":"SAVE10","total":300001,"login":true,"expected":"success","expectedDiscount":30000,"expectedFinal":270001,"defectKey":"FR09-PERCENT-CALCULATION"},
+  {"id":"TC-COUPON-014","category":"boundary","code":"BIGBUY","total":499999,"login":true,"expected":"error","expectedMessage":"chưa đủ","defectKey":""},
+  {"id":"TC-COUPON-015","category":"boundary","code":"BIGBUY","total":500001,"login":true,"expected":"success","expectedDiscount":50000,"expectedFinal":450001,"defectKey":""}
 ]
