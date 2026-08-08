@@ -1,0 +1,609 @@
+^D
+> 23127065-hw06-api-testing@1.0.0 test:checkout
+> newman run postman/23127065_HW06.postman_collection.json -e postman/localhost.postman_environment.json -d test-data/checkout-cases.json --folder "Pool B - Checkout" -r cli,json,junit,htmlextra --reporter-json-export newman/results/checkout.json --reporter-junit-export newman/results/checkout.xml --reporter-htmlextra-export newman/reports/checkout/index.html --reporter-htmlextra-title "23127065 HW06 Checkout" --env-var baseUrl=http://127.0.0.1:31065
+
+[0mnewman[0m
+
+[0m23127065 HW06 API Testing[0m
+
+[90m[4mIteration 1/40[24m[39m
+
+❏ [0mPool B - Checkout[0m
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 20ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 312B, 9ms][39m
+[32m  ✓ [39m [90mCHECKOUT-001 expected HTTP 200[39m
+[32m  ✓ [39m [90mCHECKOUT-001 sent student header[39m
+[32m  ✓ [39m [90mCHECKOUT-001 checkout schema[39m
+
+[90m[4mIteration 2/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 5ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 312B, 6ms][39m
+[32m  ✓ [39m [90mCHECKOUT-002 expected HTTP 200[39m
+[32m  ✓ [39m [90mCHECKOUT-002 sent student header[39m
+[32m  ✓ [39m [90mCHECKOUT-002 checkout schema[39m
+
+[90m[4mIteration 3/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 4ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 312B, 3ms][39m
+[32m  ✓ [39m [90mCHECKOUT-003 expected HTTP 200[39m
+[32m  ✓ [39m [90mCHECKOUT-003 sent student header[39m
+[32m  ✓ [39m [90mCHECKOUT-003 checkout schema[39m
+
+[90m[4mIteration 4/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 312B, 3ms][39m
+[31m[1m  1.[22m[39m [31m[1mCHECKOUT-004 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-004 sent student header[39m
+
+[90m[4mIteration 5/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 3ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 312B, 3ms][39m
+[31m[1m  2.[22m[39m [31m[1mCHECKOUT-005 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-005 sent student header[39m
+
+[90m[4mIteration 6/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 312B, 3ms][39m
+[31m[1m  3.[22m[39m [31m[1mCHECKOUT-006 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-006 sent student header[39m
+
+[90m[4mIteration 7/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 312B, 3ms][39m
+[31m[1m  4.[22m[39m [31m[1mCHECKOUT-007 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-007 sent student header[39m
+
+[90m[4mIteration 8/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 3ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 312B, 3ms][39m
+[31m[1m  5.[22m[39m [31m[1mCHECKOUT-008 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-008 sent student header[39m
+
+[90m[4mIteration 9/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 312B, 3ms][39m
+[31m[1m  6.[22m[39m [31m[1mCHECKOUT-009 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-009 sent student header[39m
+
+[90m[4mIteration 10/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[31m[1m  7.[22m[39m [31m[1mCHECKOUT-010 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-010 sent student header[39m
+
+[90m[4mIteration 11/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 4ms][39m
+[31m[1m  8.[22m[39m [31m[1mCHECKOUT-011 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-011 sent student header[39m
+
+[90m[4mIteration 12/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[31m[1m  9.[22m[39m [31m[1mCHECKOUT-012 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-012 sent student header[39m
+
+[90m[4mIteration 13/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 4ms][39m
+[31m[1m 10.[22m[39m [31m[1mCHECKOUT-013 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-013 sent student header[39m
+
+[90m[4mIteration 14/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[31m[1m 11.[22m[39m [31m[1mCHECKOUT-014 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-014 sent student header[39m
+
+[90m[4mIteration 15/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[31m[1m 12.[22m[39m [31m[1mCHECKOUT-015 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-015 sent student header[39m
+
+[90m[4mIteration 16/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 4ms][39m
+[32m  ✓ [39m [90mCHECKOUT-016 expected HTTP 200[39m
+[32m  ✓ [39m [90mCHECKOUT-016 sent student header[39m
+[32m  ✓ [39m [90mCHECKOUT-016 checkout schema[39m
+
+[90m[4mIteration 17/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[31m[1m 13.[22m[39m [31m[1mCHECKOUT-017 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-017 sent student header[39m
+
+[90m[4mIteration 18/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[31m[1m 14.[22m[39m [31m[1mCHECKOUT-018 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-018 sent student header[39m
+
+[90m[4mIteration 19/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[31m[1m 15.[22m[39m [31m[1mCHECKOUT-019 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-019 sent student header[39m
+
+[90m[4mIteration 20/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 4ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[31m[1m 16.[22m[39m [31m[1mCHECKOUT-020 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-020 sent student header[39m
+
+[90m[4mIteration 21/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[31m[1m 17.[22m[39m [31m[1mCHECKOUT-021 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-021 sent student header[39m
+
+[90m[4mIteration 22/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[31m[1m 18.[22m[39m [31m[1mCHECKOUT-022 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-022 sent student header[39m
+
+[90m[4mIteration 23/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[31m[1m 19.[22m[39m [31m[1mCHECKOUT-023 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-023 sent student header[39m
+
+[90m[4mIteration 24/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 13ms][39m
+[31m[1m 20.[22m[39m [31m[1mCHECKOUT-024 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-024 sent student header[39m
+
+[90m[4mIteration 25/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[32m  ✓ [39m [90mCHECKOUT-025 expected HTTP 200[39m
+[32m  ✓ [39m [90mCHECKOUT-025 sent student header[39m
+[32m  ✓ [39m [90mCHECKOUT-025 checkout schema[39m
+
+[90m[4mIteration 26/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[401 Unauthorized, 301B, 1ms][39m
+[32m  ✓ [39m [90mCHECKOUT-026 expected HTTP 401[39m
+[32m  ✓ [39m [90mCHECKOUT-026 sent student header[39m
+
+[90m[4mIteration 27/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[403 Forbidden, 295B, 1ms][39m
+[32m  ✓ [39m [90mCHECKOUT-027 expected HTTP 403[39m
+[32m  ✓ [39m [90mCHECKOUT-027 sent student header[39m
+
+[90m[4mIteration 28/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+[32m  ✓ [39m [90mCHECKOUT-028 expected HTTP 200[39m
+[32m  ✓ [39m [90mCHECKOUT-028 sent student header[39m
+[32m  ✓ [39m [90mCHECKOUT-028 checkout schema[39m
+
+[90m[4mIteration 29/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[403 Forbidden, 295B, 2ms][39m
+[32m  ✓ [39m [90mCHECKOUT-029 expected HTTP 403[39m
+[32m  ✓ [39m [90mCHECKOUT-029 sent student header[39m
+
+[90m[4mIteration 30/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 6ms][39m
+[31m[1m 21.[22m[39m [31m[1mCHECKOUT-030 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-030 sent student header[39m
+
+[90m[4mIteration 31/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+[31m[1m 22.[22m[39m [31m[1mCHECKOUT-031 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-031 sent student header[39m
+
+[90m[4mIteration 32/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[32m  ✓ [39m [90mCHECKOUT-032 expected HTTP 200[39m
+[32m  ✓ [39m [90mCHECKOUT-032 sent student header[39m
+[32m  ✓ [39m [90mCHECKOUT-032 checkout schema[39m
+
+[90m[4mIteration 33/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[32m  ✓ [39m [90mCHECKOUT-033 expected HTTP 200[39m
+[32m  ✓ [39m [90mCHECKOUT-033 sent student header[39m
+[32m  ✓ [39m [90mCHECKOUT-033 JSON content type[39m
+
+[90m[4mIteration 34/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[32m  ✓ [39m [90mCHECKOUT-034 expected HTTP 200[39m
+[32m  ✓ [39m [90mCHECKOUT-034 sent student header[39m
+[32m  ✓ [39m [90mCHECKOUT-034 checkout schema[39m
+
+[90m[4mIteration 35/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[32m  ✓ [39m [90mCHECKOUT-035 expected HTTP 200[39m
+[32m  ✓ [39m [90mCHECKOUT-035 sent student header[39m
+[32m  ✓ [39m [90mCHECKOUT-035 checkout schema[39m
+
+[90m[4mIteration 36/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+[31m[1m 23.[22m[39m [31m[1mCHECKOUT-036 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-036 sent student header[39m
+
+[90m[4mIteration 37/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+[31m[1m 24.[22m[39m [31m[1mCHECKOUT-037 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-037 sent student header[39m
+
+[90m[4mIteration 38/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[31m[1m 25.[22m[39m [31m[1mCHECKOUT-038 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-038 sent student header[39m
+
+[90m[4mIteration 39/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+[32m  ✓ [39m [90mCHECKOUT-039 expected HTTP 200[39m
+[32m  ✓ [39m [90mCHECKOUT-039 sent student header[39m
+[32m  ✓ [39m [90mCHECKOUT-039 checkout schema[39m
+
+[90m[4mIteration 40/40[24m[39m
+
+↳ [0mExecute Checkout Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+[31m[1m 26.[22m[39m [31m[1mCHECKOUT-040 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mCHECKOUT-040 sent student header[39m
+
+[90m┌─────────────────────────[39m[90m┬─────────────────[39m[90m┬─────────────────┐[39m
+[90m│[39m                         [90m│[39m        executed [90m│[39m          failed [90m│[39m
+[90m├─────────────────────────[39m[90m┼─────────────────[39m[90m┼─────────────────┤[39m
+[90m│[39m              [32miterations[39m [90m│[39m              40 [90m│[39m               0 [90m│[39m
+[90m├─────────────────────────[39m[90m┼─────────────────[39m[90m┼─────────────────┤[39m
+[90m│[39m                [32mrequests[39m [90m│[39m              78 [90m│[39m               0 [90m│[39m
+[90m├─────────────────────────[39m[90m┼─────────────────[39m[90m┼─────────────────┤[39m
+[90m│[39m            [32mtest-scripts[39m [90m│[39m              40 [90m│[39m               0 [90m│[39m
+[90m├─────────────────────────[39m[90m┼─────────────────[39m[90m┼─────────────────┤[39m
+[90m│[39m      [32mprerequest-scripts[39m [90m│[39m              80 [90m│[39m               0 [90m│[39m
+[90m├─────────────────────────[39m[90m┼─────────────────[39m[90m┼─────────────────┤[39m
+[90m│[39m              [31massertions[39m [90m│[39m              91 [90m│[39m              [31m26[39m [90m│[39m
+[90m├─────────────────────────┴─────────────────┴─────────────────┤[39m
+[90m│[39m total run duration: 925ms                                   [90m│[39m
+[90m├─────────────────────────────────────────────────────────────┤[39m
+[90m│[39m total data received: 15.67kB (approx)                       [90m│[39m
+[90m├─────────────────────────────────────────────────────────────┤[39m
+[90m│[39m average response time: 2ms [min: 1ms, max: 20ms, s.d.: 2ms] [90m│[39m
+[90m└─────────────────────────────────────────────────────────────┘[39m
+
+[31m   [31m[4m#[24m[31m [39m[31m [31m[4mfailure[24m[31m        [39m[31m [31m[4mdetail[24m[31m                                                [39m
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 01.  AssertionError  CHECKOUT-004 expected HTTP 400                        
+      [90miteration: 4[39m    [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 02.  AssertionError  CHECKOUT-005 expected HTTP 400                        
+      [90miteration: 5[39m    [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 03.  AssertionError  CHECKOUT-006 expected HTTP 400                        
+      [90miteration: 6[39m    [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 04.  AssertionError  CHECKOUT-007 expected HTTP 400                        
+      [90miteration: 7[39m    [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 05.  AssertionError  CHECKOUT-008 expected HTTP 400                        
+      [90miteration: 8[39m    [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 06.  AssertionError  CHECKOUT-009 expected HTTP 400                        
+      [90miteration: 9[39m    [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 07.  AssertionError  CHECKOUT-010 expected HTTP 400                        
+      [90miteration: 10[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 08.  AssertionError  CHECKOUT-011 expected HTTP 400                        
+      [90miteration: 11[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 09.  AssertionError  CHECKOUT-012 expected HTTP 400                        
+      [90miteration: 12[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 10.  AssertionError  CHECKOUT-013 expected HTTP 400                        
+      [90miteration: 13[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 11.  AssertionError  CHECKOUT-014 expected HTTP 400                        
+      [90miteration: 14[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 12.  AssertionError  CHECKOUT-015 expected HTTP 400                        
+      [90miteration: 15[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 13.  AssertionError  CHECKOUT-017 expected HTTP 400                        
+      [90miteration: 17[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 14.  AssertionError  CHECKOUT-018 expected HTTP 400                        
+      [90miteration: 18[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 15.  AssertionError  CHECKOUT-019 expected HTTP 400                        
+      [90miteration: 19[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 16.  AssertionError  CHECKOUT-020 expected HTTP 400                        
+      [90miteration: 20[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 17.  AssertionError  CHECKOUT-021 expected HTTP 400                        
+      [90miteration: 21[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 18.  AssertionError  CHECKOUT-022 expected HTTP 400                        
+      [90miteration: 22[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 19.  AssertionError  CHECKOUT-023 expected HTTP 400                        
+      [90miteration: 23[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 20.  AssertionError  CHECKOUT-024 expected HTTP 400                        
+      [90miteration: 24[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 21.  AssertionError  CHECKOUT-030 expected HTTP 400                        
+      [90miteration: 30[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 22.  AssertionError  CHECKOUT-031 expected HTTP 400                        
+      [90miteration: 31[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 23.  AssertionError  CHECKOUT-036 expected HTTP 400                        
+      [90miteration: 36[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 24.  AssertionError  CHECKOUT-037 expected HTTP 400                        
+      [90miteration: 37[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 25.  AssertionError  CHECKOUT-038 expected HTTP 400                        
+      [90miteration: 38[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    
+[90m     [39m[90m                [39m[90m                                                       [39m
+ 26.  AssertionError  CHECKOUT-040 expected HTTP 400                        
+      [90miteration: 40[39m   [90mexpected response to have status code 400 but got 200[39m 
+                      [90mat assertion:0 in test-script[39m[90m[39m                         
+                      [90minside "Pool B - Checkout / Execute Checkout Case"[39m    

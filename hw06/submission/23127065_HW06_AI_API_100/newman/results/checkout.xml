@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="23127065 HW06 API Testing" tests="40" time="0.268">
+  <testsuite name="Pool B - Checkout / Execute Checkout Case" id="1830c23f-90b2-4642-9621-cb32574083af" timestamp="2026-08-08T14:10:55.281Z" tests="2" failures="52" errors="0" time="0.003">
+    <testcase name="CHECKOUT-001 expected HTTP 200" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-001 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-001 checkout schema" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-002 expected HTTP 200" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-002 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-002 checkout schema" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-003 expected HTTP 200" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-003 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-003 checkout schema" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-004 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-004 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-004 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-005 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-005 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-005 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-006 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-006 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-006 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-007 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-007 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-007 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-008 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-008 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-008 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-009 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-009 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-009 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-010 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-010 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-010 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-011 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-011 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-011 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-012 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-012 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-012 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-013 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-013 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-013 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-014 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-014 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-014 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-015 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-015 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-015 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-016 expected HTTP 200" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-016 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-016 checkout schema" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-017 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-017 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-017 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-018 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-018 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-018 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-019 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-019 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-019 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-020 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-020 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-020 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-021 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-021 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-021 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-022 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-022 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-022 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-023 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-023 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-023 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-024 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-024 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-024 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-025 expected HTTP 200" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-025 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-025 checkout schema" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-026 expected HTTP 401" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-026 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-027 expected HTTP 403" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-027 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-028 expected HTTP 200" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-028 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-028 checkout schema" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-029 expected HTTP 403" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-029 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-030 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-030 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-030 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-031 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-031 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-031 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-032 expected HTTP 200" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-032 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-032 checkout schema" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-033 expected HTTP 200" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-033 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-033 JSON content type" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-034 expected HTTP 200" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-034 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-034 checkout schema" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-035 expected HTTP 200" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-035 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-035 checkout schema" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-036 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-036 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-036 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-037 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-037 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-037 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-038 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-038 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-038 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-039 expected HTTP 200" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-039 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-039 checkout schema" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+    <testcase name="CHECKOUT-040 expected HTTP 400" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 9abd747d-2680-44dd-b929-45a8b27c069e.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool B - Checkout / Execute Checkout Case.]]>
+        <![CDATA[Test description: CHECKOUT-040 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="CHECKOUT-040 sent student header" time="0.002" classname="PoolBCheckoutExecuteCheckoutCase"/>
+  </testsuite>
+</testsuites>
