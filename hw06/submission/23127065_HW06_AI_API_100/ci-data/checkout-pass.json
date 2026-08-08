@@ -1,0 +1,23 @@
+[
+  {
+    "case_id": "CHECKOUT-001",
+    "api": "POST /api/checkout",
+    "feature": "FR-08",
+    "title": "Valid checkout",
+    "origin": "AI",
+    "audit_status": "VALID",
+    "audit_reason": "The case is specific, executable, and traceable to the contract.",
+    "technique": "Domain partition",
+    "security_or_transition": "None",
+    "preconditions": "Fresh isolated SUT",
+    "input_summary": "{\"total_amount\": 200000, \"shipping_address\": \"123 Le Loi, TP.HCM\"}",
+    "raw_body": "{\"total_amount\": 200000, \"shipping_address\": \"123 Le Loi, TP.HCM\"}",
+    "auth_mode": "user",
+    "prefail_count": 0,
+    "current_status": "",
+    "expected_status": 200,
+    "check_type": "checkout_schema",
+    "final_expected": "Response matches the specified status and schema.",
+    "human_review": "TODO(HUMAN): confirm or correct this AI-assisted decision"
+  }
+]

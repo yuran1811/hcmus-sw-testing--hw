@@ -1,0 +1,23 @@
+[
+  {
+    "case_id": "CI-DEMO-FAIL-001",
+    "api": "POST /api/login",
+    "feature": "FR-02",
+    "title": "Intentional CI failure demonstration",
+    "origin": "AI",
+    "audit_status": "VALID",
+    "audit_reason": "The case is specific, executable, and traceable to the contract.",
+    "technique": "Domain partition",
+    "security_or_transition": "None",
+    "preconditions": "Fresh isolated SUT",
+    "input_summary": "{\"email\": \"login_001@example.com\", \"password\": \"Valid123!\"}",
+    "raw_body": "{\"email\": \"login_001@example.com\", \"password\": \"Valid123!\"}",
+    "auth_mode": "none",
+    "prefail_count": 0,
+    "current_status": "",
+    "expected_status": 418,
+    "check_type": "login_schema",
+    "final_expected": "Deliberately impossible expectation used only to demonstrate a red pipeline.",
+    "human_review": "TODO(HUMAN): confirm or correct this AI-assisted decision"
+  }
+]

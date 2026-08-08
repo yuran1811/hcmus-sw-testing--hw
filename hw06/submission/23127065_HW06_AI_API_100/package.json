@@ -1,0 +1,15 @@
+{
+  "name": "23127065-hw06-api-testing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Reproducible Newman runner for HW06",
+  "scripts": {
+    "test:login": "newman run postman/23127065_HW06.postman_collection.json -e postman/localhost.postman_environment.json -d test-data/login-cases.json --folder \"Pool A - Login\" -r cli,json,junit,htmlextra --reporter-json-export newman/results/login.json --reporter-junit-export newman/results/login.xml --reporter-htmlextra-export newman/reports/login/index.html --reporter-htmlextra-title \"23127065 HW06 Login\"",
+    "test:checkout": "newman run postman/23127065_HW06.postman_collection.json -e postman/localhost.postman_environment.json -d test-data/checkout-cases.json --folder \"Pool B - Checkout\" -r cli,json,junit,htmlextra --reporter-json-export newman/results/checkout.json --reporter-junit-export newman/results/checkout.xml --reporter-htmlextra-export newman/reports/checkout/index.html --reporter-htmlextra-title \"23127065 HW06 Checkout\"",
+    "test:order": "newman run postman/23127065_HW06.postman_collection.json -e postman/localhost.postman_environment.json -d test-data/orderstatus-cases.json --folder \"Pool C - Admin Order Status\" -r cli,json,junit,htmlextra --reporter-json-export newman/results/orderstatus.json --reporter-junit-export newman/results/orderstatus.xml --reporter-htmlextra-export newman/reports/orderstatus/index.html --reporter-htmlextra-title \"23127065 HW06 Order Status\""
+  },
+  "devDependencies": {
+    "newman": "6.2.2",
+    "newman-reporter-htmlextra": "1.23.1"
+  }
+}

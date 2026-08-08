@@ -1,0 +1,23 @@
+[
+  {
+    "case_id": "ORDER-001",
+    "api": "PUT /api/admin/orders/:id/status",
+    "feature": "FR-18",
+    "title": "Pending to confirmed",
+    "origin": "AI",
+    "audit_status": "VALID",
+    "audit_reason": "The case is specific, executable, and traceable to the contract.",
+    "technique": "State transition",
+    "security_or_transition": "pending -> confirmed",
+    "preconditions": "Fresh isolated SUT",
+    "input_summary": "{\"status\": \"confirmed\"}",
+    "raw_body": "{\"status\": \"confirmed\"}",
+    "auth_mode": "admin",
+    "prefail_count": 0,
+    "current_status": "pending",
+    "expected_status": 200,
+    "check_type": "order_schema",
+    "final_expected": "Response matches the specified status and schema.",
+    "human_review": "TODO(HUMAN): confirm or correct this AI-assisted decision"
+  }
+]
