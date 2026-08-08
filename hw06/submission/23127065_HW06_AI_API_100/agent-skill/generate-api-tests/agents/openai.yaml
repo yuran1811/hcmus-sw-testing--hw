@@ -1,0 +1,4 @@
+interface:
+  display_name: "Generate API Tests"
+  short_description: "Generate auditable API test cases"
+  default_prompt: "Use $generate-api-tests to generate and audit API tests from this specification."
