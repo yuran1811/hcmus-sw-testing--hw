@@ -1,5 +1,17 @@
 Generated for hw05/submission/23127065 on 2026-08-08 (Asia/Ho_Chi_Minh).
-This log records the implementation steps before the final commit that adds this log file.
+This log records the implementation and repair steps before the final commit that refreshes this log file.
+
+commit 5b285a7792da87bcf6b7fbbda6543365639ebc15
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   2026-08-08T19:51:24+07:00
+
+    hw05: make evidence audit portable on macOS
+
+commit ba5d500caa685b868b28ccfd044cd6c5f31c8397
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   2026-08-08T19:50:11+07:00
+
+    hw05: add submission commit log
 
 commit c60d931787817e5c672a3d93500638cdbfa679ca
 Author: yuran1811 <trieuvanbd123@gmail.com>
