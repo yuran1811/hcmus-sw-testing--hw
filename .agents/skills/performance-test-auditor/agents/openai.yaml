@@ -1,0 +1,4 @@
+interface:
+  display_name: "Performance Test Auditor"
+  short_description: "Run and audit JMeter performance evidence"
+  default_prompt: "Use $performance-test-auditor to run a JMeter scenario and audit its JTL evidence."
