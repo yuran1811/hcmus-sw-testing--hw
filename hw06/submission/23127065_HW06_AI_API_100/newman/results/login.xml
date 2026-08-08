@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="23127065 HW06 API Testing" tests="40" time="0.133">
+  <testsuite name="Pool A - Login / Execute Login Case" id="761d3db7-dbf0-46d6-b4be-46e6e222b707" timestamp="2026-08-08T14:09:25.717Z" tests="3" failures="42" errors="0" time="0.001">
+    <testcase name="LOGIN-001 expected HTTP 200" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-001 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-001 login schema" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-002 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-002 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-002 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-003 expected HTTP 401" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-003 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-004 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-004 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-004 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-005 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-005 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-005 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-006 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-006 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-006 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-007 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-007 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-007 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-008 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-008 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-008 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-009 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-009 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-009 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-010 expected HTTP 401" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-010 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-011 expected HTTP 401" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-011 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-012 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-012 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-012 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-013 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-013 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-013 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-014 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-014 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-014 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-015 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-015 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-015 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-016 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-016 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-016 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-017 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-017 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-017 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-018 expected HTTP 401" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-018 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-019 expected HTTP 401" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-019 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-020 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-020 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-020 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-021 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-021 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-021 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-022 expected HTTP 200" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-022 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-022 login schema" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-023 expected HTTP 401" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-023 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-024 expected HTTP 401" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-024 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-025 expected HTTP 401" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-025 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-026 expected HTTP 401" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-026 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-027 expected HTTP 200" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 200 but got 403">
+        <![CDATA[Failed 4 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-027 expected HTTP 200.]]>
+        <![CDATA[Error message: expected response to have status code 200 but got 403.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 200 but got 403
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-027 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-028 expected HTTP 403" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-028 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-029 expected HTTP 403" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-029 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-030 expected HTTP 403" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-030 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-031 expected HTTP 200" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-031 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-031 login schema" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-032 expected HTTP 200" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-032 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-032 excludes password" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected { id: 34, name: 'LOGIN-032', …(8) } to not have property 'password'">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-032 excludes password.]]>
+        <![CDATA[Error message: expected { id: 34, name: 'LOGIN-032', …(8) } to not have property 'password'.]]>
+        <![CDATA[Stacktrace: AssertionError: expected { id: 34, name: 'LOGIN-032', …(8) } to not have property 'password'
+   at Object.eval sandbox-script.js:3:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-033 expected HTTP 200" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-033 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-033 JSON content type" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-034 expected HTTP 401" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-034 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-034 generic auth error" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-035 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-035 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-035 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-036 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-036 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-036 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-037 expected HTTP 200" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-037 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-037 login schema" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-038 expected HTTP 200" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-038 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-038 login schema" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-039 expected HTTP 200" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-039 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-039 login schema" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-040 expected HTTP 400" time="0.001" classname="PoolALoginExecuteLoginCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 401">
+        <![CDATA[Failed 2 times.]]>
+        <![CDATA[Collection JSON ID: 17ba31ee-24ff-4a1b-a55f-b15f3718897c.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool A - Login / Execute Login Case.]]>
+        <![CDATA[Test description: LOGIN-040 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 401.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 401
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="LOGIN-040 sent student header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+    <testcase name="LOGIN-040 exact anti-cheat header" time="0.001" classname="PoolALoginExecuteLoginCase"/>
+  </testsuite>
+</testsuites>
