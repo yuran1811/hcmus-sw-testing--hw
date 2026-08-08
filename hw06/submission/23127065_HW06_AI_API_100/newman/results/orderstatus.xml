@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="23127065 HW06 API Testing" tests="40" time="0.303">
+  <testsuite name="Pool C - Admin Order Status / Execute Order Status Case" id="5193c88d-4287-4449-bacc-781f895e20da" timestamp="2026-08-08T14:13:51.831Z" tests="2" failures="20" errors="0" time="0.002">
+    <testcase name="ORDER-001 expected HTTP 200" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-001 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-001 order schema" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-002 expected HTTP 200" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-002 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-002 order schema" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-003 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-003 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-004 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-004 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-005 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-005 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-006 expected HTTP 200" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-006 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-006 order schema" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-007 expected HTTP 200" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-007 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-007 order schema" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-008 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-008 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-009 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-009 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-010 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-010 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-011 expected HTTP 200" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-011 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-011 order schema" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-012 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-012 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-013 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-013 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-014 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-014 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-015 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-015 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-016 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-016 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-017 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-017 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-018 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-018 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-019 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-019 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-020 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-020 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-021 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase">
+      <failure type="AssertionFailure" message="expected response to have status code 400 but got 200">
+        <![CDATA[Failed 5 times.]]>
+        <![CDATA[Collection JSON ID: 4bf0114b-218e-4e10-b992-82c18ffe2bf5.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool C - Admin Order Status / Execute Order Status Case.]]>
+        <![CDATA[Test description: ORDER-021 expected HTTP 400.]]>
+        <![CDATA[Error message: expected response to have status code 400 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 400 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="ORDER-021 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-022 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-022 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-023 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-023 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-024 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-024 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-025 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-025 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-026 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-026 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-027 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-027 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-028 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-028 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-029 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-029 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-030 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-030 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-031 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-031 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-032 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-032 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-033 expected HTTP 404" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-033 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-034 expected HTTP 401" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-034 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-035 expected HTTP 403" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-035 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-036 expected HTTP 403" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase">
+      <failure type="AssertionFailure" message="expected response to have status code 403 but got 200">
+        <![CDATA[Failed 4 times.]]>
+        <![CDATA[Collection JSON ID: 4bf0114b-218e-4e10-b992-82c18ffe2bf5.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool C - Admin Order Status / Execute Order Status Case.]]>
+        <![CDATA[Test description: ORDER-036 expected HTTP 403.]]>
+        <![CDATA[Error message: expected response to have status code 403 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 403 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="ORDER-036 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-037 expected HTTP 403" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase">
+      <failure type="AssertionFailure" message="expected response to have status code 403 but got 200">
+        <![CDATA[Failed 4 times.]]>
+        <![CDATA[Collection JSON ID: 4bf0114b-218e-4e10-b992-82c18ffe2bf5.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool C - Admin Order Status / Execute Order Status Case.]]>
+        <![CDATA[Test description: ORDER-037 expected HTTP 403.]]>
+        <![CDATA[Error message: expected response to have status code 403 but got 200.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 403 but got 200
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="ORDER-037 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-038 expected HTTP 200" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-038 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-038 order schema" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-039 expected HTTP 400" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-039 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+    <testcase name="ORDER-040 expected HTTP 403" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase">
+      <failure type="AssertionFailure" message="expected response to have status code 403 but got 400">
+        <![CDATA[Failed 7 times.]]>
+        <![CDATA[Collection JSON ID: 4bf0114b-218e-4e10-b992-82c18ffe2bf5.]]>
+        <![CDATA[Collection name: 23127065 HW06 API Testing.]]>
+        <![CDATA[Request name: Pool C - Admin Order Status / Execute Order Status Case.]]>
+        <![CDATA[Test description: ORDER-040 expected HTTP 403.]]>
+        <![CDATA[Error message: expected response to have status code 403 but got 400.]]>
+        <![CDATA[Stacktrace: AssertionError: expected response to have status code 403 but got 400
+   at Object.eval sandbox-script.js:1:1).]]>
+      </failure>
+    </testcase>
+    <testcase name="ORDER-040 sent student header" time="0.001" classname="PoolCAdminOrderStatusExecuteOrderStatusCase"/>
+  </testsuite>
+</testsuites>

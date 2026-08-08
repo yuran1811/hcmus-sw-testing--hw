@@ -1,0 +1,613 @@
+^D
+> 23127065-hw06-api-testing@1.0.0 test:order
+> newman run postman/23127065_HW06.postman_collection.json -e postman/localhost.postman_environment.json -d test-data/orderstatus-cases.json --folder "Pool C - Admin Order Status" -r cli,json,junit,htmlextra --reporter-json-export newman/results/orderstatus.json --reporter-junit-export newman/results/orderstatus.xml --reporter-htmlextra-export newman/reports/orderstatus/index.html --reporter-htmlextra-title "23127065 HW06 Order Status" --env-var baseUrl=http://127.0.0.1:31065
+
+[0mnewman[0m
+
+[0m23127065 HW06 API Testing[0m
+
+[90m[4mIteration 1/40[24m[39m
+
+❏ [0mPool C - Admin Order Status[0m
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 16ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/77/status[39m  [90m[200 OK, 301B, 4ms][39m
+[32m  ✓ [39m [90mORDER-001 expected HTTP 200[39m
+[32m  ✓ [39m [90mORDER-001 sent student header[39m
+[32m  ✓ [39m [90mORDER-001 order schema[39m
+
+[90m[4mIteration 2/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 3ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 4ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 4ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/78/status[39m  [90m[200 OK, 301B, 3ms][39m
+[32m  ✓ [39m [90mORDER-002 expected HTTP 200[39m
+[32m  ✓ [39m [90mORDER-002 sent student header[39m
+[32m  ✓ [39m [90mORDER-002 order schema[39m
+
+[90m[4mIteration 3/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 3ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/79/status[39m  [90m[400 Bad Request, 337B, 2ms][39m
+[32m  ✓ [39m [90mORDER-003 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-003 sent student header[39m
+
+[90m[4mIteration 4/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/80/status[39m  [90m[400 Bad Request, 338B, 2ms][39m
+[32m  ✓ [39m [90mORDER-004 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-004 sent student header[39m
+
+[90m[4mIteration 5/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/81/status[39m  [90m[400 Bad Request, 336B, 1ms][39m
+[32m  ✓ [39m [90mORDER-005 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-005 sent student header[39m
+
+[90m[4mIteration 6/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/82/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/82/status[39m  [90m[200 OK, 301B, 3ms][39m
+[32m  ✓ [39m [90mORDER-006 expected HTTP 200[39m
+[32m  ✓ [39m [90mORDER-006 sent student header[39m
+[32m  ✓ [39m [90mORDER-006 order schema[39m
+
+[90m[4mIteration 7/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/83/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/83/status[39m  [90m[200 OK, 301B, 2ms][39m
+[32m  ✓ [39m [90mORDER-007 expected HTTP 200[39m
+[32m  ✓ [39m [90mORDER-007 sent student header[39m
+[32m  ✓ [39m [90mORDER-007 order schema[39m
+
+[90m[4mIteration 8/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/84/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/84/status[39m  [90m[400 Bad Request, 338B, 1ms][39m
+[32m  ✓ [39m [90mORDER-008 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-008 sent student header[39m
+
+[90m[4mIteration 9/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/85/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/85/status[39m  [90m[400 Bad Request, 340B, 2ms][39m
+[32m  ✓ [39m [90mORDER-009 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-009 sent student header[39m
+
+[90m[4mIteration 10/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/86/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/86/status[39m  [90m[400 Bad Request, 340B, 1ms][39m
+[32m  ✓ [39m [90mORDER-010 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-010 sent student header[39m
+
+[90m[4mIteration 11/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/87/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/87/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/87/status[39m  [90m[200 OK, 301B, 2ms][39m
+[32m  ✓ [39m [90mORDER-011 expected HTTP 200[39m
+[32m  ✓ [39m [90mORDER-011 sent student header[39m
+[32m  ✓ [39m [90mORDER-011 order schema[39m
+
+[90m[4mIteration 12/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/88/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/88/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/88/status[39m  [90m[400 Bad Request, 338B, 1ms][39m
+[32m  ✓ [39m [90mORDER-012 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-012 sent student header[39m
+
+[90m[4mIteration 13/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/89/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/89/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/89/status[39m  [90m[400 Bad Request, 339B, 1ms][39m
+[32m  ✓ [39m [90mORDER-013 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-013 sent student header[39m
+
+[90m[4mIteration 14/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/90/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/90/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/90/status[39m  [90m[400 Bad Request, 337B, 2ms][39m
+[32m  ✓ [39m [90mORDER-014 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-014 sent student header[39m
+
+[90m[4mIteration 15/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/91/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/91/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/91/status[39m  [90m[400 Bad Request, 338B, 1ms][39m
+[32m  ✓ [39m [90mORDER-015 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-015 sent student header[39m
+
+[90m[4mIteration 16/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/92/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/92/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/92/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/92/status[39m  [90m[400 Bad Request, 338B, 2ms][39m
+[32m  ✓ [39m [90mORDER-016 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-016 sent student header[39m
+
+[90m[4mIteration 17/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/93/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/93/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/93/status[39m  [90m[200 OK, 301B, 4ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/93/status[39m  [90m[400 Bad Request, 340B, 1ms][39m
+[32m  ✓ [39m [90mORDER-017 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-017 sent student header[39m
+
+[90m[4mIteration 18/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/94/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/94/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/94/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/94/status[39m  [90m[400 Bad Request, 339B, 1ms][39m
+[32m  ✓ [39m [90mORDER-018 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-018 sent student header[39m
+
+[90m[4mIteration 19/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/95/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/95/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/95/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/95/status[39m  [90m[400 Bad Request, 339B, 1ms][39m
+[32m  ✓ [39m [90mORDER-019 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-019 sent student header[39m
+
+[90m[4mIteration 20/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/96/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/96/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/96/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/96/status[39m  [90m[400 Bad Request, 340B, 1ms][39m
+[32m  ✓ [39m [90mORDER-020 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-020 sent student header[39m
+
+[90m[4mIteration 21/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/97/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/97/status[39m  [90m[200 OK, 301B, 3ms][39m
+[31m[1m  1.[22m[39m [31m[1mORDER-021 expected HTTP 400[22m[39m
+[32m  ✓ [39m [90mORDER-021 sent student header[39m
+
+[90m[4mIteration 22/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 4ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/98/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/98/status[39m  [90m[400 Bad Request, 337B, 1ms][39m
+[32m  ✓ [39m [90mORDER-022 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-022 sent student header[39m
+
+[90m[4mIteration 23/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 313B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/99/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/99/status[39m  [90m[400 Bad Request, 339B, 2ms][39m
+[32m  ✓ [39m [90mORDER-023 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-023 sent student header[39m
+
+[90m[4mIteration 24/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/100/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/100/status[39m  [90m[400 Bad Request, 338B, 1ms][39m
+[32m  ✓ [39m [90mORDER-024 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-024 sent student header[39m
+
+[90m[4mIteration 25/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/101/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/101/status[39m  [90m[400 Bad Request, 338B, 1ms][39m
+[32m  ✓ [39m [90mORDER-025 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-025 sent student header[39m
+
+[90m[4mIteration 26/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/102/status[39m  [90m[400 Bad Request, 337B, 1ms][39m
+[32m  ✓ [39m [90mORDER-026 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-026 sent student header[39m
+
+[90m[4mIteration 27/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/103/status[39m  [90m[400 Bad Request, 329B, 2ms][39m
+[32m  ✓ [39m [90mORDER-027 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-027 sent student header[39m
+
+[90m[4mIteration 28/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/104/status[39m  [90m[400 Bad Request, 333B, 1ms][39m
+[32m  ✓ [39m [90mORDER-028 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-028 sent student header[39m
+
+[90m[4mIteration 29/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/105/status[39m  [90m[400 Bad Request, 338B, 1ms][39m
+[32m  ✓ [39m [90mORDER-029 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-029 sent student header[39m
+
+[90m[4mIteration 30/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/106/status[39m  [90m[400 Bad Request, 337B, 1ms][39m
+[32m  ✓ [39m [90mORDER-030 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-030 sent student header[39m
+
+[90m[4mIteration 31/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/107/status[39m  [90m[400 Bad Request, 338B, 2ms][39m
+[32m  ✓ [39m [90mORDER-031 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-031 sent student header[39m
+
+[90m[4mIteration 32/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/108/status[39m  [90m[400 Bad Request, 344B, 1ms][39m
+[32m  ✓ [39m [90mORDER-032 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-032 sent student header[39m
+
+[90m[4mIteration 33/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/99999999/status[39m  [90m[404 Not Found, 301B, 1ms][39m
+[32m  ✓ [39m [90mORDER-033 expected HTTP 404[39m
+[32m  ✓ [39m [90mORDER-033 sent student header[39m
+
+[90m[4mIteration 34/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/109/status[39m  [90m[401 Unauthorized, 301B, 1ms][39m
+[32m  ✓ [39m [90mORDER-034 expected HTTP 401[39m
+[32m  ✓ [39m [90mORDER-034 sent student header[39m
+
+[90m[4mIteration 35/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/110/status[39m  [90m[403 Forbidden, 295B, 1ms][39m
+[32m  ✓ [39m [90mORDER-035 expected HTTP 403[39m
+[32m  ✓ [39m [90mORDER-035 sent student header[39m
+
+[90m[4mIteration 36/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/111/status[39m  [90m[200 OK, 301B, 2ms][39m
+[31m[1m  2.[22m[39m [31m[1mORDER-036 expected HTTP 403[22m[39m
+[32m  ✓ [39m [90mORDER-036 sent student header[39m
+
+[90m[4mIteration 37/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/112/status[39m  [90m[200 OK, 301B, 3ms][39m
+[31m[1m  3.[22m[39m [31m[1mORDER-037 expected HTTP 403[22m[39m
+[32m  ✓ [39m [90mORDER-037 sent student header[39m
+
+[90m[4mIteration 38/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/113/status[39m  [90m[200 OK, 301B, 2ms][39m
+[32m  ✓ [39m [90mORDER-038 expected HTTP 200[39m
+[32m  ✓ [39m [90mORDER-038 sent student header[39m
+[32m  ✓ [39m [90mORDER-038 order schema[39m
+
+[90m[4mIteration 39/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 2ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/114/status[39m  [90m[400 Bad Request, 349B, 1ms][39m
+[32m  ✓ [39m [90mORDER-039 expected HTTP 400[39m
+[32m  ✓ [39m [90mORDER-039 sent student header[39m
+
+[90m[4mIteration 40/40[24m[39m
+
+↳ [0mExecute Order Status Case[0m
+[90m  ┌[39m
+[90m[39m[90m  [90m│[90m [90m'X-Student-Id: 23127065'[90m[39m
+[90m[39m[90m  └[39m
+[90m[39m  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 635B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/login[39m  [90m[200 OK, 640B, 1ms][39m
+  [90mPOST[39m [90mhttp://127.0.0.1:31065/api/checkout[39m  [90m[200 OK, 314B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/115/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/115/status[39m  [90m[200 OK, 301B, 2ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/115/status[39m  [90m[200 OK, 301B, 3ms][39m
+  [90mPUT[39m [90mhttp://127.0.0.1:31065/api/admin/orders/115/status[39m  [90m[400 Bad Request, 339B, 1ms][39m
+[31m[1m  4.[22m[39m [31m[1mORDER-040 expected HTTP 403[22m[39m
+[32m  ✓ [39m [90mORDER-040 sent student header[39m
+
+[90m┌─────────────────────────[39m[90m┬─────────────────[39m[90m┬─────────────────┐[39m
+[90m│[39m                         [90m│[39m        executed [90m│[39m          failed [90m│[39m
+[90m├─────────────────────────[39m[90m┼─────────────────[39m[90m┼─────────────────┤[39m
+[90m│[39m              [32miterations[39m [90m│[39m              40 [90m│[39m               0 [90m│[39m
+[90m├─────────────────────────[39m[90m┼─────────────────[39m[90m┼─────────────────┤[39m
+[90m│[39m                [32mrequests[39m [90m│[39m             197 [90m│[39m               0 [90m│[39m
+[90m├─────────────────────────[39m[90m┼─────────────────[39m[90m┼─────────────────┤[39m
+[90m│[39m            [32mtest-scripts[39m [90m│[39m              40 [90m│[39m               0 [90m│[39m
+[90m├─────────────────────────[39m[90m┼─────────────────[39m[90m┼─────────────────┤[39m
+[90m│[39m      [32mprerequest-scripts[39m [90m│[39m              80 [90m│[39m               0 [90m│[39m
+[90m├─────────────────────────[39m[90m┼─────────────────[39m[90m┼─────────────────┤[39m
+[90m│[39m              [31massertions[39m [90m│[39m              86 [90m│[39m               [31m4[39m [90m│[39m
+[90m├─────────────────────────┴─────────────────┴─────────────────┤[39m
+[90m│[39m total run duration: 1233ms                                  [90m│[39m
+[90m├─────────────────────────────────────────────────────────────┤[39m
+[90m│[39m total data received: 34.71kB (approx)                       [90m│[39m
+[90m├─────────────────────────────────────────────────────────────┤[39m
+[90m│[39m average response time: 2ms [min: 1ms, max: 16ms, s.d.: 1ms] [90m│[39m
+[90m└─────────────────────────────────────────────────────────────┘[39m
+
+[31m  [31m[4m#[24m[31m [39m[31m [31m[4mfailure[24m[31m        [39m[31m [31m[4mdetail[24m[31m                                                           [39m
+[90m    [39m[90m                [39m[90m                                                                  [39m
+ 1.  AssertionError  ORDER-021 expected HTTP 400                                      
+     [90miteration: 21[39m   [90mexpected response to have status code 400 but got 200[39m            
+                     [90mat assertion:0 in test-script[39m[90m[39m                                    
+                     [90minside "Pool C - Admin Order Status / Execute Order Status Case"[39m 
+[90m    [39m[90m                [39m[90m                                                                  [39m
+ 2.  AssertionError  ORDER-036 expected HTTP 403                                      
+     [90miteration: 36[39m   [90mexpected response to have status code 403 but got 200[39m            
+                     [90mat assertion:0 in test-script[39m[90m[39m                                    
+                     [90minside "Pool C - Admin Order Status / Execute Order Status Case"[39m 
+[90m    [39m[90m                [39m[90m                                                                  [39m
+ 3.  AssertionError  ORDER-037 expected HTTP 403                                      
+     [90miteration: 37[39m   [90mexpected response to have status code 403 but got 200[39m            
+                     [90mat assertion:0 in test-script[39m[90m[39m                                    
+                     [90minside "Pool C - Admin Order Status / Execute Order Status Case"[39m 
+[90m    [39m[90m                [39m[90m                                                                  [39m
+ 4.  AssertionError  ORDER-040 expected HTTP 403                                      
+     [90miteration: 40[39m   [90mexpected response to have status code 403 but got 400[39m            
+                     [90mat assertion:0 in test-script[39m[90m[39m                                    
+                     [90minside "Pool C - Admin Order Status / Execute Order Status Case"[39m 
