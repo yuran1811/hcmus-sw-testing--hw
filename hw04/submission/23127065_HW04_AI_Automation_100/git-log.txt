@@ -1,0 +1,24 @@
+HW04 Git history snapshot generated 2026-08-08 (Asia/Ho_Chi_Minh)
+Public repository: https://github.com/yuran1811/hcmus-sw-testing--hw
+
+HW04 test-script commits:
+5f8cc30  2026-08-08T09:39:40+07:00  yuran1811  test(hw04): complete three-browser automation evidence
+7e07684  2026-08-08T00:59:10+07:00  yuran1811  test(hw04): add data-driven automation matrix
+
+Requirement audit:
+- Test-script commits found: 2
+- Distinct dates: 1 (2026-08-08)
+- Required: at least 8 test-script commits over at least 4 days
+- Status: NOT MET. No history was fabricated or backdated.
+
+Recent repository history:
+5f8cc30  2026-08-08T09:39:40+07:00  test(hw04): complete three-browser automation evidence
+fbafb6d  2026-08-08T01:00:01+07:00  docs(hw04): label reports and capture issue evidence
+7e07684  2026-08-08T00:59:10+07:00  test(hw04): add data-driven automation matrix
+ade6d6b  2026-08-04T18:31:03+07:00  feat: add submission README
+cc96878  2026-08-03T08:01:23+07:00  feat: add automation test skill
+ce4fb19  2026-08-03T09:47:21+07:00  feat: compress the submission
+a4fa24c  2026-08-03T08:26:19+07:00  docs: finalize the submission
+82b90e2  2026-08-03T00:58:30+07:00  docs: finalize ai audit report, ai critique, bug report, gui & usability evidence
+da1221f  2026-08-03T00:42:05+07:00  feat: finish task 3
+fcd315e  2026-08-03T00:04:02+07:00  feat(export-pdf): add PDF export skill and associated script

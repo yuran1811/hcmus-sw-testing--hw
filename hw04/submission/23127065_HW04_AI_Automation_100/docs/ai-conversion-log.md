@@ -1,13 +1,14 @@
-# AI Conversion Log — HW04 Task 1
+# AI Conversion and Human Review Log
 
-| Feature | Stage | Prompt / input reviewed | Outcome / human review |
-| --- | --- | --- | --- |
-| FR-06 | Analyse | SUT specification and ProductDetail UI | Identified product content, positive-integer quantity, and immediate feedback requirements. |
-| FR-06 | Design | Twelve candidate cases | Retained content, default, boundary, invalid, and valid-quantity cases. |
-| FR-06 | Review | Generated locator and assertion approach | Replaced positional selectors with role/text/input locators; kept the first-click feedback failure as a defect. |
-| FR-09 | Analyse | Coupon rules C1–C5 and calculation formula | Designed threshold, expiry, unknown, authentication, casing, and fixed/percent cases. |
-| FR-09 | Review | Checkout implementation | Kept the exact threshold and authentication expectations; do not accept the SUT's client-controlled total or incorrect percent calculation. |
-| FR-17 | Analyse | Coupon CRUD requirement and admin UI | Modelled required fields plus valid and invalid numeric/date cases. |
-| FR-17 | Review | Generated form coverage | Added cleanup and explicit negative expectations; browser-native validation is not treated as backend validation. |
+| Feature / stage | AI proposal or assumption | Human review and final decision |
+| --- | --- | --- |
+| FR-06 locator | Use accessible labels for login/inputs | SUT label associations are missing; use visible-label-relative or role locators. |
+| FR-06 invalid input | Fill `abc` into a number input | Use keyboard input because Playwright rejects impossible `fill`; keep missing UI validation as a defect. |
+| FR-06 oracle | Treat first click behavior as implemented | Require immediate feedback after one click; preserve the failure. |
+| FR-09 result | Check only the success message | Assert exact savings and final totals; this exposed the percentage formula defect. |
+| FR-09 threshold | Mirror current `>` implementation | Keep requirement equality (`>=`) as the oracle. |
+| FR-17 rejection | Check native validity and immediately check zero rows | Wait for submission/render, require no matching row, capture it before cleanup, then delete it in `finally`. |
+| Matrix | Stop on first nonzero browser run | Continue all nine cells and fail only after recording all 108 attempts. |
+| Evidence | Depend only on automatic failure screenshots | Add explicit pre-cleanup screenshot where cleanup would hide the defect. |
 
-All data records are stored in `test-data/`; the specs load and validate them at runtime. This log records actual work performed in this repository, not fabricated AI transcripts.
+This is an honest decision log derived from the implemented session. It is not presented as a verbatim transcript.
