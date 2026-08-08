@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parents[1]
 REQUIRED = [
     "README.md", "Main_Report.md", "Main_Report.pdf", "AI_Audit_Report.md",
     "AI_Audit_Report.pdf", "AI_Critique.md", "AI_Critique.pdf", "Bug_Report.md",
-    "HUMAN_ACTION_REQUIRED.md", "test-cases/23127065_HW06_Test_Cases.xlsx",
+    "HUMAN_ACTION_REQUIRED.md", "Git_Commit_Log.txt", "test-cases/23127065_HW06_Test_Cases.xlsx",
     "postman/23127065_HW06.postman_collection.json",
     "postman/localhost.postman_environment.json", "package.json", "package-lock.json",
     "newman/results/login.json", "newman/results/checkout.json",

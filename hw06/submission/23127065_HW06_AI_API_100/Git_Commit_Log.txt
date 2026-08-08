@@ -1,0 +1,20 @@
+HW06 Git commit log - Student ID 23127065
+Generated: 2026-08-08 21:35 +07:00
+Base before HW06 work: 2d1aca87cd30ab52154429efff26204f2b7d1d21
+
+de3ba013fa604244cac9ae5637660cfbab8567db | feat(hw06): add API test generation skill
+d2a240eb08b3d172b5e89d1bafc1152e25be2be6 | test(hw06): generate login API cases
+9fbf07786e70069a0484b292f14092f0f9074a00 | docs(hw06): audit and extend login cases
+39b23fd7b5c329df3680fff9a088c3140fb38293 | test(hw06): record login Newman execution
+7f5bdd31211ec4e7751d336139492fc0464aa37f | test(hw06): generate checkout API cases
+a081d3d8b46e5f2027e4510fb6c7654c13edd511 | docs(hw06): audit and extend checkout cases
+096b6b935abe74345e21dc57c5f8990bbb6b8068 | test(hw06): record checkout Newman execution
+13d684272d6ac46cf7327af891c984df5a9f904a | test(hw06): generate order-status API cases
+5685d62f42bb7ba191292afbcbbd394650a3f06c | docs(hw06): audit and extend order-status cases
+00ecdf01a3e56796646059b652027e87dec68d16 | test(hw06): record order-status Newman execution
+dc93613a2e76a0bc654a2d0371c3e7c63031adcd | feat(hw06): add data-driven Postman suite
+a1f73d66e9e9c720971eb0f039ca4e7667d9acbf | ci(hw06): add pass and failure Newman demos
+a0da685dcc34a5ab9be965bf83d4148e1558f5af | docs(hw06): report verified API defects
+0e821d4005f0672ee7da6d0e5dbe8e1475f8d6d1 | docs(hw06): complete reports and human handoff
+
+This file intentionally lists the procedure commits created before the final log-refresh commit.
