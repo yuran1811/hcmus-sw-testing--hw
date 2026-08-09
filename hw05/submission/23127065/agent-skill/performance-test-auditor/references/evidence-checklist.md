@@ -3,12 +3,12 @@
 ## Machine-verifiable
 
 - Three distinct scenario plans named `{StudentID}_{ScenarioType}_{YYYYMMDD}.jmx`.
-- Exactly one read-heavy, one auth-heavy, and one transactional mapping.
-- One independent CSV file per endpoint group.
+- Every scenario executes the same `POST /api/login` → `GET /api/products?search=…` → `POST /api/checkout` workflow.
+- Every plan loads all three independent CSV files: credentials, search terms, and checkout payloads.
 - Distinct listener/report types across Load, Stress, and Spike.
 - One non-empty raw `.jtl` and one HTML dashboard with `index.html` per scenario.
 - Endurance JTL lasting approximately 10–15 minutes with a numeric stability conclusion.
-- Reported samples, error rate, throughput, p50, p90, p95, p99, and maximum match the raw JTL.
+- Reported workflow and per-endpoint samples, error rate, throughput, p50, p90, p95, p99, and maximum match the raw JTL. HTTP-sampler totals are not completed-workflow totals.
 - Main report, AI Audit Report, AI Critique, README, bug report, and Git commit log exist.
 
 ## Human-attributable

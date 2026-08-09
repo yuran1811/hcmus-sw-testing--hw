@@ -6,8 +6,11 @@ from __future__ import annotations
 import argparse
 import csv
 import math
-from collections import defaultdict
 from pathlib import Path
+
+
+WORKFLOW_LABEL = "Workflow: Login → Search → Checkout"
+ENDPOINT_LABELS = ("POST Login", "GET Product Search", "POST Checkout")
 
 
 def percentile(values: list[int], fraction: float) -> int:
@@ -15,14 +18,26 @@ def percentile(values: list[int], fraction: float) -> int:
     return ordered[max(0, math.ceil(len(ordered) * fraction) - 1)]
 
 
-def summarize(rows: list[dict[str, str]]) -> list[dict[str, object]]:
-    groups: dict[str, list[dict[str, str]]] = defaultdict(list)
-    groups["OVERALL"] = rows
+def summarize(rows: list[dict[str, str]], workflow_label: str) -> list[dict[str, object]]:
+    """Summarize the parent workflow and its HTTP children separately.
+
+    HTTP sample counts are deliberately not combined into a synthetic overall
+    transaction count: a workflow is one parent Transaction Controller sample,
+    while an iteration emits three child HTTP samples.
+    """
+    groups = {label: [] for label in (workflow_label, *ENDPOINT_LABELS)}
     for row in rows:
-        groups[row.get("label", "(unlabelled)")].append(row)
+        label = row.get("label", "(unlabelled)")
+        if label in groups:
+            groups[label].append(row)
+
+    if not groups[workflow_label]:
+        raise ValueError(f"JTL has no parent workflow samples labelled {workflow_label!r}")
 
     output = []
     for label, samples in groups.items():
+        if not samples:
+            raise ValueError(f"JTL has no samples labelled {label!r}")
         elapsed = [int(row["elapsed"]) for row in samples]
         failures = sum(row.get("success", "").lower() != "true" for row in samples)
         timestamps = [int(row["timeStamp"]) for row in samples]
@@ -64,6 +79,7 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("jtl", type=Path)
     parser.add_argument("--markdown", type=Path)
+    parser.add_argument("--workflow-label", default=WORKFLOW_LABEL)
     args = parser.parse_args()
 
     with args.jtl.open(newline="", encoding="utf-8-sig") as handle:
@@ -75,7 +91,11 @@ def main() -> int:
     if missing:
         raise SystemExit(f"JTL is missing required columns: {sorted(missing)}")
 
-    markdown = render_markdown(summarize(rows))
+    try:
+        summary = summarize(rows, args.workflow_label)
+    except ValueError as error:
+        raise SystemExit(str(error)) from error
+    markdown = render_markdown(summary)
     print(markdown, end="")
     if args.markdown:
         args.markdown.parent.mkdir(parents=True, exist_ok=True)
