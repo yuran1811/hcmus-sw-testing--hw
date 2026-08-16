@@ -1,0 +1,59 @@
+commit bbe9601163ac64428c911bd08d4cc90cadd53317 (HEAD -> main)
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   Sun Aug 16 21:55:35 2026 +0700
+
+    feat: finalize submission
+
+commit ff75df585bd1d5f393538be8da9e9034b78c3273
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   Sun Aug 9 09:10:42 2026 +0700
+
+    feat(hw05): add unified workflow performance artifacts
+
+commit 9b20c93360bb0c30decc7d8a4b01392afbe08882
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   2026-08-08T19:53:24+07:00
+
+    hw05: tighten human evidence audit
+
+commit 25b8c4da75b8e3529a34544130627563c0e14754
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   2026-08-08T19:51:50+07:00
+
+    hw05: refresh final commit log
+
+commit 5b285a7792da87bcf6b7fbbda6543365639ebc15
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   2026-08-08T19:51:24+07:00
+
+    hw05: make evidence audit portable on macOS
+
+commit ba5d500caa685b868b28ccfd044cd6c5f31c8397
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   2026-08-08T19:50:11+07:00
+
+    hw05: add submission commit log
+
+commit c60d931787817e5c672a3d93500638cdbfa679ca
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   2026-08-08T19:49:37+07:00
+
+    hw05: add analysis reports and human handoff
+
+commit efa56cbe0c1c66b261bce6c9e4f137a9a5e570d1
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   2026-08-08T19:41:33+07:00
+
+    hw05: record verified performance evidence
+
+commit ddcea91e0060937e6540012adb6d5e80f1796f43
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   2026-08-08T19:41:16+07:00
+
+    hw05: add performance evidence auditor skill
+
+commit 282b0325e12a606b5464dff6742582de33a8c099
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   2026-08-08T19:40:59+07:00
+
+    hw05: add data-driven performance plans
