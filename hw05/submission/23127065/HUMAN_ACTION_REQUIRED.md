@@ -4,18 +4,18 @@ AI/machine-completable artifacts are present, but the anti-cheat rules make the 
 
 ## Scope and review
 
-- [ ] Confirm with group members that the selected product-search, login, and checkout workflows are not duplicated.
+- [x] Confirm with group members that the selected product-search, login, and checkout workflows are not duplicated.
 - [ ] Open all three JMX plans in JMeter GUI; review users, ramp-up, duration, timers, CSV mapping and assertions against the lectures.
 - [ ] Independently cross-check the quoted JTL values in Main Report Mục 6–7.
 - [ ] Fill and sign Main Report Mục 10 and the AI Audit human-review table.
 
 ## Real screenshots
 
-- [ ] During a real Load rerun, capture JMeter/tool and backend Activity Monitor in the same frame; save exactly `evidence/load/tool-and-resource-monitor.png`.
-- [ ] Repeat for Stress → `evidence/stress/tool-and-resource-monitor.png`.
-- [ ] Repeat for Spike → `evidence/spike/tool-and-resource-monitor.png`.
-- [ ] Capture hardware/spec screen showing hostname `LAP15045s-MacBook-Pro.local`; save `evidence/hardware/hardware-spec.png`. Avoid exposing serial/UUID if not required.
-- [ ] Visually verify screenshots are legible and correspond to the correct run.
+- [x] Load screenshot is present: `evidence/load/tool-and-resource-monitor.png`.
+- [x] Stress screenshot is present: `evidence/stress/tool-and-resource-monitor.png`.
+- [x] Spike screenshot is present: `evidence/spike/tool-and-resource-monitor.png`.
+- [x] Hardware/spec screen is present: `evidence/hardware/hardware-spec.png`.
+- [ ] Visually verify screenshots are legible and correspond to the correct run/profile; Spike screenshot must correspond to the compliant 60-second rerun.
 
 ## Video and publication
 
@@ -43,10 +43,10 @@ AI/machine-completable artifacts are present, but the anti-cheat rules make the 
 ## Current human-only gaps detected automatically
 
 ```text
-MISSING evidence/hardware/hardware-spec.png
-MISSING evidence/load/tool-and-resource-monitor.png
-MISSING evidence/stress/tool-and-resource-monitor.png
-MISSING evidence/spike/tool-and-resource-monitor.png
+PRESENT evidence/hardware/hardware-spec.png
+PRESENT evidence/load/tool-and-resource-monitor.png
+PRESENT evidence/stress/tool-and-resource-monitor.png
+PRESENT evidence/spike/tool-and-resource-monitor.png
 MISSING evidence/bugs/BUG-HW05-01-github-issue.png
 MISSING unlisted demo URL(s)
 MISSING human signatures/review confirmations

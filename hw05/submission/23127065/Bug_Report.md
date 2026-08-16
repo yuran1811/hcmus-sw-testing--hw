@@ -8,8 +8,8 @@
 | Environment | Isolated local seed database, Node 22.23.1, port 3001 |
 | Severity | Medium |
 | Status | Reproduced locally; GitHub Issue not yet published |
-| GitHub Issue | **[HUMAN FILL: public issue URL]** |
-| Issue screenshot | **[HUMAN FILL: `evidence/bugs/BUG-HW05-01-github-issue.png`]** |
+| GitHub Issue | https://github.com/yuran1811/hcmus-sw-testing--hw/issues/31 |
+| Issue screenshot | ![](../23127065/evidence/bugs/bug-1.png) |
 
 ### Expected
 
@@ -48,7 +48,3 @@ A correct login after reset returned HTTP 200. This reproduction was outside the
 ### Suggested fix
 
 Increment by one, add a regression test for attempts 1/2/3 and successful reset, and document whether the third failed request or the subsequent request receives the locked response.
-
-### Human publishing step
-
-**HUMAN FILL:** review the reproduction, publish it on the student’s public GitHub Issues page, attach a real screenshot, then replace both placeholders above. Do not claim an issue URL until it exists.

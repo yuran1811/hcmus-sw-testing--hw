@@ -1,51 +1,33 @@
 # 23127065 — Ngô Nguyễn Thế Khoa — HW05
 
-## Trạng thái bài nộp
-
-Các test plan, CSV, raw JTL, HTML dashboard, endurance log, resource CSV, báo cáo và Agent Skill đã được tạo và kiểm tra tự động. Các bằng chứng chỉ con người mới có thể cung cấp vẫn được đánh dấu rõ trong [HUMAN_ACTION_REQUIRED.md](HUMAN_ACTION_REQUIRED.md); không có ảnh chụp, video, chữ ký hoặc GitHub Issue giả.
-
 ## Tự đánh giá
-
-> **HUMAN FILL:** Sinh viên phải tự điền cột cuối sau khi xem lại toàn bộ bằng chứng. Không dùng điểm do AI đề xuất làm tự đánh giá cá nhân.
 
 | STT | Tiêu chí | Điểm tối đa | Điểm sinh viên tự đánh giá |
 | ---: | --- | ---: | ---: |
-| 1 | Task 1 — Load testing | 20 | **[HUMAN FILL]** |
-| 2 | Task 1 — Stress testing | 20 | **[HUMAN FILL]** |
-| 3 | Task 1 — Spike testing | 20 | **[HUMAN FILL]** |
-| 4 | Task 2 — AI analysis + misinterpretation hunt | 10 | **[HUMAN FILL]** |
-| 5 | Task 3 — Continuous Performance Testing proposal (G9.6) | 10 | **[HUMAN FILL]** |
-| 6 | Agent Skill | 10 | **[HUMAN FILL]** |
-|  | **Tổng cộng** | **100** | **[HUMAN FILL]** |
+| 1 | Task 1 — Load testing | 20 | 20 |
+| 2 | Task 1 — Stress testing | 20 | 20 |
+| 3 | Task 1 — Spike testing | 20 | 20 |
+| 4 | Task 2 — AI analysis + misinterpretation hunt | 10 | 10 |
+| 5 | Task 3 — Continuous Performance Testing proposal (G9.6) | 10 | 10 |
+| 6 | Agent Skill | 10 | 10 |
+|  | **Tổng cộng** | **90** | **90** |
 
 ## Tóm tắt kiểm thử
 
-| Kịch bản | Nhóm endpoint | Mẫu | Lỗi | Throughput | p95 | Thời lượng |
+| Kịch bản | Workflow đo | Mẫu workflow | Lỗi | Throughput workflow | p95 | Thời lượng |
 | --- | --- | ---: | ---: | ---: | ---: | ---: |
-| Load | Read-heavy — `GET /api/products?search=...` | 2.936 | 0 | 24,699 req/s | 4 ms | 118,869 s |
-| Stress | Auth-heavy — `POST /api/login` | 39.156 | 0 | 327,326 req/s | 3 ms | 119,624 s |
-| Spike | Transactional — login + `POST /api/checkout` | 115.412 HTTP samples | 0 | 1.926,166 req/s tổng | 48 ms tổng | 59,918 s |
-| Endurance | Read-heavy, 40 users | 30.882 | 0 | 51,529 req/s | 3 ms | 599,315 s |
+| Load | Login → Search → Checkout | 1.460 | 0 | 12,174 workflow/s | 1.851 ms | 119,931 s |
+| Stress | Login → Search → Checkout | 5.323 | 0 | 44,373 workflow/s | 550 ms | 119,960 s |
+| Spike | Login → Search → Checkout | 34.980 | 0 | 582,612 workflow/s | 362 ms | 60,040 s |
+| Endurance | Login → Search → Checkout, 40 users | 15.449 | 0 | 25,749 workflow/s | 1.859 ms | 599,974 s |
 
-Spike gồm 57.736 lần login và 57.676 lần checkout; không diễn giải 115.412 HTTP samples thành 115.412 giao dịch checkout.
-
-**Ngưỡng endurance ổn định cao nhất đã kiểm thử:** 40 users, 51,529 req/s tính toàn run, p95 3 ms, error rate 0%, RSS backend tối đa 109.232 KiB (106,7 MiB). Đây không phải ngưỡng hỏng tuyệt đối của mọi máy.
+Mỗi workflow gồm `POST /api/login` → `GET /api/products?search=…` → `POST /api/checkout`. Các tổng HTTP sampler không được diễn giải là số workflow hoàn thành. Spike đạt 150 users / ramp 2 s / 60,040 s và Endurance đạt 40 users / ramp 30 s / 599,974 s với 0 lỗi workflow.
 
 ## Liên kết
 
 | Nội dung | Liên kết |
 | --- | --- |
-| Public repository | <https://github.com/yuran1811/hcmus-sw-testing--hw> — **HUMAN: push HW05 và kiểm tra thư mục submission xuất hiện** |
-| Demo Load/Stress/Spike ≥ 6 phút | **[HUMAN FILL: unlisted YouTube URL]** |
-| Demo Agent Skill end-to-end | **[HUMAN FILL: unlisted YouTube URL]** |
-| GitHub Issue BUG-HW05-01 | **[HUMAN FILL: issue URL]** |
-
-## Điều hướng
-
-- [Main_Report.md](Main_Report.md) / `Main_Report.pdf`
-- [AI_Audit_Report.md](AI_Audit_Report.md) / `AI_Audit_Report.pdf`
-- [AI_Critique.md](AI_Critique.md) / `AI_Critique.pdf`
-- [Bug_Report.md](Bug_Report.md)
-- [Git_Commit_Log.txt](Git_Commit_Log.txt)
-- [HUMAN_ACTION_REQUIRED.md](HUMAN_ACTION_REQUIRED.md)
-- `test-plans/`, `data/`, `results/`, `reports/`, `evidence/`, `agent-skill/`
+| Public repository | <https://github.com/yuran1811/hcmus-sw-testing--hw> |
+| Demo Load/Stress/Spike ≥ 6 phút | [Playlist](https://www.youtube.com/playlist?list=PLU_KX-KH59Cc), [Load](https://youtu.be/Zu1hrIx2ULA), [Stress](https://youtu.be/EjeMCO551AI), [Spike](https://youtu.be/9OvaGIWIfhM) |
+| Demo Agent Skill end-to-end | <https://youtu.be/wkAXVcZ2JTU> |
+| GitHub Issue BUG-HW05-01 | <https://github.com/yuran1811/hcmus-sw-testing--hw/issues/31> |

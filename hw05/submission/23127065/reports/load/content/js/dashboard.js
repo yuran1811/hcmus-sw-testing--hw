@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [1.0, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [1.0, 500, 1500, "GET Product Search"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.8072620891412837, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [1.0, 500, 1500, "GET Product Search"], "isController": false}, {"data": [1.0, 500, 1500, "POST Checkout"], "isController": false}, {"data": [0.2328767123287671, 500, 1500, "Workflow: Login → Search → Checkout"], "isController": true}, {"data": [1.0, 500, 1500, "POST Login"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 2936, 0, 0.0, 2.118188010899183, 0, 37, 2.0, 3.0, 4.0, 15.0, 24.699459068386208, 11.158226177556806, 3.4492490814468026], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["GET Product Search", 2936, 0, 0.0, 2.118188010899183, 0, 37, 2.0, 3.0, 4.0, 15.0, 24.699459068386208, 11.158226177556806, 3.4492490814468026], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 4371, 0, 0.0, 5.012354152367881, 0, 948, 3.0, 5.0, 6.0, 11.0, 36.46146146146146, 15.89059762887888, 9.39987024785202], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["GET Product Search", 1451, 0, 0.0, 2.281185389386634, 0, 26, 2.0, 3.0, 4.0, 7.0, 12.258277082682122, 5.20250597443165, 2.047028254864027], "isController": false}, {"data": ["POST Checkout", 1440, 0, 0.0, 5.049999999999977, 2, 68, 5.0, 7.0, 8.0, 13.0, 12.232935479760439, 3.4285668776281697, 4.754597969672514], "isController": false}, {"data": ["Workflow: Login → Search → Checkout", 1460, 0, 0.0, 1507.0178082191794, 1, 2407, 1524.0, 1782.8000000000002, 1851.95, 1943.0, 12.173666524918495, 15.745910995176393, 9.34415869854333], "isController": true}, {"data": ["POST Login", 1460, 0, 0.0, 2.5095890410958903, 1, 171, 2.0, 4.0, 4.0, 7.3900000000001, 12.178845512178846, 7.2490296285869205, 2.658175753878879], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }, [[1, 1]]);
 
         // Create top5 errors by sampler
-    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 2936, 0, "", "", "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}]}, function(index, item){
+    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 4371, 0, "", "", "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
         return item;
     }, [[0, 0]], 0);
 

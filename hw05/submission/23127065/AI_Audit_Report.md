@@ -8,12 +8,6 @@
 | Công cụ AI | OpenAI Codex; Context7 MCP |
 | Thời gian | 08/08/2026, Asia/Ho_Chi_Minh |
 
-## Tuyên bố bắt buộc
-
-> I use AI tools for the following tasks: extracting and tracing the assignment requirements; inspecting the real SUT routes; designing and validating JMeter plans; executing and summarizing JTL evidence; drafting the performance analysis, AI critique, continuous-testing proposal, documentation, and reusable Agent Skill.
-
-Không dùng AI để tạo hoặc giả mạo raw JTL, ảnh resource monitor/hardware, GitHub Issue screenshot, video, giọng nói, chữ ký hay human review.
-
 ## AI-01 — Yêu cầu tổng
 
 **Công cụ / thời gian:** OpenAI Codex — 08/08/2026, khoảng 18:55 ICT.
@@ -42,7 +36,7 @@ Không dùng AI để tạo hoặc giả mạo raw JTL, ảnh resource monitor/h
 
 **Prompt:** Dùng backend thật thay vì chỉ ví dụ trong PDF; tìm route và schema cho product search, login/lockout, checkout.
 
-**AI output:** Chọn Load=`GET /api/products?search`, Stress=`POST /api/login`, Spike=`POST /api/login`→`POST /api/checkout`. Backend dùng port 3000, JWT bearer và body checkout gồm `total_amount`, `shipping_address`.
+**AI output:** Theo requirement cập nhật, cả Load, Stress và Spike dùng `POST /api/login` → `GET /api/products?search` → `POST /api/checkout`. Backend dùng port 3000, JWT bearer và body checkout gồm `total_amount`, `shipping_address`.
 
 **Rà soát:** CẦN HUMAN CONFIRM. Route/method/body đã xác minh từ code, nhưng AI không thể biết lựa chọn của thành viên khác; sinh viên phải xác nhận uniqueness.
 
@@ -62,7 +56,7 @@ Không dùng AI để tạo hoặc giả mạo raw JTL, ảnh resource monitor/h
 
 **Công cụ / thời gian:** OpenAI Codex — 08/08/2026.
 
-**Prompt:** Sinh ba plan data-driven, timer/assertion/override property, ba listener khác nhau và runner fail-closed.
+**Prompt:** Sinh ba plan data-driven dùng chung workflow Login → Search → Checkout, ba CSV độc lập, parent Transaction Controller, timer/assertion/override property, ba listener khác nhau và runner fail-closed.
 
 **AI output:** Tạo ba JMX, ba CSV, `run-jmeter.sh`, `analyze-jtl.py`, evidence audit và process monitor.
 
@@ -76,13 +70,13 @@ Không dùng AI để tạo hoặc giả mạo raw JTL, ảnh resource monitor/h
 
 **AI output:**
 
-- Load: 2.936 samples, 0 lỗi, 24,699 req/s, p95 4 ms.
-- Stress: 39.156, 0 lỗi, 327,326 req/s, p95 3 ms.
-- Spike overall: 115.412 HTTP samples, 0 lỗi, 1.926,166 req/s, p95 48 ms; checkout riêng 57.676 samples, 963,966 req/s, p95 50 ms.
-- Endurance: 30.882, 0 lỗi, 51,529 req/s, p95 3 ms, RSS max 109.232 KiB.
+- Load workflow rerun: 1.460 samples, 0 lỗi, 12,174 workflow/s, p95 1.851 ms.
+- Stress workflow rerun: 5.323, 0 lỗi, 44,373 workflow/s, p95 550 ms.
+- Spike workflow rerun: 34.980 parent workflows, 0 lỗi, 582,612 workflow/s, p95 362 ms; checkout riêng 34.836 samples, 587,038 req/s, p95 123 ms. Thời lượng raw JTL là 60,040 s, đúng profile.
+- Endurance: 15.449 workflow samples, 0 lỗi, 25,749 workflow/s, p95 1.859 ms, 599,974 s; resource CSV được lưu cùng JTL.
 - Đề xuất index, WAL, pool, prepared statement, p95 gate.
 
-**Rà soát:** CẦN ĐIỀU CHỈNH. Không gọi overall Spike là checkout throughput; không gọi endurance value là failure threshold; không kết luận memory leak từ một run; B-tree index không tự giúp `LIKE '%term%'`; generic SQLite pool thiếu căn cứ. Các sửa đổi ghi ở Main Report Mục 7.
+**Rà soát:** CẦN ĐIỀU CHỈNH. Không gọi parent workflow là checkout; không cộng HTTP sample để suy ra workflow; không gọi endurance value là failure threshold; và không kết luận memory leak từ một run. Spike JTL 60,040 s xác nhận profile 60 s. Các sửa đổi ghi ở Main Report Mục 7.
 
 ## AI-07 — Agent Skill
 
@@ -101,11 +95,3 @@ Không dùng AI để tạo hoặc giả mạo raw JTL, ảnh resource monitor/h
 | HỢP LỆ | 3 |
 | CẦN ĐIỀU CHỈNH | 3 |
 | CẦN HUMAN CONFIRM | 1 |
-
-## Chữ ký human review
-
-> **HUMAN FILL:** Tôi đã đọc prompt/output, đối chiếu raw artifacts và chấp nhận/chỉnh sửa báo cáo trên.
-
-| Họ tên | Ngày | Chữ ký |
-| --- | --- | --- |
-| **[HUMAN FILL]** | **[HUMAN FILL]** | **[HUMAN FILL]** |

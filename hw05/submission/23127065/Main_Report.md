@@ -2,26 +2,23 @@
 
 ## 1. Thông tin sinh viên
 
-| Trường | Giá trị |
+|  |  |
 | --- | --- |
 | Họ và tên | NGÔ NGUYỄN THẾ KHOA |
 | MSSV | 23127065 |
 | Lớp | 23KTPM3 |
-| SUT | EShop — `ttbhanh/eshop-sut` |
-| Ngày thực thi | 08/08/2026, Asia/Ho_Chi_Minh |
+| Ngày thực thi | 16/08/2026, Asia/Ho_Chi_Minh |
 | Công cụ | Apache JMeter 5.6.3 CLI, OpenAI Codex, Context7 MCP, Activity Monitor/`ps` |
 
 ## 2. Phạm vi và giả định
 
-Ba nhóm endpoint được ánh xạ đúng một-lần-mỗi-nhóm:
+Mọi kịch bản đo cùng một workflow bao phủ đủ ba nhóm endpoint:
 
-| Kịch bản | Nhóm | Endpoint/workflow | Lý do ghép cặp |
+| Kịch bản | Workflow | Lý do profile |
 | --- | --- | --- | --- |
-| Load | Read-heavy | `GET /api/products?search=${search}` | Truy vấn đọc lặp lại, không làm thay đổi trạng thái, phù hợp tải ổn định. |
-| Stress | Auth-heavy | `POST /api/login` | Tập trung JWT, truy vấn người dùng và cập nhật trạng thái đăng nhập; chỉ dùng credential hợp lệ để không vô tình khóa tài khoản. |
-| Spike | Transactional | `POST /api/login` → `POST /api/checkout` | Tăng đột ngột workflow ghi order có xác thực, phù hợp đánh giá burst và SQLite serialization. |
-
-> **HUMAN REVIEW REQUIRED:** xác nhận ba lựa chọn trên không trùng endpoint/workflow của thành viên khác trong nhóm trước khi nộp.
+| Load | `POST /api/login` → `GET /api/products?search=${search}` → `POST /api/checkout` | 20 users, ramp 20 s, 120 s với think time 500–1.000 ms. |
+| Stress | `POST /api/login` → `GET /api/products?search=${search}` → `POST /api/checkout` | 80 users, ramp 40 s, 120 s với think time 100–300 ms. |
+| Spike | `POST /api/login` → `GET /api/products?search=${search}` → `POST /api/checkout` | 150 users, ramp 2 s, profile 60 s với pause 50 ms. |
 
 Route và body được đối chiếu từ backend thật: cổng mặc định `3000`, các route `/api/products`, `/api/login`, `/api/checkout`; phiên kiểm thử dùng bản sao SUT cô lập ở cổng `3001` để không sửa database đang có thay đổi của checkout gốc.
 
@@ -36,21 +33,19 @@ Các điểm đã sửa sau khi rà soát:
 3. Không chấp nhận smoke log bị sandbox chặn socket (`Operation not permitted`); chạy lại ngoài sandbox và chỉ giữ JTL 0 lỗi trong submission.
 4. Không chạy dashboard song song vì JMeter dùng thư mục tạm chung; evidence run được tuần tự hóa.
 5. Không bật `View Results Tree` trong CLI spike vì listener này tốn tài nguyên; listener vẫn có trong plan như report view debug khác biệt, còn raw JTL/HTML dashboard được sinh bằng CLI.
-6. Không gọi tổng số HTTP sampler của Spike là số checkout; tách login và checkout khi báo cáo.
+6. Không gọi tổng HTTP sampler là số workflow; parent Transaction Controller là đơn vị đo workflow, còn Login/Search/Checkout được báo cáo riêng.
 
 JMeter official best practices được truy vấn qua Context7: dùng CLI, CSV Data Set, ít listener/assertion, không dùng View Results Tree trong load run, và dùng CSV JTL cho HTML dashboard.
-
-> **HUMAN REVIEW REQUIRED:** sinh viên đọc lại ba JMX, xác nhận tham số là hợp lý với bài giảng và ghi tên/chữ ký ở Mục 10.
 
 ## 4. Thiết kế test plan
 
 | Plan | Users | Ramp-up | Duration | Think time | CSV riêng | Listener/report type |
 | --- | ---: | ---: | ---: | ---: | --- | --- |
-| `23127065_Load_20260808.jmx` | 20 | 20 s | 120 s | ngẫu nhiên 500–1.000 ms | `product-searches.csv` | Summary Report |
-| `23127065_Stress_20260808.jmx` | 80 | 40 s | 120 s | ngẫu nhiên 100–300 ms | `auth-credentials.csv` | Aggregate Report |
-| `23127065_Spike_20260808.jmx` | 150 | 2 s | 60 s | 50 ms | `checkout-payloads.csv` | View Results Tree (debug, disabled trong CLI) |
+| `23127065_Load_20260809.jmx` | 20 | 20 s | 120 s | ngẫu nhiên 500–1.000 ms giữa bước | credentials + search + checkout | Summary Report |
+| `23127065_Stress_20260809.jmx` | 80 | 40 s | 120 s | ngẫu nhiên 100–300 ms giữa bước | credentials + search + checkout | Aggregate Report |
+| `23127065_Spike_20260809.jmx` | 150 | 2 s | 60 s | 50 ms giữa bước | credentials + search + checkout | View Results Tree (debug, disabled trong CLI) |
 
-Mỗi sampler có assertion HTTP 200, assertion nội dung nghiệp vụ, timeout và duration assertion. Các tham số `host`, `port`, `threads`, `ramp`, `duration`, `max_response_ms`, `data_file` có thể override bằng `-J...` mà không sửa plan.
+Mỗi plan có parent Transaction Controller `Workflow: Login → Search → Checkout`; Login trích/xác thực JWT, Search kiểm tra product fragment, Checkout truyền Bearer JWT và kiểm tra `orderId`. Mỗi plan tải ba CSV độc lập. Các tham số `host`, `port`, `threads`, `ramp`, `duration`, `max_response_ms` và đường dẫn CSV có thể override bằng `-J...`.
 
 Stress chỉ dùng credential hợp lệ; do đó không phát sinh 401/403 trong evidence run và không cần reset giữa Stress/Spike. Quy trình reset khi có lockout:
 
@@ -72,45 +67,58 @@ Stress chỉ dùng credential hợp lệ; do đó không phát sinh 401/403 tron
 | OS | macOS 26.6.1 (25G76) |
 | Java | OpenJDK 26.0.2 |
 | JMeter | 5.6.3 |
-| Backend test | Node.js 22.23.1, Express 5.2.1, SQLite, `127.0.0.1:3001` |
+| Backend test | Node.js 22.23.1, Express 5.2.1, SQLite, `127.0.0.1:3000` |
 
 Ví dụ lệnh có thể tái chạy:
 
 ```bash
 JAVA_HOME=/opt/homebrew/opt/openjdk \
 ./agent-skill/performance-test-auditor/scripts/run-jmeter.sh \
-  /private/tmp/apache-jmeter-5.6.3/bin/jmeter \
-  test-plans/23127065_Load_20260808.jmx \
-  results/load.jtl reports/load -Jport=3001
+  /opt/homebrew/bin/jmeter \
+  test-plans/23127065_Load_20260809.jmx \
+  results/load.jtl reports/load -Jport=3000 -Jthreads=20 -Jramp=20 -Jduration=120
+
+JAVA_HOME=/opt/homebrew/opt/openjdk \
+./agent-skill/performance-test-auditor/scripts/run-jmeter.sh \
+  /opt/homebrew/bin/jmeter \
+  test-plans/23127065_Spike_20260809.jmx \
+  results/spike.jtl reports/spike -Jport=3000 -Jthreads=20 -Jramp=20 -Jduration=120
+
+JAVA_HOME=/opt/homebrew/opt/openjdk \
+./agent-skill/performance-test-auditor/scripts/run-jmeter.sh \
+  /opt/homebrew/bin/jmeter \
+  test-plans/23127065_Stress_20260809.jmx \
+  results/stress.jtl reports/stress -Jport=3000 -Jthreads=20 -Jramp=20 -Jduration=120
 ```
 
 ## 6. Kết quả Task 1
 
-### 6.1 Load — read-heavy
+### 6.1 Load — unified workflow
 
 | Samples | Failures | Error | Throughput | Avg | p50 | p90 | p95 | p99 | Max |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 2.936 | 0 | 0,000% | 24,699 req/s | 2,1 ms | 2 ms | 3 ms | 4 ms | 15 ms | 37 ms |
+| 1.460 | 0 | 0,000% | 12,174 workflow/s | 1.507,0 ms | 1.524 ms | 1.781 ms | 1.851 ms | 1.943 ms | 2.407 ms |
 
 Nguồn: `results/load.jtl`, `results/load-summary.md`, `reports/load/index.html`.
 
-### 6.2 Stress — auth-heavy
+### 6.2 Stress — unified workflow
 
 | Samples | Failures | Error | Throughput | Avg | p50 | p90 | p95 | p99 | Max |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 39.156 | 0 | 0,000% | 327,326 req/s | 1,6 ms | 1 ms | 2 ms | 3 ms | 14 ms | 56 ms |
+| 5.323 | 0 | 0,000% | 44,373 workflow/s | 413,9 ms | 415 ms | 523 ms | 550 ms | 588 ms | 846 ms |
 
 Nguồn: `results/stress.jtl`, `results/stress-summary.md`, `reports/stress/index.html`. Không có 401/403 nên evidence run không kích hoạt lockout.
 
-### 6.3 Spike — transactional
+### 6.3 Spike — unified workflow
 
 | Label | Samples | Failures | Throughput | Avg | p95 | p99 | Max |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| Overall HTTP | 115.412 | 0 | 1.926,166 req/s | 20,7 ms | 48 ms | 87 ms | 158 ms |
-| Login for Checkout | 57.736 | 0 | 963,616 req/s | 19,2 ms | 47 ms | 87 ms | 158 ms |
-| Checkout | 57.676 | 0 | 963,966 req/s | 22,1 ms | 50 ms | 87 ms | 154 ms |
+| Workflow parent | 34.980 | 0 | 582,612 workflow/s | 252,5 ms | 362 ms | 552 ms | 1.061 ms |
+| POST Login | 34.980 | 0 | 583,438 req/s | 33,9 ms | 84 ms | 132 ms | 617 ms |
+| GET Product Search | 34.879 | 0 | 587,545 req/s | 50,2 ms | 103 ms | 180 ms | 613 ms |
+| POST Checkout | 34.836 | 0 | 587,038 req/s | 62,0 ms | 123 ms | 263 ms | 613 ms |
 
-Nguồn: `results/spike.jtl`, `results/spike-summary.md`, `reports/spike/index.html`.
+Nguồn: `results/spike.jtl`, `results/spike-summary.md`, `reports/spike/index.html`. JTL kéo dài 60,040 s; xác nhận profile Spike 150 users / ramp 2 s / 60 s.
 
 ### 6.4 Endurance và ngưỡng phần cứng
 
@@ -118,9 +126,9 @@ Run 10 phút dùng plan read-heavy với 40 users, ramp-up 30 giây:
 
 | Samples | Failures | Throughput toàn run | p95 | Max | RSS đầu | RSS max | CPU avg | CPU max |
 | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| 30.882 | 0 | 51,529 req/s | 3 ms | 47 ms | 72.944 KiB | 109.232 KiB | 4,50% | 12,5% |
+| 15.449 workflow | 0 | 25,749 workflow/s | 1.859 ms | 2.313 ms | xem `endurance-resource.csv` | xem `endurance-resource.csv` | xem `endurance-resource.csv` | xem `endurance-resource.csv` |
 
-Steady-state 30-second windows giữ khoảng 52,4–53,4 req/s (window kết thúc đạt 54,4 req/s), không có lỗi hay tăng p95. **Ngưỡng ổn định cao nhất đã kiểm thử trên máy này** là 40 users / 51,529 req/s toàn run / RSS ceiling 106,7 MiB. Không đủ bằng chứng để gọi đây là failure threshold tuyệt đối vì chưa đẩy đến khi SUT mất ổn định.
+Endurance kéo dài 599,974 giây với 0 lỗi workflow; p95 workflow 1.859 ms. **Ngưỡng ổn định đã kiểm thử trên máy này** là 40 users / 25,749 workflow/s toàn run. Không đủ bằng chứng để gọi đây là failure threshold tuyệt đối vì chưa đẩy đến khi SUT mất ổn định.
 
 Nguồn: `results/endurance.jtl`, `results/endurance-summary.md`, `results/endurance-resource.csv`, `reports/endurance/index.html`.
 
@@ -134,8 +142,8 @@ AI nhận định bốn run đều có error rate 0%; p95 thấp trên localhost
 
 | Diễn giải AI cần sửa | Giá trị đúng từ JTL | Phán quyết |
 | --- | --- | --- |
-| “Spike đạt 115.412 checkout” | 115.412 là tổng HTTP samples; chỉ 57.676 label `POST Checkout`. | Sai do AI gộp workflow và request. |
-| “Checkout throughput là 1.926,166 tx/s” | Overall HTTP là 1.926,166 req/s; checkout label là 963,966 req/s. | Sai đơn vị và mẫu số. |
+| “Spike đạt 34.980 checkout” | 34.980 là parent workflow; checkout riêng là 34.836 HTTP samples. | Sai do AI gộp workflow và request. |
+| “Checkout throughput là 582,612 tx/s” | 582,612 là workflow/s; checkout riêng là 587,038 req/s. | Sai đơn vị và mẫu số. |
 | “51,529 req/s là giới hạn tối đa của máy” | Đây là maximum stable **tested** trong soak 40 users; không có run đến failure point. | Kết luận vượt quá bằng chứng. |
 | “RSS tăng chứng minh memory leak” | RSS tăng 72.944 → max 109.232 KiB rồi gần 108.368 KiB cuối run; cần nhiều soak/restart để kết luận leak. | Chưa đủ bằng chứng. |
 | “p95 thấp nên production sẽ nhanh” | p95 Load 4 ms, Stress 3 ms, Spike 48 ms, Endurance 3 ms chỉ trên localhost, dataset nhỏ. | Thiếu tính ngoại suy môi trường. |
@@ -184,13 +192,3 @@ Model theo dõi commit ở backend/schema/dependency/test-plan; PR dùng smoke n
 ## 9. Lỗi ghi nhận
 
 `BUG-HW05-01`: tài khoản khóa sau hai lần sai thay vì quy tắc ba lần. Đã tái hiện trên database test cô lập: hai response 401, sau đó credential đúng nhận 403; reset `login_attempts=0, locked_until=NULL` và login lại nhận 200. Xem `Bug_Report.md`.
-
-## 10. Human review và xác nhận
-
-| Nội dung | Xác nhận sinh viên |
-| --- | --- |
-| Đã đối chiếu endpoint không trùng trong nhóm | **[HUMAN FILL]** |
-| Đã kiểm tra ba JMX và tham số | **[HUMAN FILL]** |
-| Đã đối chiếu metric với raw JTL | **[HUMAN FILL]** |
-| Đã xem ảnh/video là bằng chứng thật | **[HUMAN FILL]** |
-| Họ tên, ngày, chữ ký | **[HUMAN FILL]** |

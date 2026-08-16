@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [1.0, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [1.0, 500, 1500, "POST Checkout"], "isController": false}, {"data": [1.0, 500, 1500, "POST Login for Checkout"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.9975800966529443, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.9996129476189111, 500, 1500, "GET Product Search"], "isController": false}, {"data": [0.9986077620851992, 500, 1500, "POST Checkout"], "isController": false}, {"data": [0.9924814179531161, 500, 1500, "Workflow: Login → Search → Checkout"], "isController": true}, {"data": [0.9996283590623213, 500, 1500, "POST Login"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 115412, 0, 0.0, 20.65746196236088, 0, 158, 14.0, 32.0, 38.0, 77.0, 1926.165759871825, 896.7554974871908, 591.9661330119914], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["POST Checkout", 57676, 0, 0.0, 22.10087384700757, 0, 154, 17.0, 34.0, 42.0, 83.0, 963.9657708249766, 297.29489314873314, 378.431874874649], "isController": false}, {"data": ["POST Login for Checkout", 57736, 0, 0.0, 19.21555009006515, 0, 158, 14.0, 33.0, 41.0, 80.0, 963.6157286868282, 599.9073344609537, 214.08456539676382], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 104845, 0, 0.0, 48.72547093328291, 0, 617, 32.0, 88.0, 100.0, 123.0, 1748.0284766334885, 806.7929243985395, 459.4032064868537], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["GET Product Search", 34879, 0, 0.0, 50.150405688236376, 0, 613, 53.0, 82.0, 94.0, 115.0, 587.5446398490668, 265.42777596165183, 100.98421852364228], "isController": false}, {"data": ["POST Checkout", 34836, 0, 0.0, 61.98868986106261, 0, 613, 55.0, 90.0, 100.0, 127.0, 587.0378484041657, 180.97344497784033, 231.0314969793738], "isController": false}, {"data": ["Workflow: Login → Search → Checkout", 34980, 0, 0.0, 252.50706117781502, 27, 1061, 236.0, 281.0, 303.0, 402.0, 582.6115922718188, 804.0186587847685, 458.1994328000083], "isController": true}, {"data": ["POST Login", 34980, 0, 0.0, 33.93050314465409, 0, 617, 23.0, 62.0, 76.0, 103.0, 583.4375781836377, 363.2240782149112, 130.19090489742308], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }, [[1, 1]]);
 
         // Create top5 errors by sampler
-    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 115412, 0, "", "", "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
+    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 104845, 0, "", "", "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
         return item;
     }, [[0, 0]], 0);
 
