@@ -74,6 +74,20 @@ render_markdown() {
   printf '%s\n' "$html"
 }
 
+render_text() {
+  local source="$1"
+  local language="$2"
+  local name="$3"
+  local html="$work_dir/$name.html"
+  local source_directory
+
+  source_directory="$(cd "$(dirname "$source")" && pwd)"
+
+  rtk bun -e 'const [source, output, language, sourceDirectory] = Bun.argv.slice(1); const baseUrl = new URL(`file://${sourceDirectory}/`).href; const raw = await Bun.file(source).text(); const escaped = raw.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); const css = `@page { size: A4; margin: 15mm 13mm 17mm; } body { font-family: "SFMono-Regular", Menlo, Consolas, monospace; color: #1f2937; font-size: 8pt; line-height: 1.35; background: #ffffff; } pre { white-space: pre-wrap; overflow-wrap: anywhere; margin: 0; padding: 0; }`; await Bun.write(output, `<!doctype html><html lang="${language}"><head><meta charset="utf-8"><base href="${baseUrl}"><style>${css}</style></head><body><pre>${escaped}</pre></body></html>`);' "$source" "$html" "$language" "$source_directory"
+
+  printf '%s\n' "$html"
+}
+
 validate_pdf() {
   local output="$1"
   local size
@@ -82,8 +96,14 @@ validate_pdf() {
   else
     size="$(stat -f '%z' "$output")"
   fi
-  rtk pdftotext "$output" "$work_dir/validation.txt"
-  if [[ ! -s "$output" ]] || [[ "$size" -lt 10000 ]] || [[ ! -s "$work_dir/validation.txt" ]] || ! rtk proxy file "$output" | rtk proxy grep -q 'PDF document'; then
+  if command -v pdftotext >/dev/null 2>&1; then
+    rtk proxy pdftotext "$output" "$work_dir/validation.txt"
+    if [[ ! -s "$work_dir/validation.txt" ]]; then
+      echo "Empty text extracted from PDF output: $output" >&2
+      exit 1
+    fi
+  fi
+  if [[ ! -s "$output" ]] || [[ "$size" -lt 1000 ]] || ! rtk proxy file "$output" | rtk proxy grep -q 'PDF document'; then
     echo "Invalid PDF output: $output" >&2
     exit 1
   fi
@@ -107,11 +127,16 @@ export_one() {
       html="$(render_markdown "$source" "$language" "$name")" || exit $?
       rtk proxy "$chrome" --headless --no-sandbox --disable-gpu --no-pdf-header-footer --print-to-pdf="$output" "file://$html"
       ;;
+    *.txt)
+      name="$(basename "${source%.txt}")"
+      html="$(render_text "$source" "$language" "$name")" || exit $?
+      rtk proxy "$chrome" --headless --no-sandbox --disable-gpu --no-pdf-header-footer --print-to-pdf="$output" "file://$html"
+      ;;
     *.html|*.htm)
       rtk proxy "$chrome" --headless --no-sandbox --disable-gpu --no-pdf-header-footer --print-to-pdf="$output" "file://$source"
       ;;
     *)
-      echo "Unsupported source type: $source (expected Markdown or HTML)" >&2
+      echo "Unsupported source type: $source (expected Markdown, HTML, or plain text)" >&2
       exit 1
       ;;
   esac

@@ -1,3 +1,15 @@
+commit bbe9601163ac64428c911bd08d4cc90cadd53317 (HEAD -> main)
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   Sun Aug 16 21:55:35 2026 +0700
+
+    feat: finalize submission
+
+commit ff75df585bd1d5f393538be8da9e9034b78c3273
+Author: yuran1811 <trieuvanbd123@gmail.com>
+Date:   Sun Aug 9 09:10:42 2026 +0700
+
+    feat(hw05): add unified workflow performance artifacts
+
 commit 9b20c93360bb0c30decc7d8a4b01392afbe08882
 Author: yuran1811 <trieuvanbd123@gmail.com>
 Date:   2026-08-08T19:53:24+07:00

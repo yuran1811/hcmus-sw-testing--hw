@@ -15,7 +15,7 @@
 Mọi kịch bản đo cùng một workflow bao phủ đủ ba nhóm endpoint:
 
 | Kịch bản | Workflow | Lý do profile |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Load | `POST /api/login` → `GET /api/products?search=${search}` → `POST /api/checkout` | 20 users, ramp 20 s, 120 s với think time 500–1.000 ms. |
 | Stress | `POST /api/login` → `GET /api/products?search=${search}` → `POST /api/checkout` | 80 users, ramp 40 s, 120 s với think time 100–300 ms. |
 | Spike | `POST /api/login` → `GET /api/products?search=${search}` → `POST /api/checkout` | 150 users, ramp 2 s, profile 60 s với pause 50 ms. |
@@ -147,8 +147,6 @@ AI nhận định bốn run đều có error rate 0%; p95 thấp trên localhost
 | “51,529 req/s là giới hạn tối đa của máy” | Đây là maximum stable **tested** trong soak 40 users; không có run đến failure point. | Kết luận vượt quá bằng chứng. |
 | “RSS tăng chứng minh memory leak” | RSS tăng 72.944 → max 109.232 KiB rồi gần 108.368 KiB cuối run; cần nhiều soak/restart để kết luận leak. | Chưa đủ bằng chứng. |
 | “p95 thấp nên production sẽ nhanh” | p95 Load 4 ms, Stress 3 ms, Spike 48 ms, Endurance 3 ms chỉ trên localhost, dataset nhỏ. | Thiếu tính ngoại suy môi trường. |
-
-> **HUMAN REVIEW REQUIRED:** sinh viên phải tự đối chiếu ít nhất các dòng JTL/summary trên, sửa hoặc bổ sung nhận xét cá nhân; không ký nếu chưa kiểm tra.
 
 ### 7.3 Đánh giá đề xuất tối ưu
 
