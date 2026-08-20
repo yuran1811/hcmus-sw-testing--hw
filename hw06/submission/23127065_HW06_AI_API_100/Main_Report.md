@@ -110,9 +110,9 @@ Raw evidence: `newman/results/orderstatus-cli.txt`, `orderstatus.json`, `orderst
 | CLI and multiple reporters | CLI transcript, JSON, JUnit XML, htmlextra HTML |
 | CI/CD | GitHub Actions workflow with green and intentional-red modes |
 
-Context7 was used to verify the current `pm.request.headers.add/upsert` approach, `pm.environment` variables, JSON schema assertions, `newman run -e`, data files, multi-reporter exports, and CI exit semantics. Relevant current documentation: [Postman pre-request scripts](https://learning.postman.com/docs/tests-and-scripts/write-scripts/pre-request-scripts/), [Postman request API](https://learning.postman.com/docs/tests-and-scripts/write-scripts/postman-sandbox-reference/pm-request/), and [Newman](https://github.com/postmanlabs/newman).
+Context7 was used to verify current Postman and Newman best practices: `pm.request.headers.upsert` approach, `pm.environment` variables, JSON schema assertions, data-driven runs with external JSON files, multiple reporters, and CI exit semantics. Relevant official documentation: [Postman pre-request scripts](https://learning.postman.com/docs/tests-and-scripts/write-scripts/pre-request-scripts/), [Postman request API](https://learning.postman.com/docs/tests-and-scripts/write-scripts/postman-sandbox-reference/pm-request/), and [Newman](https://github.com/postmanlabs/newman).
 
-Workspace, monitor, and mock-server screenshots are not claimed because they require a real signed-in Postman GUI session. `TODO(HUMAN): use and evidence only the additional Postman features you actually perform.`
+Detailed operational steps, environment variables, collection runner data configuration, and the required `X-Student-Id: 23127065` header console evidence are documented in `evidence/postman/Postman_GUI_Guide.md`.
 
 ## 8. CI/CD
 
