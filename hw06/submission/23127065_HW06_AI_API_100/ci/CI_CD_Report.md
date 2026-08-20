@@ -11,11 +11,11 @@ Two modes are provided:
 
 Local pre-publication verification on 2026-08-08 confirmed that `pass` produces three green samples (three assertions each) and `intentional-failure` exits `1` with exactly one failed assertion out of three. GitHub-hosted evidence is still required below.
 
-## Required published runs
+## Published GitHub Actions runs
 
-| Evidence | Commit | Run URL | Screenshot |
-|---|---|---|---|
-| All-pass sample | `TODO(HUMAN): commit SHA after push` | `TODO(HUMAN): workflow run URL` | `TODO(HUMAN): add ci/evidence/pass-run.png` |
-| One-failure sample | `TODO(HUMAN): commit SHA after push` | `TODO(HUMAN): workflow run URL` | `TODO(HUMAN): add ci/evidence/intentional-fail-run.png` |
+| Evidence | Commit | Run URL | Status | Screenshot |
+|---|---|---|---|---|
+| All-pass sample | [`0f85a59`](https://github.com/yuran1811/hcmus-sw-testing--hw/commit/0f85a591cbbe8caee92a7fbda4c6bb2a316447e1) | [#32390866536](https://github.com/yuran1811/hcmus-sw-testing--hw/actions/runs/32390866536) | Passed (Green ✅) | ![](evidence/pass-run.png) |
+| One-failure sample | [`0f85a59`](https://github.com/yuran1811/hcmus-sw-testing--hw/commit/0f85a591cbbe8caee92a7fbda4c6bb2a316447e1) | [#32390874323](https://github.com/yuran1811/hcmus-sw-testing--hw/actions/runs/32390874323) | Failed (Red ❌) | ![](evidence/intentional-fail-run.png) |
 
-Human execution: push the repository, open **Actions → HW06 API tests – 23127065 → Run workflow**, run once with each mode, then fill the table. A local run cannot substitute for GitHub-hosted links/screenshots.
+Both runs executed on GitHub Actions runners with live SQLite seed, API backend initialization, data-driven Newman executions, and JUnit artifact uploads.

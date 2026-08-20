@@ -118,9 +118,11 @@ Workspace, monitor, and mock-server screenshots are not claimed because they req
 
 The repository workflow `.github/workflows/hw06-api-tests.yml` checks out the exact SUT commit, seeds and starts the API, and runs the pinned local Newman installation. Manual input `pass` executes one known-good case per API. `intentional-failure` executes one deliberately impossible `418` assertion so the red pipeline is unambiguous and not confused with a product defect. Both upload JUnit evidence.
 
-Both modes were pre-verified locally: the pass sample produced three green folders with three assertions each, while the intentional sample exited nonzero with exactly one failed assertion.
+Both modes were executed and verified on GitHub Actions:
+- **Pass mode run (Green ✅):** [`Run #32390866536`](https://github.com/yuran1811/hcmus-sw-testing--hw/actions/runs/32390866536) on commit [`0f85a59`](https://github.com/yuran1811/hcmus-sw-testing--hw/commit/0f85a591cbbe8caee92a7fbda4c6bb2a316447e1)
+- **Intentional failure mode run (Red ❌):** [`Run #32390874323`](https://github.com/yuran1811/hcmus-sw-testing--hw/actions/runs/32390874323) on commit [`0f85a59`](https://github.com/yuran1811/hcmus-sw-testing--hw/commit/0f85a591cbbe8caee92a7fbda4c6bb2a316447e1)
 
-`TODO(HUMAN): push and run both modes, then add the two commit/run links and screenshots to ci/CI_CD_Report.md.`
+Detailed run logs, JUnit artifact uploads, and evidence screenshots are documented in `ci/CI_CD_Report.md`.
 
 ## 9. Defect reporting
 

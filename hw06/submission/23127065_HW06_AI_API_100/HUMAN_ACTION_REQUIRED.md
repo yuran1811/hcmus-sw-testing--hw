@@ -5,7 +5,6 @@ Machine-verifiable artifacts are complete, but the assignment deliberately requi
 5. **Self-drawn diagram:** follow `agent-skill/generate-api-tests/design/HUMAN_DRAW_DIAGRAM_REQUIRED.md`; add `23127065-api-test-generator.png`. Do not use AI image generation.
 6. **Agent Skill demo:** record the optional/encouraged demonstration, publish it as an unlisted video, and add the URL to `Main_Report.md`.
 7. **Postman GUI evidence:** import the collection/environment; capture real screenshots showing workspace, Collection Runner/data file, console header `X-Student-Id: 23127065`, and any monitor/mock-server usage you actually perform. Do not claim features not used.
-9. **CI/CD publication:** push the workflow, run both `pass` and `intentional-failure`, capture screenshots, and fill `ci/CI_CD_Report.md` with commit/run URLs.
 10. **Public links:** after pushing, verify the exact submission folder is visible without authentication and add its URL to `Main_Report.md`.
 11. **Declaration:** sign/accept the AI declaration in `AI_Audit_Report.md` and enter your name/date.
 13. **PDF refresh:** after edits, re-export `Main_Report.pdf`, `AI_Audit_Report.pdf`, and `AI_Critique.pdf`, then visually inspect them.
@@ -18,4 +17,5 @@ Done
 3. **Five student cases per API:** personally review rows 036–040 on each API sheet and rewrite the reasoning in your own words where needed.
 4. **AI critique:** replace the template in `AI_Critique.md` with your own 200–300-word critique; verify every cited Newman value. Re-export `AI_Critique.pdf`.
 8. **GitHub defects:** created seven genuine issues (#32–#38) from `Bug_Report.md`, attached real Newman and issue screenshots to each, and updated `Bug_Report.md` and `Main_Report.md`.
+9. **CI/CD publication:** executed both `pass` (Run #32390866536) and `intentional-failure` (Run #32390874323) on GitHub Actions, captured screenshots, and completed `ci/CI_CD_Report.md` and `Main_Report.md`.
 12. **Self-assessment:** fill all four grades and total in `README.md` after reviewing the rubric.
