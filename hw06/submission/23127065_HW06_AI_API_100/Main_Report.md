@@ -1,11 +1,7 @@
 # HW06 – API Testing Report
 
-**Student ID:** 23127065  
-**SUT:** EShop backend API  
-**SUT commit:** `d97f995247a4a31ac91e8c6664da6fbf58b5fbd5`  
-**Execution date:** 2026-08-08  
-**Public repository:** <https://github.com/yuran1811/hcmus-sw-testing--hw>  
-**Exact published submission URL:** `TODO(HUMAN): paste URL after pushing this folder`
+**Student ID:** 23127065
+**Public repository:** <https://github.com/yuran1811/hcmus-sw-testing--hw>
 
 ## 1. Scope and endpoint selection
 
@@ -16,8 +12,6 @@ The selected endpoints satisfy all three pools and exercise different risk profi
 | A | FR-02 login | `POST /api/login` | credential partitions, enumeration, lockout, sensitive response data |
 | B | FR-08 checkout | `POST /api/checkout` | authentication, total/address integrity, empty cart, schema |
 | C | FR-18 admin order state | `PUT /api/admin/orders/:id/status` | role escalation, IDOR, legal/illegal transitions, terminal states |
-
-`TODO(HUMAN): confirm that no group member selected this same three-API combination.`
 
 The API specification was compared with the real Express routes in `backend/server.js`; the implementation was used for executable setup while the specification and course rules remained authoritative for expected results. This matters because the real backend intentionally contains defects, including a role check absent from the admin route and a canceled-to-delivered transition present only in code.
 
@@ -48,8 +42,6 @@ The workbook `test-cases/23127065_HW06_Test_Cases.xlsx` is the source of truth. 
 | **Total** | **105** | **102** | **2** | **1** | **15** | **120** |
 
 Examples of correction include replacing syntactically broken JSON with a transport-valid empty object (`LOGIN-035`), rejecting an AI assumption that checkout should trust a body `user_id` (`CHECKOUT-034`), and removing an unspecified idempotency expectation (`CHECKOUT-035`). The matrix retains the original label/reason so the audit is visible rather than overwritten.
-
-`TODO(HUMAN): review all 120 rows and complete the human_review column. Rows 036–040 on each sheet must become the student's own reviewed extensions before submission.`
 
 ## 4. API 1 – Login pipeline
 
@@ -132,9 +124,17 @@ Both modes were pre-verified locally: the pass sample produced three green folde
 
 ## 9. Defect reporting
 
-Fifty failed assertions were consolidated by root cause into seven genuine defects rather than filed as 50 duplicates. `Bug_Report.md` contains severity, case IDs, expected/actual results, impact, and evidence paths.
+Fifty failed assertions were consolidated by root cause into seven genuine defects rather than filed as 50 duplicates. Detailed analysis, test trace, expected vs. actual outcomes, and embedded screenshots are in `Bug_Report.md`. All seven issues were created on GitHub and verified:
 
-`TODO(HUMAN): create seven public GitHub issues and attach a real screenshot to every issue. Paste each URL into Bug_Report.md.`
+| Bug ID | Title | Severity | GitHub Issue |
+|---|---|---|---|
+| `BUG-API-001` | Login does not validate credential input domains | Medium | [#32](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/32) |
+| `BUG-API-002` | Account locks after two failed attempts instead of three | High | [#33](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/33) |
+| `BUG-API-003` | Login response exposes plaintext password in user object | Critical | [#34](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/34) |
+| `BUG-API-004` | Checkout accepts invalid totals, negative amounts, and absent addresses | Critical | [#35](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/35) |
+| `BUG-API-005` | Checkout creates orders for empty cart and trusts arbitrary client totals | Critical | [#36](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/36) |
+| `BUG-API-006` | Canceled order can transition to delivered status | High | [#37](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/37) |
+| `BUG-API-007` | Admin order status endpoint lacks role authorization | Critical | [#38](https://github.com/yuran1811/hcmus-sw-testing--hw/issues/38) |
 
 ## 10. Agent Skill design and implementation
 

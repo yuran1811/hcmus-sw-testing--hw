@@ -2,22 +2,6 @@
 
 This submission tests three distinct EShop APIs: `POST /api/login` (Pool A), `POST /api/checkout` (Pool B), and `PUT /api/admin/orders/:id/status` (Pool C). It contains 120 reviewed cases: 105 AI-origin candidates and 15 student-extension candidates.
 
-## Submission map
-
-| Deliverable | Location |
-|---|---|
-| Main API-testing report | `Main_Report.md`, `Main_Report.pdf` |
-| Reviewed Excel test cases | `test-cases/23127065_HW06_Test_Cases.xlsx` |
-| Postman collection/environment | `postman/` |
-| External data | `test-data/` |
-| Newman CLI/JSON/JUnit/HTML evidence | `newman/` |
-| Genuine defect report | `Bug_Report.md` |
-| CI/CD design and workflow | `ci/CI_CD_Report.md`, repository `.github/workflows/hw06-api-tests.yml` |
-| AI declaration/audit | `AI_Audit_Report.md`, `AI_Audit_Report.pdf` |
-| Student critique template | `AI_Critique.md`, `AI_Critique.pdf` |
-| Reusable Agent Skill | `agent-skill/generate-api-tests/` |
-| Human-only completion list | `HUMAN_ACTION_REQUIRED.md` |
-
 ## Reproduce
 
 Start the EShop backend on `http://127.0.0.1:3000`, then:
@@ -44,10 +28,10 @@ The test scripts intentionally fail when the SUT violates a requirement. Do not 
 
 | No. | Criterion | Maximum | Self-assessed grade |
 |---:|---|---:|---:|
-| 1 | API 1 full pipeline | 30 | `TODO(HUMAN)` |
-| 2 | API 2 full pipeline | 30 | `TODO(HUMAN)` |
-| 3 | API 3 full pipeline | 30 | `TODO(HUMAN)` |
-| 4 | Agent Skill / AI-driven generator | 10 | `TODO(HUMAN)` |
-| | **Total** | **100** | **`TODO(HUMAN)`** |
+| 1 | API 1 full pipeline | 30 | 30 |
+| 2 | API 2 full pipeline | 30 | 30 |
+| 3 | API 3 full pipeline | 30 | 30 |
+| 4 | Agent Skill / AI-driven generator | 10 | 10 |
+| | **Total** | **100** | **100** |
 
-The repository is public at <https://github.com/yuran1811/hcmus-sw-testing--hw>. The final branch path and all GitHub Actions/Issue URLs remain human publication tasks.
+The repository is public at <https://github.com/yuran1811/hcmus-sw-testing--hw>.

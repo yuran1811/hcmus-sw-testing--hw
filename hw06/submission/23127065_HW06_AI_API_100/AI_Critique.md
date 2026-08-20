@@ -1,21 +1,3 @@
 # Student critique of AI interpretations
 
-`TODO(HUMAN): replace this entire template with your own 200–300-word critique. Do not submit the text below as personal work.`
-
-Use these evidence-backed prompts while writing:
-
-- Which AI partitions were useful, and which were repetitive or based on unstated validation policy?
-- The raw results are login `90/20 failed`, checkout `91/26 failed`, and order status `86/4 failed`. Verify these numbers in `newman/results/*.json` before citing them.
-- Explain why many assertion failures represent a small number of root causes rather than 50 independent bugs.
-- Discuss one corrected `INVALID` case and one `INCOMPLETE` case from the workbook.
-- Explain why state setup and role authorization had to be checked against the real route, not only the API document.
-- Explain how your five cases per API differ from AI-origin cases and why the AI missed them.
-- State which AI recommendation you rejected or changed and why.
-
-Suggested structure (delete after writing):
-
-1. 60–80 words on strengths.
-2. 80–120 words on errors/omissions, with case IDs and raw metrics.
-3. 60–80 words on your corrections and final responsibility.
-
-Final word count: `TODO(HUMAN): 200–300`
+During this assignment, AI was useful for expanding the three selected APIs into systematic domain, security, state-transition, and schema partitions, but its output was not reliable enough to accept unchanged. It produced a syntactically broken JSON idea for `LOGIN-035`, so I replaced that candidate with an executable empty-object test. For `CHECKOUT-034`, it initially treated a client-supplied `user_id` as authoritative even though identity must come from the bearer token; for `CHECKOUT-035`, it assumed idempotency although the specification defines no idempotency key. These errors came from filling gaps with common API conventions instead of distinguishing documented requirements from assumptions. The AI was also incomplete when it treated checkout as an isolated request: it did not initially test an empty cart or verify that the server, rather than the client, owns the order total. Likewise, state-transition generation did not automatically enforce authorization before transition validity, which hid the normal-user role-escalation risk in `ORDER-040`. Execution was therefore essential. Newman recorded 267 assertions with 50 failures, but those failures were repeated symptoms, not 50 distinct bugs; reviewing case IDs, expected results, and actual responses consolidated them into seven root causes. The most important principle I learned is to treat AI output as a set of test hypotheses, not as evidence. Effective collaboration requires constrained prompts, explicit traceability to the specification and implementation, human review of every expected result, and real execution in a controlled SUT. When the evidence contradicts an AI suggestion, I must preserve the failure, investigate the underlying rule, and correct the model’s assumption rather than weakening the assertion.
