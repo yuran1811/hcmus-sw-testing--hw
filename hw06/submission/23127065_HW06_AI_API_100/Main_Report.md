@@ -164,7 +164,9 @@ The architecture and workflow diagram for the `generate-api-tests` skill is defi
 ### Algorithm and Pseudocode
 The comprehensive end-to-end pseudocode is documented in [`design/pseudocode.md`](agent-skill/generate-api-tests/design/pseudocode.md), covering contract ingestion, differential analysis, multi-partition test generation, human audit classification (`VALID`, `INVALID`, `INCOMPLETE`), student extensions, Postman/Newman artifact compilation, and defect triaging.
 
-Demonstration video: `TODO(HUMAN): unlisted video URL`.
+### Demonstration Video
+- **Video Link (YouTube):** <https://youtu.be/x8tdexiYHw8>
+- **Description:** Demonstration showing the AI-driven test generator skill executing against the SUT API contract, generating 120 traceable test cases across all three endpoints, compiling the Postman collection with `X-Student-Id: 23127065`, and executing Newman tests.
 
 ## 11. Limitations and reproducibility
 

@@ -25,4 +25,8 @@ newman run postman/23127065_HW06.postman_collection.json \
   -d test-data/login-cases.json --folder "Pool A - Login"
 ```
 
+## Demonstration Video
+
+- **YouTube Walkthrough:** <https://youtu.be/x8tdexiYHw8>
+
 Read [references/coverage-model.md](references/coverage-model.md) before adding or changing cases. Never fabricate GitHub links, screenshots, student critique, student declarations, group uniqueness, or a self-drawn diagram.
