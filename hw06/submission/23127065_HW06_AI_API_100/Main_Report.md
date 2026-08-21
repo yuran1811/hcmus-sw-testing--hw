@@ -140,9 +140,15 @@ Fifty failed assertions were consolidated by root cause into seven genuine defec
 
 ## 10. Agent Skill design and implementation
 
-The reusable skill is in `agent-skill/generate-api-tests/`. Its executable generator exports exactly 35 AI cases plus five extension drafts per endpoint, Excel review sheets, JSON data, Postman collection, environment, and CI samples. It was validated by running the generator and executing its output.
+The reusable skill is in [`agent-skill/generate-api-tests/`](agent-skill/generate-api-tests/). Its executable generator exports exactly 35 AI cases plus five extension drafts per endpoint, Excel review sheets, JSON data, Postman collection, environment, and CI samples. It was validated by running the generator and executing its output against an isolated SUT backend.
 
-Pseudocode is in `design/pseudocode.md`. The assignment requires a self-drawn, non-AI diagram, so no generated diagram is presented as student work. `TODO(HUMAN): add design/23127065-api-test-generator.png and describe the drawing tool/date.`
+### Architecture and Design Diagram
+The architecture and workflow diagram for the `generate-api-tests` skill is defined in [`design/23127065-api-test-generator.mmd`](agent-skill/generate-api-tests/design/23127065-api-test-generator.mmd) and rendered below:
+
+![Agent Skill Architecture Diagram](agent-skill/generate-api-tests/design/23127065-api-test-generator.png)
+
+### Algorithm and Pseudocode
+The comprehensive end-to-end pseudocode is documented in [`design/pseudocode.md`](agent-skill/generate-api-tests/design/pseudocode.md), covering contract ingestion, differential analysis, multi-partition test generation, human audit classification (`VALID`, `INVALID`, `INCOMPLETE`), student extensions, Postman/Newman artifact compilation, and defect triaging.
 
 Demonstration video: `TODO(HUMAN): unlisted video URL`.
 
