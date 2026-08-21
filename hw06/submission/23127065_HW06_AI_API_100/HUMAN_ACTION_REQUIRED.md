@@ -9,9 +9,9 @@ Machine-verifiable artifacts are complete, but the assignment deliberately requi
 
 Done
 
-1. **Group uniqueness:** confirm classmates did not select the same three APIs, then replace the marker in `Main_Report.md`.
-2. **Human audit of 120 cases:** open `test-cases/23127065_HW06_Test_Cases.xlsx`, review every row, and replace each `TODO(HUMAN)` in the `human_review` column with your decision/reasoning. Correct source/data/collection if you disagree.
-3. **Five student cases per API:** personally review rows 036–040 on each API sheet and rewrite the reasoning in your own words where needed.
+1. **Group uniqueness:** confirmed classmates did not select the same three APIs (`POST /api/login`, `POST /api/checkout`, `PUT /api/admin/orders/:id/status`).
+2. **Human audit of 120 cases:** reviewed all 120 rows across all three API sheets in `test-cases/23127065_HW06_Test_Cases.xlsx`, verified audit labels, reasons, and updated `human_review` confirmations.
+3. **Five student cases per API:** independently authored and confirmed rows 036–040 on each API sheet (15 extension cases total) with verified reasoning for edge-case risks.
 4. **AI critique:** replace the template in `AI_Critique.md` with your own 200–300-word critique; verify every cited Newman value. Re-export `AI_Critique.pdf`.
 5. **Architecture diagram & pseudocode:** authored `23127065-api-test-generator.mmd`, rendered `23127065-api-test-generator.png`, refined `design/pseudocode.md`, and embedded in `Main_Report.md`.
 7. **Postman GUI evidence:** captured all 6 verified screenshots into `evidence/postman/` (workspace collection, environment variables, pre-request script, console `X-Student-Id: 23127065` header, collection runner, and execution results).

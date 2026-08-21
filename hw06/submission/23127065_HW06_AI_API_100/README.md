@@ -1,5 +1,10 @@
 # HW06 – API Testing – 23127065
 
+- **Student ID:** 23127065
+- **Student Name:** NGÔ NGUYỄN THẾ KHOA (Ngo Nguyen The Khoa)
+- **Class:** 23KTPM3
+- **Course:** CS423 / CSC13003 – Software Testing
+
 This submission tests three distinct EShop APIs: `POST /api/login` (Pool A), `POST /api/checkout` (Pool B), and `PUT /api/admin/orders/:id/status` (Pool C). It contains 120 reviewed cases: 105 AI-origin candidates and 15 student-extension candidates.
 
 ## Reproduce

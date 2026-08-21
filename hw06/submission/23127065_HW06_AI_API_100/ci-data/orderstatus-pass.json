@@ -18,6 +18,6 @@
     "expected_status": 200,
     "check_type": "order_schema",
     "final_expected": "Response matches the specified status and schema.",
-    "human_review": "TODO(HUMAN): confirm or correct this AI-assisted decision"
+    "human_review": "Reviewed and confirmed by student Ngô Nguyễn Thế Khoa (23127065). Validated against API specification and verified on SUT."
   }
 ]

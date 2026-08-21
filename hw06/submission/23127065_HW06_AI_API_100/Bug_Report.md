@@ -1,5 +1,10 @@
 # Genuine API defects
 
+**Student ID:** 23127065  
+**Student Name:** NGÔ NGUYỄN THẾ KHOA (Ngo Nguyen The Khoa)  
+**Class:** 23KTPM3  
+**Course:** CS423 / CSC13003 – Software Testing  
+
 Every issue below was reproduced against SUT commit `d97f995247a4a31ac91e8c6664da6fbf58b5fbd5` on 2026-08-08. Raw responses and assertion details are in `newman/results/*.json`, `*.xml`, and the HTML reports.
 
 ## BUG-API-001 – Login does not validate credential input domains

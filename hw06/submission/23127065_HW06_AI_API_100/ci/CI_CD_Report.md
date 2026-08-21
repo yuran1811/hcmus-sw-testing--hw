@@ -1,5 +1,10 @@
 # CI/CD report
 
+**Student ID:** 23127065  
+**Student Name:** NGÔ NGUYỄN THẾ KHOA (Ngo Nguyen The Khoa)  
+**Class:** 23KTPM3  
+**Course:** CS423 / CSC13003 – Software Testing  
+
 Workflow: repository root `.github/workflows/hw06-api-tests.yml`.
 
 The manual workflow checks out this submission and the exact public SUT revision, installs Node 22 and pinned Newman dependencies, seeds SQLite, starts the backend, waits for `/api/products`, and runs Postman data through Newman. JUnit results are uploaded even when an assertion fails.

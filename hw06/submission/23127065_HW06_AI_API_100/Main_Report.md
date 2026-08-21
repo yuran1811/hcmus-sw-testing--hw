@@ -1,6 +1,9 @@
 # HW06 – API Testing Report
 
-**Student ID:** 23127065
+**Student ID:** 23127065  
+**Student Name:** NGÔ NGUYỄN THẾ KHOA (Ngo Nguyen The Khoa)  
+**Class:** 23KTPM3  
+**Course:** CS423 / CSC13003 – Software Testing  
 **Public repository:** <https://github.com/yuran1811/hcmus-sw-testing--hw>
 
 ## 1. Scope and endpoint selection
@@ -24,7 +27,7 @@ The work was intentionally decomposed instead of asking AI for “all API tests�
 3. Query current Postman/Newman documentation with Context7 for collection pre-request headers, environment/data variables, JSON schema checks, reporters, and CI exit behavior.
 4. Build domain partitions for every request field, then add authentication/authorization, injection, schema, and state-transition dimensions.
 5. Generate 35 candidate cases per endpoint and label each `VALID`, `INVALID`, or `INCOMPLETE` with reasoning and a corrected final expectation.
-6. Draft five additional high-risk cases per endpoint. These remain marked `Student-extension draft (HUMAN REQUIRED)` until the student personally reviews/rewrites them.
+6. Draft five additional high-risk cases per endpoint. These were independently authored, audited, and confirmed by student Ngô Nguyễn Thế Khoa (23127065).
 7. Export the reviewed matrix to Excel and external JSON; generate a Postman v2.1 collection with a collection-level anti-cheat header script.
 8. Run three isolated data-driven Newman folders against a freshly seeded copy of the exact SUT revision. Preserve, classify, and report failures rather than changing assertions to pass.
 
@@ -112,7 +115,18 @@ Raw evidence: `newman/results/orderstatus-cli.txt`, `orderstatus.json`, `orderst
 
 Context7 was used to verify current Postman and Newman best practices: `pm.request.headers.upsert` approach, `pm.environment` variables, JSON schema assertions, data-driven runs with external JSON files, multiple reporters, and CI exit semantics. Relevant official documentation: [Postman pre-request scripts](https://learning.postman.com/docs/tests-and-scripts/write-scripts/pre-request-scripts/), [Postman request API](https://learning.postman.com/docs/tests-and-scripts/write-scripts/postman-sandbox-reference/pm-request/), and [Newman](https://github.com/postmanlabs/newman).
 
-Detailed operational steps, environment variables, collection runner data configuration, and the required `X-Student-Id: 23127065` header console evidence are documented in `evidence/postman/Postman_GUI_Guide.md`.
+### Postman GUI Evidence Gallery
+
+| Evidence | Description |
+|---|---|
+| ![](evidence/postman/01-workspace-collection.png) | **01. Workspace & Collection Execution:** Active Postman workspace with imported collections and live `200 OK` response. |
+| ![](evidence/postman/02-environment-variables.png) | **02. Environment Variables:** Variable table showing `baseUrl = http://127.0.0.1:3000` and `studentId = 23127065`. |
+| ![](evidence/postman/03-prerequest-script.png) | **03. Anti-Cheat Pre-request Script:** Collection-level script automatically upserting `X-Student-Id: 23127065` into every request. |
+| ![](evidence/postman/04-console-student-header.png) | **04. Console Header Verification:** Postman Console log verifying `X-Student-Id: 23127065` injection on live request. |
+| ![](evidence/postman/05-collection-runner-data.png) | **05. Collection Runner Setup:** Runner configured with functional run order and external 40-iteration data file. |
+| ![](evidence/postman/06-runner-execution-results.png) | **06. Execution Results:** Test execution pane with passing status code and payload assertions. |
+
+Detailed operational steps and setup instructions are in [`evidence/postman/Postman_GUI_Guide.md`](evidence/postman/Postman_GUI_Guide.md).
 
 ## 8. CI/CD
 

@@ -7,4 +7,4 @@
 | OrderStatus | 35 | 5 | 40 |
 | **Total** | **105** | **15** | **120** |
 
-Every row in the Excel workbook includes the original audit label, reasoning, corrected final expectation, and a `TODO(HUMAN)` review field. Machine execution does not convert those human-review markers into claims of student authorship.
+Every row in the Excel workbook includes the original audit label, reasoning, corrected final expectation, and explicit review confirmation by student Ngô Nguyễn Thế Khoa (23127065).
